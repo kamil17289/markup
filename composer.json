@@ -1,0 +1,24 @@
+{
+    "name": "nethead/markup",
+    "description": "Package for HTML markup generation in Laravel",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kamil Gałkiewicz",
+            "email": "kamil@nitro-digital.com"
+        }
+    ],
+    "require": {
+        "illuminate/support": "5.5.*"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Nethead\\Markup\\MarkupServiceProvider"
+            ],
+            "aliases": {
+                "Markup": "Nethead\\Markup\\MarkupFacade"
+            }
+        }
+    }
+}
