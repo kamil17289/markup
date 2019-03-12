@@ -4,6 +4,7 @@ namespace Nethead\Markup;
 
 use Illuminate\Contracts\Routing\UrlGenerator;
 use Nethead\Markup\Html\Meta;
+use Nethead\Markup\Html\Picture;
 use Nethead\Markup\Html\Script;
 use Nethead\Markup\Html\Image;
 use Nethead\Markup\Html\Style;
@@ -93,7 +94,16 @@ class MarkupBuilder {
         return new Image($src, $alt, $attributes);
     }
 
-
+    /**
+     * Render a <picture> element
+     * @param array $attributes
+     * @param array $contents
+     * @return Picture
+     */
+    public function picture(array $attributes = [], $contents = [])
+    {
+        return new Picture($attributes, $contents);
+    }
 
     /**
      * Render <a> element
@@ -168,6 +178,6 @@ class MarkupBuilder {
     }
 
     /**
-     * TODO: ol, ul, p, picture, table
+     * TODO: ol, ul, p, table
      */
 }

@@ -109,7 +109,7 @@ class Tag implements Htmlable {
 
         // ignore content and closing tag for void elements
         if (! in_array($this->name, $this->voidElements)) {
-            $string .= $this->contents;
+            $string .= is_array($this->contents) ? implode(PHP_EOL, $this->contents) : $this->contents;
 
             $string .= '</' . $this->name . '>';
         }
