@@ -3,6 +3,7 @@
 namespace Nethead\Markup;
 
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\Blade;
 
 /**
  * Class MarkupServiceProvider
@@ -14,7 +15,7 @@ class MarkupServiceProvider extends ServiceProvider {
      */
     public function boot()
     {
-       //
+
     }
 
     /**

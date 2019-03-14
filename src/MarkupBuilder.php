@@ -3,12 +3,13 @@
 namespace Nethead\Markup;
 
 use Illuminate\Contracts\Routing\UrlGenerator;
-use Nethead\Markup\Html\Meta;
+use Nethead\Markup\Html\Mailto;
 use Nethead\Markup\Html\Picture;
 use Nethead\Markup\Html\Script;
 use Nethead\Markup\Html\Image;
 use Nethead\Markup\Html\Style;
 use Nethead\Markup\Html\Link;
+use Nethead\Markup\Html\Meta;
 use Nethead\Markup\Html\Tag;
 use Nethead\Markup\Html\A;
 
@@ -117,6 +118,11 @@ class MarkupBuilder {
         return new A($href, $text, $attributes);
     }
 
+    public function mailto(string $email, string $text, array $attributes = [])
+    {
+        return new Mailto($email, $text, $attributes);
+    }
+
     /**
      * Render custom <meta> element
      * @param string $name
@@ -176,8 +182,4 @@ class MarkupBuilder {
     {
         return $this->meta('keywords', $content);
     }
-
-    /**
-     * TODO: ol, ul, p, table
-     */
 }
