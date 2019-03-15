@@ -23,12 +23,12 @@ class Mailto extends Tag {
      */
     public function __construct($href, $contents, array $attributes = [])
     {
-        $attributes = [
+        $attributes = array_merge($attributes, [
             'href' => 'javascript:void(0);',
             'data-address' => $this->obfuscate($href),
             'style' => 'direction: rtl; unicode-bidi: bidi-override;',
             'onclick' => "window.location.href='mailto:'+this.dataset.address" . $this->rot13jsDecoder
-        ];
+        ]);
 
         parent::__construct('a', $attributes, strrev($contents));
     }
