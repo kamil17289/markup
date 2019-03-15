@@ -1,6 +1,7 @@
 <?php
 
 namespace Nethead\Markup\Html;
+use Nethead\Markup\MarkupBuilder;
 
 /**
  * Class Picture
@@ -14,6 +15,11 @@ class Picture extends Tag {
     public $srcset = [];
 
     /**
+     * @var
+     */
+    protected $urlGenerator;
+
+    /**
      * Picture constructor.
      * @param array $attributes
      * @param array $contents
@@ -23,6 +29,8 @@ class Picture extends Tag {
         if (! is_array($contents) && ! empty($contents)) {
             $contents = [$contents];
         }
+
+        $this->urlGenerator = MarkupBuilder::
 
         parent::__construct('picture', $attributes, $contents);
     }

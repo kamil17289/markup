@@ -2,9 +2,10 @@
 
 namespace Nethead\Markup;
 
-use Illuminate\Contracts\Routing\UrlGenerator;
-use Nethead\Markup\Html\Mailto;
+use Nethead\Markup\Html\Stylesheet;
+use Nethead\Markup\UrlGenerators\UrlGenerator;
 use Nethead\Markup\Html\Picture;
+use Nethead\Markup\Html\Mailto;
 use Nethead\Markup\Html\Script;
 use Nethead\Markup\Html\Image;
 use Nethead\Markup\Html\Style;
@@ -19,6 +20,7 @@ use Nethead\Markup\Html\A;
  */
 class MarkupBuilder {
     /**
+     * \Nethead\Markup\UrlGenerators\UrlGenerator implementation
      * @var UrlGenerator
      */
     protected $urlGenerator;
@@ -27,7 +29,7 @@ class MarkupBuilder {
      * MarkupBuilder constructor.
      * @param UrlGenerator $urlGenerator
      */
-    public function __construct(UrlGenerator $urlGenerator)
+    public function __construct(UrlGenerator $urlGenerator = null)
     {
         $this->urlGenerator = $urlGenerator;
     }
@@ -54,10 +56,10 @@ class MarkupBuilder {
     public function script(string $assetPath = '', array $attributes = [], $secure = null)
     {
         if (! empty($assetPath)) {
-            $attributes['src'] = $this->urlGenerator->asset($assetPath, $secure);
+            $attributes['src'] = $this->urlGenerator->pathToAsset($assetPath, $secure);
         }
 
-        return new Script($attributes);
+        return new Script($attributes, $secure);
     }
 
     /**
@@ -82,6 +84,81 @@ class MarkupBuilder {
     }
 
     /**
+     * Render <link> to external CSS sheet
+     * @param string $href
+     * @param string $media
+     * @param array $attributes
+     * @return Link
+     */
+    public function stylesheet(string $href, string $media, array $attributes = [])
+    {
+        $attributes['rel'] = 'stylesheet';
+        $attributes['media'] = $media;
+        $attributes['href'] = $this->urlGenerator->pathToAsset($href);
+
+        return new Link($attributes);
+    }
+
+    /**
+     * Render alternative document versions in <link> element
+     * @param string $href
+     * @param string $type
+     * @param string $title
+     * @param array $attributes
+     * @return Link
+     */
+    public function alternate(string $href, string $type, string $title = '', array $attributes = [])
+    {
+        $attributes = array_merge($attributes, [
+            'href' => $this->urlGenerator->generalUrl($href),
+            'type' => $type,
+            'rel' => 'alternate'
+        ]);
+
+        if (! empty($title)) {
+            $attributes['title'] = $title;
+        }
+
+        return new Link($attributes);
+    }
+
+    /**
+     * Render <link> element to document's author
+     * @param $href
+     * @param array $attributes
+     * @return Link
+     */
+    public function author(string $href, array $attributes = [])
+    {
+        $attributes = array_merge($attributes, [
+            'rel' => 'author',
+            'href' => $this->urlGenerator->generalUrl($href)
+        ]);
+
+        return new Link($attributes);
+    }
+
+    /**
+     * Render the favicon <link> element
+     * @param string $href
+     * @param string $type
+     * @param string $sizes
+     * @param array $attributes
+     * @return Link
+     */
+    public function icon(string $href, string $type, string $sizes, array $attributes = [])
+    {
+        $attributes = array_merge($attributes, [
+            'href' => $this->urlGenerator->pathToAsset($href),
+            'type' => $type,
+            'sizes' => $sizes,
+            'rel' => 'icon'
+        ]);
+
+        return new Link($attributes);
+    }
+
+    /**
      * Render <img> element
      * @param string $src
      * @param string $alt
@@ -90,7 +167,7 @@ class MarkupBuilder {
      */
     public function image(string $src, string $alt, array $attributes = [])
     {
-        $src = $this->urlGenerator->asset($src);
+        $src = $this->urlGenerator->pathToAsset($src);
 
         return new Image($src, $alt, $attributes);
     }
@@ -101,8 +178,10 @@ class MarkupBuilder {
      * @param array $contents
      * @return Picture
      */
-    public function picture(array $attributes = [], $contents = [])
+    public function picture(array $attributes = [], $secure = null)
     {
+        $homepage = $this->urlGenerator->homepage();
+
         return new Picture($attributes, $contents);
     }
 
@@ -166,7 +245,7 @@ class MarkupBuilder {
      * @param string $content
      * @return Meta
      */
-    public function author(string $content)
+    public function meta_author(string $content)
     {
         return $this->meta('author', $content);
     }
@@ -176,7 +255,7 @@ class MarkupBuilder {
      * @param string $content
      * @return Meta
      */
-    public function description(string $content) {
+    public function meta_description(string $content) {
         return $this->meta('description', $content);
     }
 
@@ -185,7 +264,7 @@ class MarkupBuilder {
      * @param string $content
      * @return Meta
      */
-    public function keywords(string $content)
+    public function meta_keywords(string $content)
     {
         return $this->meta('keywords', $content);
     }

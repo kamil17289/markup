@@ -24,7 +24,9 @@ class MarkupServiceProvider extends ServiceProvider {
     public function register()
     {
         $this->app->singleton('markup', function ($app) {
-            return new MarkupBuilder($app['url']);
+            $laravelUrlAdapter = new UrlGenerators\LaravelUrlAdapter($app['url']);
+
+            return new MarkupBuilder($laravelUrlAdapter);
         });
     }
 }
