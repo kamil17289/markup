@@ -14,6 +14,12 @@ trait HasHtmlAttributes {
     public $htmlAttributes = [];
 
     /**
+     * List of attributes which value shouldn't be escaped
+     * @var array
+     */
+    protected $notEscapedAttributes = [];
+
+    /**
      * Set HTML attributes. Every call of this will remove previously set attributes
      * @param array $attrs
      */
@@ -116,13 +122,19 @@ trait HasHtmlAttributes {
      */
     public function renderHtmlAttribute(string $name, $value) : string
     {
+        $name = e($name);
+
         // no-value attributes, like required, disabled, readonly
         if (is_bool($value)) {
-            return $value ? e($name) : '';
+            return $value ? $name : '';
         }
 
         if (! is_null($value)) {
-            return sprintf('%s="%s"', e($name), e($value));
+            if (! in_array($name, $this->notEscapedAttributes)) {
+                $value = e($value);
+            }
+
+            return sprintf('%s="%s"', $name, $value);
         }
 
         return '';

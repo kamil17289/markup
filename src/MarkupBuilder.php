@@ -118,6 +118,13 @@ class MarkupBuilder {
         return new A($href, $text, $attributes);
     }
 
+    /**
+     * Render obfuscated mailto: <a> element
+     * @param string $email
+     * @param string $text
+     * @param array $attributes
+     * @return Mailto
+     */
     public function mailto(string $email, string $text, array $attributes = [])
     {
         return new Mailto($email, $text, $attributes);

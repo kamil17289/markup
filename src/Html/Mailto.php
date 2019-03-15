@@ -6,8 +6,14 @@ namespace Nethead\Markup\Html;
  * Class Mailto
  * @package Nethead\Markup\Html
  */
-class Mailto extends A {
+class Mailto extends Tag {
     use ObfuscatesData;
+
+    /**
+     * List of attributes which value shouldn't be escaped
+     * @var array
+     */
+    protected $notEscapedAttributes = ['onclick'];
 
     /**
      * Mailto constructor.
@@ -17,8 +23,13 @@ class Mailto extends A {
      */
     public function __construct($href, $contents, array $attributes = [])
     {
-        $href = 'mailto:' . $this->obfuscate($href);
+        $attributes = [
+            'href' => 'javascript:void(0);',
+            'data-address' => $this->obfuscate($href),
+            'style' => 'direction: rtl; unicode-bidi: bidi-override;',
+            'onclick' => "window.location.href='mailto:'+this.dataset.address" . $this->rot13jsDecoder
+        ];
 
-        parent::__construct($href, $contents, $attributes);
+        parent::__construct('a', $attributes, strrev($contents));
     }
 }
