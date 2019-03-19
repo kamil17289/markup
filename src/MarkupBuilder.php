@@ -2,6 +2,7 @@
 
 namespace Nethead\Markup;
 
+use Mockery\Exception\BadMethodCallException;
 use Nethead\Markup\Html\Stylesheet;
 use Nethead\Markup\UrlGenerators\UrlGenerator;
 use Nethead\Markup\Html\Picture;
@@ -174,15 +175,14 @@ class MarkupBuilder {
 
     /**
      * Render a <picture> element
+     * @param string $alt
      * @param array $attributes
-     * @param array $contents
+     * @param mixed $secure
      * @return Picture
      */
-    public function picture(array $attributes = [], $secure = null)
+    public function picture(string $alt, array $attributes = [], $secure = null)
     {
-        $homepage = $this->urlGenerator->homepage();
-
-        return new Picture($attributes, $contents);
+        return new Picture($alt, $attributes, $this->urlGenerator, $secure);
     }
 
     /**

@@ -1,7 +1,8 @@
 <?php
 
 namespace Nethead\Markup\Html;
-use Nethead\Markup\MarkupBuilder;
+
+use Nethead\Markup\UrlGenerators\UrlGenerator;
 
 /**
  * Class Picture
@@ -9,10 +10,14 @@ use Nethead\Markup\MarkupBuilder;
  */
 class Picture extends Tag {
     /**
-     * Source sets for <picture>
-     * @var array
+     * @var
      */
-    public $srcset = [];
+    protected $alt;
+
+    /**
+     * @var
+     */
+    protected $secure;
 
     /**
      * @var
@@ -21,43 +26,37 @@ class Picture extends Tag {
 
     /**
      * Picture constructor.
-     * @param array $attributes
-     * @param array $contents
-     */
-    public function __construct(array $attributes = [], $contents = [])
-    {
-        if (! is_array($contents) && ! empty($contents)) {
-            $contents = [$contents];
-        }
-
-        $this->urlGenerator = MarkupBuilder::
-
-        parent::__construct('picture', $attributes, $contents);
-    }
-
-    /**
-     * Add default <img> inside the <picture>
-     * @param string $src
      * @param string $alt
      * @param array $attributes
-     * @return $this
+     * @param UrlGenerator $urlGenerator
+     * @param mixed $secure
      */
-    public function image(string $src, string $alt, array $attributes = [])
+    public function __construct(string $alt, array $attributes = [], UrlGenerator $urlGenerator, $secure = null)
     {
-        $this->contents[] = new Image($src, $alt, $attributes);
+        $this->urlGenerator = $urlGenerator;
 
-        return $this;
+        $this->alt = $alt;
+
+        $this->secure = $secure;
+
+        parent::__construct('picture', $attributes, []);
     }
 
     /**
      * Add <source> set to the <picture>
-     * @param string $srcset
      * @param string $media
+     * @param string $href
+     * @param array $attributes
      * @returns $this
      */
-    public function source(string $srcset, string $media, array $attributes = [])
+    public function source(string $href, string $media = '', array $attributes = [])
     {
-       $this->contents[] = new Source($srcset, $media, $attributes);
+        if (empty($this->contents)) {
+            $this->contents[] = new Image($this->urlGenerator->pathToAsset($href, $this->secure), $this->alt, $attributes);
+        }
+        else {
+            $this->contents[] = new Source($this->urlGenerator->pathToAsset($href, $this->secure), $media, $attributes);
+        }
 
        return $this;
     }

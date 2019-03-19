@@ -15,21 +15,39 @@ class LaravelUrlAdapter implements UrlGenerator {
      */
     protected $generator;
 
+    /**
+     * LaravelUrlAdapter constructor.
+     * @param LaravelGenerator $generator\
+     */
     public function __construct(LaravelGenerator $generator)
     {
         $this->generator = $generator;
     }
 
+    /**
+     * @param $path
+     * @param null $secure
+     * @return string
+     */
     public function pathToAsset($path, $secure = null) : string
     {
         return $this->generator->asset($path, $secure);
     }
 
+    /**
+     * @param $path
+     * @param null $secure
+     * @return string
+     */
     public function generalUrl($path, $secure = null) : string
     {
         return $this->generator->to($path, [], $secure);
     }
 
+    /**
+     * @param null $secure
+     * @return string
+     */
     public function homepage($secure = null): string
     {
         return $this->generator->to('/');

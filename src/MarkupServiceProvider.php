@@ -15,7 +15,7 @@ class MarkupServiceProvider extends ServiceProvider {
      */
     public function boot()
     {
-
+        //
     }
 
     /**
