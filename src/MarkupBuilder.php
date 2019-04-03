@@ -2,8 +2,7 @@
 
 namespace Nethead\Markup;
 
-use Mockery\Exception\BadMethodCallException;
-use Nethead\Markup\Html\Stylesheet;
+use Nethead\Markup\Presenters\PresenterInterface;
 use Nethead\Markup\UrlGenerators\UrlGenerator;
 use Nethead\Markup\Html\Picture;
 use Nethead\Markup\Html\Mailto;
@@ -27,13 +26,24 @@ class MarkupBuilder {
     protected $urlGenerator;
 
     /**
+     * \Nethead\Markup\Presenters\PresenterInterface
+     * @var
+     */
+    protected $presenter;
+
+    /**
      * MarkupBuilder constructor.
      * @param UrlGenerator $urlGenerator
+     * @param PresenterInterface $presenter
      */
-    public function __construct(UrlGenerator $urlGenerator = null)
+    public function __construct(UrlGenerator $urlGenerator = null, PresenterInterface $presenter = null)
     {
         $this->urlGenerator = $urlGenerator;
+
+        $this->presenter = $presenter;
     }
+
+    protected function present()
 
     /**
      * Render a tag, whatever you like
