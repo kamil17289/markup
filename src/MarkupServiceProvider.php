@@ -4,6 +4,7 @@ namespace Nethead\Markup;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Blade;
+use Nethead\Markup\Presenters\LaravelBladePresenter;
 use Nethead\Markup\Presenters\PlainStringPresenter;
 
 /**
@@ -26,8 +27,7 @@ class MarkupServiceProvider extends ServiceProvider {
     {
         $this->app->singleton('markup', function ($app) {
             $laravelUrlAdapter = new UrlGenerators\LaravelUrlAdapter($app['url']);
-
-            $presenter = new PlainStringPresenter();
+            $presenter = new LaravelBladePresenter();
 
             return new MarkupBuilder($laravelUrlAdapter, $presenter);
         });

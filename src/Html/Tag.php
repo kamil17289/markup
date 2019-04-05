@@ -2,14 +2,11 @@
 
 namespace Nethead\Markup\Html;
 
-use Illuminate\Contracts\Support\Htmlable;
-use Illuminate\Support\HtmlString;
-
 /**
  * Class Tag
  * @package Nethead\Markup\Html
  */
-class Tag implements Htmlable {
+class Tag {
     use HasHtmlAttributes;
 
     /**
@@ -82,14 +79,6 @@ class Tag implements Htmlable {
     public function clearContents()
     {
         $this->contents = '';
-    }
-
-    /**
-     * @inheritdoc
-     */
-    public function toHtml()
-    {
-        return new HtmlString($this->__toString());
     }
 
     /**

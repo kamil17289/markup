@@ -43,18 +43,25 @@ class MarkupBuilder {
         $this->presenter = $presenter;
     }
 
-    protected function present()
+    /**
+     * @param Tag $tag
+     * @return mixed
+     */
+    protected function present(Tag $tag)
+    {
+        return $this->presenter->present($tag);
+    }
 
     /**
      * Render a tag, whatever you like
      * @param string $name
      * @param array $attributes
      * @param string $contents
-     * @return Tag
+     * @return mixed
      */
     public function tag(string $name, array $attributes = [], $contents = '')
     {
-        return new Tag($name, $attributes, $contents);
+        return $this->present(new Tag($name, $attributes, $contents));
     }
 
     /**
@@ -62,7 +69,7 @@ class MarkupBuilder {
      * @param string $assetPath
      * @param array $attributes
      * @param null $secure
-     * @return Tag
+     * @return mixed
      */
     public function script(string $assetPath = '', array $attributes = [], $secure = null)
     {
@@ -70,28 +77,28 @@ class MarkupBuilder {
             $attributes['src'] = $this->urlGenerator->pathToAsset($assetPath, $secure);
         }
 
-        return new Script($attributes, $secure);
+        return $this->present(new Script($attributes, $secure));
     }
 
     /**
      * Render <style>
      * @param array $attributes
      * @param string $contents
-     * @return Style
+     * @return mixed
      */
     public function style(array $attributes = [], $contents = '')
     {
-        return new Style($attributes, $contents);
+        return $this->present(new Style($attributes, $contents));
     }
 
     /**
      * Render <link> element
      * @param array $attributes
-     * @return Link
+     * @return mixed
      */
     public function link(array $attributes = [])
     {
-        return new Link($attributes);
+        return $this->present(new Link($attributes));
     }
 
     /**
@@ -99,7 +106,7 @@ class MarkupBuilder {
      * @param string $href
      * @param string $media
      * @param array $attributes
-     * @return Link
+     * @return mixed
      */
     public function stylesheet(string $href, string $media, array $attributes = [])
     {
@@ -107,7 +114,7 @@ class MarkupBuilder {
         $attributes['media'] = $media;
         $attributes['href'] = $this->urlGenerator->pathToAsset($href);
 
-        return new Link($attributes);
+        return $this->present(new Link($attributes));
     }
 
     /**
@@ -116,7 +123,7 @@ class MarkupBuilder {
      * @param string $type
      * @param string $title
      * @param array $attributes
-     * @return Link
+     * @return mixed
      */
     public function alternate(string $href, string $type, string $title = '', array $attributes = [])
     {
@@ -130,14 +137,14 @@ class MarkupBuilder {
             $attributes['title'] = $title;
         }
 
-        return new Link($attributes);
+        return $this->present(new Link($attributes));
     }
 
     /**
      * Render <link> element to document's author
      * @param $href
      * @param array $attributes
-     * @return Link
+     * @return mixed
      */
     public function author(string $href, array $attributes = [])
     {
@@ -146,7 +153,7 @@ class MarkupBuilder {
             'href' => $this->urlGenerator->generalUrl($href)
         ]);
 
-        return new Link($attributes);
+        return $this->present(new Link($attributes));
     }
 
     /**
@@ -155,7 +162,7 @@ class MarkupBuilder {
      * @param string $type
      * @param string $sizes
      * @param array $attributes
-     * @return Link
+     * @return mixed
      */
     public function icon(string $href, string $type, string $sizes, array $attributes = [])
     {
@@ -166,7 +173,7 @@ class MarkupBuilder {
             'rel' => 'icon'
         ]);
 
-        return new Link($attributes);
+        return $this->present(new Link($attributes));
     }
 
     /**
@@ -174,13 +181,13 @@ class MarkupBuilder {
      * @param string $src
      * @param string $alt
      * @param array $attributes
-     * @return Image
+     * @return mixed
      */
     public function image(string $src, string $alt, array $attributes = [])
     {
         $src = $this->urlGenerator->pathToAsset($src);
 
-        return new Image($src, $alt, $attributes);
+        return $this->present(new Image($src, $alt, $attributes));
     }
 
     /**
@@ -188,11 +195,11 @@ class MarkupBuilder {
      * @param string $alt
      * @param array $attributes
      * @param mixed $secure
-     * @return Picture
+     * @return mixed
      */
     public function picture(string $alt, array $attributes = [], $secure = null)
     {
-        return new Picture($alt, $attributes, $this->urlGenerator, $secure);
+        return $this->present(new Picture($alt, $attributes, $this->urlGenerator, $secure));
     }
 
     /**
@@ -200,11 +207,11 @@ class MarkupBuilder {
      * @param string $href
      * @param string $text
      * @param array $attributes
-     * @return A
+     * @return mixed
      */
     public function a(string $href, string $text, array $attributes = [])
     {
-        return new A($href, $text, $attributes);
+        return $this->present(new A($href, $text, $attributes));
     }
 
     /**
@@ -212,28 +219,28 @@ class MarkupBuilder {
      * @param string $email
      * @param string $text
      * @param array $attributes
-     * @return Mailto
+     * @return mixed
      */
     public function mailto(string $email, string $text, array $attributes = [])
     {
-        return new Mailto($email, $text, $attributes);
+        return $this->present(new Mailto($email, $text, $attributes));
     }
 
     /**
      * Render custom <meta> element
      * @param string $name
      * @param string $content
-     * @return Meta
+     * @return mixed
      */
     public function meta(string $name, string $content)
     {
-        return new Meta($name, $content);
+        return $this->present(new Meta($name, $content));
     }
 
     /**
      * Render charset <meta> element
      * @param string $charset
-     * @return \Illuminate\Support\HtmlString
+     * @return string
      */
     public function charset($charset = 'UTF-8')
     {
@@ -243,7 +250,7 @@ class MarkupBuilder {
     /**
      * Render viewport <meta> element
      * @param string $content
-     * @return Meta
+     * @return mixed
      */
     public function viewport(string $content = 'width=device-width, initial-scale=1.0')
     {

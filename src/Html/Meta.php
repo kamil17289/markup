@@ -19,6 +19,6 @@ class Meta extends Tag {
 
     public static function charset(string $charset)
     {
-        return new HtmlString(sprintf('<meta charset="%s">', $charset));
+        return sprintf('<meta charset="%s">', $charset);
     }
 }
