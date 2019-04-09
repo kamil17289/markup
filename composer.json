@@ -5,7 +5,7 @@
     "authors": [
         {
             "name": "Kamil Gałkiewicz",
-            "email": "kamil@nitro-digital.com"
+            "email": "kamil17289@op.pl"
         }
     ],
     "require": {
@@ -20,5 +20,8 @@
                 "Markup": "Nethead\\Markup\\MarkupFacade"
             }
         }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8"
     }
 }
