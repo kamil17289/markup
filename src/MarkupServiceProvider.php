@@ -5,7 +5,6 @@ namespace Nethead\Markup;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Blade;
 use Nethead\Markup\Presenters\LaravelBladePresenter;
-use Nethead\Markup\Presenters\PlainStringPresenter;
 
 /**
  * Class MarkupServiceProvider

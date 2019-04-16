@@ -53,6 +53,15 @@ class MarkupBuilder {
     }
 
     /**
+     * Get HTML5 doctype declaration (only version 5 is supported)
+     * @return string
+     */
+    public function doctype()
+    {
+        return '<!DOCTYPE html>';
+    }
+
+    /**
      * Render a tag, whatever you like
      * @param string $name
      * @param array $attributes

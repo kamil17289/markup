@@ -9,7 +9,12 @@
         }
     ],
     "require": {
-        "illuminate/support": "5.5.*"
+        "illuminate/support": "5.8.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Nethead\\Markup\\": "src/"
+        }
     },
     "extra": {
         "laravel": {
@@ -22,6 +27,6 @@
         }
     },
     "require-dev": {
-        "phpunit/phpunit": "^8"
+        "orchestra/testbench": "^3.8"
     }
 }
