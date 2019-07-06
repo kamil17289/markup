@@ -21,4 +21,12 @@ trait ObfuscatesData {
 
         return str_rot13($data);
     }
+
+    protected function reverse(string $data = '')
+    {
+        if (empty($data))
+            return '';
+
+        return strrev($data);
+    }
 }

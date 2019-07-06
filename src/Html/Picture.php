@@ -47,7 +47,7 @@ class Picture extends Tag {
      * @param string $media
      * @param string $href
      * @param array $attributes
-     * @returns $this
+     * @return $this
      */
     public function source(string $href, string $media = '', array $attributes = [])
     {

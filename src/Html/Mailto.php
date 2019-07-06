@@ -30,6 +30,6 @@ class Mailto extends Tag {
             'onclick' => "window.location.href='mailto:'+this.dataset.address" . $this->rot13jsDecoder
         ]);
 
-        parent::__construct('a', $attributes, strrev($contents));
+        parent::__construct('a', $attributes, $this->reverse($contents));
     }
 }

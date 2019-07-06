@@ -13,7 +13,7 @@ class Image extends Tag {
      * @param string $alt
      * @param array $attributes
      */
-    public function __construct(string $src, string $alt, array $attributes = [])
+    public function __construct(string $src, string $alt = '', array $attributes = [])
     {
         $attributes['src'] = $src;
         $attributes['alt'] = $alt;

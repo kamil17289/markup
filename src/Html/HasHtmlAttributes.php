@@ -8,6 +8,27 @@ namespace Nethead\Markup\Html;
  */
 trait HasHtmlAttributes {
     /**
+     * Global attributes supported by every HTML tag
+     * @var array
+     */
+    public $globalAttributes = [
+        'accesskey',
+        'class',
+        'contenteditable',
+        'dir',
+        'draggable',
+        'dropzone',
+        'hidden',
+        'id',
+        'lang',
+        'spellcheck',
+        'style',
+        'tabindex',
+        'title',
+        'translate'
+    ];
+
+    /**
      * @var array $htmlAttributes List of HTML element attributes in format:
      *  'htmlAttributeName' => 'AttributeValue'
      */
@@ -20,7 +41,8 @@ trait HasHtmlAttributes {
     protected $notEscapedAttributes = [];
 
     /**
-     * Set HTML attributes. Every call of this will remove previously set attributes
+     * Set HTML attributes.
+     * Every call of this will remove previously set attributes
      * @param array $attrs
      */
     public function setHtmlAttributes(array $attrs = [])
@@ -32,6 +54,7 @@ trait HasHtmlAttributes {
 
     /**
      * Set one of the HTML attributes
+     * No value escaping here as some of them can be boolean/null types
      * @param string $name
      * @param $value
      */
@@ -138,5 +161,28 @@ trait HasHtmlAttributes {
         }
 
         return '';
+    }
+
+    /**
+     * Set the data-* attribute and value for the element
+     * @param $name
+     * @param $value
+     */
+    public function data($name, $value)
+    {
+        $this->setHtmlAttribute("data-$name", $value);
+    }
+
+    /**
+     * Intercept any calls to undefined methods
+     * and use it for convenient attributes setting
+     * @param $name
+     * @param $arguments
+     */
+    public function __call($name, $arguments)
+    {
+        if (in_array($name, $this->globalAttributes)) {
+            $this->setHtmlAttribute($name, $arguments[0]);
+        }
     }
 }

@@ -53,4 +53,12 @@ class A extends Tag {
 
         return $this;
     }
+
+    /**
+     * @param string $relation
+     */
+    public function rel(string $relation)
+    {
+        $this->setHtmlAttribute('rel', $relation);
+    }
 }

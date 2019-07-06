@@ -2,8 +2,6 @@
 
 namespace Nethead\Markup\Html;
 
-use Nethead\Markup\MarkupBuilder;
-
 /**
  * Class Script
  * @package Nethead\Markup\Html
