@@ -3,7 +3,6 @@
 namespace Nethead\Markup;
 
 use Illuminate\Support\ServiceProvider;
-use Illuminate\Support\Facades\Blade;
 use Nethead\Markup\Presenters\LaravelBladePresenter;
 
 /**

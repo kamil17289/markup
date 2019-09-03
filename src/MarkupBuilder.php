@@ -36,7 +36,7 @@ class MarkupBuilder {
      * @param UrlGenerator $urlGenerator
      * @param PresenterInterface $presenter
      */
-    public function __construct(UrlGenerator $urlGenerator = null, PresenterInterface $presenter = null)
+    public function __construct(UrlGenerator $urlGenerator, PresenterInterface $presenter)
     {
         $this->urlGenerator = $urlGenerator;
 
