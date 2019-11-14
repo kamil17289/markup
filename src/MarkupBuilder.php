@@ -281,7 +281,8 @@ class MarkupBuilder {
      * @param string $content
      * @return Meta
      */
-    public function meta_description(string $content) {
+    public function meta_description(string $content)
+    {
         return $this->meta('description', $content);
     }
 
