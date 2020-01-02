@@ -64,6 +64,22 @@ trait HasHtmlAttributes {
     }
 
     /**
+     * Append the attribute value
+     * @param string $name
+     * @param $value
+     * @param string $prefix
+     */
+    public function appendToAttribute(string $name, $value, $prefix = ' ')
+    {
+        if (array_key_exists($name, $this->htmlAttributes)) {
+            $this->htmlAttributes[$name] .= $prefix . $value;
+        }
+        else {
+            $this->htmlAttributes[$name] = $value;
+        }
+    }
+
+    /**
      * Merge new attributes into current list
      * @param array $newAttributes
      */
