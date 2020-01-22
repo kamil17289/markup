@@ -132,6 +132,23 @@ trait HasHtmlAttributes {
     }
 
     /**
+     * @param string $name
+     * @param bool $value
+     * @return $this
+     */
+    protected function setBooleanAttribute(string $name, bool $value)
+    {
+        if ($value) {
+            $this->setHtmlAttribute($name, true);
+        }
+        else {
+            $this->removeHtmlAttribute($name);
+        }
+
+        return $this;
+    }
+
+    /**
      * Render the attributes as HTML string
      * @return string
      */
