@@ -10,16 +10,20 @@ class Input extends Tag {
     /**
      * Input constructor.
      * @param string $type
+     * @param string $name
      * @param string $value
      * @param array $attributes
      * @param string $contents
      */
-    public function __construct(string $type, $value = '', array $attributes = [], $contents = '')
+    public function __construct(string $type, string $name, $value = '', array $attributes = [], $contents = '')
     {
         parent::__construct('input', $attributes, $contents);
 
-        $this->setHtmlAttribute('type', $type);
-        $this->setHtmlAttribute('value', $value);
+        $this->mergeHtmlAttributes([
+            'type' => $type,
+            'value' => $value,
+            'name' => $name
+        ]);
     }
 
     /**
@@ -165,5 +169,13 @@ class Input extends Tag {
     public function step(int $value)
     {
         $this->setHtmlAttribute('step', $value);
+    }
+
+    /**
+     * @param string $id
+     */
+    public function list(string $id)
+    {
+        $this->setHtmlAttribute('list', $id);
     }
 }

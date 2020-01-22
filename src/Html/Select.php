@@ -9,12 +9,15 @@ namespace Nethead\Markup\Html;
 class Select extends Tag {
     /**
      * Select constructor.
+     * @param string $name
      * @param array $options
      * @param array $attributes
      */
-    public function __construct(array $options = [], array $attributes = [])
+    public function __construct(string $name, array $options = [], array $attributes = [])
     {
         parent::__construct('select', $attributes, $options);
+
+        $this->setHtmlAttribute('name', $name);
     }
 
     /**
