@@ -16,5 +16,7 @@ class Datalist extends Tag {
     public function __construct(string $id, array $attributes = [], array $options = [])
     {
         parent::__construct('datalist', $attributes, $options);
+
+        $this->setHtmlAttribute('id', $id);
     }
 }

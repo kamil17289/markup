@@ -18,12 +18,15 @@ class Button extends Tag {
      * @param array $attributes
      * @param string $contents
      */
-    public function __construct(string $value, string $type = 'button', array $attributes = [], $contents = '')
+    public function __construct(string $type = 'button', string $value = '', array $attributes = [], $contents = '')
     {
         parent::__construct('button', $attributes, $contents);
 
         $this->setHtmlAttribute('type', $type);
-        $this->setHtmlAttribute('value', $value);
+
+        if (! empty($value)) {
+            $this->setHtmlAttribute('value', $value);
+        }
     }
 
     /**

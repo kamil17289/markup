@@ -15,9 +15,9 @@ class Input extends Tag {
      * @param array $attributes
      * @param string $contents
      */
-    public function __construct(string $type, string $name, $value = '', array $attributes = [], $contents = '')
+    public function __construct(string $type, string $name, $value = '', array $attributes = [])
     {
-        parent::__construct('input', $attributes, $contents);
+        parent::__construct('input', $attributes);
 
         $this->mergeHtmlAttributes([
             'type' => $type,

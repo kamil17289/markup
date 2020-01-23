@@ -41,6 +41,11 @@ class Form extends Tag {
         return $this;
     }
 
+    public function enctype(string $enctype)
+    {
+        $this->setHtmlAttribute('enctype', $enctype);
+    }
+
     /**
      * @param bool $value
      * @return $this
