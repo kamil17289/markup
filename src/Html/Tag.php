@@ -2,6 +2,8 @@
 
 namespace Nethead\Markup\Html;
 
+use Nethead\Markup\Commons\HasHtmlAttributes;
+
 /**
  * Class Tag
  * @package Nethead\Markup\Html

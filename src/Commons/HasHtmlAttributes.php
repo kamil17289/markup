@@ -1,6 +1,6 @@
 <?php
 
-namespace Nethead\Markup\Html;
+namespace Nethead\Markup\Commons;
 
 /**
  * Trait HasHtmlAttributes
