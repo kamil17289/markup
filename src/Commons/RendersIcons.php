@@ -53,6 +53,14 @@ trait RendersIcons {
     }
 
     /**
+     * @return bool
+     */
+    public function hasIcons() : bool
+    {
+        return ! empty($this->icons);
+    }
+
+    /**
      * @param string $position
      * @return string
      */
