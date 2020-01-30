@@ -729,7 +729,7 @@ class MarkupBuilder {
     public function tel(string $name, $value, array $attributes = [])
     {
         return $this->present(
-            new Input('text', $name, $value, $attributes)
+            new Input('tel', $name, $value, $attributes)
         );
     }
 
