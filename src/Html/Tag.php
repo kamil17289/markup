@@ -88,23 +88,54 @@ class Tag {
      */
     public function __toString()
     {
-        $string = '<' . e($this->name);
+        return $this->open() . $this->renderContents() . $this->close();
+    }
+
+    /**
+     * @param bool $closeVoids
+     * @return string
+     */
+    public function open($closeVoids = false)
+    {
+        $tagOpening = '<' . htmlspecialchars($this->name, ENT_QUOTES, 'UTF-8', true);
 
         $attributes = $this->renderHtmlAttributes();
 
         if (! empty($attributes)) {
-            $string .= ' ' . $attributes;
+            $tagOpening .= ' ' . $attributes;
         }
 
-        $string .= '>';
+        if ($closeVoids && in_array($this->name, $this->voidElements)) {
+            $tagOpening .= '/>';
 
-        // ignore content and closing tag for void elements
-        if (! in_array($this->name, $this->voidElements)) {
-            $string .= is_array($this->contents) ? implode(PHP_EOL, $this->contents) : $this->contents;
-
-            $string .= '</' . $this->name . '>';
+            return $tagOpening;
         }
 
-        return $string;
+        return $tagOpening . '>';
+    }
+
+    /**
+     * @return string
+     */
+    public function renderContents()
+    {
+        if (in_array($this->name, $this->voidElements) || empty($this->contents)) {
+            return '';
+        }
+
+        return is_array($this->contents) ? implode(PHP_EOL, $this->contents) : $this->contents;
+    }
+
+    /**
+     * Close the tag
+     * @return string
+     */
+    public function close()
+    {
+        if (in_array($this->name, $this->voidElements)) {
+            return '';
+        }
+
+        return '</' . $this->name . '>';
     }
 }
