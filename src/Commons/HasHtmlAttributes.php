@@ -207,6 +207,16 @@ trait HasHtmlAttributes {
     }
 
     /**
+     * Set the aria-* attribute and value for the element
+     * @param $name
+     * @param $value
+     */
+    public function aria($name, $value)
+    {
+        $this->setHtmlAttribute("aria-$name", $value);
+    }
+
+    /**
      * Intercept any calls to undefined methods
      * and use it for convenient attributes setting
      * @param $name
