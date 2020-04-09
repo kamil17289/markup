@@ -13,7 +13,7 @@ class A extends Tag {
      * @param string $contents
      * @param array $attributes
      */
-    public function __construct(string $href, string $contents, array $attributes = [])
+    public function __construct(string $href, $contents, array $attributes = [])
     {
         parent::__construct('a', $attributes, $contents);
 
