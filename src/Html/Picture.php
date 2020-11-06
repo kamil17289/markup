@@ -2,8 +2,6 @@
 
 namespace Nethead\Markup\Html;
 
-use Nethead\Markup\UrlGenerators\UrlGenerator;
-
 /**
  * Class Picture
  * @package Nethead\Markup\Html
@@ -15,29 +13,13 @@ class Picture extends Tag {
     protected $alt;
 
     /**
-     * @var
-     */
-    protected $secure;
-
-    /**
-     * @var
-     */
-    protected $urlGenerator;
-
-    /**
      * Picture constructor.
      * @param string $alt
      * @param array $attributes
-     * @param UrlGenerator $urlGenerator
-     * @param mixed $secure
      */
-    public function __construct(string $alt, array $attributes = [], UrlGenerator $urlGenerator, $secure = null)
+    public function __construct(string $alt, array $attributes = [])
     {
-        $this->urlGenerator = $urlGenerator;
-
         $this->alt = $alt;
-
-        $this->secure = $secure;
 
         parent::__construct('picture', $attributes, []);
     }
@@ -52,10 +34,10 @@ class Picture extends Tag {
     public function source(string $href, string $media = '', array $attributes = [])
     {
         if (empty($this->contents)) {
-            $this->contents[] = new Image($this->urlGenerator->pathToAsset($href, $this->secure), $this->alt, $attributes);
+            $this->contents[] = new Image($href, $this->alt, $attributes);
         }
         else {
-            $this->contents[] = new Source($this->urlGenerator->pathToAsset($href, $this->secure), $media, $attributes);
+            $this->contents[] = new Source($href, $media, $attributes);
         }
 
        return $this;

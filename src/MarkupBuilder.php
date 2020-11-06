@@ -3,7 +3,6 @@
 namespace Nethead\Markup;
 
 use Nethead\Markup\Presenters\PresenterInterface;
-use Nethead\Markup\UrlGenerators\UrlGenerator;
 use Nethead\Markup\Html\Datalist;
 use Nethead\Markup\Html\Fieldset;
 use Nethead\Markup\Html\Optgroup;
@@ -32,12 +31,6 @@ use Nethead\Markup\Html\A;
  */
 class MarkupBuilder {
     /**
-     * \Nethead\Markup\UrlGenerators\UrlGenerator implementation
-     * @var UrlGenerator
-     */
-    protected $urlGenerator;
-
-    /**
      * \Nethead\Markup\Presenters\PresenterInterface
      * @var
      */
@@ -45,13 +38,10 @@ class MarkupBuilder {
 
     /**
      * MarkupBuilder constructor.
-     * @param UrlGenerator $urlGenerator
      * @param PresenterInterface $presenter
      */
-    public function __construct(UrlGenerator $urlGenerator, PresenterInterface $presenter)
+    public function __construct(PresenterInterface $presenter)
     {
-        $this->urlGenerator = $urlGenerator;
-
         $this->presenter = $presenter;
     }
 
@@ -87,18 +77,17 @@ class MarkupBuilder {
 
     /**
      * Render <script>
-     * @param string $assetPath
+     * @param string $src
      * @param array $attributes
-     * @param null $secure
      * @return mixed
      */
-    public function script(string $assetPath = '', array $attributes = [], $secure = null)
+    public function script(string $src = '', array $attributes = [])
     {
-        if (! empty($assetPath)) {
-            $attributes['src'] = $this->urlGenerator->pathToAsset($assetPath, $secure);
+        if (! empty($src)) {
+            $attributes['src'] = $src;
         }
 
-        return $this->present(new Script($attributes, $secure));
+        return $this->present(new Script($attributes));
     }
 
     /**
@@ -133,7 +122,7 @@ class MarkupBuilder {
     {
         $attributes['rel'] = 'stylesheet';
         $attributes['media'] = $media;
-        $attributes['href'] = $this->urlGenerator->pathToAsset($href);
+        $attributes['href'] = $href;
 
         return $this->present(new Link($attributes));
     }
@@ -149,7 +138,7 @@ class MarkupBuilder {
     public function alternate(string $href, string $type, string $title = '', array $attributes = [])
     {
         $attributes = array_merge($attributes, [
-            'href' => $this->urlGenerator->generalUrl($href),
+            'href' => $href,
             'type' => $type,
             'rel' => 'alternate'
         ]);
@@ -171,7 +160,7 @@ class MarkupBuilder {
     {
         $attributes = array_merge($attributes, [
             'rel' => 'author',
-            'href' => $this->urlGenerator->generalUrl($href)
+            'href' => $href
         ]);
 
         return $this->present(new Link($attributes));
@@ -188,7 +177,7 @@ class MarkupBuilder {
     public function icon(string $href, string $type, string $sizes, array $attributes = [])
     {
         $attributes = array_merge($attributes, [
-            'href' => $this->urlGenerator->pathToAsset($href),
+            'href' => $href,
             'type' => $type,
             'sizes' => $sizes,
             'rel' => 'icon'
@@ -206,8 +195,6 @@ class MarkupBuilder {
      */
     public function image(string $src, string $alt, array $attributes = [])
     {
-        $src = $this->urlGenerator->pathToAsset($src);
-
         return $this->present(new Image($src, $alt, $attributes));
     }
 
@@ -215,12 +202,11 @@ class MarkupBuilder {
      * Render a <picture> element
      * @param string $alt
      * @param array $attributes
-     * @param mixed $secure
      * @return mixed
      */
-    public function picture(string $alt, array $attributes = [], $secure = null)
+    public function picture(string $alt, array $attributes = [])
     {
-        return $this->present(new Picture($alt, $attributes, $this->urlGenerator, $secure));
+        return $this->present(new Picture($alt, $attributes));
     }
 
     /**

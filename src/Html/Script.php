@@ -11,7 +11,7 @@ class Script extends Tag {
      * Script constructor.
      * @param array $attributes
      */
-    public function __construct(array $attributes = [], $secure = null)
+    public function __construct(array $attributes = [])
     {
         parent::__construct('script', $attributes, '');
     }

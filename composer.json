@@ -15,18 +15,5 @@
         "psr-4": {
             "Nethead\\Markup\\": "src/"
         }
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Nethead\\Markup\\MarkupServiceProvider"
-            ],
-            "aliases": {
-                "Markup": "Nethead\\Markup\\MarkupFacade"
-            }
-        }
-    },
-    "require-dev": {
-        "orchestra/testbench": "^3.8"
     }
 }
