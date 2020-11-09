@@ -1,3 +1,3 @@
 #!/bin/bash
 
-php -S localhost:8000 -t examples
+php -S localhost:8002 -t examples

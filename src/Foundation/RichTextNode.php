@@ -2,8 +2,6 @@
 
 namespace Nethead\Markup\Foundation;
 
-use mysql_xdevapi\RowResult;
-
 /**
  * Class RichTextNode
  * @package Nethead\Markup\Foundation
@@ -217,7 +215,6 @@ class RichTextNode {
     }
 
     /**
-     * @param string $text
      * @return $this
      */
     public function wbr() : RichTextNode
