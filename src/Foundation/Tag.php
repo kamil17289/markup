@@ -33,6 +33,11 @@ class Tag {
     ];
 
     /**
+     * @var bool
+     */
+    public static $closeVoids;
+
+    /**
      * Tag name (a, title, meta, etc)
      * @var
      */
@@ -85,8 +90,9 @@ class Tag {
 
     /**
      * Render the tag
+     * @return string
      */
-    public function __toString()
+    public function __toString() : string
     {
         return $this->open() . $this->renderContents() . $this->close();
     }
@@ -101,10 +107,9 @@ class Tag {
     }
 
     /**
-     * @param bool $closeVoids
      * @return string
      */
-    public function open($closeVoids = false)
+    public function open() : string
     {
         $tagOpening = '<' . htmlspecialchars($this->name, ENT_QUOTES, 'UTF-8', true);
 
@@ -114,7 +119,7 @@ class Tag {
             $tagOpening .= ' ' . $attributes;
         }
 
-        if ($closeVoids && $this->isVoidElement()) {
+        if ($this->isVoidElement() && (bool) self::$closeVoids) {
             $tagOpening .= '/>';
 
             return $tagOpening;
@@ -132,7 +137,7 @@ class Tag {
             return '';
         }
 
-        return implode(PHP_EOL, $this->contents);
+        return implode('', $this->contents);
     }
 
     /**

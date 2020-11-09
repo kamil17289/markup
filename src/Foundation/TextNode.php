@@ -18,6 +18,10 @@ class TextNode {
      */
     public function __construct(string $contents)
     {
+        if (empty($contents)) {
+            throw new \InvalidArgumentException('TextNode can only be created with not empty string.');
+        }
+
         $this->contents = $contents;
     }
 
