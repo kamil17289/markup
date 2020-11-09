@@ -2,7 +2,7 @@
 
 namespace Nethead\Markup\Presenters;
 
-use Nethead\Markup\Html\Tag;
+use Nethead\Markup\Tags\Tag;
 
 /**
  * Interface PresenterInterface

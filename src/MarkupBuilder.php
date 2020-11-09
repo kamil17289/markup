@@ -3,27 +3,27 @@
 namespace Nethead\Markup;
 
 use Nethead\Markup\Presenters\PresenterInterface;
-use Nethead\Markup\Html\Datalist;
-use Nethead\Markup\Html\Fieldset;
-use Nethead\Markup\Html\Optgroup;
-use Nethead\Markup\Html\Template;
-use Nethead\Markup\Html\Textarea;
-use Nethead\Markup\Html\Picture;
-use Nethead\Markup\Html\Button;
-use Nethead\Markup\Html\Legend;
-use Nethead\Markup\Html\Option;
-use Nethead\Markup\Html\Mailto;
-use Nethead\Markup\Html\Script;
-use Nethead\Markup\Html\Select;
-use Nethead\Markup\Html\Input;
-use Nethead\Markup\Html\Label;
-use Nethead\Markup\Html\Image;
-use Nethead\Markup\Html\Style;
-use Nethead\Markup\Html\Link;
-use Nethead\Markup\Html\Meta;
-use Nethead\Markup\Html\Form;
-use Nethead\Markup\Html\Tag;
-use Nethead\Markup\Html\A;
+use Nethead\Markup\Tags\Datalist;
+use Nethead\Markup\Tags\Fieldset;
+use Nethead\Markup\Tags\Optgroup;
+use Nethead\Markup\Tags\Template;
+use Nethead\Markup\Tags\Textarea;
+use Nethead\Markup\Tags\Picture;
+use Nethead\Markup\Tags\Button;
+use Nethead\Markup\Tags\Legend;
+use Nethead\Markup\Tags\Option;
+use Nethead\Markup\Tags\Mailto;
+use Nethead\Markup\Tags\Script;
+use Nethead\Markup\Tags\Select;
+use Nethead\Markup\Tags\Input;
+use Nethead\Markup\Tags\Label;
+use Nethead\Markup\Tags\Image;
+use Nethead\Markup\Tags\Style;
+use Nethead\Markup\Tags\Link;
+use Nethead\Markup\Tags\Meta;
+use Nethead\Markup\Tags\Form;
+use Nethead\Markup\Tags\Tag;
+use Nethead\Markup\Tags\A;
 
 /**
  * Class MarkupBuilder
@@ -56,11 +56,12 @@ class MarkupBuilder {
 
     /**
      * Get HTML5 doctype declaration (only version 5 is supported)
+     * @param string $declaration
      * @return string
      */
-    public function doctype()
+    public function doctype($declaration = Document::DOC_HTML5) : string
     {
-        return '<!DOCTYPE html>';
+        return "<!DOCTYPE $declaration>";
     }
 
     /**
