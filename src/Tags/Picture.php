@@ -2,13 +2,15 @@
 
 namespace Nethead\Markup\Tags;
 
+use Nethead\Markup\Foundation\Tag;
+
 /**
  * Class Picture
  * @package Nethead\Markup\Html
  */
 class Picture extends Tag {
     /**
-     * @var
+     * @var string $alt
      */
     protected $alt;
 
@@ -29,15 +31,19 @@ class Picture extends Tag {
      * @param string $media
      * @param string $href
      * @param array $attributes
-     * @return $this
+     * @return Picture
      */
-    public function source(string $href, string $media = '', array $attributes = [])
+    public function source(string $href, string $media = '', array $attributes = []): Picture
     {
-        if (empty($this->contents)) {
-            $this->contents[] = new Image($href, $this->alt, $attributes);
+        if (empty($this->children)) {
+            $this->addChildren([
+                new Image($href, $this->alt, $attributes)
+            ]);
         }
         else {
-            $this->contents[] = new Source($href, $media, $attributes);
+            $this->addChildren([
+                new Source($href, $media, $attributes)
+            ]);
         }
 
        return $this;

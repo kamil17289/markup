@@ -2,11 +2,18 @@
 
 namespace Nethead\Markup\Tags;
 
+use Nethead\Markup\Foundation\Tag;
+use Nethead\Markup\Helpers\CanBeDisabled;
+use Nethead\Markup\Helpers\CanBeReadonly;
+use Nethead\Markup\Helpers\CanBeRequired;
+
 /**
  * Class Select
  * @package Nethead\Markup\Html
  */
 class Select extends Tag {
+    use CanBeDisabled, CanBeReadonly, CanBeRequired;
+
     /**
      * Select constructor.
      * @param string $name
@@ -17,52 +24,46 @@ class Select extends Tag {
     {
         parent::__construct('select', $attributes, $options);
 
-        $this->setHtmlAttribute('name', $name);
+        $this->attrs()->set('name', $name);
     }
 
     /**
-     * @param bool $value
+     * @param $value
      * @return Select
      */
-    public function autofocus(bool $value = true)
+    public function autofocus($value = true): Select
     {
-        return $this->setBooleanAttribute('autofocus', $value);
+        $this->attrs()->set('autofocus', (bool) $value);
+        return $this;
     }
 
     /**
-     * @param bool $value
+     * @param $value
      * @return Select
      */
-    public function disabled(bool $value = true)
+    public function required($value): Select
     {
-        return $this->setBooleanAttribute('disabled', $value);
+        $this->attrs()->set('required', (bool) $value);
+        return $this;
     }
 
     /**
-     * @param bool $value
+     * @param $value
      * @return Select
      */
-    public function required(bool $value)
+    public function multiple($value = true): Select
     {
-        return $this->setBooleanAttribute('required', $value);
-    }
-
-    /**
-     * @param bool $value
-     * @return Select
-     */
-    public function multiple(bool $value = true)
-    {
-        return $this->setBooleanAttribute('multiple', $value);
+        $this->attrs()->set('multiple', (bool) $value);
+        return $this;
     }
 
     /**
      * @param string $value
      * @return Select
      */
-    public function name(string $value)
+    public function name(string $value): Select
     {
-        $this->setHtmlAttribute('name', $value);
+        $this->attrs()->set('name', $value);
         return $this;
     }
 
@@ -70,9 +71,9 @@ class Select extends Tag {
      * @param int $value
      * @return Select
      */
-    public function size(int $value)
+    public function size(int $value): Select
     {
-        $this->setHtmlAttribute('size', $value);
+        $this->attrs()->set('size', $value);
         return $this;
     }
 }

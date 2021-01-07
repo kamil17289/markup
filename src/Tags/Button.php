@@ -2,11 +2,17 @@
 
 namespace Nethead\Markup\Tags;
 
+use Nethead\Markup\Foundation\Tag;
+use Nethead\Markup\Helpers\BindableToForm;
+use Nethead\Markup\Helpers\CanBeDisabled;
+
 /**
  * Class Button
  * @package Nethead\Markup\Html
  */
 class Button extends Tag {
+    use BindableToForm, CanBeDisabled;
+
     const TYPE_BUTTON = 'button';
     const TYPE_SUBMIT = 'submit';
     const TYPE_RESET = 'reset';
@@ -16,45 +22,17 @@ class Button extends Tag {
      * @param string $value
      * @param string $type
      * @param array $attributes
-     * @param string $contents
+     * @param array $contents
      */
-    public function __construct(string $type = 'button', string $value = '', array $attributes = [], $contents = '')
+    public function __construct(string $type = 'button', string $value = '', array $attributes = [], array $contents = [])
     {
         parent::__construct('button', $attributes, $contents);
 
-        $this->setHtmlAttribute('type', $type);
+        $this->attrs()->set('type', $type);
 
         if (! empty($value)) {
-            $this->setHtmlAttribute('value', $value);
+            $this->attrs()->set('value', $value);
         }
-    }
-
-    /**
-     * @param bool $value
-     * @return $this
-     */
-    public function disabled(bool $value = true)
-    {
-        if ($value) {
-            $this->setHtmlAttribute('disabled', true);
-        }
-
-        return $this;
-    }
-
-    /**
-     * @param Form $form
-     * @return $this
-     */
-    public function form(Form $form)
-    {
-        $formId = $form->getHtmlAttribute('id');
-
-        if ($formId) {
-            $this->setHtmlAttribute('form', $formId);
-        }
-
-        return $this;
     }
 
     /**
@@ -63,7 +41,7 @@ class Button extends Tag {
      */
     public function name(string $name)
     {
-        $this->setHtmlAttribute('name', $name);
+        $this->attrs()->set('name', $name);
 
         return $this;
     }

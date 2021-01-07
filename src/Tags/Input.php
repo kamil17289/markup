@@ -2,24 +2,30 @@
 
 namespace Nethead\Markup\Tags;
 
+use Nethead\Markup\Foundation\Tag;
+use Nethead\Markup\Helpers\CanBeDisabled;
+use Nethead\Markup\Helpers\CanBeReadonly;
+use Nethead\Markup\Helpers\CanBeRequired;
+
 /**
  * Class Input
  * @package Nethead\Markup\Html
  */
 class Input extends Tag {
+    use CanBeDisabled, CanBeReadonly, CanBeRequired;
+
     /**
      * Input constructor.
      * @param string $type
      * @param string $name
      * @param string $value
      * @param array $attributes
-     * @param string $contents
      */
     public function __construct(string $type, string $name, $value = '', array $attributes = [])
     {
         parent::__construct('input', $attributes);
 
-        $this->mergeHtmlAttributes([
+        $this->attrs()->setMany([
             'type' => $type,
             'value' => $value,
             'name' => $name
@@ -27,155 +33,140 @@ class Input extends Tag {
     }
 
     /**
-     * @param bool $value
+     * @param $value
      * @return Input
      */
-    public function autocomplete(bool $value = true)
+    public function autocomplete($value = true): Input
     {
-        return $this->setBooleanAttribute('autocomplete', $value);
+        $this->attrs()->set('autocomplete', $value);
+
+        return $this;
     }
 
     /**
-     * @param bool $value
+     * @param $value
      * @return Input
      */
-    public function autofocus(bool $value = true)
+    public function autofocus($value = true): Input
     {
-        return $this->setBooleanAttribute('autofocus', $value);
+        $this->attrs()->set('autofocus', $value);
+
+        return $this;
     }
 
     /**
-     * @param bool $value
-     * @return $this|Input
+     * @param $value
+     * @return Input
      */
-    public function checked(bool $value = true)
+    public function checked($value = true): Input
     {
-        if ($this->getHtmlAttribute('type') === 'radio' || $this->getHtmlAttribute('type') === 'checkbox') {
-            return $this->setBooleanAttribute('checked', $value);
+        $selfType = $this->attrs()->get('type');
+
+        if ($selfType == 'radio' || $selfType == 'checkbox') {
+            $this->attrs()->set('checked', $value);
         }
 
         return $this;
     }
 
     /**
-     * @param bool $value
+     * @param $value
      * @return Input
      */
-    public function disabled(bool $value = true)
+    public function multiple($value = true): Input
     {
-        return $this->setBooleanAttribute('disabled', $value);
-    }
+        $this->attrs()->set('multiple', $value);
 
-    /**
-     * @param bool $value
-     * @return Input
-     */
-    public function multiple(bool $value = true)
-    {
-        return $this->setBooleanAttribute('multiple', $value);
-    }
-
-    /**
-     * @param string $value
-     * @return $this
-     */
-    public function max(string $value)
-    {
-        $this->setHtmlAttribute('max', $value);
         return $this;
     }
 
     /**
      * @param string $value
-     * @return $this
+     * @return Input
      */
-    public function min(string $value)
+    public function max(string $value): Input
     {
-        $this->setHtmlAttribute('min', $value);
+        $this->attrs()->set('max', $value);
+        return $this;
+    }
+
+    /**
+     * @param string $value
+     * @return Input
+     */
+    public function min(string $value): Input
+    {
+        $this->attrs()->set('min', $value);
         return $this;
     }
 
     /**
      * @param int $value
-     * @return $this
-     */
-    public function maxlength(int $value)
-    {
-        $this->setHtmlAttribute('maxlength', $value);
-        return $this;
-    }
-
-    /**
-     * @param string $value
-     * @return $this
-     */
-    public function name(string $value)
-    {
-        $this->setHtmlAttribute('name', $value);
-        return $this;
-    }
-
-    /**
-     * @param string $value
-     * @return $this
-     */
-    public function pattern(string $value)
-    {
-        $this->setHtmlAttribute('pattern', $value);
-        return $this;
-    }
-
-    /**
-     * @param string $value
-     * @return $this
-     */
-    public function placeholder(string $value)
-    {
-        $this->setHtmlAttribute('placeholder', $value);
-        return $this;
-    }
-
-    /**
-     * @param bool $value
      * @return Input
      */
-    public function readonly(bool $value)
+    public function maxlength(int $value): Input
     {
-        return $this->setBooleanAttribute('readonly', $value);
+        $this->attrs()->set('maxlength', $value);
+        return $this;
     }
 
     /**
-     * @param bool $value
+     * @param string $value
      * @return Input
      */
-    public function required(bool $value)
+    public function name(string $value): Input
     {
-        return $this->setBooleanAttribute('required', $value);
+        $this->attrs()->set('name', $value);
+        return $this;
+    }
+
+    /**
+     * @param string $value
+     * @return Input
+     */
+    public function pattern(string $value): Input
+    {
+        $this->attrs()->set('pattern', $value);
+        return $this;
+    }
+
+    /**
+     * @param string $value
+     * @return Input
+     */
+    public function placeholder(string $value): Input
+    {
+        $this->attrs()->set('placeholder', $value);
+        return $this;
     }
 
     /**
      * @param $value
-     * @return $this
+     * @return Input
      */
-    public function value($value)
+    public function value($value): Input
     {
-        $this->setHtmlAttribute('value', $value);
+        $this->attrs()->set('value', $value);
         return $this;
     }
 
     /**
      * @param int $value
+     * @return Input
      */
-    public function step(int $value)
+    public function step(int $value): Input
     {
-        $this->setHtmlAttribute('step', $value);
+        $this->attrs()->set('step', $value);
+        return $this;
     }
 
     /**
      * @param string $id
+     * @return Input
      */
-    public function list(string $id)
+    public function list(string $id): Input
     {
-        $this->setHtmlAttribute('list', $id);
+        $this->attrs()->set('list', $id);
+        return $this;
     }
 }

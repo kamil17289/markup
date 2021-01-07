@@ -27,6 +27,15 @@ class TextNode {
 
     /**
      * @param string $contents
+     * @return TextNode
+     */
+    public static function make(string $contents): TextNode
+    {
+        return new self($contents);
+    }
+
+    /**
+     * @param string $contents
      * @return $this
      */
     public function append(string $contents) : TextNode
@@ -36,10 +45,24 @@ class TextNode {
     }
 
     /**
+     * @param bool $doubleEncode
+     * @return string
+     */
+    public function render(bool $doubleEncode = true): string
+    {
+        return htmlspecialchars(
+            $this->contents,
+            ENT_HTML5,
+            'UTF-8',
+            $doubleEncode
+        );
+    }
+
+    /**
      * @return string
      */
     public function __toString() : string
     {
-        return htmlspecialchars($this->contents);
+        return $this->render();
     }
 }

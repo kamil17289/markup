@@ -2,36 +2,26 @@
 
 namespace Nethead\Markup\Tags;
 
+use Nethead\Markup\Foundation\Tag;
+use Nethead\Markup\Helpers\BindableToForm;
+
 /**
  * Class Label
  * @package Nethead\Markup\Html
  */
 class Label extends Tag {
+    use BindableToForm;
+
     /**
      * Label constructor.
      * @param string $for
      * @param string $text
-     * @param string $form
      * @param array $attributes
      */
-    public function __construct(string $for, string $text, array $attributes = [], string $form = '')
+    public function __construct(string $for, string $text, array $attributes = [])
     {
         parent::__construct('label', $attributes, $text);
 
-        $this->setHtmlAttribute('for', $for);
-
-        if (! empty($form)) {
-            $this->form($form);
-        }
-    }
-
-    /**
-     * @param string $value
-     * @return $this
-     */
-    public function form(string $value)
-    {
-        $this->setHtmlAttribute('form', $value);
-        return $this;
+        $this->attrs()->set('for', $for);
     }
 }

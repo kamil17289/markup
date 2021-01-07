@@ -2,23 +2,19 @@
 
 namespace Nethead\Markup\Tags;
 
+use Nethead\Markup\Foundation\Tag;
+use Nethead\Markup\Helpers\CanBeDisabled;
+
 class Fieldset extends Tag {
+    use CanBeDisabled;
+
     /**
      * Fieldset constructor.
      * @param array $attributes
-     * @param string $contents
+     * @param array $contents
      */
-    public function __construct(array $attributes = [], $contents = '')
+    public function __construct(array $attributes = [], array $contents = [])
     {
         parent::__construct('fieldset', $attributes, $contents);
-    }
-
-    /**
-     * @param bool $value
-     * @return Fieldset
-     */
-    public function disabled(bool $value = true)
-    {
-        return $this->setBooleanAttribute('disabled', $value);
     }
 }

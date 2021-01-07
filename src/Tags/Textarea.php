@@ -2,41 +2,48 @@
 
 namespace Nethead\Markup\Tags;
 
+use Nethead\Markup\Foundation\Tag;
+use Nethead\Markup\Helpers\CanBeDisabled;
+use Nethead\Markup\Helpers\CanBeReadonly;
+use Nethead\Markup\Helpers\CanBeRequired;
+
 /**
  * Class Textarea
  * @package Nethead\Markup\Html
  */
 class Textarea extends Tag {
+    use CanBeDisabled, CanBeReadonly, CanBeRequired;
+
     /**
      * Textarea constructor.
      * @param string $name
      * @param array $attributes
-     * @param string $contents
+     * @param array $contents
      */
-    public function __construct(string $name, array $attributes = [], string $contents = '')
+    public function __construct(string $name, array $attributes = [], array $contents = [])
     {
         parent::__construct('textarea', $attributes, $contents);
 
-        $this->setHtmlAttribute('name', $name);
+        $this->attrs()->set('name', $name);
     }
 
     /**
      * @param int $value
-     * @return $this
+     * @return Textarea
      */
-    public function cols(int $value)
+    public function cols(int $value): Textarea
     {
-        $this->setHtmlAttribute('cols', $value);
+        $this->attrs()->set('cols', $value);
         return $this;
     }
 
     /**
      * @param int $value
-     * @return $this
+     * @return Textarea
      */
-    public function rows(int $value)
+    public function rows(int $value): Textarea
     {
-        $this->setHtmlAttribute('rows', $value);
+        $this->attrs()->set('rows', $value);
         return $this;
     }
 
@@ -44,66 +51,49 @@ class Textarea extends Tag {
      * @param bool $value
      * @return Textarea
      */
-    public function autocomplete(bool $value = true)
+    public function autocomplete(bool $value = true): Textarea
     {
-        return $this->setBooleanAttribute('autocomplete', $value);
+        $this->attrs()->set('autocomplete', $value);
+        return $this;
     }
 
     /**
      * @param bool $value
      * @return Textarea
      */
-    public function autofocus(bool $value = true)
+    public function autofocus(bool $value = true): Textarea
     {
-        return $this->setBooleanAttribute('autofocus', $value);
-    }
-
-    /**
-     * @param bool $value
-     * @return Textarea
-     */
-    public function disabled(bool $value = true)
-    {
-        return $this->setBooleanAttribute('disabled', $value);
+        $this->attrs()->set('autofocus', $value);
+        return $this;
     }
 
     /**
      * @param int $value
-     * @return $this
+     * @return Textarea
      */
-    public function maxlength(int $value)
+    public function maxlength(int $value): Textarea
     {
-        $this->setHtmlAttribute('maxlength', $value);
+        $this->attrs()->set('maxlength', $value);
         return $this;
     }
 
     /**
      * @param string $value
-     * @return $this
+     * @return Textarea
      */
-    public function placeholder(string $value)
+    public function placeholder(string $value): Textarea
     {
-        $this->setHtmlAttribute('placeholder', $value);
+        $this->attrs()->set('placeholder', $value);
         return $this;
     }
 
     /**
      * @param string $value
-     * @return $this
+     * @return Textarea
      */
-    public function readonly(string $value)
+    public function required(string $value): Textarea
     {
-        $this->setHtmlAttribute('readonly', $value);
-        return $this;
-    }
-
-    /**
-     * @param string $value
-     * @return $this
-     */
-    public function required(string $value)
-    {
-        $this->setHtmlAttribute('required', $value);
+        $this->attrs()->set('required', $value);
         return $this;
     }
 }

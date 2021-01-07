@@ -2,8 +2,10 @@
 
 namespace Nethead\Markup\Foundation;
 
+use Nethead\Markup\MarkupFactory;
 use Nethead\Markup\Tags\Body;
 use Nethead\Markup\Tags\Head;
+use Nethead\Markup\Tags\Html;
 
 class Document {
     /**
@@ -12,7 +14,7 @@ class Document {
     const DOC_HTML5 = 'html';
 
     /**
-     * Declaration for HTML 4.01 if you need to suppoer something older
+     * Declaration for HTML 4.01 if you need to support something older
      */
     const DOC_HTML4 = 'HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"';
 
@@ -27,49 +29,114 @@ class Document {
     protected $doctype;
 
     /**
-     * @var Tags\Html Document main root
+     * @var Html Document main root
      */
     protected $html;
 
     /**
-     * @var MarkupBuilder Builder object for generating new nodes
-     */
-    protected $builder;
-
-    /**
      * Document constructor.
-     * @param MarkupBuilder $builder
      * @param string $lang
+     * @param array $attributes
      * @param string $doctype
      */
-    public function __construct(MarkupBuilder $builder, string $lang, array $attributes = [], $doctype = self::DOC_HTML5)
+    public function __construct(string $lang, array $attributes = [], $doctype = self::DOC_HTML5)
     {
-        $this->builder = $builder;
+        $this->doctype = $this->doctype($doctype);
 
-        $this->doctype = $this->builder->doctype($doctype);
-
-        $this->html = new Tags\Html($lang, $attributes, [
-            new Head(),
-            new Body()
+        $this->html = new Html($lang, $attributes, [
+            'head' => new Head(),
+            'body' => new Body()
         ]);
     }
 
     /**
-     * Get the head to set the metadata tags or attributes
-     * @return mixed
+     * Return document type declaration as string
+     * @param string $documentType
+     * @return string
      */
-    public function head()
+    public function doctype(string $documentType) : string
     {
-        return $this->html->contents[1];
+        return "<!DOCTYPE $documentType>";
+    }
+
+    /**
+     * Get the head to set the metadata tags or attributes
+     * @return Head
+     */
+    public function head(): Head
+    {
+        return $this->html->children['head'];
+    }
+
+    /**
+     * @param string $title
+     * @return Document
+     */
+    public function title(string $title): Document
+    {
+        $this->head()->addChildren([
+            'title' => new Tag('title', [], [$title])
+        ]);
+
+        return $this;
+    }
+
+    /**
+     * @param string $name
+     * @param string $value
+     * @return Document
+     */
+    public function meta(string $name, string $value): Document
+    {
+        $this->head()->addChildren([
+            "meta-$name" => MarkupFactory::meta($name, $value)
+        ]);
+
+        return $this;
+    }
+
+    /**
+     * @param string $charset
+     * @return Document
+     */
+    public function charset(string $charset = 'UTF-8'): Document
+    {
+        $this->head()->addChildren([
+            'charset' => MarkupFactory::charset($charset)
+        ]);
+
+        return $this;
+    }
+
+    /**
+     * @param array $contents
+     * @return $this
+     */
+    public function toHead(array $contents): Document
+    {
+        $this->head()->addChildren($contents);
+
+        return $this;
+    }
+
+    /**
+     * @param array $contents
+     * @return $this
+     */
+    public function toBody(array $contents): Document
+    {
+        $this->body()->addChildren($contents);
+
+        return $this;
     }
 
     /**
      * Get the body to set attributes or contents
-     * @return mixed
+     * @return Body
      */
-    public function body()
+    public function body(): Body
     {
-        return $this->html->contents[0];
+        return $this->html->children['body'];
     }
 
     /**

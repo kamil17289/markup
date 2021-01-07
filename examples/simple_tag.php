@@ -4,6 +4,7 @@ include '../vendor/autoload.php';
 
 use \Nethead\Markup\Foundation\Tag;
 use \Nethead\Markup\Foundation\RichTextNode;
+use \Nethead\Markup\Foundation\TextNode;
 
 $text = new RichTextNode();
 
@@ -21,3 +22,9 @@ $text->plain(' You break the lines')
 $tag = new Tag('p', ['class' => 'paragpraph'], [$text]);
 
 echo $tag->__toString();
+
+$emojisP = new Tag('p', [], [
+    TextNode::make("You can also render emojis in your text \u{270c}")
+]);
+
+echo $emojisP;

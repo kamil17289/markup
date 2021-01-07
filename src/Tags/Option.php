@@ -2,6 +2,9 @@
 
 namespace Nethead\Markup\Tags;
 
+use Nethead\Markup\Foundation\Tag;
+use Nethead\Markup\Foundation\TextNode;
+
 /**
  * Class Option
  * @package Nethead\Markup\Html
@@ -15,7 +18,7 @@ class Option extends Tag {
      */
     public function __construct($value, string $text, array $attributes = [])
     {
-        parent::__construct('option', $attributes, $text);
+        parent::__construct('option', $attributes, [new TextNode($text)]);
 
         $this->value($value);
     }
@@ -25,7 +28,7 @@ class Option extends Tag {
      */
     public function value($value)
     {
-        $this->setHtmlAttribute('value', $value);
+        $this->attrs()->set('value', $value);
     }
 
     /**
@@ -33,6 +36,6 @@ class Option extends Tag {
      */
     public function label(string $value)
     {
-        $this->setHtmlAttribute('label', $value);
+        $this->attrs()->set('label', $value);
     }
 }

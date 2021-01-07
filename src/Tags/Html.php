@@ -2,11 +2,23 @@
 
 namespace Nethead\Markup\Tags;
 
-class Html extends Tag {
-    public function __construct(string $lang = 'en', array $attributes = [], $contents = '')
-    {
-        parent::__construct('html', $attributes, $contents);
+use Nethead\Markup\Foundation\Tag;
 
-        $this->setHtmlAttribute('lang', $lang);
+/**
+ * Class Html
+ * @package Nethead\Markup\Tags
+ */
+class Html extends Tag {
+    /**
+     * Html constructor.
+     * @param string $lang
+     * @param array $attributes
+     * @param array $children
+     */
+    public function __construct(string $lang = 'en', array $attributes = [], array $children = [])
+    {
+        parent::__construct('html', $attributes, $children);
+
+        $this->attrs()->set('lang', $lang);
     }
 }

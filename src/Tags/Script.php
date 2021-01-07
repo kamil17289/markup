@@ -2,6 +2,8 @@
 
 namespace Nethead\Markup\Tags;
 
+use Nethead\Markup\Foundation\Tag;
+
 /**
  * Class Script
  * @package Nethead\Markup\Html
@@ -13,26 +15,26 @@ class Script extends Tag {
      */
     public function __construct(array $attributes = [])
     {
-        parent::__construct('script', $attributes, '');
+        parent::__construct('script', $attributes);
     }
 
     /**
      * Helper for quickly adding async attribute
-     * @return $this
+     * @return Script
      */
-    public function async()
+    public function async(): Script
     {
-        $this->setHtmlAttribute('async', true);
+        $this->attrs()->set('async', true);
         return $this;
     }
 
     /**
      * Helper for quickly adding defer attribute
-     * @return $this
+     * @return Script
      */
-    public function defer()
+    public function defer(): Script
     {
-        $this->setHtmlAttribute('defer', true);
+        $this->attrs()->set('defer', true);
         return $this;
     }
 }

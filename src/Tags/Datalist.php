@@ -2,11 +2,18 @@
 
 namespace Nethead\Markup\Tags;
 
+use Nethead\Markup\Foundation\Tag;
+use Nethead\Markup\Helpers\CanBeDisabled;
+use Nethead\Markup\Helpers\CanBeReadonly;
+use Nethead\Markup\Helpers\CanBeRequired;
+
 /**
  * Class Datalist
  * @package Nethead\Markup\Html
  */
 class Datalist extends Tag {
+    use CanBeRequired, CanBeReadonly, CanBeDisabled;
+
     /**
      * Datalist constructor.
      * @param string $id
@@ -17,6 +24,6 @@ class Datalist extends Tag {
     {
         parent::__construct('datalist', $attributes, $options);
 
-        $this->setHtmlAttribute('id', $id);
+        $this->attrs()->set('id', $id);
     }
 }

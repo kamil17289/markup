@@ -2,6 +2,8 @@
 
 namespace Nethead\Markup\Tags;
 
+use Nethead\Markup\Foundation\Tag;
+
 /**
  * Class Image
  * @package Nethead\Markup\Html
@@ -18,7 +20,7 @@ class Image extends Tag {
         $attributes['src'] = $src;
         $attributes['alt'] = $alt;
 
-        parent::__construct('img', $attributes, '');
+        parent::__construct('img', $attributes);
     }
 
     /**
@@ -28,7 +30,7 @@ class Image extends Tag {
      */
     public function title(string $text)
     {
-        $this->setHtmlAttribute('title', $text);
+        $this->attrs()->set('title', $text);
 
         return $this;
     }

@@ -2,6 +2,8 @@
 
 namespace Nethead\Markup\Tags;
 
+use Nethead\Markup\Foundation\Tag;
+
 /**
  * Class A
  * @package Nethead\Markup\Html
@@ -10,14 +12,14 @@ class A extends Tag {
     /**
      * A constructor.
      * @param string $href
-     * @param string $contents
+     * @param array $children
      * @param array $attributes
      */
-    public function __construct(string $href, $contents, array $attributes = [])
+    public function __construct(string $href, array $children, array $attributes = [])
     {
-        parent::__construct('a', $attributes, $contents);
+        parent::__construct('a', $attributes, $children);
 
-        $this->setHtmlAttribute('href', $href);
+        $this->attrs()->set('href', $href);
     }
 
     /**
@@ -26,7 +28,7 @@ class A extends Tag {
      */
     public function download()
     {
-        $this->setHtmlAttribute('download', true);
+        $this->attrs()->set('download', true);
 
         return $this;
     }
@@ -38,7 +40,7 @@ class A extends Tag {
      */
     public function target(string $targetWindow)
     {
-        $this->setHtmlAttribute('target', $targetWindow);
+        $this->attrs()->set('target', $targetWindow);
 
         return $this;
     }
@@ -49,7 +51,7 @@ class A extends Tag {
      */
     public function blank()
     {
-        $this->setHtmlAttribute('target', '_blank');
+        $this->attrs()->set('target', '_blank');
 
         return $this;
     }
@@ -59,6 +61,6 @@ class A extends Tag {
      */
     public function rel(string $relation)
     {
-        $this->setHtmlAttribute('rel', $relation);
+        $this->attrs()->set('rel', $relation);
     }
 }

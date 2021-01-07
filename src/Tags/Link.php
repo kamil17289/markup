@@ -2,6 +2,8 @@
 
 namespace Nethead\Markup\Tags;
 
+use Nethead\Markup\Foundation\Tag;
+
 /**
  * Class Link
  * @package Nethead\Markup\Html

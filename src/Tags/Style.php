@@ -2,6 +2,8 @@
 
 namespace Nethead\Markup\Tags;
 
+use Nethead\Markup\Foundation\Tag;
+
 /**
  * Class Style
  * @package Nethead\Markup\Html
@@ -10,9 +12,9 @@ class Style extends Tag {
     /**
      * Style constructor.
      * @param array $attributes
-     * @param string $contents
+     * @param array $contents
      */
-    public function __construct(array $attributes = [], $contents = '')
+    public function __construct(array $attributes = [], array $contents = [])
     {
         parent::__construct('style', $attributes, $contents);
     }
@@ -32,11 +34,11 @@ class Style extends Tag {
     /**
      * Set the devices for which this stylesheet should be used
      * @param $value
-     * @return $this
+     * @return Style
      */
-    public function media($value)
+    public function media($value): Style
     {
-        $this->setHtmlAttribute('media', $value);
+        $this->attrs()->set('media', $value);
 
         return $this;
     }

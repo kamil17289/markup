@@ -2,6 +2,8 @@
 
 namespace Nethead\Markup\Tags;
 
+use Nethead\Markup\Foundation\Tag;
+
 class Form extends Tag {
     /**
      * Form encoding types (only for POST method)
@@ -20,14 +22,26 @@ class Form extends Tag {
      * @param string $action
      * @param string $method
      * @param array $attributes
-     * @param string $contents
+     * @param array $contents
      */
-    public function __construct(string $action, string $method = 'post', array $attributes = [], $contents = '')
+    public function __construct(string $action, string $method = 'post', array $attributes = [], array $contents = [])
     {
+        if (! isset($attributes['id'])) {
+            $attributes['id'] = substr(md5(time()), 0, 6);
+        }
+
+        if (! empty($contents)) {
+            foreach($contents as $name => $element) {
+                if (method_exists($element, 'bindForm')) {
+                    $element->bindForm($this);
+                }
+            }
+        }
+
         parent::__construct('form', $attributes, $contents);
 
-        $this->setHtmlAttribute('action', $action);
-        $this->setHtmlAttribute('method', $method);
+        $this->attrs()->set('action', $action);
+        $this->attrs()->set('method', $method);
     }
 
     /**
@@ -36,25 +50,31 @@ class Form extends Tag {
      */
     public function acceptCharset(string $charset)
     {
-        $this->appendToAttribute('accept-charset', $charset, ' ');
+        $this->attrs()->set('accept-charset', $charset);
 
         return $this;
     }
 
+    /**
+     * @param string $enctype
+     * @return $this
+     */
     public function enctype(string $enctype)
     {
-        $this->setHtmlAttribute('enctype', $enctype);
+        $this->attrs()->set('enctype', $enctype);
+
+        return $this;
     }
 
     /**
-     * @param bool $value
+     * @param $value
      * @return $this
      */
-    public function autocomplete(bool $value = true)
+    public function autocomplete($value = true)
     {
         $autocomplete = $value ? 'on' : 'off';
 
-        $this->setHtmlAttribute('autocomplete', $autocomplete);
+        $this->attrs()->set('autocomplete', $autocomplete);
 
         return $this;
     }
@@ -65,7 +85,7 @@ class Form extends Tag {
      */
     public function name(string $name)
     {
-        $this->setHtmlAttribute('name', $name);
+        $this->attrs()->set('name', $name);
 
         return $this;
     }

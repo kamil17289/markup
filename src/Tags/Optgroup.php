@@ -2,11 +2,16 @@
 
 namespace Nethead\Markup\Tags;
 
+use Nethead\Markup\Foundation\Tag;
+use Nethead\Markup\Helpers\CanBeDisabled;
+
 /**
  * Class Optgroup
  * @package Nethead\Markup\Html
  */
 class Optgroup extends Tag {
+    use CanBeDisabled;
+
     /**
      * Optgroup constructor.
      * @param string $label
@@ -21,19 +26,13 @@ class Optgroup extends Tag {
     }
 
     /**
-     * @param bool $value
+     * @param string $value
      * @return Optgroup
      */
-    public function disabled(bool $value = true)
+    public function label(string $value): Optgroup
     {
-        return $this->setBooleanAttribute('disabled', $value);
-    }
+        $this->attrs()->set('label', $value);
 
-    /**
-     * @param string $value
-     */
-    public function label(string $value)
-    {
-        $this->setHtmlAttribute('label', $value);
+        return $this;
     }
 }

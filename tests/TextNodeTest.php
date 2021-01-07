@@ -3,7 +3,6 @@
 use \PHPUnit\Framework\TestCase;
 use \Nethead\Markup\Foundation\TextNode;
 
-
 final class TextNodeTest extends TestCase {
     public function testCanBeCreatedFromString()
     {
