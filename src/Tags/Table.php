@@ -5,13 +5,16 @@ namespace Nethead\Markup\Tags;
 use Nethead\Markup\Foundation\Tag;
 
 /**
- * Class Table
+ * Creates a HTML "table".
+ *
  * @package Nethead\Markup\Tags
  */
 class Table extends Tag {
     /**
      * Table constructor.
+     *
      * @param array $attributes
+     *  Additional HTML attributes you want to add
      */
     public function __construct(array $attributes = [])
     {
@@ -22,7 +25,10 @@ class Table extends Tag {
     }
 
     /**
+     * Static helper for creating tables.
+     *
      * @param array $attributes
+     *  Additional HTML attributes you want to add
      * @return Table
      */
     public static function make(array $attributes = []): Table
@@ -31,7 +37,10 @@ class Table extends Tag {
     }
 
     /**
+     * Define the headers for the table.
+     *
      * @param array $headers
+     *  Array of strings to be placed as headers for the table
      */
     public function head(array $headers)
     {
@@ -43,12 +52,16 @@ class Table extends Tag {
     }
 
     /**
+     * Add data row to the table.
+     *
      * @param array $data
+     *  Array of strings to be placed as data row in the table.
+     *  *Important:* make sure that that length of the array matches the number of header cells.
      */
     public function row(array $data)
     {
         $this->getChild('tbody')->addChildren([
-            new Tag('tr', [], [$data])
+            new Tag('tr', [], $data)
         ]);
     }
 }

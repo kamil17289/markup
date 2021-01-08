@@ -5,13 +5,16 @@ namespace Nethead\Markup\Tags;
 use Nethead\Markup\Foundation\Tag;
 
 /**
- * Class Style
- * @package Nethead\Markup\Html
+ * Creates a "style" element.
+ *
+ * @package Nethead\Markup\Tags
  */
 class Style extends Tag {
     /**
      * Style constructor.
+     *
      * @param array $attributes
+     *  Additional HTML attributes you want to add
      * @param array $contents
      */
     public function __construct(array $attributes = [], array $contents = [])
@@ -20,6 +23,9 @@ class Style extends Tag {
     }
 
     /**
+     * Provides default attributes for the HtmlAttributes object.
+     *
+     * @see \Nethead\Markup\Helpers\HtmlAttributes
      * @inheritdoc
      * @return array
      */
@@ -32,11 +38,12 @@ class Style extends Tag {
     }
 
     /**
-     * Set the devices for which this stylesheet should be used
-     * @param $value
+     * Set the devices for which this stylesheet should be used.
+     *
+     * @param string $value Devices list as for the media query standard
      * @return Style
      */
-    public function media($value): Style
+    public function media(string $value): Style
     {
         $this->attrs()->set('media', $value);
 

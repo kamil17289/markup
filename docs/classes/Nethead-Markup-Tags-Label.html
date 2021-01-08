@@ -99,7 +99,7 @@
             <ul class="phpdocumentor-breadcrumbs">
                                     <li class="phpdocumentor-breadcrumb"><a href="packages/Nethead.html">Nethead</a></li>
                                     <li class="phpdocumentor-breadcrumb"><a href="packages/Nethead-Markup.html">Markup</a></li>
-                                    <li class="phpdocumentor-breadcrumb"><a href="packages/Nethead-Markup-Html.html">Html</a></li>
+                                    <li class="phpdocumentor-breadcrumb"><a href="packages/Nethead-Markup-Tags.html">Tags</a></li>
                             </ul>
         </div>
     
@@ -112,10 +112,10 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Tags/Label.php"><a href="files/src-tags-label.html"><abbr title="src/Tags/Label.php">Label.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">12</span>
+    <span class="phpdocumentor-element-found-in__line">13</span>
 </aside>
 
-            <p class="phpdocumentor-summary">Class Label</p>
+            <p class="phpdocumentor-summary">Creates &quot;label&quot; element.</p>
 
     <section class="phpdocumentor-description"></section>
 
@@ -137,29 +137,28 @@
     <span>
                 &nbsp;: <a href="classes/Nethead-Markup-Helpers-HtmlAttributes.html"><abbr title="\Nethead\Markup\Helpers\HtmlAttributes">HtmlAttributes</abbr></a>            </span>
 </dt>
-<dd></dd>
+<dd>HTML attributes of this Tag</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/Nethead-Markup-Foundation-Tag.html#property_children">$children</a>
     <span>
                 &nbsp;: array&lt;string|int, mixed&gt;            </span>
 </dt>
-<dd>Children of this tag</dd>
+<dd>Children of this tag.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/Nethead-Markup-Foundation-Tag.html#property_name">$name</a>
     <span>
                 &nbsp;: string            </span>
 </dt>
-<dd>Tag name (a, title, meta, etc)</dd>
+<dd>Name of the tag (in HTML).</dd>
 
                 <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Foundation-Tag.html#method___call">__call()</a>
     <span>
                         &nbsp;: mixed    </span>
 </dt>
-<dd>Intercept any calls to undefined methods and use it for convenient attributes setting
-Only global attributes can be set this way.</dd>
+<dd>Intercept any calls to undefined methods and use it for convenient attributes setting.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Tags-Label.html#method___construct">__construct()</a>
@@ -173,7 +172,7 @@ Only global attributes can be set this way.</dd>
     <span>
                         &nbsp;: string    </span>
 </dt>
-<dd>Render the tag</dd>
+<dd>Magic method to make the Tag object convertible to string</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Foundation-Tag.html#method_addChildren">addChildren()</a>
@@ -188,21 +187,21 @@ Warning: if some keys already exists they will be overwritten</dd>
     <span>
                         &nbsp;: <a href="classes/Nethead-Markup-Helpers-HtmlAttributes.html"><abbr title="\Nethead\Markup\Helpers\HtmlAttributes">HtmlAttributes</abbr></a>    </span>
 </dt>
-<dd>Modify the attributes</dd>
+<dd>Retrieve the attributes object</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Helpers-BindableToForm.html#method_bindForm">bindForm()</a>
     <span>
                         &nbsp;: $this    </span>
 </dt>
-<dd></dd>
+<dd>Bind the element to form.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Foundation-Tag.html#method_classList">classList()</a>
     <span>
                         &nbsp;: <a href="classes/Nethead-Markup-Helpers-ClassList.html"><abbr title="\Nethead\Markup\Helpers\ClassList">ClassList</abbr></a>    </span>
 </dt>
-<dd>Modify the class attribute directly</dd>
+<dd>Modify the class attribute directly, without calling -&gt;attrs()</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Foundation-Tag.html#method_clearChildren">clearChildren()</a>
@@ -216,7 +215,7 @@ Warning: if some keys already exists they will be overwritten</dd>
     <span>
                         &nbsp;: string    </span>
 </dt>
-<dd>Close the tag</dd>
+<dd>Close the tag.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Foundation-Tag.html#method_getChild">getChild()</a>
@@ -237,33 +236,33 @@ Warning: if some keys already exists they will be overwritten</dd>
     <span>
                         &nbsp;: string    </span>
 </dt>
-<dd></dd>
+<dd>Open the Tag in HTML.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Foundation-Tag.html#method_removeChild">removeChild()</a>
     <span>
                         &nbsp;: mixed    </span>
 </dt>
-<dd>Remove child element</dd>
+<dd>Remove child element of a given key</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Foundation-Tag.html#method_render">render()</a>
     <span>
                         &nbsp;: string    </span>
 </dt>
-<dd></dd>
+<dd>Render the tag object to string.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Foundation-Tag.html#method_renderChildren">renderChildren()</a>
     <span>
                         &nbsp;: string    </span>
 </dt>
-<dd></dd>
+<dd>Render child elements of this Tag.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Foundation-Tag.html#method_setChildren">setChildren()</a>
     <span>
-                        &nbsp;: mixed    </span>
+                        &nbsp;: <a href="classes/Nethead-Markup-Foundation-Tag.html"><abbr title="\Nethead\Markup\Foundation\Tag">Tag</abbr></a>    </span>
 </dt>
 <dd>Set tag&#039;s inner HTML</dd>
 
@@ -272,7 +271,7 @@ Warning: if some keys already exists they will be overwritten</dd>
     <span>
                         &nbsp;: <a href="classes/Nethead-Markup-Foundation-Tag.html"><abbr title="\Nethead\Markup\Foundation\Tag">Tag</abbr></a>    </span>
 </dt>
-<dd></dd>
+<dd>Pass the Tag instance to any processing function for further modification.</dd>
 
         </dl>
 
@@ -302,10 +301,11 @@ Warning: if some keys already exists they will be overwritten</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/Tag.php"><a href="files/src-foundation-tag.html"><abbr title="src/Foundation/Tag.php">Tag.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">29</span>
+    <span class="phpdocumentor-element-found-in__line">38</span>
 </aside>
 
-    
+        <p class="phpdocumentor-summary">HTML attributes of this Tag</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type"><a href="classes/Nethead-Markup-Helpers-HtmlAttributes.html"><abbr title="\Nethead\Markup\Helpers\HtmlAttributes">HtmlAttributes</abbr></a></span>
@@ -315,6 +315,32 @@ Warning: if some keys already exists they will be overwritten</dd>
         <section class="phpdocumentor-description"></section>
 
     
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">see</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\Nethead\Markup\Foundation\Tag::attrs()">Tag::attrs()</abbr></span>
+                                        
+                                                 <section class="phpdocumentor-description"><p>To quickly get the attributes object</p>
+</section>
+
+                                    </dd>
+                            <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">see</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                    <span class="phpdocumentor-tag-link"><a href="classes/Nethead-Markup-Helpers-HtmlAttributes.html"><abbr title="\Nethead\Markup\Helpers\HtmlAttributes">HtmlAttributes</abbr></a></span>
+                                        
+                                                 <section class="phpdocumentor-description"><p>For attributes management methods</p>
+</section>
+
+                                    </dd>
+                        </dl>
 
 </article>
                     <article
@@ -333,10 +359,10 @@ Warning: if some keys already exists they will be overwritten</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/Tag.php"><a href="files/src-foundation-tag.html"><abbr title="src/Foundation/Tag.php">Tag.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">24</span>
+    <span class="phpdocumentor-element-found-in__line">29</span>
 </aside>
 
-        <p class="phpdocumentor-summary">Children of this tag</p>
+        <p class="phpdocumentor-summary">Children of this tag.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -344,7 +370,10 @@ Warning: if some keys already exists they will be overwritten</dd>
     <span class="phpdocumentor-signature__name">$children</span>
      = <span class="phpdocumentor-signature__default-value">[]</span></code>
 
-        <section class="phpdocumentor-description"></section>
+        <section class="phpdocumentor-description"><p>Array containing the children of the tag - other tags.
+Can contain Tag objects, strings, or anything that can be converted to string.
+Children array can be associative to make it easier to retrieve the child elements.</p>
+</section>
 
     
 
@@ -365,10 +394,10 @@ Warning: if some keys already exists they will be overwritten</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/Tag.php"><a href="files/src-foundation-tag.html"><abbr title="src/Foundation/Tag.php">Tag.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">18</span>
+    <span class="phpdocumentor-element-found-in__line">19</span>
 </aside>
 
-        <p class="phpdocumentor-summary">Tag name (a, title, meta, etc)</p>
+        <p class="phpdocumentor-summary">Name of the tag (in HTML).</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -376,7 +405,8 @@ Warning: if some keys already exists they will be overwritten</dd>
     <span class="phpdocumentor-signature__name">$name</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
+        <section class="phpdocumentor-description"><p>It can be any of the valid HTML tags (a, title, meta, etc)</p>
+</section>
 
     
 
@@ -401,17 +431,17 @@ Warning: if some keys already exists they will be overwritten</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/Tag.php"><a href="files/src-foundation-tag.html"><abbr title="src/Foundation/Tag.php">Tag.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">212</span>
+    <span class="phpdocumentor-element-found-in__line">252</span>
 </aside>
 
-        <p class="phpdocumentor-summary">Intercept any calls to undefined methods and use it for convenient attributes setting
-Only global attributes can be set this way.</p>
+        <p class="phpdocumentor-summary">Intercept any calls to undefined methods and use it for convenient attributes setting.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">__call</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$arguments</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
+        <section class="phpdocumentor-description"><p>Only global attributes can be set this way.</p>
+</section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -434,6 +464,22 @@ Only global attributes can be set this way.</p>
             </dl>
 
     
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">see</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                    <span class="phpdocumentor-tag-link"><a href="https://www.w3schools.com/tags/ref_standardattributes.asp"><abbr title="https://www.w3schools.com/tags/ref_standardattributes.asp">https://www.w3schools.com/tags/ref_standardattributes.asp</abbr></a></span>
+                                        
+                                                 <section class="phpdocumentor-description"><p>For a list of Global HTML Attributes</p>
+</section>
+
+                                    </dd>
+                        </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
@@ -455,7 +501,7 @@ Only global attributes can be set this way.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Tags/Label.php"><a href="files/src-tags-label.html"><abbr title="src/Tags/Label.php">Label.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">21</span>
+    <span class="phpdocumentor-element-found-in__line">26</span>
 </aside>
 
         <p class="phpdocumentor-summary">Label constructor.</p>
@@ -473,7 +519,8 @@ Only global attributes can be set this way.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                    <section class="phpdocumentor-description"><p>HTML ID of the input that will be bind with this label</p>
+</section>
 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
@@ -481,7 +528,8 @@ Only global attributes can be set this way.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                    <section class="phpdocumentor-description"><p>Text for the label</p>
+</section>
 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
@@ -489,7 +537,8 @@ Only global attributes can be set this way.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
                  = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                    <section class="phpdocumentor-description"><p>Additional HTML attributes you want to add</p>
+</section>
 
             </dd>
             </dl>
@@ -516,10 +565,10 @@ Only global attributes can be set this way.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/Tag.php"><a href="files/src-foundation-tag.html"><abbr title="src/Foundation/Tag.php">Tag.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">137</span>
+    <span class="phpdocumentor-element-found-in__line">164</span>
 </aside>
 
-        <p class="phpdocumentor-summary">Render the tag</p>
+        <p class="phpdocumentor-summary">Magic method to make the Tag object convertible to string</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -529,6 +578,21 @@ Only global attributes can be set this way.</p>
 
     
     
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">see</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                    <span class="phpdocumentor-tag-link"><a href="classes/Nethead-Markup-Foundation-Tag.html#method_render"><abbr title="\Nethead\Markup\Foundation\Tag::render()">Tag::render()</abbr></a></span>
+                                        
+                                                 <section class="phpdocumentor-description"></section>
+
+                                    </dd>
+                        </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">string</span>
@@ -550,7 +614,7 @@ Only global attributes can be set this way.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/Tag.php"><a href="files/src-foundation-tag.html"><abbr title="src/Foundation/Tag.php">Tag.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">99</span>
+    <span class="phpdocumentor-element-found-in__line">117</span>
 </aside>
 
         <p class="phpdocumentor-summary">Add new child elements
@@ -569,7 +633,8 @@ Warning: if some keys already exists they will be overwritten</p>
                 : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                    <section class="phpdocumentor-description"><p>New children to merge into inner HTML</p>
+</section>
 
             </dd>
             </dl>
@@ -596,10 +661,10 @@ Warning: if some keys already exists they will be overwritten</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/Tag.php"><a href="files/src-foundation-tag.html"><abbr title="src/Foundation/Tag.php">Tag.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">108</span>
+    <span class="phpdocumentor-element-found-in__line">128</span>
 </aside>
 
-        <p class="phpdocumentor-summary">Modify the attributes</p>
+        <p class="phpdocumentor-summary">Retrieve the attributes object</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -609,6 +674,22 @@ Warning: if some keys already exists they will be overwritten</p>
 
     
     
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">see</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                    <span class="phpdocumentor-tag-link"><a href="classes/Nethead-Markup-Helpers-HtmlAttributes.html"><abbr title="\Nethead\Markup\Helpers\HtmlAttributes">HtmlAttributes</abbr></a></span>
+                                        
+                                                 <section class="phpdocumentor-description"><p>To check how to modify the attributes of the tag</p>
+</section>
+
+                                    </dd>
+                        </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Helpers-HtmlAttributes.html"><abbr title="\Nethead\Markup\Helpers\HtmlAttributes">HtmlAttributes</abbr></a></span>
@@ -630,10 +711,11 @@ Warning: if some keys already exists they will be overwritten</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Helpers/BindableToForm.php"><a href="files/src-helpers-bindabletoform.html"><abbr title="src/Helpers/BindableToForm.php">BindableToForm.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">16</span>
+    <span class="phpdocumentor-element-found-in__line">22</span>
 </aside>
 
-    
+        <p class="phpdocumentor-summary">Bind the element to form.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">bindForm</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Nethead-Markup-Tags-Form.html"><abbr title="\Nethead\Markup\Tags\Form">Form</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$form</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
@@ -647,12 +729,28 @@ Warning: if some keys already exists they will be overwritten</p>
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Nethead-Markup-Tags-Form.html"><abbr title="\Nethead\Markup\Tags\Form">Form</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                    <section class="phpdocumentor-description"><p>Form object to bind to</p>
+</section>
 
             </dd>
             </dl>
 
     
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">see</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                    <span class="phpdocumentor-tag-link"><a href="classes/Nethead-Markup-Tags-Form.html"><abbr title="\Nethead\Markup\Tags\Form">Form</abbr></a></span>
+                                        
+                                                 <section class="phpdocumentor-description"></section>
+
+                                    </dd>
+                        </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">$this</span>
@@ -674,10 +772,10 @@ Warning: if some keys already exists they will be overwritten</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/Tag.php"><a href="files/src-foundation-tag.html"><abbr title="src/Foundation/Tag.php">Tag.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">117</span>
+    <span class="phpdocumentor-element-found-in__line">139</span>
 </aside>
 
-        <p class="phpdocumentor-summary">Modify the class attribute directly</p>
+        <p class="phpdocumentor-summary">Modify the class attribute directly, without calling -&gt;attrs()</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -687,6 +785,22 @@ Warning: if some keys already exists they will be overwritten</p>
 
     
     
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">see</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                    <span class="phpdocumentor-tag-link"><a href="classes/Nethead-Markup-Helpers-ClassList.html"><abbr title="\Nethead\Markup\Helpers\ClassList">ClassList</abbr></a></span>
+                                        
+                                                 <section class="phpdocumentor-description"><p>to find out how to modify class names of the tags</p>
+</section>
+
+                                    </dd>
+                        </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Helpers-ClassList.html"><abbr title="\Nethead\Markup\Helpers\ClassList">ClassList</abbr></a></span>
@@ -708,7 +822,7 @@ Warning: if some keys already exists they will be overwritten</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/Tag.php"><a href="files/src-foundation-tag.html"><abbr title="src/Foundation/Tag.php">Tag.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">66</span>
+    <span class="phpdocumentor-element-found-in__line">81</span>
 </aside>
 
         <p class="phpdocumentor-summary">Clear tag&#039;s inner HTML</p>
@@ -742,16 +856,17 @@ Warning: if some keys already exists they will be overwritten</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/Tag.php"><a href="files/src-foundation-tag.html"><abbr title="src/Foundation/Tag.php">Tag.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">197</span>
+    <span class="phpdocumentor-element-found-in__line">235</span>
 </aside>
 
-        <p class="phpdocumentor-summary">Close the tag</p>
+        <p class="phpdocumentor-summary">Close the tag.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">close</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
-        <section class="phpdocumentor-description"></section>
+        <section class="phpdocumentor-description"><p>Prints the closing tag in HTML. If the tag is void tag, empty string will be returned instead.</p>
+</section>
 
     
     
@@ -776,7 +891,7 @@ Warning: if some keys already exists they will be overwritten</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/Tag.php"><a href="files/src-foundation-tag.html"><abbr title="src/Foundation/Tag.php">Tag.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">76</span>
+    <span class="phpdocumentor-element-found-in__line">92</span>
 </aside>
 
         <p class="phpdocumentor-summary">Get the child element of a given key</p>
@@ -794,7 +909,8 @@ Warning: if some keys already exists they will be overwritten</p>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                    <section class="phpdocumentor-description"><p>The key of the $children array to retrieve</p>
+</section>
 
             </dd>
             </dl>
@@ -804,7 +920,8 @@ Warning: if some keys already exists they will be overwritten</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-Tag.html"><abbr title="\Nethead\Markup\Foundation\Tag">Tag</abbr></a>|<a href="classes/Nethead-Markup-Foundation-TextNode.html"><abbr title="\Nethead\Markup\Foundation\TextNode">TextNode</abbr></a>|null</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
+            <section class="phpdocumentor-description"><p>Child tag requested or null if the child doesn't exist</p>
+</section>
 
     
 </article>
@@ -821,7 +938,7 @@ Warning: if some keys already exists they will be overwritten</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/Tag.php"><a href="files/src-foundation-tag.html"><abbr title="src/Foundation/Tag.php">Tag.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">154</span>
+    <span class="phpdocumentor-element-found-in__line">184</span>
 </aside>
 
         <p class="phpdocumentor-summary">Check if this tag has it&#039;s closing equivalent</p>
@@ -838,7 +955,8 @@ Warning: if some keys already exists they will be overwritten</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">bool</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
+            <section class="phpdocumentor-description"><p>TRUE if the Tag is a void tag, FALSE otherwise</p>
+</section>
 
     
 </article>
@@ -855,15 +973,18 @@ Warning: if some keys already exists they will be overwritten</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/Tag.php"><a href="files/src-foundation-tag.html"><abbr title="src/Foundation/Tag.php">Tag.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">162</span>
+    <span class="phpdocumentor-element-found-in__line">196</span>
 </aside>
 
-    
+        <p class="phpdocumentor-summary">Open the Tag in HTML.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">open</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
-        <section class="phpdocumentor-description"></section>
+        <section class="phpdocumentor-description"><p>Prints the opening &lt; with a tag name and the attributes if there are any.
+If the tag is void tag, and HtmlConfig::$closeVoids is set to true, it will be automatically closed with /&gt;.</p>
+</section>
 
     
     
@@ -888,10 +1009,10 @@ Warning: if some keys already exists they will be overwritten</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/Tag.php"><a href="files/src-foundation-tag.html"><abbr title="src/Foundation/Tag.php">Tag.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">89</span>
+    <span class="phpdocumentor-element-found-in__line">106</span>
 </aside>
 
-        <p class="phpdocumentor-summary">Remove child element</p>
+        <p class="phpdocumentor-summary">Remove child element of a given key</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -906,7 +1027,8 @@ Warning: if some keys already exists they will be overwritten</p>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                    <section class="phpdocumentor-description"><p>Child tag name (key) in $children array</p>
+</section>
 
             </dd>
             </dl>
@@ -933,10 +1055,11 @@ Warning: if some keys already exists they will be overwritten</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/Tag.php"><a href="files/src-foundation-tag.html"><abbr title="src/Foundation/Tag.php">Tag.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">145</span>
+    <span class="phpdocumentor-element-found-in__line">174</span>
 </aside>
 
-    
+        <p class="phpdocumentor-summary">Render the tag object to string.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">render</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
@@ -949,7 +1072,8 @@ Warning: if some keys already exists they will be overwritten</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">string</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
+            <section class="phpdocumentor-description"><p>Tag object compiled to a string that can be outputted to the browser.</p>
+</section>
 
     
 </article>
@@ -966,10 +1090,11 @@ Warning: if some keys already exists they will be overwritten</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/Tag.php"><a href="files/src-foundation-tag.html"><abbr title="src/Foundation/Tag.php">Tag.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">184</span>
+    <span class="phpdocumentor-element-found-in__line">220</span>
 </aside>
 
-    
+        <p class="phpdocumentor-summary">Render child elements of this Tag.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">renderChildren</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
@@ -999,14 +1124,14 @@ Warning: if some keys already exists they will be overwritten</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/Tag.php"><a href="files/src-foundation-tag.html"><abbr title="src/Foundation/Tag.php">Tag.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">55</span>
+    <span class="phpdocumentor-element-found-in__line">70</span>
 </aside>
 
         <p class="phpdocumentor-summary">Set tag&#039;s inner HTML</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">setChildren</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$children</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">setChildren</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$children</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-Tag.html"><abbr title="\Nethead\Markup\Foundation\Tag">Tag</abbr></a></span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -1017,7 +1142,8 @@ Warning: if some keys already exists they will be overwritten</p>
                 : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                    <section class="phpdocumentor-description"><p>Children of the tag in form of array, same as for the constructor</p>
+</section>
 
             </dd>
             </dl>
@@ -1025,7 +1151,7 @@ Warning: if some keys already exists they will be overwritten</p>
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-Tag.html"><abbr title="\Nethead\Markup\Foundation\Tag">Tag</abbr></a></span>
             &mdash;
             <section class="phpdocumentor-description"></section>
 
@@ -1044,15 +1170,17 @@ Warning: if some keys already exists they will be overwritten</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/Tag.php"><a href="files/src-foundation-tag.html"><abbr title="src/Foundation/Tag.php">Tag.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">126</span>
+    <span class="phpdocumentor-element-found-in__line">151</span>
 </aside>
 
-    
+        <p class="phpdocumentor-summary">Pass the Tag instance to any processing function for further modification.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">with</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">callable&nbsp;</span><span class="phpdocumentor-signature__argument__name">$processor</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-Tag.html"><abbr title="\Nethead\Markup\Foundation\Tag">Tag</abbr></a></span></code>
 
-        <section class="phpdocumentor-description"></section>
+        <section class="phpdocumentor-description"><p>Can be useful for any initialization purposes, or for the HTML altering inside the modular application.</p>
+</section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1061,7 +1189,8 @@ Warning: if some keys already exists they will be overwritten</p>
                 : <span class="phpdocumentor-signature__argument__return-type">callable</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                    <section class="phpdocumentor-description"><p>Function which will process the Tag object</p>
+</section>
 
             </dd>
             </dl>

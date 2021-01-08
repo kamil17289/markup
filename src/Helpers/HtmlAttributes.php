@@ -2,14 +2,19 @@
 
 namespace Nethead\Markup\Helpers;
 
+/**
+ * Helper class for HTML attributes manipulation.
+ * @package Nethead\Markup\Helpers
+ */
 class HtmlAttributes {
     /**
-     * @var array $htmlAttributes List of HTML element attributes in format:
-     *  'htmlAttributeName' => 'AttributeValue'
+     * List of HTML element attributes
+     * @var array $htmlAttributes
      */
     public $attrs = [];
 
     /**
+     * ClassList object helper
      * @var ClassList
      */
     public $classList;
@@ -17,7 +22,10 @@ class HtmlAttributes {
     /**
      * HtmlAttributes constructor.
      * @param array $attrs
+     *  HTML attributes in format: 'htmlAttributeName' => 'attributeValue'
      * @param array $defaults
+     *  Default attributes that can be used if no custom attributes are provided for the element.
+     *  In same format as $attrs
      */
     public function __construct(array $attrs = [], array $defaults = [])
     {
@@ -36,7 +44,7 @@ class HtmlAttributes {
     }
 
     /**
-     * Get the classList just like in Javascript
+     * Get the classList just like in Javascript.
      * @return ClassList
      */
     public function classList(): ClassList
@@ -45,11 +53,14 @@ class HtmlAttributes {
     }
 
     /**
-     * Set one of the HTML attributes
-     * No value escaping here as some of them can be boolean/null types
-     * You can also use this to remove the attribute by giving it false as the value
+     * Set one of the HTML attributes.
+     * No value escaping here as some of them can be boolean/null types.
+     * You can also use this to remove the attribute by giving it false as the value.
+     *
      * @param string $name
+     *  Name of the attribute you want to set.
      * @param null $value
+     *  Value of the attribute you want to set. Use (bool) false to remove the attribute.
      * @return HtmlAttributes
      */
     public function set(string $name, $value = null): HtmlAttributes
@@ -68,7 +79,11 @@ class HtmlAttributes {
     }
 
     /**
-     * @param array $attrs
+     * Set many attributes in one call.
+     * Attributes should be structured in the same format as in __construct.
+     * If one or more attributes values are bool false, they will be removed from the list.
+     *
+     * @param array $attrs HTML attributes in format: 'htmlAttributeName' => 'attributeValue'
      * @return HtmlAttributes
      */
     public function setMany(array $attrs): HtmlAttributes
@@ -81,11 +96,12 @@ class HtmlAttributes {
     }
 
     /**
-     * Get value of one of the attributes
-     * Call without parameters to get all
-     * @param string|null $name
-     * @param string $default
-     * @return mixed|string
+     * Get value of the attribute of given name.
+     * Call without parameters to get all in array.
+     *
+     * @param string|null $name Name of the attribute you want to retrieve value of
+     * @param string $default Default value that will be returned if the requested attribute doesn't exists
+     * @return mixed|string Value of the requested attribute or $default if it doesn't exists
      */
     public function get(string $name = null, $default = '')
     {
@@ -105,8 +121,10 @@ class HtmlAttributes {
     }
 
     /**
-     * Remove the given attribute from list
-     * @param $name
+     * Remove the given attribute(s) from list.
+     *
+     * @param array|string $name
+     *  Name of the single attribute to remove, or an array containing the attributes names as values.
      * @return HtmlAttributes
      */
     public function remove($name): HtmlAttributes
@@ -127,27 +145,38 @@ class HtmlAttributes {
     }
 
     /**
-     * Set the data-* attribute and value for the element
-     * @param $name
-     * @param $value
+     * Set the data-* attribute for the element.
+     *
+     * @param string $name
+     *  Name of the data attribute, omit the "data-" as it will be added automatically.
+     *  Example: ->data('open', 'modal');
+     * @param mixed $value
+     *  Value of the data attribute
+     * @return HtmlAttributes
      */
-    public function data($name, $value)
+    public function data(string $name, $value): HtmlAttributes
     {
         $this->set("data-$name", $value);
+        return $this;
     }
 
     /**
-     * Set the aria-* attribute and value for the element
-     * @param $name
-     * @param $value
+     * Set the aria-* attribute for the element.
+     *
+     * @param string $name
+     *  Name of the data attribute, omit the "aria-" as it will be added automatically.
+     * @param mixed $value
+     *  Value of the aria attribute
+     * @return HtmlAttributes
      */
-    public function aria($name, $value)
+    public function aria(string $name, $value): HtmlAttributes
     {
         $this->set("aria-$name", $value);
+        return $this;
     }
 
     /**
-     * Render the attributes as HTML string
+     * Render the attributes as HTML string.
      * @return string
      */
     public function render(): string
@@ -182,6 +211,8 @@ class HtmlAttributes {
     }
 
     /**
+     * Convert the HtmlAtributes object into HTML string.
+     * @see HtmlAttributes::render()
      * @return string
      */
     public function __toString(): string

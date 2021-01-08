@@ -95,18 +95,14 @@
 
 <dl class="phpdocumentor-table-of-contents">
     
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Nethead-Markup-Foundation-Document.html"><abbr title="\Nethead\Markup\Foundation\Document">Document</abbr></a></dt>
-        <dd></dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Nethead-Markup-Helpers-HtmlAttributes.html"><abbr title="\Nethead\Markup\Helpers\HtmlAttributes">HtmlAttributes</abbr></a></dt>
-        <dd></dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Nethead-Markup-Helpers-HtmlConfig.html"><abbr title="\Nethead\Markup\Helpers\HtmlConfig">HtmlConfig</abbr></a></dt>
-        <dd></dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Nethead-Markup-MarkupFactory.html"><abbr title="\Nethead\Markup\MarkupFactory">MarkupFactory</abbr></a></dt>
         <dd></dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Nethead-Markup-Tags-Fieldset.html"><abbr title="\Nethead\Markup\Tags\Fieldset">Fieldset</abbr></a></dt>
-        <dd>Class Tag</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Nethead-Markup-Tags-Form.html"><abbr title="\Nethead\Markup\Tags\Form">Form</abbr></a></dt>
-        <dd>Class Tag</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Nethead-Markup-Tags-Audio.html"><abbr title="\Nethead\Markup\Tags\Audio">Audio</abbr></a></dt>
+        <dd>A class for creating any HTML tag element you would like.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Nethead-Markup-Tags-Progress.html"><abbr title="\Nethead\Markup\Tags\Progress">Progress</abbr></a></dt>
+        <dd>A class for creating any HTML tag element you would like.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Nethead-Markup-Tags-Video.html"><abbr title="\Nethead\Markup\Tags\Video">Video</abbr></a></dt>
+        <dd>A class for creating any HTML tag element you would like.</dd>
     
     </dl>
 
@@ -122,7 +118,7 @@
     <span>
                         &nbsp;: <a href="classes/Nethead-Markup-Foundation-Tag.html"><abbr title="\Nethead\Markup\Foundation\Tag">Tag</abbr></a>    </span>
 </dt>
-<dd></dd>
+<dd>A helper factory function.</dd>
 
     </dl>
 
@@ -141,15 +137,19 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Helpers/tag.php"><a href="files/src-helpers-tag.html"><abbr title="src/Helpers/tag.php">tag.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">13</span>
+    <span class="phpdocumentor-element-found-in__line">20</span>
 </aside>
 
-    
+        <p class="phpdocumentor-summary">A helper factory function.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
                 <span class="phpdocumentor-signature__name">tag</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$attributes</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$children</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-Tag.html"><abbr title="\Nethead\Markup\Foundation\Tag">Tag</abbr></a></span></code>
 
-        <section class="phpdocumentor-description"></section>
+        <section class="phpdocumentor-description"><p>You can use this the same way as the Tag constructor, just using the functional way,
+without constantly typing 'new' operator. It also lets you make it easier to chain
+methods right after the object is created.</p>
+</section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -158,7 +158,8 @@
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                    <section class="phpdocumentor-description"><p>Name of the tag</p>
+</section>
 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
@@ -166,7 +167,8 @@
                 : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
                  = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                    <section class="phpdocumentor-description"><p>Attributes array</p>
+</section>
 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
@@ -174,12 +176,28 @@
                 : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
                  = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                    <section class="phpdocumentor-description"><p>Children tags</p>
+</section>
 
             </dd>
             </dl>
 
     
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">see</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\Nethead\Markup\Foundation\Tag::__construct">Tag::__construct</abbr></span>
+                                        
+                                                 <section class="phpdocumentor-description"></section>
+
+                                    </dd>
+                        </dl>
 
     
 </article>

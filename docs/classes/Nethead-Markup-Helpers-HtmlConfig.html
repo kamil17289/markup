@@ -94,7 +94,9 @@
             <div class="phpdocumentor-element__package">
             in package
             <ul class="phpdocumentor-breadcrumbs">
-                                    <li class="phpdocumentor-breadcrumb"><a href="packages/Default.html">Default</a></li>
+                                    <li class="phpdocumentor-breadcrumb"><a href="packages/Nethead.html">Nethead</a></li>
+                                    <li class="phpdocumentor-breadcrumb"><a href="packages/Nethead-Markup.html">Markup</a></li>
+                                    <li class="phpdocumentor-breadcrumb"><a href="packages/Nethead-Markup-Helpers.html">Helpers</a></li>
                             </ul>
         </div>
     
@@ -104,10 +106,15 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Helpers/HtmlConfig.php"><a href="files/src-helpers-htmlconfig.html"><abbr title="src/Helpers/HtmlConfig.php">HtmlConfig.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">5</span>
+    <span class="phpdocumentor-element-found-in__line">13</span>
 </aside>
 
-        
+            <p class="phpdocumentor-summary">Class HtmlConfig.</p>
+
+    <section class="phpdocumentor-description"><p>Stores the configuration for the HTML Foundation.
+Everything can be overwritten at runtime as it is all public and static.
+See below for more documentation on configuration options.</p>
+</section>
 
 
 
@@ -127,28 +134,35 @@
     <span>
                 &nbsp;: bool            </span>
 </dt>
-<dd></dd>
+<dd>If set to true, void tags will be always closed. Useful when you are working in XHTML.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a href="classes/Nethead-Markup-Helpers-HtmlConfig.html#property_defaultIconsFactory">$defaultIconsFactory</a>
+    <span>
+                &nbsp;: callable            </span>
+</dt>
+<dd>Change if you have your own factory or you want to use diferent icons set.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/Nethead-Markup-Helpers-HtmlConfig.html#property_globalAttributes">$globalAttributes</a>
     <span>
                 &nbsp;: array&lt;string|int, mixed&gt;            </span>
 </dt>
-<dd>Global attributes supported by every HTML tag</dd>
+<dd>Global attributes supported by every HTML tag.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/Nethead-Markup-Helpers-HtmlConfig.html#property_notEscapedAttributes">$notEscapedAttributes</a>
     <span>
                 &nbsp;: array&lt;string|int, mixed&gt;            </span>
 </dt>
-<dd>List of attributes which value shouldn&#039;t be escaped</dd>
+<dd>List of attributes which value shouldn&#039;t be escaped.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/Nethead-Markup-Helpers-HtmlConfig.html#property_voidElements">$voidElements</a>
     <span>
                 &nbsp;: array&lt;string|int, mixed&gt;            </span>
 </dt>
-<dd>HTML 5.3 void elements</dd>
+<dd>HTML 5.3 void elements list.</dd>
 
             </dl>
 
@@ -178,15 +192,48 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Helpers/HtmlConfig.php"><a href="files/src-helpers-htmlconfig.html"><abbr title="src/Helpers/HtmlConfig.php">HtmlConfig.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">51</span>
+    <span class="phpdocumentor-element-found-in__line">71</span>
 </aside>
 
-    
+        <p class="phpdocumentor-summary">If set to true, void tags will be always closed. Useful when you are working in XHTML.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
     <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">bool</span>
     <span class="phpdocumentor-signature__name">$closeVoids</span>
      = <span class="phpdocumentor-signature__default-value">false</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+            -static                                            "
+>
+    <h4 class="phpdocumentor-element__name" id="property_defaultIconsFactory">
+        $defaultIconsFactory
+        <a href="classes/Nethead-Markup-Helpers-HtmlConfig.html#property_defaultIconsFactory" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Helpers/HtmlConfig.php"><a href="files/src-helpers-htmlconfig.html"><abbr title="src/Helpers/HtmlConfig.php">HtmlConfig.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">87</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Change if you have your own factory or you want to use diferent icons set.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">callable</span>
+    <span class="phpdocumentor-signature__name">$defaultIconsFactory</span>
+     = <span class="phpdocumentor-signature__default-value">[NetheadMarkupHelpersIconsFactory::class, &#039;fontAwesome&#039;]</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -209,10 +256,10 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Helpers/HtmlConfig.php"><a href="files/src-helpers-htmlconfig.html"><abbr title="src/Helpers/HtmlConfig.php">HtmlConfig.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">31</span>
+    <span class="phpdocumentor-element-found-in__line">49</span>
 </aside>
 
-        <p class="phpdocumentor-summary">Global attributes supported by every HTML tag</p>
+        <p class="phpdocumentor-summary">Global attributes supported by every HTML tag.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -220,9 +267,27 @@
     <span class="phpdocumentor-signature__name">$globalAttributes</span>
      = <span class="phpdocumentor-signature__default-value">[&#039;accesskey&#039;, &#039;class&#039;, &#039;contenteditable&#039;, &#039;dir&#039;, &#039;draggable&#039;, &#039;dropzone&#039;, &#039;hidden&#039;, &#039;id&#039;, &#039;lang&#039;, &#039;spellcheck&#039;, &#039;style&#039;, &#039;tabindex&#039;, &#039;title&#039;, &#039;translate&#039;]</span></code>
 
-        <section class="phpdocumentor-description"></section>
+        <section class="phpdocumentor-description"><p>If you have a need to quickly add some attribute on all tags, you can add it to global attributes list like this:
+<code class="prettyprint">HtmlConfig::$globalAttributes[] = 'yourTagName';</code>. <em>Remember:</em> Not all attributes can be added on some elements
+according to HTML standard. It's your responsibility if the HTML will validate.</p>
+</section>
 
     
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">see</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\Nethead\Markup\Foundation\Tag::__call">Tag::__call</abbr></span>
+                                        
+                                                 <section class="phpdocumentor-description"></section>
+
+                                    </dd>
+                        </dl>
 
 </article>
                     <article
@@ -241,10 +306,10 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Helpers/HtmlConfig.php"><a href="files/src-helpers-htmlconfig.html"><abbr title="src/Helpers/HtmlConfig.php">HtmlConfig.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">57</span>
+    <span class="phpdocumentor-element-found-in__line">78</span>
 </aside>
 
-        <p class="phpdocumentor-summary">List of attributes which value shouldn&#039;t be escaped</p>
+        <p class="phpdocumentor-summary">List of attributes which value shouldn&#039;t be escaped.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -273,10 +338,10 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Helpers/HtmlConfig.php"><a href="files/src-helpers-htmlconfig.html"><abbr title="src/Helpers/HtmlConfig.php">HtmlConfig.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">10</span>
+    <span class="phpdocumentor-element-found-in__line">23</span>
 </aside>
 
-        <p class="phpdocumentor-summary">HTML 5.3 void elements</p>
+        <p class="phpdocumentor-summary">HTML 5.3 void elements list.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -284,7 +349,11 @@
     <span class="phpdocumentor-signature__name">$voidElements</span>
      = <span class="phpdocumentor-signature__default-value">[&#039;area&#039;, &#039;base&#039;, &#039;br&#039;, &#039;col&#039;, &#039;embed&#039;, &#039;hr&#039;, &#039;img&#039;, &#039;input&#039;, &#039;link&#039;, &#039;meta&#039;, &#039;param&#039;, &#039;source&#039;, &#039;track&#039;, &#039;wbr&#039;]</span></code>
 
-        <section class="phpdocumentor-description"></section>
+        <section class="phpdocumentor-description"><p>Void elements (tags) are elements that can't have children elements and are closed right away.
+They still can have attributes. HTML Foundation is using this array to decide how and when the
+tag should be closed, and if it can have child elements.
+You can add more tags if you need to by calling <code class="prettyprint">HtmlConfig::$voidElements[] = 'yourTagName';</code></p>
+</section>
 
     
 

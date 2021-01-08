@@ -94,7 +94,9 @@
             <div class="phpdocumentor-element__package">
             in package
             <ul class="phpdocumentor-breadcrumbs">
-                                    <li class="phpdocumentor-breadcrumb"><a href="packages/Default.html">Default</a></li>
+                                    <li class="phpdocumentor-breadcrumb"><a href="packages/Nethead.html">Nethead</a></li>
+                                    <li class="phpdocumentor-breadcrumb"><a href="packages/Nethead-Markup.html">Markup</a></li>
+                                    <li class="phpdocumentor-breadcrumb"><a href="packages/Nethead-Markup-Helpers.html">Helpers</a></li>
                             </ul>
         </div>
     
@@ -104,10 +106,12 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Helpers/HtmlAttributes.php"><a href="files/src-helpers-htmlattributes.html"><abbr title="src/Helpers/HtmlAttributes.php">HtmlAttributes.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">5</span>
+    <span class="phpdocumentor-element-found-in__line">9</span>
 </aside>
 
-        
+            <p class="phpdocumentor-summary">Helper class for HTML attributes manipulation.</p>
+
+    <section class="phpdocumentor-description"></section>
 
 
 
@@ -127,14 +131,14 @@
     <span>
                 &nbsp;: array&lt;string|int, mixed&gt;            </span>
 </dt>
-<dd></dd>
+<dd>List of HTML element attributes</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/Nethead-Markup-Helpers-HtmlAttributes.html#property_classList">$classList</a>
     <span>
                 &nbsp;: <a href="classes/Nethead-Markup-Helpers-ClassList.html"><abbr title="\Nethead\Markup\Helpers\ClassList">ClassList</abbr></a>            </span>
 </dt>
-<dd></dd>
+<dd>ClassList object helper</dd>
 
                 <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Helpers-HtmlAttributes.html#method___construct">__construct()</a>
@@ -148,66 +152,63 @@
     <span>
                         &nbsp;: string    </span>
 </dt>
-<dd></dd>
+<dd>Convert the HtmlAtributes object into HTML string.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Helpers-HtmlAttributes.html#method_aria">aria()</a>
     <span>
-                        &nbsp;: mixed    </span>
+                        &nbsp;: <a href="classes/Nethead-Markup-Helpers-HtmlAttributes.html"><abbr title="\Nethead\Markup\Helpers\HtmlAttributes">HtmlAttributes</abbr></a>    </span>
 </dt>
-<dd>Set the aria-* attribute and value for the element</dd>
+<dd>Set the aria-* attribute for the element.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Helpers-HtmlAttributes.html#method_classList">classList()</a>
     <span>
                         &nbsp;: <a href="classes/Nethead-Markup-Helpers-ClassList.html"><abbr title="\Nethead\Markup\Helpers\ClassList">ClassList</abbr></a>    </span>
 </dt>
-<dd>Get the classList just like in Javascript</dd>
+<dd>Get the classList just like in Javascript.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Helpers-HtmlAttributes.html#method_data">data()</a>
     <span>
-                        &nbsp;: mixed    </span>
+                        &nbsp;: <a href="classes/Nethead-Markup-Helpers-HtmlAttributes.html"><abbr title="\Nethead\Markup\Helpers\HtmlAttributes">HtmlAttributes</abbr></a>    </span>
 </dt>
-<dd>Set the data-* attribute and value for the element</dd>
+<dd>Set the data-* attribute for the element.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Helpers-HtmlAttributes.html#method_get">get()</a>
     <span>
                         &nbsp;: mixed|string    </span>
 </dt>
-<dd>Get value of one of the attributes
-Call without parameters to get all</dd>
+<dd>Get value of the attribute of given name.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Helpers-HtmlAttributes.html#method_remove">remove()</a>
     <span>
                         &nbsp;: <a href="classes/Nethead-Markup-Helpers-HtmlAttributes.html"><abbr title="\Nethead\Markup\Helpers\HtmlAttributes">HtmlAttributes</abbr></a>    </span>
 </dt>
-<dd>Remove the given attribute from list</dd>
+<dd>Remove the given attribute(s) from list.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Helpers-HtmlAttributes.html#method_render">render()</a>
     <span>
                         &nbsp;: string    </span>
 </dt>
-<dd>Render the attributes as HTML string</dd>
+<dd>Render the attributes as HTML string.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Helpers-HtmlAttributes.html#method_set">set()</a>
     <span>
                         &nbsp;: <a href="classes/Nethead-Markup-Helpers-HtmlAttributes.html"><abbr title="\Nethead\Markup\Helpers\HtmlAttributes">HtmlAttributes</abbr></a>    </span>
 </dt>
-<dd>Set one of the HTML attributes
-No value escaping here as some of them can be boolean/null types
-You can also use this to remove the attribute by giving it false as the value</dd>
+<dd>Set one of the HTML attributes.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Helpers-HtmlAttributes.html#method_setMany">setMany()</a>
     <span>
                         &nbsp;: <a href="classes/Nethead-Markup-Helpers-HtmlAttributes.html"><abbr title="\Nethead\Markup\Helpers\HtmlAttributes">HtmlAttributes</abbr></a>    </span>
 </dt>
-<dd></dd>
+<dd>Set many attributes in one call.</dd>
 
         </dl>
 
@@ -237,10 +238,11 @@ You can also use this to remove the attribute by giving it false as the value</d
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Helpers/HtmlAttributes.php"><a href="files/src-helpers-htmlattributes.html"><abbr title="src/Helpers/HtmlAttributes.php">HtmlAttributes.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">10</span>
+    <span class="phpdocumentor-element-found-in__line">14</span>
 </aside>
 
-    
+        <p class="phpdocumentor-summary">List of HTML element attributes</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
@@ -268,10 +270,11 @@ You can also use this to remove the attribute by giving it false as the value</d
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Helpers/HtmlAttributes.php"><a href="files/src-helpers-htmlattributes.html"><abbr title="src/Helpers/HtmlAttributes.php">HtmlAttributes.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">15</span>
+    <span class="phpdocumentor-element-found-in__line">20</span>
 </aside>
 
-    
+        <p class="phpdocumentor-summary">ClassList object helper</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type"><a href="classes/Nethead-Markup-Helpers-ClassList.html"><abbr title="\Nethead\Markup\Helpers\ClassList">ClassList</abbr></a></span>
@@ -303,7 +306,7 @@ You can also use this to remove the attribute by giving it false as the value</d
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Helpers/HtmlAttributes.php"><a href="files/src-helpers-htmlattributes.html"><abbr title="src/Helpers/HtmlAttributes.php">HtmlAttributes.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">22</span>
+    <span class="phpdocumentor-element-found-in__line">30</span>
 </aside>
 
         <p class="phpdocumentor-summary">HtmlAttributes constructor.</p>
@@ -321,7 +324,8 @@ You can also use this to remove the attribute by giving it false as the value</d
                 : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
                  = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                    <section class="phpdocumentor-description"><p>HTML attributes in format: 'htmlAttributeName' =&gt; 'attributeValue'</p>
+</section>
 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
@@ -329,7 +333,9 @@ You can also use this to remove the attribute by giving it false as the value</d
                 : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
                  = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                    <section class="phpdocumentor-description"><p>Default attributes that can be used if no custom attributes are provided for the element.
+In same format as $attrs</p>
+</section>
 
             </dd>
             </dl>
@@ -356,10 +362,11 @@ You can also use this to remove the attribute by giving it false as the value</d
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Helpers/HtmlAttributes.php"><a href="files/src-helpers-htmlattributes.html"><abbr title="src/Helpers/HtmlAttributes.php">HtmlAttributes.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">187</span>
+    <span class="phpdocumentor-element-found-in__line">218</span>
 </aside>
 
-    
+        <p class="phpdocumentor-summary">Convert the HtmlAtributes object into HTML string.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">__toString</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
@@ -368,6 +375,21 @@ You can also use this to remove the attribute by giving it false as the value</d
 
     
     
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">see</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                    <span class="phpdocumentor-tag-link"><a href="classes/Nethead-Markup-Helpers-HtmlAttributes.html#method_render"><abbr title="\Nethead\Markup\Helpers\HtmlAttributes::render()">HtmlAttributes::render()</abbr></a></span>
+                                        
+                                                 <section class="phpdocumentor-description"></section>
+
+                                    </dd>
+                        </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">string</span>
@@ -389,14 +411,14 @@ You can also use this to remove the attribute by giving it false as the value</d
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Helpers/HtmlAttributes.php"><a href="files/src-helpers-htmlattributes.html"><abbr title="src/Helpers/HtmlAttributes.php">HtmlAttributes.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">144</span>
+    <span class="phpdocumentor-element-found-in__line">172</span>
 </aside>
 
-        <p class="phpdocumentor-summary">Set the aria-* attribute and value for the element</p>
+        <p class="phpdocumentor-summary">Set the aria-* attribute for the element.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">aria</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">aria</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Helpers-HtmlAttributes.html"><abbr title="\Nethead\Markup\Helpers\HtmlAttributes">HtmlAttributes</abbr></a></span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -404,18 +426,20 @@ You can also use this to remove the attribute by giving it false as the value</d
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$name</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a></span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                    <section class="phpdocumentor-description"><p>Name of the data attribute, omit the &quot;aria-&quot; as it will be added automatically.</p>
+</section>
 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$value</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a></span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                    <section class="phpdocumentor-description"><p>Value of the aria attribute</p>
+</section>
 
             </dd>
             </dl>
@@ -423,7 +447,7 @@ You can also use this to remove the attribute by giving it false as the value</d
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Helpers-HtmlAttributes.html"><abbr title="\Nethead\Markup\Helpers\HtmlAttributes">HtmlAttributes</abbr></a></span>
             &mdash;
             <section class="phpdocumentor-description"></section>
 
@@ -442,10 +466,10 @@ You can also use this to remove the attribute by giving it false as the value</d
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Helpers/HtmlAttributes.php"><a href="files/src-helpers-htmlattributes.html"><abbr title="src/Helpers/HtmlAttributes.php">HtmlAttributes.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">42</span>
+    <span class="phpdocumentor-element-found-in__line">50</span>
 </aside>
 
-        <p class="phpdocumentor-summary">Get the classList just like in Javascript</p>
+        <p class="phpdocumentor-summary">Get the classList just like in Javascript.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -476,14 +500,14 @@ You can also use this to remove the attribute by giving it false as the value</d
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Helpers/HtmlAttributes.php"><a href="files/src-helpers-htmlattributes.html"><abbr title="src/Helpers/HtmlAttributes.php">HtmlAttributes.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">134</span>
+    <span class="phpdocumentor-element-found-in__line">157</span>
 </aside>
 
-        <p class="phpdocumentor-summary">Set the data-* attribute and value for the element</p>
+        <p class="phpdocumentor-summary">Set the data-* attribute for the element.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">data</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">data</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Helpers-HtmlAttributes.html"><abbr title="\Nethead\Markup\Helpers\HtmlAttributes">HtmlAttributes</abbr></a></span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -491,18 +515,21 @@ You can also use this to remove the attribute by giving it false as the value</d
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$name</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a></span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                    <section class="phpdocumentor-description"><p>Name of the data attribute, omit the &quot;data-&quot; as it will be added automatically.
+Example: -&gt;data('open', 'modal');</p>
+</section>
 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$value</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a></span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                    <section class="phpdocumentor-description"><p>Value of the data attribute</p>
+</section>
 
             </dd>
             </dl>
@@ -510,7 +537,7 @@ You can also use this to remove the attribute by giving it false as the value</d
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Helpers-HtmlAttributes.html"><abbr title="\Nethead\Markup\Helpers\HtmlAttributes">HtmlAttributes</abbr></a></span>
             &mdash;
             <section class="phpdocumentor-description"></section>
 
@@ -529,17 +556,17 @@ You can also use this to remove the attribute by giving it false as the value</d
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Helpers/HtmlAttributes.php"><a href="files/src-helpers-htmlattributes.html"><abbr title="src/Helpers/HtmlAttributes.php">HtmlAttributes.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">90</span>
+    <span class="phpdocumentor-element-found-in__line">106</span>
 </aside>
 
-        <p class="phpdocumentor-summary">Get value of one of the attributes
-Call without parameters to get all</p>
+        <p class="phpdocumentor-summary">Get value of the attribute of given name.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">get</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$default</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed|string</span></code>
 
-        <section class="phpdocumentor-description"></section>
+        <section class="phpdocumentor-description"><p>Call without parameters to get all in array.</p>
+</section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -548,7 +575,8 @@ Call without parameters to get all</p>
                 : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
                  = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                    <section class="phpdocumentor-description"><p>Name of the attribute you want to retrieve value of</p>
+</section>
 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
@@ -556,7 +584,8 @@ Call without parameters to get all</p>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                  = <span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                    <section class="phpdocumentor-description"><p>Default value that will be returned if the requested attribute doesn't exists</p>
+</section>
 
             </dd>
             </dl>
@@ -566,7 +595,8 @@ Call without parameters to get all</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed|string</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
+            <section class="phpdocumentor-description"><p>Value of the requested attribute or $default if it doesn't exists</p>
+</section>
 
     
 </article>
@@ -583,14 +613,14 @@ Call without parameters to get all</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Helpers/HtmlAttributes.php"><a href="files/src-helpers-htmlattributes.html"><abbr title="src/Helpers/HtmlAttributes.php">HtmlAttributes.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">112</span>
+    <span class="phpdocumentor-element-found-in__line">130</span>
 </aside>
 
-        <p class="phpdocumentor-summary">Remove the given attribute from list</p>
+        <p class="phpdocumentor-summary">Remove the given attribute(s) from list.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">remove</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Helpers-HtmlAttributes.html"><abbr title="\Nethead\Markup\Helpers\HtmlAttributes">HtmlAttributes</abbr></a></span></code>
+                <span class="phpdocumentor-signature__name">remove</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Helpers-HtmlAttributes.html"><abbr title="\Nethead\Markup\Helpers\HtmlAttributes">HtmlAttributes</abbr></a></span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -598,10 +628,11 @@ Call without parameters to get all</p>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$name</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a></span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;|string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                    <section class="phpdocumentor-description"><p>Name of the single attribute to remove, or an array containing the attributes names as values.</p>
+</section>
 
             </dd>
             </dl>
@@ -628,10 +659,10 @@ Call without parameters to get all</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Helpers/HtmlAttributes.php"><a href="files/src-helpers-htmlattributes.html"><abbr title="src/Helpers/HtmlAttributes.php">HtmlAttributes.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">153</span>
+    <span class="phpdocumentor-element-found-in__line">182</span>
 </aside>
 
-        <p class="phpdocumentor-summary">Render the attributes as HTML string</p>
+        <p class="phpdocumentor-summary">Render the attributes as HTML string.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -662,18 +693,18 @@ Call without parameters to get all</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Helpers/HtmlAttributes.php"><a href="files/src-helpers-htmlattributes.html"><abbr title="src/Helpers/HtmlAttributes.php">HtmlAttributes.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">55</span>
+    <span class="phpdocumentor-element-found-in__line">66</span>
 </aside>
 
-        <p class="phpdocumentor-summary">Set one of the HTML attributes
-No value escaping here as some of them can be boolean/null types
-You can also use this to remove the attribute by giving it false as the value</p>
+        <p class="phpdocumentor-summary">Set one of the HTML attributes.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">set</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Helpers-HtmlAttributes.html"><abbr title="\Nethead\Markup\Helpers\HtmlAttributes">HtmlAttributes</abbr></a></span></code>
 
-        <section class="phpdocumentor-description"></section>
+        <section class="phpdocumentor-description"><p>No value escaping here as some of them can be boolean/null types.
+You can also use this to remove the attribute by giving it false as the value.</p>
+</section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -682,7 +713,8 @@ You can also use this to remove the attribute by giving it false as the value</p
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                    <section class="phpdocumentor-description"><p>Name of the attribute you want to set.</p>
+</section>
 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
@@ -690,7 +722,8 @@ You can also use this to remove the attribute by giving it false as the value</p
                 : <span class="phpdocumentor-signature__argument__return-type">null</span>
                  = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                    <section class="phpdocumentor-description"><p>Value of the attribute you want to set. Use (bool) false to remove the attribute.</p>
+</section>
 
             </dd>
             </dl>
@@ -717,15 +750,18 @@ You can also use this to remove the attribute by giving it false as the value</p
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Helpers/HtmlAttributes.php"><a href="files/src-helpers-htmlattributes.html"><abbr title="src/Helpers/HtmlAttributes.php">HtmlAttributes.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">74</span>
+    <span class="phpdocumentor-element-found-in__line">89</span>
 </aside>
 
-    
+        <p class="phpdocumentor-summary">Set many attributes in one call.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">setMany</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$attrs</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Helpers-HtmlAttributes.html"><abbr title="\Nethead\Markup\Helpers\HtmlAttributes">HtmlAttributes</abbr></a></span></code>
 
-        <section class="phpdocumentor-description"></section>
+        <section class="phpdocumentor-description"><p>Attributes should be structured in the same format as in __construct.
+If one or more attributes values are bool false, they will be removed from the list.</p>
+</section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -734,7 +770,8 @@ You can also use this to remove the attribute by giving it false as the value</p
                 : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                    <section class="phpdocumentor-description"><p>HTML attributes in format: 'htmlAttributeName' =&gt; 'attributeValue'</p>
+</section>
 
             </dd>
             </dl>

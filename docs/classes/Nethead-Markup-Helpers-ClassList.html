@@ -106,10 +106,10 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Helpers/ClassList.php"><a href="files/src-helpers-classlist.html"><abbr title="src/Helpers/ClassList.php">ClassList.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">9</span>
+    <span class="phpdocumentor-element-found-in__line">10</span>
 </aside>
 
-            <p class="phpdocumentor-summary">Class ClassList</p>
+            <p class="phpdocumentor-summary">Helper for CSS class manipulation.</p>
 
     <section class="phpdocumentor-description"></section>
 
@@ -145,7 +145,7 @@
     <span>
                         &nbsp;: string    </span>
 </dt>
-<dd>Implode the class list to a string without duplicates</dd>
+<dd>Convert the ClasList object to a string.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Helpers-ClassList.html#method_add">add()</a>
@@ -159,42 +159,42 @@
     <span>
                         &nbsp;: bool    </span>
 </dt>
-<dd></dd>
+<dd>Check if the class name was added to this list.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Helpers-ClassList.html#method_empty">empty()</a>
     <span>
                         &nbsp;: bool    </span>
 </dt>
-<dd></dd>
+<dd>Check if the list contains any class names</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Helpers-ClassList.html#method_remove">remove()</a>
     <span>
                         &nbsp;: <a href="classes/Nethead-Markup-Helpers-ClassList.html"><abbr title="\Nethead\Markup\Helpers\ClassList">ClassList</abbr></a>    </span>
 </dt>
-<dd>Remove class</dd>
+<dd>Remove class name from the list.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Helpers-ClassList.html#method_render">render()</a>
     <span>
                         &nbsp;: string    </span>
 </dt>
-<dd></dd>
+<dd>Implode the class list to a string.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Helpers-ClassList.html#method_replace">replace()</a>
     <span>
                         &nbsp;: <a href="classes/Nethead-Markup-Helpers-ClassList.html"><abbr title="\Nethead\Markup\Helpers\ClassList">ClassList</abbr></a>    </span>
 </dt>
-<dd></dd>
+<dd>Remove a class and add another.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Helpers-ClassList.html#method_toggle">toggle()</a>
     <span>
                         &nbsp;: <a href="classes/Nethead-Markup-Helpers-ClassList.html"><abbr title="\Nethead\Markup\Helpers\ClassList">ClassList</abbr></a>    </span>
 </dt>
-<dd></dd>
+<dd>Toggle class name in the list.</dd>
 
         </dl>
 
@@ -224,7 +224,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Helpers/ClassList.php"><a href="files/src-helpers-classlist.html"><abbr title="src/Helpers/ClassList.php">ClassList.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">13</span>
+    <span class="phpdocumentor-element-found-in__line">14</span>
 </aside>
 
     
@@ -259,7 +259,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Helpers/ClassList.php"><a href="files/src-helpers-classlist.html"><abbr title="src/Helpers/ClassList.php">ClassList.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">19</span>
+    <span class="phpdocumentor-element-found-in__line">22</span>
 </aside>
 
         <p class="phpdocumentor-summary">ClassList constructor.</p>
@@ -277,7 +277,8 @@
                 : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
                  = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                    <section class="phpdocumentor-description"><p>Class list in form of numeric array. Only values are considered, keys are irrelevant.</p>
+</section>
 
             </dd>
             </dl>
@@ -304,10 +305,10 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Helpers/ClassList.php"><a href="files/src-helpers-classlist.html"><abbr title="src/Helpers/ClassList.php">ClassList.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">111</span>
+    <span class="phpdocumentor-element-found-in__line">132</span>
 </aside>
 
-        <p class="phpdocumentor-summary">Implode the class list to a string without duplicates</p>
+        <p class="phpdocumentor-summary">Convert the ClasList object to a string.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -317,6 +318,21 @@
 
     
     
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">see</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                    <span class="phpdocumentor-tag-link"><a href="classes/Nethead-Markup-Helpers-ClassList.html#method_render"><abbr title="\Nethead\Markup\Helpers\ClassList::render()">ClassList::render()</abbr></a></span>
+                                        
+                                                 <section class="phpdocumentor-description"></section>
+
+                                    </dd>
+                        </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">string</span>
@@ -338,14 +354,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Helpers/ClassList.php"><a href="files/src-helpers-classlist.html"><abbr title="src/Helpers/ClassList.php">ClassList.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">29</span>
+    <span class="phpdocumentor-element-found-in__line">36</span>
 </aside>
 
         <p class="phpdocumentor-summary">Add new class or classes</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">add</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$class</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Helpers-ClassList.html"><abbr title="\Nethead\Markup\Helpers\ClassList">ClassList</abbr></a></span></code>
+                <span class="phpdocumentor-signature__name">add</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$class</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Helpers-ClassList.html"><abbr title="\Nethead\Markup\Helpers\ClassList">ClassList</abbr></a></span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -353,10 +369,13 @@
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$class</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a></span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                    <section class="phpdocumentor-description"><p>If string is provided, it will be split with spaces and each chunk will be used as a CSS class.
+If it's array, all it's values will be added at the end.
+Make sure each array value holds one CSS class.</p>
+</section>
 
             </dd>
             </dl>
@@ -383,10 +402,11 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Helpers/ClassList.php"><a href="files/src-helpers-classlist.html"><abbr title="src/Helpers/ClassList.php">ClassList.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">60</span>
+    <span class="phpdocumentor-element-found-in__line">69</span>
 </aside>
 
-    
+        <p class="phpdocumentor-summary">Check if the class name was added to this list.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">contains</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$class</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
@@ -400,7 +420,8 @@
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                    <section class="phpdocumentor-description"><p>Class name you want to check</p>
+</section>
 
             </dd>
             </dl>
@@ -410,7 +431,8 @@
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">bool</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
+            <section class="phpdocumentor-description"><p>TRUE if the class name was added, FALSE otherwise</p>
+</section>
 
     
 </article>
@@ -427,10 +449,11 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Helpers/ClassList.php"><a href="files/src-helpers-classlist.html"><abbr title="src/Helpers/ClassList.php">ClassList.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">97</span>
+    <span class="phpdocumentor-element-found-in__line">111</span>
 </aside>
 
-    
+        <p class="phpdocumentor-summary">Check if the list contains any class names</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">empty</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
@@ -443,7 +466,8 @@
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">bool</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
+            <section class="phpdocumentor-description"><p>TRUE if no class names are added, FALSE otherwise</p>
+</section>
 
     
 </article>
@@ -460,10 +484,10 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Helpers/ClassList.php"><a href="files/src-helpers-classlist.html"><abbr title="src/Helpers/ClassList.php">ClassList.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">45</span>
+    <span class="phpdocumentor-element-found-in__line">53</span>
 </aside>
 
-        <p class="phpdocumentor-summary">Remove class</p>
+        <p class="phpdocumentor-summary">Remove class name from the list.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -478,7 +502,8 @@
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                    <section class="phpdocumentor-description"><p>The class name you want to remove</p>
+</section>
 
             </dd>
             </dl>
@@ -505,15 +530,19 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Helpers/ClassList.php"><a href="files/src-helpers-classlist.html"><abbr title="src/Helpers/ClassList.php">ClassList.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">102</span>
+    <span class="phpdocumentor-element-found-in__line">122</span>
 </aside>
 
-    
+        <p class="phpdocumentor-summary">Implode the class list to a string.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">render</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
-    
+        <section class="phpdocumentor-description"><p>Render class names into space separated string that can be used as HTML attribute value.
+Checks for duplicates and only renders each class one time.</p>
+</section>
+
     
     
 
@@ -537,15 +566,17 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Helpers/ClassList.php"><a href="files/src-helpers-classlist.html"><abbr title="src/Helpers/ClassList.php">ClassList.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">70</span>
+    <span class="phpdocumentor-element-found-in__line">81</span>
 </aside>
 
-    
+        <p class="phpdocumentor-summary">Remove a class and add another.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">replace</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$classToAdd</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$classToRemove</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Helpers-ClassList.html"><abbr title="\Nethead\Markup\Helpers\ClassList">ClassList</abbr></a></span></code>
 
-        <section class="phpdocumentor-description"></section>
+        <section class="phpdocumentor-description"><p>New class name will be added no matter if it already exists or not, and the one to remove exists.</p>
+</section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -554,7 +585,8 @@
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                    <section class="phpdocumentor-description"><p>Class name to add, not validated for duplication</p>
+</section>
 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
@@ -562,7 +594,8 @@
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                    <section class="phpdocumentor-description"><p>Class name to remove, if it doesn't exist no error is triggered</p>
+</section>
 
             </dd>
             </dl>
@@ -589,15 +622,17 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Helpers/ClassList.php"><a href="files/src-helpers-classlist.html"><abbr title="src/Helpers/ClassList.php">ClassList.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">82</span>
+    <span class="phpdocumentor-element-found-in__line">95</span>
 </aside>
 
-    
+        <p class="phpdocumentor-summary">Toggle class name in the list.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">toggle</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$class</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Helpers-ClassList.html"><abbr title="\Nethead\Markup\Helpers\ClassList">ClassList</abbr></a></span></code>
 
-        <section class="phpdocumentor-description"></section>
+        <section class="phpdocumentor-description"><p>If the provided class name exists in the list it will be removed. It will be added otherwise.</p>
+</section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -606,7 +641,8 @@
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                    <section class="phpdocumentor-description"><p>Class name to toggle</p>
+</section>
 
             </dd>
             </dl>

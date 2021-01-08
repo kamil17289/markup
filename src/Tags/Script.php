@@ -6,7 +6,7 @@ use Nethead\Markup\Foundation\Tag;
 
 /**
  * Class Script
- * @package Nethead\Markup\Html
+ * @package Nethead\Markup\Tags
  */
 class Script extends Tag {
     /**

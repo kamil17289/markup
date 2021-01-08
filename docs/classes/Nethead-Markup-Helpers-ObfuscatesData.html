@@ -94,14 +94,33 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Helpers/ObfuscatesData.php"><a href="files/src-helpers-obfuscatesdata.html"><abbr title="src/Helpers/ObfuscatesData.php">ObfuscatesData.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">9</span>
+    <span class="phpdocumentor-element-found-in__line">14</span>
 </aside>
 
-            <p class="phpdocumentor-summary">Trait ObfuscatesData</p>
+            <p class="phpdocumentor-summary">Trait ObfuscatesData.</p>
 
-    <section class="phpdocumentor-description"></section>
+    <section class="phpdocumentor-description"><p>Uses a weird technique to obfuscate data. It can hide anything from crawlers and robots,
+for example your e-mail address. It uses a simple rot13 encryption (not very strong but tricky for robots)
+for encrypting your important data you can decode with the simple JS call below.</p>
+</section>
 
 
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">see</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                    <span class="phpdocumentor-tag-link"><a href="classes/Nethead-Markup-Tags-Mailto.html"><abbr title="\Nethead\Markup\Tags\Mailto">Mailto</abbr></a></span>
+                                        
+                                                 <section class="phpdocumentor-description"><p>For more information on how to obfuscate your data in HTML</p>
+</section>
+
+                                    </dd>
+                        </dl>
 
 
 
@@ -126,14 +145,14 @@
     <span>
                         &nbsp;: string    </span>
 </dt>
-<dd>Code the string to make it harder for robots to collect data</dd>
+<dd>Code the string to make it harder for robots to collect data.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Nethead-Markup-Helpers-ObfuscatesData.html#method_reverse">reverse()</a>
     <span>
                         &nbsp;: string    </span>
 </dt>
-<dd></dd>
+<dd>Reverse the string.</dd>
 
         </dl>
 
@@ -161,7 +180,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Helpers/ObfuscatesData.php"><a href="files/src-helpers-obfuscatesdata.html"><abbr title="src/Helpers/ObfuscatesData.php">ObfuscatesData.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">10</span>
+    <span class="phpdocumentor-element-found-in__line">15</span>
 </aside>
 
     
@@ -195,10 +214,10 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Helpers/ObfuscatesData.php"><a href="files/src-helpers-obfuscatesdata.html"><abbr title="src/Helpers/ObfuscatesData.php">ObfuscatesData.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">17</span>
+    <span class="phpdocumentor-element-found-in__line">23</span>
 </aside>
 
-        <p class="phpdocumentor-summary">Code the string to make it harder for robots to collect data</p>
+        <p class="phpdocumentor-summary">Code the string to make it harder for robots to collect data.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
@@ -213,7 +232,8 @@
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                  = <span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                    <section class="phpdocumentor-description"><p>Data you want to encode.</p>
+</section>
 
             </dd>
             </dl>
@@ -223,7 +243,8 @@
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">string</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
+            <section class="phpdocumentor-description"><p>Data encoded with simple rot13 encoding.</p>
+</section>
 
     
 </article>
@@ -240,10 +261,11 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Helpers/ObfuscatesData.php"><a href="files/src-helpers-obfuscatesdata.html"><abbr title="src/Helpers/ObfuscatesData.php">ObfuscatesData.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">29</span>
+    <span class="phpdocumentor-element-found-in__line">37</span>
 </aside>
 
-    
+        <p class="phpdocumentor-summary">Reverse the string.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
                 <span class="phpdocumentor-signature__name">reverse</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>

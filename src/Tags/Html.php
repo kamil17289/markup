@@ -5,15 +5,20 @@ namespace Nethead\Markup\Tags;
 use Nethead\Markup\Foundation\Tag;
 
 /**
- * Class Html
+ * Creates a "html" root element.
+ *
  * @package Nethead\Markup\Tags
  */
 class Html extends Tag {
     /**
      * Html constructor.
+     *
      * @param string $lang
-     * @param array $attributes
+     *  Language of the document, two-letters code. See https://www.w3schools.com/tags/ref_language_codes.asp
      * @param array $children
+     *  Child elements that will be put inside (images, texts, whatever)
+     * @param array $attributes
+     *  Additional HTML attributes you want to add
      */
     public function __construct(string $lang = 'en', array $attributes = [], array $children = [])
     {

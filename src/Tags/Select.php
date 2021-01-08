@@ -6,13 +6,17 @@ use Nethead\Markup\Foundation\Tag;
 use Nethead\Markup\Helpers\CanBeDisabled;
 use Nethead\Markup\Helpers\CanBeReadonly;
 use Nethead\Markup\Helpers\CanBeRequired;
+use Nethead\Markup\Helpers\CanGainAutoFocus;
 
 /**
  * Class Select
- * @package Nethead\Markup\Html
+ * @package Nethead\Markup\Tags
  */
 class Select extends Tag {
-    use CanBeDisabled, CanBeReadonly, CanBeRequired;
+    use CanBeDisabled,
+    CanBeReadonly,
+    CanBeRequired,
+    CanGainAutoFocus;
 
     /**
      * Select constructor.
@@ -25,26 +29,6 @@ class Select extends Tag {
         parent::__construct('select', $attributes, $options);
 
         $this->attrs()->set('name', $name);
-    }
-
-    /**
-     * @param $value
-     * @return Select
-     */
-    public function autofocus($value = true): Select
-    {
-        $this->attrs()->set('autofocus', (bool) $value);
-        return $this;
-    }
-
-    /**
-     * @param $value
-     * @return Select
-     */
-    public function required($value): Select
-    {
-        $this->attrs()->set('required', (bool) $value);
-        return $this;
     }
 
     /**

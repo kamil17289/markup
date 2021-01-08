@@ -5,8 +5,9 @@ namespace Nethead\Markup\Tags;
 use Nethead\Markup\Foundation\Tag;
 
 /**
- * Class Picture
- * @package Nethead\Markup\Html
+ * Creates "picture" element.
+ *
+ * @package Nethead\Markup\Tags
  */
 class Picture extends Tag {
     /**
@@ -16,6 +17,7 @@ class Picture extends Tag {
 
     /**
      * Picture constructor.
+     *
      * @param string $alt
      * @param array $attributes
      */
@@ -27,13 +29,15 @@ class Picture extends Tag {
     }
 
     /**
-     * Add <source> set to the <picture>
-     * @param string $media
+     * Add "source" element to the "picture"
+     *
+     * @param int $width
      * @param string $href
      * @param array $attributes
+     * @todo Image tag must be the last child of Picture
      * @return Picture
      */
-    public function source(string $href, string $media = '', array $attributes = []): Picture
+    public function source(string $href, int $width = 320, bool $up = true, array $attributes = []): Picture
     {
         if (empty($this->children)) {
             $this->addChildren([
@@ -42,7 +46,9 @@ class Picture extends Tag {
         }
         else {
             $this->addChildren([
-                new Source($href, $media, $attributes)
+                Source::make($attributes)
+                    ->srcset($href)
+                    ->media($width, $up)
             ]);
         }
 

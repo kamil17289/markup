@@ -136,6 +136,30 @@ class MarkupFactory {
     }
 
     /**
+     * Create a bookmark.
+     * @param array $contents What you want inside the link element.
+     * @param string|Tag $to
+     *  What to bookmark - if string is provided it will be used as the bookmark destination.
+     *  If $to is a Tag object it's ID will be fetched. If the object doesn't have the ID,
+     *  it will be generated automatically
+     *
+     * @see MarkupFactory::generateId()
+     * @return A
+     */
+    public static function bookmark(array $contents, $to): A
+    {
+        if ($to instanceof Tag) {
+            if (! $to->attrs()->get('id', false)) {
+                $to->attrs()->set('id', self::generateId());
+            }
+
+            return new A('#' . $to->attrs()->get('id'), $contents);
+        }
+
+        return new A('#' . $to, $contents);
+    }
+
+    /**
      * Create mailto: <a> element with encrypted e-mail address
      * @param string $email
      * @param string $text
@@ -663,5 +687,14 @@ class MarkupFactory {
         $form->enctype($enctype);
 
         return $form;
+    }
+
+    /**
+     * @param int $length
+     * @return string
+     */
+    public static function generateId(int $length = 5): string
+    {
+        return substr(md5(time()), 0, $length);
     }
 }

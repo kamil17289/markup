@@ -3,31 +3,39 @@
 namespace Nethead\Markup\Tags;
 
 use Nethead\Markup\Foundation\Tag;
+use Nethead\Markup\Helpers\CanBeAutoCompleted;
 use Nethead\Markup\Helpers\CanBeDisabled;
 use Nethead\Markup\Helpers\CanBeReadonly;
 use Nethead\Markup\Helpers\CanBeRequired;
 
 /**
- * Class Textarea
- * @package Nethead\Markup\Html
+ * Creates "textarea" element.
+ *
+ * @package Nethead\Markup\Tags
  */
 class Textarea extends Tag {
-    use CanBeDisabled, CanBeReadonly, CanBeRequired;
+    use CanBeDisabled, CanBeReadonly, CanBeRequired, CanBeAutoCompleted;
 
     /**
      * Textarea constructor.
+     *
      * @param string $name
+     *  Data field name
+     * @param array $children
+     *  Child elements that will be put inside (images, texts, whatever)
      * @param array $attributes
-     * @param array $contents
+     *  Additional HTML attributes you want to add
      */
-    public function __construct(string $name, array $attributes = [], array $contents = [])
+    public function __construct(string $name, array $attributes = [], array $children = [])
     {
-        parent::__construct('textarea', $attributes, $contents);
+        parent::__construct('textarea', $attributes, $children);
 
         $this->attrs()->set('name', $name);
     }
 
     /**
+     * Set the columns number for the textarea.
+     *
      * @param int $value
      * @return Textarea
      */
@@ -38,6 +46,8 @@ class Textarea extends Tag {
     }
 
     /**
+     * Set the rows number for the textarea.
+     *
      * @param int $value
      * @return Textarea
      */
@@ -48,27 +58,9 @@ class Textarea extends Tag {
     }
 
     /**
-     * @param bool $value
-     * @return Textarea
-     */
-    public function autocomplete(bool $value = true): Textarea
-    {
-        $this->attrs()->set('autocomplete', $value);
-        return $this;
-    }
-
-    /**
-     * @param bool $value
-     * @return Textarea
-     */
-    public function autofocus(bool $value = true): Textarea
-    {
-        $this->attrs()->set('autofocus', $value);
-        return $this;
-    }
-
-    /**
-     * @param int $value
+     * Set the maximum length for this textarea field.
+     *
+     * @param int $value Number of characters allowed to put inside the textarea
      * @return Textarea
      */
     public function maxlength(int $value): Textarea
@@ -78,22 +70,14 @@ class Textarea extends Tag {
     }
 
     /**
+     * Set the placeholder for the textarea.
+     *
      * @param string $value
      * @return Textarea
      */
     public function placeholder(string $value): Textarea
     {
         $this->attrs()->set('placeholder', $value);
-        return $this;
-    }
-
-    /**
-     * @param string $value
-     * @return Textarea
-     */
-    public function required(string $value): Textarea
-    {
-        $this->attrs()->set('required', $value);
         return $this;
     }
 }

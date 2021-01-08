@@ -3,7 +3,7 @@ Search.appendIndex(
                 {
             "fqsen": "\\Nethead\\Markup\\Foundation\\Document",
             "name": "Document",
-            "summary": "",
+            "summary": "Creates\u0020a\u0020whole\u0020HTML\u0020document.",
             "url": "classes/Nethead-Markup-Foundation-Document.html"
         },                {
             "fqsen": "\\Nethead\\Markup\\Foundation\\Document\u003A\u003A__construct\u0028\u0029",
@@ -13,7 +13,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Nethead\\Markup\\Foundation\\Document\u003A\u003A\u0024doctype",
             "name": "doctype",
-            "summary": "",
+            "summary": "Holds\u0020the\u0020doctype\u0020declaration\u0020for\u0020this\u0020document",
             "url": "classes/Nethead-Markup-Foundation-Document.html#property_doctype"
         },                {
             "fqsen": "\\Nethead\\Markup\\Foundation\\Document\u003A\u003Ahead\u0028\u0029",
@@ -23,27 +23,27 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Nethead\\Markup\\Foundation\\Document\u003A\u003Atitle\u0028\u0029",
             "name": "title",
-            "summary": "",
+            "summary": "Give\u0020this\u0020document\u0020a\u0020title\u0021",
             "url": "classes/Nethead-Markup-Foundation-Document.html#method_title"
         },                {
             "fqsen": "\\Nethead\\Markup\\Foundation\\Document\u003A\u003Ameta\u0028\u0029",
             "name": "meta",
-            "summary": "",
+            "summary": "Add\u0020any\u0020meta\u0020tags\u0020to\u0020head\u0020element.",
             "url": "classes/Nethead-Markup-Foundation-Document.html#method_meta"
         },                {
             "fqsen": "\\Nethead\\Markup\\Foundation\\Document\u003A\u003Acharset\u0028\u0029",
             "name": "charset",
-            "summary": "",
+            "summary": "Set\u0020the\u0020charset\u0020meta\u0020tag\u0020for\u0020this\u0020document.",
             "url": "classes/Nethead-Markup-Foundation-Document.html#method_charset"
         },                {
             "fqsen": "\\Nethead\\Markup\\Foundation\\Document\u003A\u003AtoHead\u0028\u0029",
             "name": "toHead",
-            "summary": "",
+            "summary": "Add\u0020more\u0020child\u0020elements\u0020to\u0020the\u0020head.",
             "url": "classes/Nethead-Markup-Foundation-Document.html#method_toHead"
         },                {
             "fqsen": "\\Nethead\\Markup\\Foundation\\Document\u003A\u003AtoBody\u0028\u0029",
             "name": "toBody",
-            "summary": "",
+            "summary": "Add\u0020more\u0020elements\u0020to\u0020the\u0020body",
             "url": "classes/Nethead-Markup-Foundation-Document.html#method_toBody"
         },                {
             "fqsen": "\\Nethead\\Markup\\Foundation\\Document\u003A\u003Abody\u0028\u0029",
@@ -53,7 +53,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Nethead\\Markup\\Foundation\\Document\u003A\u003A__toString\u0028\u0029",
             "name": "__toString",
-            "summary": "",
+            "summary": "Compile\u0020the\u0020object\u0020into\u0020HTML\u0020string",
             "url": "classes/Nethead-Markup-Foundation-Document.html#method___toString"
         },                {
             "fqsen": "\\Nethead\\Markup\\Foundation\\Document\u003A\u003ADOC_HTML5",
@@ -73,12 +73,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Nethead\\Markup\\Foundation\\Document\u003A\u003A\u0024html",
             "name": "html",
-            "summary": "",
+            "summary": "Root\u0020element\u0020of\u0020every\u0020HTML\u0020document",
             "url": "classes/Nethead-Markup-Foundation-Document.html#property_html"
         },                {
             "fqsen": "\\Nethead\\Markup\\Foundation\\RichTextNode",
             "name": "RichTextNode",
-            "summary": "Class\u0020RichTextNode",
+            "summary": "Creates\u0020rich\u0020formatted\u0020texts\u0020in\u0020HTML.",
             "url": "classes/Nethead-Markup-Foundation-RichTextNode.html"
         },                {
             "fqsen": "\\Nethead\\Markup\\Foundation\\RichTextNode\u003A\u003A__construct\u0028\u0029",
@@ -88,22 +88,22 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Nethead\\Markup\\Foundation\\RichTextNode\u003A\u003Ah\u0028\u0029",
             "name": "h",
-            "summary": "",
+            "summary": "Add\u0020a\u0020HTML\u0020header\u0020of\u0020desired\u0020level\u0020\u00281\u002D6\u0029",
             "url": "classes/Nethead-Markup-Foundation-RichTextNode.html#method_h"
         },                {
             "fqsen": "\\Nethead\\Markup\\Foundation\\RichTextNode\u003A\u003Abr\u0028\u0029",
             "name": "br",
-            "summary": "",
+            "summary": "Create\u0020a\u0020line\u0020break.",
             "url": "classes/Nethead-Markup-Foundation-RichTextNode.html#method_br"
         },                {
             "fqsen": "\\Nethead\\Markup\\Foundation\\RichTextNode\u003A\u003Aplain\u0028\u0029",
             "name": "plain",
-            "summary": "",
+            "summary": "Add\u0020a\u0020plain\u0020text.",
             "url": "classes/Nethead-Markup-Foundation-RichTextNode.html#method_plain"
         },                {
             "fqsen": "\\Nethead\\Markup\\Foundation\\RichTextNode\u003A\u003Astrong\u0028\u0029",
             "name": "strong",
-            "summary": "",
+            "summary": "Add\u0020a\u0020bold\u0020text\u0020using\u0020\u0026lt\u003Bstrong\u0026gt\u003B\u0020element.",
             "url": "classes/Nethead-Markup-Foundation-RichTextNode.html#method_strong"
         },                {
             "fqsen": "\\Nethead\\Markup\\Foundation\\RichTextNode\u003A\u003Ab\u0028\u0029",
@@ -113,92 +113,97 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Nethead\\Markup\\Foundation\\RichTextNode\u003A\u003Aunderline\u0028\u0029",
             "name": "underline",
-            "summary": "",
+            "summary": "Add\u0020underlined\u0020text\u0020using\u0020\u0026lt\u003Bu\u0026gt\u003B\u0020tag",
             "url": "classes/Nethead-Markup-Foundation-RichTextNode.html#method_underline"
         },                {
             "fqsen": "\\Nethead\\Markup\\Foundation\\RichTextNode\u003A\u003Aabbr\u0028\u0029",
             "name": "abbr",
-            "summary": "",
+            "summary": "Add\u0020abbreviation\u0020to\u0020your\u0020text",
             "url": "classes/Nethead-Markup-Foundation-RichTextNode.html#method_abbr"
         },                {
             "fqsen": "\\Nethead\\Markup\\Foundation\\RichTextNode\u003A\u003Aquote\u0028\u0029",
             "name": "quote",
-            "summary": "",
+            "summary": "Add\u0020a\u0020\u0026lt\u003Bblockquote\u0026gt\u003B\u0020to\u0020your\u0020text.",
             "url": "classes/Nethead-Markup-Foundation-RichTextNode.html#method_quote"
         },                {
             "fqsen": "\\Nethead\\Markup\\Foundation\\RichTextNode\u003A\u003Adel\u0028\u0029",
             "name": "del",
-            "summary": "",
+            "summary": "Add\u0020a\u0020strikethrough\u0020text\u0020using\u0020\u0026lt\u003Bdel\u0026gt\u003B\u0020element.",
             "url": "classes/Nethead-Markup-Foundation-RichTextNode.html#method_del"
         },                {
             "fqsen": "\\Nethead\\Markup\\Foundation\\RichTextNode\u003A\u003Ains\u0028\u0029",
             "name": "ins",
-            "summary": "",
+            "summary": "Add\u0020\u0022inserted\u0022\u0020text.",
             "url": "classes/Nethead-Markup-Foundation-RichTextNode.html#method_ins"
         },                {
             "fqsen": "\\Nethead\\Markup\\Foundation\\RichTextNode\u003A\u003Aem\u0028\u0029",
             "name": "em",
-            "summary": "",
+            "summary": "Add\u0020emphasised\u0020text.",
             "url": "classes/Nethead-Markup-Foundation-RichTextNode.html#method_em"
         },                {
             "fqsen": "\\Nethead\\Markup\\Foundation\\RichTextNode\u003A\u003Ai\u0028\u0029",
             "name": "i",
-            "summary": "",
+            "summary": "Add\u0020simple\u0020italic\u0020text\u0020using\u0020\u0026lt\u003Bi\u0026gt\u003B\u0020element.",
             "url": "classes/Nethead-Markup-Foundation-RichTextNode.html#method_i"
         },                {
             "fqsen": "\\Nethead\\Markup\\Foundation\\RichTextNode\u003A\u003Ahr\u0028\u0029",
             "name": "hr",
-            "summary": "",
+            "summary": "Add\u0020a\u0020horizontal\u0020line",
             "url": "classes/Nethead-Markup-Foundation-RichTextNode.html#method_hr"
         },                {
             "fqsen": "\\Nethead\\Markup\\Foundation\\RichTextNode\u003A\u003Akbd\u0028\u0029",
             "name": "kbd",
-            "summary": "",
+            "summary": "Add\u0020a\u0020keyboard\u0020input.",
             "url": "classes/Nethead-Markup-Foundation-RichTextNode.html#method_kbd"
         },                {
             "fqsen": "\\Nethead\\Markup\\Foundation\\RichTextNode\u003A\u003Aq\u0028\u0029",
             "name": "q",
-            "summary": "",
+            "summary": "Add\u0020a\u0020quotation\u0020using\u0020\u0026lt\u003Bq\u0026gt\u003B\u0020element.",
             "url": "classes/Nethead-Markup-Foundation-RichTextNode.html#method_q"
         },                {
             "fqsen": "\\Nethead\\Markup\\Foundation\\RichTextNode\u003A\u003Aspan\u0028\u0029",
             "name": "span",
-            "summary": "",
+            "summary": "Add\u0020a\u0020\u0026lt\u003Bspan\u0026gt\u003B\u0020element\u0020with\u0020custom\u0020CSS\u0020classes",
             "url": "classes/Nethead-Markup-Foundation-RichTextNode.html#method_span"
         },                {
             "fqsen": "\\Nethead\\Markup\\Foundation\\RichTextNode\u003A\u003Asup\u0028\u0029",
             "name": "sup",
-            "summary": "",
+            "summary": "Add\u0020a\u0020superscript.",
             "url": "classes/Nethead-Markup-Foundation-RichTextNode.html#method_sup"
         },                {
             "fqsen": "\\Nethead\\Markup\\Foundation\\RichTextNode\u003A\u003Asub\u0028\u0029",
             "name": "sub",
-            "summary": "",
+            "summary": "Add\u0020a\u0020subscript.",
             "url": "classes/Nethead-Markup-Foundation-RichTextNode.html#method_sub"
         },                {
             "fqsen": "\\Nethead\\Markup\\Foundation\\RichTextNode\u003A\u003Atime\u0028\u0029",
             "name": "time",
-            "summary": "",
+            "summary": "Add\u0020a\u0020time\u0020element.",
             "url": "classes/Nethead-Markup-Foundation-RichTextNode.html#method_time"
         },                {
             "fqsen": "\\Nethead\\Markup\\Foundation\\RichTextNode\u003A\u003Awbr\u0028\u0029",
             "name": "wbr",
-            "summary": "",
+            "summary": "Add\u0020a\u0020line\u0020break\u0020opportunity.",
             "url": "classes/Nethead-Markup-Foundation-RichTextNode.html#method_wbr"
+        },                {
+            "fqsen": "\\Nethead\\Markup\\Foundation\\RichTextNode\u003A\u003Amark\u0028\u0029",
+            "name": "mark",
+            "summary": "Add\u0020a\u0020marked\/highlighted\u0020text.",
+            "url": "classes/Nethead-Markup-Foundation-RichTextNode.html#method_mark"
         },                {
             "fqsen": "\\Nethead\\Markup\\Foundation\\RichTextNode\u003A\u003A__toString\u0028\u0029",
             "name": "__toString",
-            "summary": "",
+            "summary": "Convert\u0020the\u0020RichTextNode\u0020to\u0020HTML\u0020string",
             "url": "classes/Nethead-Markup-Foundation-RichTextNode.html#method___toString"
         },                {
             "fqsen": "\\Nethead\\Markup\\Foundation\\RichTextNode\u003A\u003A\u0024contents",
             "name": "contents",
-            "summary": "",
+            "summary": "The\u0020contents\u0020of\u0020the\u0020node",
             "url": "classes/Nethead-Markup-Foundation-RichTextNode.html#property_contents"
         },                {
             "fqsen": "\\Nethead\\Markup\\Foundation\\Tag",
             "name": "Tag",
-            "summary": "Class\u0020Tag",
+            "summary": "A\u0020class\u0020for\u0020creating\u0020any\u0020HTML\u0020tag\u0020element\u0020you\u0020would\u0020like.",
             "url": "classes/Nethead-Markup-Foundation-Tag.html"
         },                {
             "fqsen": "\\Nethead\\Markup\\Foundation\\Tag\u003A\u003A__construct\u0028\u0029",
@@ -223,7 +228,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Nethead\\Markup\\Foundation\\Tag\u003A\u003AremoveChild\u0028\u0029",
             "name": "removeChild",
-            "summary": "Remove\u0020child\u0020element",
+            "summary": "Remove\u0020child\u0020element\u0020of\u0020a\u0020given\u0020key",
             "url": "classes/Nethead-Markup-Foundation-Tag.html#method_removeChild"
         },                {
             "fqsen": "\\Nethead\\Markup\\Foundation\\Tag\u003A\u003AaddChildren\u0028\u0029",
@@ -233,27 +238,27 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Nethead\\Markup\\Foundation\\Tag\u003A\u003A\u0024attrs",
             "name": "attrs",
-            "summary": "",
+            "summary": "HTML\u0020attributes\u0020of\u0020this\u0020Tag",
             "url": "classes/Nethead-Markup-Foundation-Tag.html#property_attrs"
         },                {
             "fqsen": "\\Nethead\\Markup\\Foundation\\Tag\u003A\u003AclassList\u0028\u0029",
             "name": "classList",
-            "summary": "Modify\u0020the\u0020class\u0020attribute\u0020directly",
+            "summary": "Modify\u0020the\u0020class\u0020attribute\u0020directly,\u0020without\u0020calling\u0020\u002D\u003Eattrs\u0028\u0029",
             "url": "classes/Nethead-Markup-Foundation-Tag.html#method_classList"
         },                {
             "fqsen": "\\Nethead\\Markup\\Foundation\\Tag\u003A\u003Awith\u0028\u0029",
             "name": "with",
-            "summary": "",
+            "summary": "Pass\u0020the\u0020Tag\u0020instance\u0020to\u0020any\u0020processing\u0020function\u0020for\u0020further\u0020modification.",
             "url": "classes/Nethead-Markup-Foundation-Tag.html#method_with"
         },                {
             "fqsen": "\\Nethead\\Markup\\Foundation\\Tag\u003A\u003A__toString\u0028\u0029",
             "name": "__toString",
-            "summary": "Render\u0020the\u0020tag",
+            "summary": "Magic\u0020method\u0020to\u0020make\u0020the\u0020Tag\u0020object\u0020convertible\u0020to\u0020string",
             "url": "classes/Nethead-Markup-Foundation-Tag.html#method___toString"
         },                {
             "fqsen": "\\Nethead\\Markup\\Foundation\\Tag\u003A\u003Arender\u0028\u0029",
             "name": "render",
-            "summary": "",
+            "summary": "Render\u0020the\u0020tag\u0020object\u0020to\u0020string.",
             "url": "classes/Nethead-Markup-Foundation-Tag.html#method_render"
         },                {
             "fqsen": "\\Nethead\\Markup\\Foundation\\Tag\u003A\u003AisVoidElement\u0028\u0029",
@@ -263,37 +268,37 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Nethead\\Markup\\Foundation\\Tag\u003A\u003Aopen\u0028\u0029",
             "name": "open",
-            "summary": "",
+            "summary": "Open\u0020the\u0020Tag\u0020in\u0020HTML.",
             "url": "classes/Nethead-Markup-Foundation-Tag.html#method_open"
         },                {
             "fqsen": "\\Nethead\\Markup\\Foundation\\Tag\u003A\u003ArenderChildren\u0028\u0029",
             "name": "renderChildren",
-            "summary": "",
+            "summary": "Render\u0020child\u0020elements\u0020of\u0020this\u0020Tag.",
             "url": "classes/Nethead-Markup-Foundation-Tag.html#method_renderChildren"
         },                {
             "fqsen": "\\Nethead\\Markup\\Foundation\\Tag\u003A\u003Aclose\u0028\u0029",
             "name": "close",
-            "summary": "Close\u0020the\u0020tag",
+            "summary": "Close\u0020the\u0020tag.",
             "url": "classes/Nethead-Markup-Foundation-Tag.html#method_close"
         },                {
             "fqsen": "\\Nethead\\Markup\\Foundation\\Tag\u003A\u003A__call\u0028\u0029",
             "name": "__call",
-            "summary": "Intercept\u0020any\u0020calls\u0020to\u0020undefined\u0020methods\u0020and\u0020use\u0020it\u0020for\u0020convenient\u0020attributes\u0020setting\nOnly\u0020global\u0020attributes\u0020can\u0020be\u0020set\u0020this\u0020way.",
+            "summary": "Intercept\u0020any\u0020calls\u0020to\u0020undefined\u0020methods\u0020and\u0020use\u0020it\u0020for\u0020convenient\u0020attributes\u0020setting.",
             "url": "classes/Nethead-Markup-Foundation-Tag.html#method___call"
         },                {
             "fqsen": "\\Nethead\\Markup\\Foundation\\Tag\u003A\u003A\u0024name",
             "name": "name",
-            "summary": "Tag\u0020name\u0020\u0028a,\u0020title,\u0020meta,\u0020etc\u0029",
+            "summary": "Name\u0020of\u0020the\u0020tag\u0020\u0028in\u0020HTML\u0029.",
             "url": "classes/Nethead-Markup-Foundation-Tag.html#property_name"
         },                {
             "fqsen": "\\Nethead\\Markup\\Foundation\\Tag\u003A\u003A\u0024children",
             "name": "children",
-            "summary": "Children\u0020of\u0020this\u0020tag",
+            "summary": "Children\u0020of\u0020this\u0020tag.",
             "url": "classes/Nethead-Markup-Foundation-Tag.html#property_children"
         },                {
             "fqsen": "\\Nethead\\Markup\\Foundation\\TextNode",
             "name": "TextNode",
-            "summary": "Class\u0020TextNode",
+            "summary": "Class\u0020TextNode\u0020is\u0020used\u0020for\u0020adding\u0020texts\u0020inside\u0020of\u0020HTML\u0020tags.",
             "url": "classes/Nethead-Markup-Foundation-TextNode.html"
         },                {
             "fqsen": "\\Nethead\\Markup\\Foundation\\TextNode\u003A\u003A__construct\u0028\u0029",
@@ -303,82 +308,82 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Nethead\\Markup\\Foundation\\TextNode\u003A\u003Amake\u0028\u0029",
             "name": "make",
-            "summary": "",
+            "summary": "Helper\u0020method\u0020for\u0020fast\u0020creating\u0020new\u0020text\u0020nodes.",
             "url": "classes/Nethead-Markup-Foundation-TextNode.html#method_make"
         },                {
             "fqsen": "\\Nethead\\Markup\\Foundation\\TextNode\u003A\u003Aappend\u0028\u0029",
             "name": "append",
-            "summary": "",
+            "summary": "Append\u0020some\u0020characters\u0020at\u0020the\u0020end\u0020of\u0020the\u0020string.",
             "url": "classes/Nethead-Markup-Foundation-TextNode.html#method_append"
         },                {
             "fqsen": "\\Nethead\\Markup\\Foundation\\TextNode\u003A\u003Arender\u0028\u0029",
             "name": "render",
-            "summary": "",
+            "summary": "Render\u0020the\u0020contents\u0020as\u0020a\u0020safe\u0020HTML\u0020string.",
             "url": "classes/Nethead-Markup-Foundation-TextNode.html#method_render"
         },                {
             "fqsen": "\\Nethead\\Markup\\Foundation\\TextNode\u003A\u003A__toString\u0028\u0029",
             "name": "__toString",
-            "summary": "",
+            "summary": "Magic\u0020method\u0020for\u0020casting\u0020the\u0020object\u0020to\u0020a\u0020string\u0020type.",
             "url": "classes/Nethead-Markup-Foundation-TextNode.html#method___toString"
         },                {
             "fqsen": "\\Nethead\\Markup\\Foundation\\TextNode\u003A\u003A\u0024contents",
             "name": "contents",
-            "summary": "",
+            "summary": "The\u0020text\u0020contents\u0020of\u0020the\u0020node",
             "url": "classes/Nethead-Markup-Foundation-TextNode.html#property_contents"
         },                {
             "fqsen": "\\Nethead\\Markup\\Helpers\\BindableToForm",
             "name": "BindableToForm",
-            "summary": "Trait\u0020BindableToForm",
+            "summary": "Trait\u0020BindableToForm.",
             "url": "classes/Nethead-Markup-Helpers-BindableToForm.html"
         },                {
             "fqsen": "\\Nethead\\Markup\\Helpers\\BindableToForm\u003A\u003AbindForm\u0028\u0029",
             "name": "bindForm",
-            "summary": "",
+            "summary": "Bind\u0020the\u0020element\u0020to\u0020form.",
             "url": "classes/Nethead-Markup-Helpers-BindableToForm.html#method_bindForm"
         },                {
             "fqsen": "\\Nethead\\Markup\\Helpers\\CanBeDisabled",
             "name": "CanBeDisabled",
-            "summary": "Trait\u0020CanBeDisabled",
+            "summary": "Trait\u0020CanBeDisabled.",
             "url": "classes/Nethead-Markup-Helpers-CanBeDisabled.html"
         },                {
             "fqsen": "\\Nethead\\Markup\\Helpers\\CanBeDisabled\u003A\u003Adisabled\u0028\u0029",
             "name": "disabled",
-            "summary": "",
+            "summary": "Disable\u0020or\u0020enable\u0020the\u0020element.",
             "url": "classes/Nethead-Markup-Helpers-CanBeDisabled.html#method_disabled"
         },                {
             "fqsen": "\\Nethead\\Markup\\Helpers\\CanBeDraggable",
             "name": "CanBeDraggable",
-            "summary": "Trait\u0020CanBeDraggable",
+            "summary": "Trait\u0020CanBeDraggable.",
             "url": "classes/Nethead-Markup-Helpers-CanBeDraggable.html"
         },                {
             "fqsen": "\\Nethead\\Markup\\Helpers\\CanBeDraggable\u003A\u003Adraggable\u0028\u0029",
             "name": "draggable",
-            "summary": "",
+            "summary": "Add\u0020or\u0020remove\u0020the\u0020draggable\u0020attribute\u0020on\u0020this\u0020element.",
             "url": "classes/Nethead-Markup-Helpers-CanBeDraggable.html#method_draggable"
         },                {
             "fqsen": "\\Nethead\\Markup\\Helpers\\CanBeReadonly",
             "name": "CanBeReadonly",
-            "summary": "Trait\u0020CanBeReadonly",
+            "summary": "Trait\u0020CanBeReadonly.",
             "url": "classes/Nethead-Markup-Helpers-CanBeReadonly.html"
         },                {
             "fqsen": "\\Nethead\\Markup\\Helpers\\CanBeReadonly\u003A\u003Areadonly\u0028\u0029",
             "name": "readonly",
-            "summary": "",
+            "summary": "Add\u0020or\u0020remove\u0020the\u0020readonly\u0020attribute\u0020on\u0020this\u0020element.",
             "url": "classes/Nethead-Markup-Helpers-CanBeReadonly.html#method_readonly"
         },                {
             "fqsen": "\\Nethead\\Markup\\Helpers\\CanBeRequired",
             "name": "CanBeRequired",
-            "summary": "Trait\u0020CanBeRequired",
+            "summary": "Trait\u0020CanBeRequired.",
             "url": "classes/Nethead-Markup-Helpers-CanBeRequired.html"
         },                {
             "fqsen": "\\Nethead\\Markup\\Helpers\\CanBeRequired\u003A\u003Arequired\u0028\u0029",
             "name": "required",
-            "summary": "",
+            "summary": "Add\u0020or\u0020remove\u0020the\u0020required\u0020attribute\u0020on\u0020this\u0020element.",
             "url": "classes/Nethead-Markup-Helpers-CanBeRequired.html#method_required"
         },                {
             "fqsen": "\\Nethead\\Markup\\Helpers\\ClassList",
             "name": "ClassList",
-            "summary": "Class\u0020ClassList",
+            "summary": "Helper\u0020for\u0020CSS\u0020class\u0020manipulation.",
             "url": "classes/Nethead-Markup-Helpers-ClassList.html"
         },                {
             "fqsen": "\\Nethead\\Markup\\Helpers\\ClassList\u003A\u003A__construct\u0028\u0029",
@@ -393,37 +398,37 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Nethead\\Markup\\Helpers\\ClassList\u003A\u003Aremove\u0028\u0029",
             "name": "remove",
-            "summary": "Remove\u0020class",
+            "summary": "Remove\u0020class\u0020name\u0020from\u0020the\u0020list.",
             "url": "classes/Nethead-Markup-Helpers-ClassList.html#method_remove"
         },                {
             "fqsen": "\\Nethead\\Markup\\Helpers\\ClassList\u003A\u003Acontains\u0028\u0029",
             "name": "contains",
-            "summary": "",
+            "summary": "Check\u0020if\u0020the\u0020class\u0020name\u0020was\u0020added\u0020to\u0020this\u0020list.",
             "url": "classes/Nethead-Markup-Helpers-ClassList.html#method_contains"
         },                {
             "fqsen": "\\Nethead\\Markup\\Helpers\\ClassList\u003A\u003Areplace\u0028\u0029",
             "name": "replace",
-            "summary": "",
+            "summary": "Remove\u0020a\u0020class\u0020and\u0020add\u0020another.",
             "url": "classes/Nethead-Markup-Helpers-ClassList.html#method_replace"
         },                {
             "fqsen": "\\Nethead\\Markup\\Helpers\\ClassList\u003A\u003Atoggle\u0028\u0029",
             "name": "toggle",
-            "summary": "",
+            "summary": "Toggle\u0020class\u0020name\u0020in\u0020the\u0020list.",
             "url": "classes/Nethead-Markup-Helpers-ClassList.html#method_toggle"
         },                {
             "fqsen": "\\Nethead\\Markup\\Helpers\\ClassList\u003A\u003Aempty\u0028\u0029",
             "name": "empty",
-            "summary": "",
+            "summary": "Check\u0020if\u0020the\u0020list\u0020contains\u0020any\u0020class\u0020names",
             "url": "classes/Nethead-Markup-Helpers-ClassList.html#method_empty"
         },                {
             "fqsen": "\\Nethead\\Markup\\Helpers\\ClassList\u003A\u003Arender\u0028\u0029",
             "name": "render",
-            "summary": "",
+            "summary": "Implode\u0020the\u0020class\u0020list\u0020to\u0020a\u0020string.",
             "url": "classes/Nethead-Markup-Helpers-ClassList.html#method_render"
         },                {
             "fqsen": "\\Nethead\\Markup\\Helpers\\ClassList\u003A\u003A__toString\u0028\u0029",
             "name": "__toString",
-            "summary": "Implode\u0020the\u0020class\u0020list\u0020to\u0020a\u0020string\u0020without\u0020duplicates",
+            "summary": "Convert\u0020the\u0020ClasList\u0020object\u0020to\u0020a\u0020string.",
             "url": "classes/Nethead-Markup-Helpers-ClassList.html#method___toString"
         },                {
             "fqsen": "\\Nethead\\Markup\\Helpers\\ClassList\u003A\u003A\u0024classList",
@@ -433,7 +438,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Nethead\\Markup\\Helpers\\HtmlAttributes",
             "name": "HtmlAttributes",
-            "summary": "",
+            "summary": "Helper\u0020class\u0020for\u0020HTML\u0020attributes\u0020manipulation.",
             "url": "classes/Nethead-Markup-Helpers-HtmlAttributes.html"
         },                {
             "fqsen": "\\Nethead\\Markup\\Helpers\\HtmlAttributes\u003A\u003A__construct\u0028\u0029",
@@ -443,118 +448,133 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Nethead\\Markup\\Helpers\\HtmlAttributes\u003A\u003A\u0024classList",
             "name": "classList",
-            "summary": "",
+            "summary": "ClassList\u0020object\u0020helper",
             "url": "classes/Nethead-Markup-Helpers-HtmlAttributes.html#property_classList"
         },                {
             "fqsen": "\\Nethead\\Markup\\Helpers\\HtmlAttributes\u003A\u003Aset\u0028\u0029",
             "name": "set",
-            "summary": "Set\u0020one\u0020of\u0020the\u0020HTML\u0020attributes\nNo\u0020value\u0020escaping\u0020here\u0020as\u0020some\u0020of\u0020them\u0020can\u0020be\u0020boolean\/null\u0020types\nYou\u0020can\u0020also\u0020use\u0020this\u0020to\u0020remove\u0020the\u0020attribute\u0020by\u0020giving\u0020it\u0020false\u0020as\u0020the\u0020value",
+            "summary": "Set\u0020one\u0020of\u0020the\u0020HTML\u0020attributes.",
             "url": "classes/Nethead-Markup-Helpers-HtmlAttributes.html#method_set"
         },                {
             "fqsen": "\\Nethead\\Markup\\Helpers\\HtmlAttributes\u003A\u003AsetMany\u0028\u0029",
             "name": "setMany",
-            "summary": "",
+            "summary": "Set\u0020many\u0020attributes\u0020in\u0020one\u0020call.",
             "url": "classes/Nethead-Markup-Helpers-HtmlAttributes.html#method_setMany"
         },                {
             "fqsen": "\\Nethead\\Markup\\Helpers\\HtmlAttributes\u003A\u003Aget\u0028\u0029",
             "name": "get",
-            "summary": "Get\u0020value\u0020of\u0020one\u0020of\u0020the\u0020attributes\nCall\u0020without\u0020parameters\u0020to\u0020get\u0020all",
+            "summary": "Get\u0020value\u0020of\u0020the\u0020attribute\u0020of\u0020given\u0020name.",
             "url": "classes/Nethead-Markup-Helpers-HtmlAttributes.html#method_get"
         },                {
             "fqsen": "\\Nethead\\Markup\\Helpers\\HtmlAttributes\u003A\u003Aremove\u0028\u0029",
             "name": "remove",
-            "summary": "Remove\u0020the\u0020given\u0020attribute\u0020from\u0020list",
+            "summary": "Remove\u0020the\u0020given\u0020attribute\u0028s\u0029\u0020from\u0020list.",
             "url": "classes/Nethead-Markup-Helpers-HtmlAttributes.html#method_remove"
         },                {
             "fqsen": "\\Nethead\\Markup\\Helpers\\HtmlAttributes\u003A\u003Adata\u0028\u0029",
             "name": "data",
-            "summary": "Set\u0020the\u0020data\u002D\u002A\u0020attribute\u0020and\u0020value\u0020for\u0020the\u0020element",
+            "summary": "Set\u0020the\u0020data\u002D\u002A\u0020attribute\u0020for\u0020the\u0020element.",
             "url": "classes/Nethead-Markup-Helpers-HtmlAttributes.html#method_data"
         },                {
             "fqsen": "\\Nethead\\Markup\\Helpers\\HtmlAttributes\u003A\u003Aaria\u0028\u0029",
             "name": "aria",
-            "summary": "Set\u0020the\u0020aria\u002D\u002A\u0020attribute\u0020and\u0020value\u0020for\u0020the\u0020element",
+            "summary": "Set\u0020the\u0020aria\u002D\u002A\u0020attribute\u0020for\u0020the\u0020element.",
             "url": "classes/Nethead-Markup-Helpers-HtmlAttributes.html#method_aria"
         },                {
             "fqsen": "\\Nethead\\Markup\\Helpers\\HtmlAttributes\u003A\u003Arender\u0028\u0029",
             "name": "render",
-            "summary": "Render\u0020the\u0020attributes\u0020as\u0020HTML\u0020string",
+            "summary": "Render\u0020the\u0020attributes\u0020as\u0020HTML\u0020string.",
             "url": "classes/Nethead-Markup-Helpers-HtmlAttributes.html#method_render"
         },                {
             "fqsen": "\\Nethead\\Markup\\Helpers\\HtmlAttributes\u003A\u003A__toString\u0028\u0029",
             "name": "__toString",
-            "summary": "",
+            "summary": "Convert\u0020the\u0020HtmlAtributes\u0020object\u0020into\u0020HTML\u0020string.",
             "url": "classes/Nethead-Markup-Helpers-HtmlAttributes.html#method___toString"
         },                {
             "fqsen": "\\Nethead\\Markup\\Helpers\\HtmlAttributes\u003A\u003A\u0024attrs",
             "name": "attrs",
-            "summary": "",
+            "summary": "List\u0020of\u0020HTML\u0020element\u0020attributes",
             "url": "classes/Nethead-Markup-Helpers-HtmlAttributes.html#property_attrs"
         },                {
             "fqsen": "\\Nethead\\Markup\\Helpers\\HtmlConfig",
             "name": "HtmlConfig",
-            "summary": "",
+            "summary": "Class\u0020HtmlConfig.",
             "url": "classes/Nethead-Markup-Helpers-HtmlConfig.html"
         },                {
             "fqsen": "\\Nethead\\Markup\\Helpers\\HtmlConfig\u003A\u003A\u0024voidElements",
             "name": "voidElements",
-            "summary": "HTML\u00205.3\u0020void\u0020elements",
+            "summary": "HTML\u00205.3\u0020void\u0020elements\u0020list.",
             "url": "classes/Nethead-Markup-Helpers-HtmlConfig.html#property_voidElements"
         },                {
             "fqsen": "\\Nethead\\Markup\\Helpers\\HtmlConfig\u003A\u003A\u0024globalAttributes",
             "name": "globalAttributes",
-            "summary": "Global\u0020attributes\u0020supported\u0020by\u0020every\u0020HTML\u0020tag",
+            "summary": "Global\u0020attributes\u0020supported\u0020by\u0020every\u0020HTML\u0020tag.",
             "url": "classes/Nethead-Markup-Helpers-HtmlConfig.html#property_globalAttributes"
         },                {
             "fqsen": "\\Nethead\\Markup\\Helpers\\HtmlConfig\u003A\u003A\u0024closeVoids",
             "name": "closeVoids",
-            "summary": "",
+            "summary": "If\u0020set\u0020to\u0020true,\u0020void\u0020tags\u0020will\u0020be\u0020always\u0020closed.\u0020Useful\u0020when\u0020you\u0020are\u0020working\u0020in\u0020XHTML.",
             "url": "classes/Nethead-Markup-Helpers-HtmlConfig.html#property_closeVoids"
         },                {
             "fqsen": "\\Nethead\\Markup\\Helpers\\HtmlConfig\u003A\u003A\u0024notEscapedAttributes",
             "name": "notEscapedAttributes",
-            "summary": "List\u0020of\u0020attributes\u0020which\u0020value\u0020shouldn\u0027t\u0020be\u0020escaped",
+            "summary": "List\u0020of\u0020attributes\u0020which\u0020value\u0020shouldn\u0027t\u0020be\u0020escaped.",
             "url": "classes/Nethead-Markup-Helpers-HtmlConfig.html#property_notEscapedAttributes"
+        },                {
+            "fqsen": "\\Nethead\\Markup\\Helpers\\HtmlConfig\u003A\u003A\u0024defaultIconsFactory",
+            "name": "defaultIconsFactory",
+            "summary": "Change\u0020if\u0020you\u0020have\u0020your\u0020own\u0020factory\u0020or\u0020you\u0020want\u0020to\u0020use\u0020diferent\u0020icons\u0020set.",
+            "url": "classes/Nethead-Markup-Helpers-HtmlConfig.html#property_defaultIconsFactory"
         },                {
             "fqsen": "\\Nethead\\Markup\\Helpers\\IconsFactory",
             "name": "IconsFactory",
-            "summary": "Class\u0020IconsFactory",
+            "summary": "Class\u0020IconsFactory.",
             "url": "classes/Nethead-Markup-Helpers-IconsFactory.html"
+        },                {
+            "fqsen": "\\Nethead\\Markup\\Helpers\\IconsFactory\u003A\u003Aicon\u0028\u0029",
+            "name": "icon",
+            "summary": "A\u0020shortcut\u0020for\u0020rendering\u0020icons.",
+            "url": "classes/Nethead-Markup-Helpers-IconsFactory.html#method_icon"
         },                {
             "fqsen": "\\Nethead\\Markup\\Helpers\\IconsFactory\u003A\u003AfontAwesome\u0028\u0029",
             "name": "fontAwesome",
-            "summary": "",
+            "summary": "Font\u0020Awesome\u0020icons\u0020factory.",
             "url": "classes/Nethead-Markup-Helpers-IconsFactory.html#method_fontAwesome"
         },                {
             "fqsen": "\\Nethead\\Markup\\Helpers\\IconsFactory\u003A\u003Aglyphicons\u0028\u0029",
             "name": "glyphicons",
-            "summary": "",
+            "summary": "Bootstrap\u0020Glyphicons\u0020factory.",
             "url": "classes/Nethead-Markup-Helpers-IconsFactory.html#method_glyphicons"
         },                {
             "fqsen": "\\Nethead\\Markup\\Helpers\\IconsFactory\u003A\u003Aicofont\u0028\u0029",
             "name": "icofont",
-            "summary": "",
+            "summary": "IcoFont\u0020icons\u0020factory.",
             "url": "classes/Nethead-Markup-Helpers-IconsFactory.html#method_icofont"
         },                {
             "fqsen": "\\Nethead\\Markup\\Helpers\\ObfuscatesData",
             "name": "ObfuscatesData",
-            "summary": "Trait\u0020ObfuscatesData",
+            "summary": "Trait\u0020ObfuscatesData.",
             "url": "classes/Nethead-Markup-Helpers-ObfuscatesData.html"
         },                {
             "fqsen": "\\Nethead\\Markup\\Helpers\\ObfuscatesData\u003A\u003Aobfuscate\u0028\u0029",
             "name": "obfuscate",
-            "summary": "Code\u0020the\u0020string\u0020to\u0020make\u0020it\u0020harder\u0020for\u0020robots\u0020to\u0020collect\u0020data",
+            "summary": "Code\u0020the\u0020string\u0020to\u0020make\u0020it\u0020harder\u0020for\u0020robots\u0020to\u0020collect\u0020data.",
             "url": "classes/Nethead-Markup-Helpers-ObfuscatesData.html#method_obfuscate"
         },                {
             "fqsen": "\\Nethead\\Markup\\Helpers\\ObfuscatesData\u003A\u003Areverse\u0028\u0029",
             "name": "reverse",
-            "summary": "",
+            "summary": "Reverse\u0020the\u0020string.",
             "url": "classes/Nethead-Markup-Helpers-ObfuscatesData.html#method_reverse"
         },                {
             "fqsen": "\\Nethead\\Markup\\Helpers\\ObfuscatesData\u003A\u003A\u0024rot13jsDecoder",
             "name": "rot13jsDecoder",
             "summary": "",
             "url": "classes/Nethead-Markup-Helpers-ObfuscatesData.html#property_rot13jsDecoder"
+        },                {
+            "fqsen": "\\Nethead\\Markup\\Helpers\\tag\u0028\u0029",
+            "name": "tag",
+            "summary": "A\u0020helper\u0020factory\u0020function.",
+            "url": "namespaces/nethead-markup-helpers.html#function_tag"
         },                {
             "fqsen": "\\Nethead\\Markup\\MarkupFactory",
             "name": "MarkupFactory",
@@ -600,6 +620,11 @@ Search.appendIndex(
             "name": "anchor",
             "summary": "Create\u0020\u003Ca\u003E\u0020element",
             "url": "classes/Nethead-Markup-MarkupFactory.html#method_anchor"
+        },                {
+            "fqsen": "\\Nethead\\Markup\\MarkupFactory\u003A\u003Abookmark\u0028\u0029",
+            "name": "bookmark",
+            "summary": "Create\u0020a\u0020bookmark.",
+            "url": "classes/Nethead-Markup-MarkupFactory.html#method_bookmark"
         },                {
             "fqsen": "\\Nethead\\Markup\\MarkupFactory\u003A\u003Amailto\u0028\u0029",
             "name": "mailto",
@@ -806,9 +831,14 @@ Search.appendIndex(
             "summary": "Create\u0020the\u0020\u003Cform\u003E\u0020element",
             "url": "classes/Nethead-Markup-MarkupFactory.html#method_form"
         },                {
+            "fqsen": "\\Nethead\\Markup\\MarkupFactory\u003A\u003AgenerateId\u0028\u0029",
+            "name": "generateId",
+            "summary": "",
+            "url": "classes/Nethead-Markup-MarkupFactory.html#method_generateId"
+        },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\A",
             "name": "A",
-            "summary": "Class\u0020A",
+            "summary": "Creates\u0020\u0022a\u0022\u0020element.",
             "url": "classes/Nethead-Markup-Tags-A.html"
         },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\A\u003A\u003A__construct\u0028\u0029",
@@ -818,7 +848,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\A\u003A\u003Adownload\u0028\u0029",
             "name": "download",
-            "summary": "Helper\u0020function\u0020for\u0020indicating\u0020download\u0020link",
+            "summary": "Helper\u0020function\u0020for\u0020indicating\u0020download\u0020link.",
             "url": "classes/Nethead-Markup-Tags-A.html#method_download"
         },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\A\u003A\u003Atarget\u0028\u0029",
@@ -828,17 +858,17 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\A\u003A\u003Ablank\u0028\u0029",
             "name": "blank",
-            "summary": "Helper\u0020function\u0020to\u0020quickly\u0020set\u0020target\u0020as\u0020new\u0020window",
+            "summary": "Helper\u0020function\u0020to\u0020set\u0020the\u0020link\u0020to\u0020open\u0020in\u0020new\u0020tab.",
             "url": "classes/Nethead-Markup-Tags-A.html#method_blank"
         },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\A\u003A\u003Arel\u0028\u0029",
             "name": "rel",
-            "summary": "",
+            "summary": "Set\u0020the\u0020relation\u0020of\u0020the\u0020link.",
             "url": "classes/Nethead-Markup-Tags-A.html#method_rel"
         },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\Body",
             "name": "Body",
-            "summary": "Class\u0020Body",
+            "summary": "Creates\u0020a\u0020\u0022body\u0022\u0020element.",
             "url": "classes/Nethead-Markup-Tags-Body.html"
         },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\Body\u003A\u003A__construct\u0028\u0029",
@@ -848,7 +878,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\Button",
             "name": "Button",
-            "summary": "Class\u0020Button",
+            "summary": "Creates\u0020a\u0020\u0022button\u0022\u0020element.",
             "url": "classes/Nethead-Markup-Tags-Button.html"
         },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\Button\u003A\u003A__construct\u0028\u0029",
@@ -858,7 +888,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\Button\u003A\u003Aname\u0028\u0029",
             "name": "name",
-            "summary": "",
+            "summary": "Set\u0020the\u0020name\u0020for\u0020the\u0020button.",
             "url": "classes/Nethead-Markup-Tags-Button.html#method_name"
         },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\Button\u003A\u003ATYPE_BUTTON",
@@ -878,7 +908,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\Datalist",
             "name": "Datalist",
-            "summary": "Class\u0020Datalist",
+            "summary": "Creates\u0020a\u0020\u0022datalist\u0022\u0020element.",
             "url": "classes/Nethead-Markup-Tags-Datalist.html"
         },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\Datalist\u003A\u003A__construct\u0028\u0029",
@@ -888,7 +918,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\Fieldset",
             "name": "Fieldset",
-            "summary": "Class\u0020Tag",
+            "summary": "Creates\u0020a\u0020\u0022fieldset\u0022\u0020element.",
             "url": "classes/Nethead-Markup-Tags-Fieldset.html"
         },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\Fieldset\u003A\u003A__construct\u0028\u0029",
@@ -898,7 +928,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\Form",
             "name": "Form",
-            "summary": "Class\u0020Tag",
+            "summary": "Creates\u0020a\u0020\u0022form\u0022\u0020element.",
             "url": "classes/Nethead-Markup-Tags-Form.html"
         },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\Form\u003A\u003A__construct\u0028\u0029",
@@ -908,42 +938,37 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\Form\u003A\u003AacceptCharset\u0028\u0029",
             "name": "acceptCharset",
-            "summary": "",
+            "summary": "Set\u0020the\u0020accept\u002Dcharset\u0020attribute.",
             "url": "classes/Nethead-Markup-Tags-Form.html#method_acceptCharset"
         },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\Form\u003A\u003A\u0024enctype",
             "name": "enctype",
-            "summary": "",
+            "summary": "Current\u0020form\u0020encoding.",
             "url": "classes/Nethead-Markup-Tags-Form.html#property_enctype"
-        },                {
-            "fqsen": "\\Nethead\\Markup\\Tags\\Form\u003A\u003Aautocomplete\u0028\u0029",
-            "name": "autocomplete",
-            "summary": "",
-            "url": "classes/Nethead-Markup-Tags-Form.html#method_autocomplete"
         },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\Form\u003A\u003Aname\u0028\u0029",
             "name": "name",
-            "summary": "",
+            "summary": "Set\u0020the\u0020form\u0020element\u0020name\u0020attribute.",
             "url": "classes/Nethead-Markup-Tags-Form.html#method_name"
         },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\Form\u003A\u003AENCTYPE_URLENCODED",
             "name": "ENCTYPE_URLENCODED",
-            "summary": "Form\u0020encoding\u0020types\u0020\u0028only\u0020for\u0020POST\u0020method\u0029",
+            "summary": "Form\u0020encoding\u0020types\u0020\u0028only\u0020for\u0020POST\u0020method\u0029.",
             "url": "classes/Nethead-Markup-Tags-Form.html#constant_ENCTYPE_URLENCODED"
         },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\Form\u003A\u003AENCTYPE_MULTIPART",
             "name": "ENCTYPE_MULTIPART",
-            "summary": "",
+            "summary": "Each\u0020value\u0020is\u0020sent\u0020as\u0020a\u0020block\u0020of\u0020data\u0020\u0028\u0022body\u0020part\u0022\u0029,\u0020with\u0020a\u0020user\u0020agent\u002Ddefined\u0020delimiter\u0020\u0028\u0022boundary\u0022\u0029\nseparating\u0020each\u0020part.\u0020This\u0020one\u0020is\u0020good\u0020for\u0020binary\u0020data\u0020forms.",
             "url": "classes/Nethead-Markup-Tags-Form.html#constant_ENCTYPE_MULTIPART"
         },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\Form\u003A\u003AENCTYPE_TEXTPLAIN",
             "name": "ENCTYPE_TEXTPLAIN",
-            "summary": "",
+            "summary": "Plain\u0020text\u0020\u002D\u0020no\u0020encoding,\u0020introduced\u0020for\u0020debugging\u0020purposes",
             "url": "classes/Nethead-Markup-Tags-Form.html#constant_ENCTYPE_TEXTPLAIN"
         },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\Head",
             "name": "Head",
-            "summary": "Class\u0020Head",
+            "summary": "Creates\u0020\u0022head\u0022\u0020element.",
             "url": "classes/Nethead-Markup-Tags-Head.html"
         },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\Head\u003A\u003A__construct\u0028\u0029",
@@ -953,7 +978,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\Html",
             "name": "Html",
-            "summary": "Class\u0020Html",
+            "summary": "Creates\u0020a\u0020\u0022html\u0022\u0020root\u0020element.",
             "url": "classes/Nethead-Markup-Tags-Html.html"
         },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\Html\u003A\u003A__construct\u0028\u0029",
@@ -963,7 +988,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\Image",
             "name": "Image",
-            "summary": "Class\u0020Image",
+            "summary": "Create\u0020\u0022img\u0022\u0020element.",
             "url": "classes/Nethead-Markup-Tags-Image.html"
         },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\Image\u003A\u003A__construct\u0028\u0029",
@@ -973,12 +998,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\Image\u003A\u003Atitle\u0028\u0029",
             "name": "title",
-            "summary": "Set\u0020the\u0020title\u0020for\u0020the\u0020image",
+            "summary": "Set\u0020the\u0020title\u0020for\u0020the\u0020image.",
             "url": "classes/Nethead-Markup-Tags-Image.html#method_title"
         },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\Input",
             "name": "Input",
-            "summary": "Class\u0020Input",
+            "summary": "Creates\u0020an\u0020\u0022input\u0022\u0020element.",
             "url": "classes/Nethead-Markup-Tags-Input.html"
         },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\Input\u003A\u003A__construct\u0028\u0029",
@@ -986,35 +1011,15 @@ Search.appendIndex(
             "summary": "Input\u0020constructor.",
             "url": "classes/Nethead-Markup-Tags-Input.html#method___construct"
         },                {
-            "fqsen": "\\Nethead\\Markup\\Tags\\Input\u003A\u003Aautocomplete\u0028\u0029",
-            "name": "autocomplete",
-            "summary": "",
-            "url": "classes/Nethead-Markup-Tags-Input.html#method_autocomplete"
-        },                {
-            "fqsen": "\\Nethead\\Markup\\Tags\\Input\u003A\u003Aautofocus\u0028\u0029",
-            "name": "autofocus",
-            "summary": "",
-            "url": "classes/Nethead-Markup-Tags-Input.html#method_autofocus"
-        },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\Input\u003A\u003Achecked\u0028\u0029",
             "name": "checked",
-            "summary": "",
+            "summary": "Set\/Unset\u0020this\u0020input\u0020as\u0020checked.",
             "url": "classes/Nethead-Markup-Tags-Input.html#method_checked"
         },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\Input\u003A\u003Amultiple\u0028\u0029",
             "name": "multiple",
             "summary": "",
             "url": "classes/Nethead-Markup-Tags-Input.html#method_multiple"
-        },                {
-            "fqsen": "\\Nethead\\Markup\\Tags\\Input\u003A\u003Amax\u0028\u0029",
-            "name": "max",
-            "summary": "",
-            "url": "classes/Nethead-Markup-Tags-Input.html#method_max"
-        },                {
-            "fqsen": "\\Nethead\\Markup\\Tags\\Input\u003A\u003Amin\u0028\u0029",
-            "name": "min",
-            "summary": "",
-            "url": "classes/Nethead-Markup-Tags-Input.html#method_min"
         },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\Input\u003A\u003Amaxlength\u0028\u0029",
             "name": "maxlength",
@@ -1053,7 +1058,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\Label",
             "name": "Label",
-            "summary": "Class\u0020Label",
+            "summary": "Creates\u0020\u0022label\u0022\u0020element.",
             "url": "classes/Nethead-Markup-Tags-Label.html"
         },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\Label\u003A\u003A__construct\u0028\u0029",
@@ -1063,7 +1068,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\Legend",
             "name": "Legend",
-            "summary": "Class\u0020Legend",
+            "summary": "Creates\u0020a\u0020\u0022legend\u0022\u0020element.",
             "url": "classes/Nethead-Markup-Tags-Legend.html"
         },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\Legend\u003A\u003A__construct\u0028\u0029",
@@ -1073,7 +1078,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\Link",
             "name": "Link",
-            "summary": "Class\u0020Link",
+            "summary": "Creates\u0020a\u0020\u0022link\u0022\u0020element.",
             "url": "classes/Nethead-Markup-Tags-Link.html"
         },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\Link\u003A\u003A__construct\u0028\u0029",
@@ -1083,7 +1088,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\Mailto",
             "name": "Mailto",
-            "summary": "Class\u0020Mailto",
+            "summary": "Creates\u0020a\u0020mailto\u003A\u0020link.",
             "url": "classes/Nethead-Markup-Tags-Mailto.html"
         },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\Mailto\u003A\u003A__construct\u0028\u0029",
@@ -1093,7 +1098,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\Meta",
             "name": "Meta",
-            "summary": "Class\u0020Meta",
+            "summary": "Creates\u0020\u0022meta\u0022\u0020element.",
             "url": "classes/Nethead-Markup-Tags-Meta.html"
         },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\Meta\u003A\u003A__construct\u0028\u0029",
@@ -1103,7 +1108,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\Optgroup",
             "name": "Optgroup",
-            "summary": "Class\u0020Optgroup",
+            "summary": "Creates\u0020\u0022optgroup\u0022\u0020element.",
             "url": "classes/Nethead-Markup-Tags-Optgroup.html"
         },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\Optgroup\u003A\u003A__construct\u0028\u0029",
@@ -1113,12 +1118,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\Optgroup\u003A\u003Alabel\u0028\u0029",
             "name": "label",
-            "summary": "",
+            "summary": "Set\u0020the\u0020label\u0020for\u0020the\u0020optgroup.",
             "url": "classes/Nethead-Markup-Tags-Optgroup.html#method_label"
         },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\Option",
             "name": "Option",
-            "summary": "Class\u0020Option",
+            "summary": "Creates\u0020\u0022option\u0022\u0020element.",
             "url": "classes/Nethead-Markup-Tags-Option.html"
         },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\Option\u003A\u003A__construct\u0028\u0029",
@@ -1128,17 +1133,17 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\Option\u003A\u003Avalue\u0028\u0029",
             "name": "value",
-            "summary": "",
+            "summary": "Set\u0020the\u0020value\u0020for\u0020the\u0020option.",
             "url": "classes/Nethead-Markup-Tags-Option.html#method_value"
         },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\Option\u003A\u003Alabel\u0028\u0029",
             "name": "label",
-            "summary": "",
+            "summary": "Set\u0020the\u0020label\u0020for\u0020the\u0020option.",
             "url": "classes/Nethead-Markup-Tags-Option.html#method_label"
         },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\Picture",
             "name": "Picture",
-            "summary": "Class\u0020Picture",
+            "summary": "Creates\u0020\u0022picture\u0022\u0020element.",
             "url": "classes/Nethead-Markup-Tags-Picture.html"
         },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\Picture\u003A\u003A__construct\u0028\u0029",
@@ -1148,7 +1153,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\Picture\u003A\u003Asource\u0028\u0029",
             "name": "source",
-            "summary": "Add\u0020\u003Csource\u003E\u0020set\u0020to\u0020the\u0020\u003Cpicture\u003E",
+            "summary": "Add\u0020\u0022source\u0022\u0020element\u0020to\u0020the\u0020\u0022picture\u0022",
             "url": "classes/Nethead-Markup-Tags-Picture.html#method_source"
         },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\Picture\u003A\u003A\u0024alt",
@@ -1186,16 +1191,6 @@ Search.appendIndex(
             "summary": "Select\u0020constructor.",
             "url": "classes/Nethead-Markup-Tags-Select.html#method___construct"
         },                {
-            "fqsen": "\\Nethead\\Markup\\Tags\\Select\u003A\u003Aautofocus\u0028\u0029",
-            "name": "autofocus",
-            "summary": "",
-            "url": "classes/Nethead-Markup-Tags-Select.html#method_autofocus"
-        },                {
-            "fqsen": "\\Nethead\\Markup\\Tags\\Select\u003A\u003Arequired\u0028\u0029",
-            "name": "required",
-            "summary": "",
-            "url": "classes/Nethead-Markup-Tags-Select.html#method_required"
-        },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\Select\u003A\u003Amultiple\u0028\u0029",
             "name": "multiple",
             "summary": "",
@@ -1221,9 +1216,34 @@ Search.appendIndex(
             "summary": "Source\u0020constructor.",
             "url": "classes/Nethead-Markup-Tags-Source.html#method___construct"
         },                {
+            "fqsen": "\\Nethead\\Markup\\Tags\\Source\u003A\u003Amake\u0028\u0029",
+            "name": "make",
+            "summary": "Simple\u0020static\u0020factory\u0020method.",
+            "url": "classes/Nethead-Markup-Tags-Source.html#method_make"
+        },                {
+            "fqsen": "\\Nethead\\Markup\\Tags\\Source\u003A\u003Asrcset\u0028\u0029",
+            "name": "srcset",
+            "summary": "Set\u0020the\u0020srcset\u0020attriute\u0020when\u0020using\u0020inside\u0020the\u0020\u0022picture\u0022\u0020tag",
+            "url": "classes/Nethead-Markup-Tags-Source.html#method_srcset"
+        },                {
+            "fqsen": "\\Nethead\\Markup\\Tags\\Source\u003A\u003Amedia\u0028\u0029",
+            "name": "media",
+            "summary": "Set\u0020media\u0020query\u0020for\u0020this\u0020asset\u0020source.",
+            "url": "classes/Nethead-Markup-Tags-Source.html#method_media"
+        },                {
+            "fqsen": "\\Nethead\\Markup\\Tags\\Source\u003A\u003Asrc\u0028\u0029",
+            "name": "src",
+            "summary": "Set\u0020the\u0020video\/audio\u0020source\u0020when\u0020using\u0020in\u0020\u0022video\u0022\u0020and\u0020\u0022audio\u0022\u0020tags.",
+            "url": "classes/Nethead-Markup-Tags-Source.html#method_src"
+        },                {
+            "fqsen": "\\Nethead\\Markup\\Tags\\Source\u003A\u003Atype\u0028\u0029",
+            "name": "type",
+            "summary": "Set\u0020the\u0020MIME\u0020type\u0020of\u0020the\u0020media\u0020source.",
+            "url": "classes/Nethead-Markup-Tags-Source.html#method_type"
+        },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\Style",
             "name": "Style",
-            "summary": "Class\u0020Style",
+            "summary": "Creates\u0020a\u0020\u0022style\u0022\u0020element.",
             "url": "classes/Nethead-Markup-Tags-Style.html"
         },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\Style\u003A\u003A__construct\u0028\u0029",
@@ -1233,17 +1253,17 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\Style\u003A\u003AgetDefaultAttributes\u0028\u0029",
             "name": "getDefaultAttributes",
-            "summary": "",
+            "summary": "Provides\u0020default\u0020attributes\u0020for\u0020the\u0020HtmlAttributes\u0020object.",
             "url": "classes/Nethead-Markup-Tags-Style.html#method_getDefaultAttributes"
         },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\Style\u003A\u003Amedia\u0028\u0029",
             "name": "media",
-            "summary": "Set\u0020the\u0020devices\u0020for\u0020which\u0020this\u0020stylesheet\u0020should\u0020be\u0020used",
+            "summary": "Set\u0020the\u0020devices\u0020for\u0020which\u0020this\u0020stylesheet\u0020should\u0020be\u0020used.",
             "url": "classes/Nethead-Markup-Tags-Style.html#method_media"
         },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\Table",
             "name": "Table",
-            "summary": "Class\u0020Table",
+            "summary": "Creates\u0020a\u0020HTML\u0020\u0022table\u0022.",
             "url": "classes/Nethead-Markup-Tags-Table.html"
         },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\Table\u003A\u003A__construct\u0028\u0029",
@@ -1253,22 +1273,22 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\Table\u003A\u003Amake\u0028\u0029",
             "name": "make",
-            "summary": "",
+            "summary": "Static\u0020helper\u0020for\u0020creating\u0020tables.",
             "url": "classes/Nethead-Markup-Tags-Table.html#method_make"
         },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\Table\u003A\u003Ahead\u0028\u0029",
             "name": "head",
-            "summary": "",
+            "summary": "Define\u0020the\u0020headers\u0020for\u0020the\u0020table.",
             "url": "classes/Nethead-Markup-Tags-Table.html#method_head"
         },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\Table\u003A\u003Arow\u0028\u0029",
             "name": "row",
-            "summary": "",
+            "summary": "Add\u0020data\u0020row\u0020to\u0020the\u0020table.",
             "url": "classes/Nethead-Markup-Tags-Table.html#method_row"
         },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\Template",
             "name": "Template",
-            "summary": "Class\u0020Template",
+            "summary": "Creates\u0020a\u0020\u0022template\u0022\u0020element.",
             "url": "classes/Nethead-Markup-Tags-Template.html"
         },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\Template\u003A\u003A__construct\u0028\u0029",
@@ -1278,7 +1298,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\Textarea",
             "name": "Textarea",
-            "summary": "Class\u0020Textarea",
+            "summary": "Creates\u0020\u0022textarea\u0022\u0020element.",
             "url": "classes/Nethead-Markup-Tags-Textarea.html"
         },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\Textarea\u003A\u003A__construct\u0028\u0029",
@@ -1288,43 +1308,108 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\Textarea\u003A\u003Acols\u0028\u0029",
             "name": "cols",
-            "summary": "",
+            "summary": "Set\u0020the\u0020columns\u0020number\u0020for\u0020the\u0020textarea.",
             "url": "classes/Nethead-Markup-Tags-Textarea.html#method_cols"
         },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\Textarea\u003A\u003Arows\u0028\u0029",
             "name": "rows",
-            "summary": "",
+            "summary": "Set\u0020the\u0020rows\u0020number\u0020for\u0020the\u0020textarea.",
             "url": "classes/Nethead-Markup-Tags-Textarea.html#method_rows"
-        },                {
-            "fqsen": "\\Nethead\\Markup\\Tags\\Textarea\u003A\u003Aautocomplete\u0028\u0029",
-            "name": "autocomplete",
-            "summary": "",
-            "url": "classes/Nethead-Markup-Tags-Textarea.html#method_autocomplete"
-        },                {
-            "fqsen": "\\Nethead\\Markup\\Tags\\Textarea\u003A\u003Aautofocus\u0028\u0029",
-            "name": "autofocus",
-            "summary": "",
-            "url": "classes/Nethead-Markup-Tags-Textarea.html#method_autofocus"
         },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\Textarea\u003A\u003Amaxlength\u0028\u0029",
             "name": "maxlength",
-            "summary": "",
+            "summary": "Set\u0020the\u0020maximum\u0020length\u0020for\u0020this\u0020textarea\u0020field.",
             "url": "classes/Nethead-Markup-Tags-Textarea.html#method_maxlength"
         },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\Textarea\u003A\u003Aplaceholder\u0028\u0029",
             "name": "placeholder",
-            "summary": "",
+            "summary": "Set\u0020the\u0020placeholder\u0020for\u0020the\u0020textarea.",
             "url": "classes/Nethead-Markup-Tags-Textarea.html#method_placeholder"
         },                {
-            "fqsen": "\\Nethead\\Markup\\Tags\\Textarea\u003A\u003Arequired\u0028\u0029",
-            "name": "required",
-            "summary": "",
-            "url": "classes/Nethead-Markup-Tags-Textarea.html#method_required"
+            "fqsen": "\\Nethead\\Markup\\Helpers\\CanBeAutoCompleted",
+            "name": "CanBeAutoCompleted",
+            "summary": "Trait\u0020CanBeAutoCompleted.",
+            "url": "classes/Nethead-Markup-Helpers-CanBeAutoCompleted.html"
         },                {
-            "fqsen": "\\Nethead\\Markup\\Helpers\\tag\u0028\u0029",
-            "name": "tag",
-            "summary": "",
-            "url": "namespaces/nethead-markup-helpers.html#function_tag"
+            "fqsen": "\\Nethead\\Markup\\Helpers\\CanBeAutoCompleted\u003A\u003Aautocomplete\u0028\u0029",
+            "name": "autocomplete",
+            "summary": "Set\u0020the\u0020autocomplete\u0020attribute.",
+            "url": "classes/Nethead-Markup-Helpers-CanBeAutoCompleted.html#method_autocomplete"
+        },                {
+            "fqsen": "\\Nethead\\Markup\\Helpers\\CanGainAutoFocus",
+            "name": "CanGainAutoFocus",
+            "summary": "Trait\u0020CanGainAutoFocus.",
+            "url": "classes/Nethead-Markup-Helpers-CanGainAutoFocus.html"
+        },                {
+            "fqsen": "\\Nethead\\Markup\\Helpers\\CanGainAutoFocus\u003A\u003Aautofocus\u0028\u0029",
+            "name": "autofocus",
+            "summary": "Set\u0020this\u0020element\u0020to\u0020gain\u0020focus\u0020automatically.",
+            "url": "classes/Nethead-Markup-Helpers-CanGainAutoFocus.html#method_autofocus"
+        },                {
+            "fqsen": "\\Nethead\\Markup\\Helpers\\CanHaveMinMaxValues",
+            "name": "CanHaveMinMaxValues",
+            "summary": "Trait\u0020CanHaveMinMaxValues.",
+            "url": "classes/Nethead-Markup-Helpers-CanHaveMinMaxValues.html"
+        },                {
+            "fqsen": "\\Nethead\\Markup\\Helpers\\CanHaveMinMaxValues\u003A\u003Amax\u0028\u0029",
+            "name": "max",
+            "summary": "Set\u0020the\u0020maximum\u0020value\u0020for\u0020this\u0020input.",
+            "url": "classes/Nethead-Markup-Helpers-CanHaveMinMaxValues.html#method_max"
+        },                {
+            "fqsen": "\\Nethead\\Markup\\Helpers\\CanHaveMinMaxValues\u003A\u003Amin\u0028\u0029",
+            "name": "min",
+            "summary": "Set\u0020the\u0020minimum\u0020value\u0020for\u0020this\u0020input.",
+            "url": "classes/Nethead-Markup-Helpers-CanHaveMinMaxValues.html#method_min"
+        },                {
+            "fqsen": "\\Nethead\\Markup\\Tags\\Audio",
+            "name": "Audio",
+            "summary": "A\u0020class\u0020for\u0020creating\u0020any\u0020HTML\u0020tag\u0020element\u0020you\u0020would\u0020like.",
+            "url": "classes/Nethead-Markup-Tags-Audio.html"
+        },                {
+            "fqsen": "\\Nethead\\Markup\\Tags\\Audio\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Tag\u0020constructor.",
+            "url": "classes/Nethead-Markup-Tags-Audio.html#method___construct"
+        },                {
+            "fqsen": "\\Nethead\\Markup\\Tags\\Meter",
+            "name": "Meter",
+            "summary": "Creates\u0020a\u0020\u0022meter\u0022\u0020element.",
+            "url": "classes/Nethead-Markup-Tags-Meter.html"
+        },                {
+            "fqsen": "\\Nethead\\Markup\\Tags\\Meter\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Meter\u0020constructor.",
+            "url": "classes/Nethead-Markup-Tags-Meter.html#method___construct"
+        },                {
+            "fqsen": "\\Nethead\\Markup\\Tags\\Meter\u003A\u003Amake\u0028\u0029",
+            "name": "make",
+            "summary": "Static\u0020factory\u0020method.",
+            "url": "classes/Nethead-Markup-Tags-Meter.html#method_make"
+        },                {
+            "fqsen": "\\Nethead\\Markup\\Tags\\Meter\u003A\u003Athreshold\u0028\u0029",
+            "name": "threshold",
+            "summary": "Set\u0020the\u0020thresholds\u0020values\u0020for\u0020the\u0020meter.",
+            "url": "classes/Nethead-Markup-Tags-Meter.html#method_threshold"
+        },                {
+            "fqsen": "\\Nethead\\Markup\\Tags\\Progress",
+            "name": "Progress",
+            "summary": "A\u0020class\u0020for\u0020creating\u0020any\u0020HTML\u0020tag\u0020element\u0020you\u0020would\u0020like.",
+            "url": "classes/Nethead-Markup-Tags-Progress.html"
+        },                {
+            "fqsen": "\\Nethead\\Markup\\Tags\\Progress\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Tag\u0020constructor.",
+            "url": "classes/Nethead-Markup-Tags-Progress.html#method___construct"
+        },                {
+            "fqsen": "\\Nethead\\Markup\\Tags\\Video",
+            "name": "Video",
+            "summary": "A\u0020class\u0020for\u0020creating\u0020any\u0020HTML\u0020tag\u0020element\u0020you\u0020would\u0020like.",
+            "url": "classes/Nethead-Markup-Tags-Video.html"
+        },                {
+            "fqsen": "\\Nethead\\Markup\\Tags\\Video\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Tag\u0020constructor.",
+            "url": "classes/Nethead-Markup-Tags-Video.html#method___construct"
         },                {
             "fqsen": "\\",
             "name": "\\",

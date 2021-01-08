@@ -5,13 +5,16 @@ namespace Nethead\Markup\Tags;
 use Nethead\Markup\Foundation\Tag;
 
 /**
- * Class Link
- * @package Nethead\Markup\Html
+ * Creates a "link" element.
+ *
+ * @package Nethead\Markup\Tags
  */
 class Link extends Tag {
     /**
      * Link constructor.
+     *
      * @param array $attributes
+     *  Additional HTML attributes you want to add
      */
     public function __construct(array $attributes = [])
     {

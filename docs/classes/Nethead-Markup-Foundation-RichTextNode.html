@@ -106,12 +106,16 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/RichTextNode.php"><a href="files/src-foundation-richtextnode.html"><abbr title="src/Foundation/RichTextNode.php">RichTextNode.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">9</span>
+    <span class="phpdocumentor-element-found-in__line">13</span>
 </aside>
 
-            <p class="phpdocumentor-summary">Class RichTextNode</p>
+            <p class="phpdocumentor-summary">Creates rich formatted texts in HTML.</p>
 
-    <section class="phpdocumentor-description"></section>
+    <section class="phpdocumentor-description"><p>It has many chainable methods to make it easier and quicker to create many tags inside and format
+the text as you need, using bold, underline, italics, superscripts and other formatting options.
+It is like a factory, but adds all its children to internal storage, so they can be quickly
+rendered at once when you cast it to string.</p>
+</section>
 
 
 
@@ -131,7 +135,7 @@
     <span>
                 &nbsp;: array&lt;string|int, mixed&gt;            </span>
 </dt>
-<dd></dd>
+<dd>The contents of the node</dd>
 
                 <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Foundation-RichTextNode.html#method___construct">__construct()</a>
@@ -145,147 +149,154 @@
     <span>
                         &nbsp;: string    </span>
 </dt>
-<dd></dd>
+<dd>Convert the RichTextNode to HTML string</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Foundation-RichTextNode.html#method_abbr">abbr()</a>
     <span>
-                        &nbsp;: $this    </span>
+                        &nbsp;: <a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a>    </span>
 </dt>
-<dd></dd>
+<dd>Add abbreviation to your text</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Foundation-RichTextNode.html#method_b">b()</a>
     <span>
-                        &nbsp;: $this    </span>
+                        &nbsp;: <a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a>    </span>
 </dt>
 <dd>Alias for strong()</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Foundation-RichTextNode.html#method_br">br()</a>
     <span>
-                        &nbsp;: $this    </span>
+                        &nbsp;: <a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a>    </span>
 </dt>
-<dd></dd>
+<dd>Create a line break.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Foundation-RichTextNode.html#method_del">del()</a>
     <span>
-                        &nbsp;: $this    </span>
+                        &nbsp;: <a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a>    </span>
 </dt>
-<dd></dd>
+<dd>Add a strikethrough text using &amp;lt;del&amp;gt; element.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Foundation-RichTextNode.html#method_em">em()</a>
     <span>
-                        &nbsp;: $this    </span>
+                        &nbsp;: <a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a>    </span>
 </dt>
-<dd></dd>
+<dd>Add emphasised text.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Foundation-RichTextNode.html#method_h">h()</a>
     <span>
-                        &nbsp;: $this    </span>
+                        &nbsp;: <a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a>    </span>
 </dt>
-<dd></dd>
+<dd>Add a HTML header of desired level (1-6)</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Foundation-RichTextNode.html#method_hr">hr()</a>
     <span>
-                        &nbsp;: $this    </span>
+                        &nbsp;: <a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a>    </span>
 </dt>
-<dd></dd>
+<dd>Add a horizontal line</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Foundation-RichTextNode.html#method_i">i()</a>
     <span>
-                        &nbsp;: $this    </span>
+                        &nbsp;: <a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a>    </span>
 </dt>
-<dd></dd>
+<dd>Add simple italic text using &amp;lt;i&amp;gt; element.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Foundation-RichTextNode.html#method_ins">ins()</a>
     <span>
-                        &nbsp;: $this    </span>
+                        &nbsp;: <a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a>    </span>
 </dt>
-<dd></dd>
+<dd>Add &quot;inserted&quot; text.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Foundation-RichTextNode.html#method_kbd">kbd()</a>
     <span>
-                        &nbsp;: $this    </span>
+                        &nbsp;: <a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a>    </span>
 </dt>
-<dd></dd>
+<dd>Add a keyboard input.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Nethead-Markup-Foundation-RichTextNode.html#method_mark">mark()</a>
+    <span>
+                        &nbsp;: <a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a>    </span>
+</dt>
+<dd>Add a marked/highlighted text.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Foundation-RichTextNode.html#method_plain">plain()</a>
     <span>
-                        &nbsp;: $this    </span>
+                        &nbsp;: <a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a>    </span>
 </dt>
-<dd></dd>
+<dd>Add a plain text.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Foundation-RichTextNode.html#method_q">q()</a>
     <span>
-                        &nbsp;: $this    </span>
+                        &nbsp;: <a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a>    </span>
 </dt>
-<dd></dd>
+<dd>Add a quotation using &amp;lt;q&amp;gt; element.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Foundation-RichTextNode.html#method_quote">quote()</a>
     <span>
                         &nbsp;: <a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a>    </span>
 </dt>
-<dd></dd>
+<dd>Add a &amp;lt;blockquote&amp;gt; to your text.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Foundation-RichTextNode.html#method_span">span()</a>
     <span>
-                        &nbsp;: $this    </span>
+                        &nbsp;: <a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a>    </span>
 </dt>
-<dd></dd>
+<dd>Add a &amp;lt;span&amp;gt; element with custom CSS classes</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Foundation-RichTextNode.html#method_strong">strong()</a>
     <span>
                         &nbsp;: $this    </span>
 </dt>
-<dd></dd>
+<dd>Add a bold text using &amp;lt;strong&amp;gt; element.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Foundation-RichTextNode.html#method_sub">sub()</a>
     <span>
-                        &nbsp;: $this    </span>
+                        &nbsp;: <a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a>    </span>
 </dt>
-<dd></dd>
+<dd>Add a subscript.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Foundation-RichTextNode.html#method_sup">sup()</a>
     <span>
-                        &nbsp;: $this    </span>
+                        &nbsp;: <a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a>    </span>
 </dt>
-<dd></dd>
+<dd>Add a superscript.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Foundation-RichTextNode.html#method_time">time()</a>
     <span>
-                        &nbsp;: $this    </span>
+                        &nbsp;: <a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a>    </span>
 </dt>
-<dd></dd>
+<dd>Add a time element.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Foundation-RichTextNode.html#method_underline">underline()</a>
     <span>
-                        &nbsp;: $this    </span>
+                        &nbsp;: <a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a>    </span>
 </dt>
-<dd></dd>
+<dd>Add underlined text using &amp;lt;u&amp;gt; tag</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Foundation-RichTextNode.html#method_wbr">wbr()</a>
     <span>
-                        &nbsp;: $this    </span>
+                        &nbsp;: <a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a>    </span>
 </dt>
-<dd></dd>
+<dd>Add a line break opportunity.</dd>
 
         </dl>
 
@@ -315,10 +326,11 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/RichTextNode.php"><a href="files/src-foundation-richtextnode.html"><abbr title="src/Foundation/RichTextNode.php">RichTextNode.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">13</span>
+    <span class="phpdocumentor-element-found-in__line">19</span>
 </aside>
 
-    
+        <p class="phpdocumentor-summary">The contents of the node</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
@@ -350,7 +362,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/RichTextNode.php"><a href="files/src-foundation-richtextnode.html"><abbr title="src/Foundation/RichTextNode.php">RichTextNode.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">19</span>
+    <span class="phpdocumentor-element-found-in__line">26</span>
 </aside>
 
         <p class="phpdocumentor-summary">RichTextNode constructor.</p>
@@ -368,7 +380,8 @@
                 : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
                  = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                    <section class="phpdocumentor-description"><p>The contents for the created node</p>
+</section>
 
             </dd>
             </dl>
@@ -395,10 +408,11 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/RichTextNode.php"><a href="files/src-foundation-richtextnode.html"><abbr title="src/Foundation/RichTextNode.php">RichTextNode.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">229</span>
+    <span class="phpdocumentor-element-found-in__line">292</span>
 </aside>
 
-    
+        <p class="phpdocumentor-summary">Convert the RichTextNode to HTML string</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">__toString</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
@@ -428,13 +442,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/RichTextNode.php"><a href="files/src-foundation-richtextnode.html"><abbr title="src/Foundation/RichTextNode.php">RichTextNode.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">89</span>
+    <span class="phpdocumentor-element-found-in__line">113</span>
 </aside>
 
-    
+        <p class="phpdocumentor-summary">Add abbreviation to your text</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">abbr</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$title</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
+                <span class="phpdocumentor-signature__name">abbr</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$title</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a></span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -445,7 +460,8 @@
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                    <section class="phpdocumentor-description"><p>The text you want to add</p>
+</section>
 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
@@ -453,7 +469,8 @@
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                    <section class="phpdocumentor-description"><p>The title attribute for the abbreviation</p>
+</section>
 
             </dd>
             </dl>
@@ -461,7 +478,7 @@
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">$this</span>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a></span>
             &mdash;
             <section class="phpdocumentor-description"></section>
 
@@ -480,14 +497,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/RichTextNode.php"><a href="files/src-foundation-richtextnode.html"><abbr title="src/Foundation/RichTextNode.php">RichTextNode.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">69</span>
+    <span class="phpdocumentor-element-found-in__line">89</span>
 </aside>
 
         <p class="phpdocumentor-summary">Alias for strong()</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">b</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
+                <span class="phpdocumentor-signature__name">b</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a></span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -498,15 +515,31 @@
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                    <section class="phpdocumentor-description"><p>The text you want to add</p>
+</section>
 
             </dd>
             </dl>
 
     
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">see</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                    <span class="phpdocumentor-tag-link"><a href="classes/Nethead-Markup-Foundation-RichTextNode.html#method_strong"><abbr title="\Nethead\Markup\Foundation\RichTextNode::strong()">RichTextNode::strong()</abbr></a></span>
+                                        
+                                                 <section class="phpdocumentor-description"></section>
+
+                                    </dd>
+                        </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">$this</span>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a></span>
             &mdash;
             <section class="phpdocumentor-description"></section>
 
@@ -525,13 +558,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/RichTextNode.php"><a href="files/src-foundation-richtextnode.html"><abbr title="src/Foundation/RichTextNode.php">RichTextNode.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">38</span>
+    <span class="phpdocumentor-element-found-in__line">52</span>
 </aside>
 
-    
+        <p class="phpdocumentor-summary">Create a line break.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">br</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
+                <span class="phpdocumentor-signature__name">br</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a></span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -539,7 +573,7 @@
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">$this</span>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a></span>
             &mdash;
             <section class="phpdocumentor-description"></section>
 
@@ -558,13 +592,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/RichTextNode.php"><a href="files/src-foundation-richtextnode.html"><abbr title="src/Foundation/RichTextNode.php">RichTextNode.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">110</span>
+    <span class="phpdocumentor-element-found-in__line">138</span>
 </aside>
 
-    
+        <p class="phpdocumentor-summary">Add a strikethrough text using &amp;lt;del&amp;gt; element.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">del</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
+                <span class="phpdocumentor-signature__name">del</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a></span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -575,7 +610,8 @@
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                    <section class="phpdocumentor-description"><p>The text you want to add</p>
+</section>
 
             </dd>
             </dl>
@@ -583,7 +619,7 @@
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">$this</span>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a></span>
             &mdash;
             <section class="phpdocumentor-description"></section>
 
@@ -602,13 +638,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/RichTextNode.php"><a href="files/src-foundation-richtextnode.html"><abbr title="src/Foundation/RichTextNode.php">RichTextNode.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">130</span>
+    <span class="phpdocumentor-element-found-in__line">162</span>
 </aside>
 
-    
+        <p class="phpdocumentor-summary">Add emphasised text.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">em</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
+                <span class="phpdocumentor-signature__name">em</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a></span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -619,7 +656,8 @@
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                    <section class="phpdocumentor-description"><p>The text you want to add</p>
+</section>
 
             </dd>
             </dl>
@@ -627,7 +665,7 @@
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">$this</span>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a></span>
             &mdash;
             <section class="phpdocumentor-description"></section>
 
@@ -646,13 +684,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/RichTextNode.php"><a href="files/src-foundation-richtextnode.html"><abbr title="src/Foundation/RichTextNode.php">RichTextNode.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">29</span>
+    <span class="phpdocumentor-element-found-in__line">41</span>
 </aside>
 
-    
+        <p class="phpdocumentor-summary">Add a HTML header of desired level (1-6)</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">h</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
+                <span class="phpdocumentor-signature__name">h</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a></span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -663,7 +702,9 @@
                 : <span class="phpdocumentor-signature__argument__return-type">int</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                    <section class="phpdocumentor-description"><p>Header level, you can use any integer as this doesn't validate anything.
+Just remember HTML supports only headers from h1 to h6</p>
+</section>
 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
@@ -671,7 +712,8 @@
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                    <section class="phpdocumentor-description"><p>The text you want in the header, as plain string</p>
+</section>
 
             </dd>
             </dl>
@@ -679,7 +721,7 @@
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">$this</span>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a></span>
             &mdash;
             <section class="phpdocumentor-description"></section>
 
@@ -698,13 +740,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/RichTextNode.php"><a href="files/src-foundation-richtextnode.html"><abbr title="src/Foundation/RichTextNode.php">RichTextNode.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">150</span>
+    <span class="phpdocumentor-element-found-in__line">186</span>
 </aside>
 
-    
+        <p class="phpdocumentor-summary">Add a horizontal line</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">hr</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
+                <span class="phpdocumentor-signature__name">hr</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a></span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -715,7 +758,8 @@
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                    <section class="phpdocumentor-description"><p>The text you want to add</p>
+</section>
 
             </dd>
             </dl>
@@ -723,7 +767,7 @@
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">$this</span>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a></span>
             &mdash;
             <section class="phpdocumentor-description"></section>
 
@@ -742,13 +786,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/RichTextNode.php"><a href="files/src-foundation-richtextnode.html"><abbr title="src/Foundation/RichTextNode.php">RichTextNode.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">140</span>
+    <span class="phpdocumentor-element-found-in__line">174</span>
 </aside>
 
-    
+        <p class="phpdocumentor-summary">Add simple italic text using &amp;lt;i&amp;gt; element.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">i</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
+                <span class="phpdocumentor-signature__name">i</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a></span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -759,7 +804,8 @@
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                    <section class="phpdocumentor-description"><p>The text you want to add</p>
+</section>
 
             </dd>
             </dl>
@@ -767,7 +813,7 @@
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">$this</span>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a></span>
             &mdash;
             <section class="phpdocumentor-description"></section>
 
@@ -786,13 +832,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/RichTextNode.php"><a href="files/src-foundation-richtextnode.html"><abbr title="src/Foundation/RichTextNode.php">RichTextNode.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">120</span>
+    <span class="phpdocumentor-element-found-in__line">150</span>
 </aside>
 
-    
+        <p class="phpdocumentor-summary">Add &quot;inserted&quot; text.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">ins</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
+                <span class="phpdocumentor-signature__name">ins</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a></span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -803,7 +850,8 @@
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                    <section class="phpdocumentor-description"><p>The text you want to add</p>
+</section>
 
             </dd>
             </dl>
@@ -811,7 +859,7 @@
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">$this</span>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a></span>
             &mdash;
             <section class="phpdocumentor-description"></section>
 
@@ -830,13 +878,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/RichTextNode.php"><a href="files/src-foundation-richtextnode.html"><abbr title="src/Foundation/RichTextNode.php">RichTextNode.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">160</span>
+    <span class="phpdocumentor-element-found-in__line">198</span>
 </aside>
 
-    
+        <p class="phpdocumentor-summary">Add a keyboard input.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">kbd</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
+                <span class="phpdocumentor-signature__name">kbd</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a></span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -847,7 +896,8 @@
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                    <section class="phpdocumentor-description"><p>The text you want to add</p>
+</section>
 
             </dd>
             </dl>
@@ -855,7 +905,53 @@
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">$this</span>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a></span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_mark">
+        mark()
+        <a href="classes/Nethead-Markup-Foundation-RichTextNode.html#method_mark" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/RichTextNode.php"><a href="files/src-foundation-richtextnode.html"><abbr title="src/Foundation/RichTextNode.php">RichTextNode.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">282</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Add a marked/highlighted text.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">mark</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a></span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$text</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The text you want to add</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a></span>
             &mdash;
             <section class="phpdocumentor-description"></section>
 
@@ -874,13 +970,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/RichTextNode.php"><a href="files/src-foundation-richtextnode.html"><abbr title="src/Foundation/RichTextNode.php">RichTextNode.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">48</span>
+    <span class="phpdocumentor-element-found-in__line">64</span>
 </aside>
 
-    
+        <p class="phpdocumentor-summary">Add a plain text.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">plain</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
+                <span class="phpdocumentor-signature__name">plain</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a></span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -891,7 +988,8 @@
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                    <section class="phpdocumentor-description"><p>The text you want to add</p>
+</section>
 
             </dd>
             </dl>
@@ -899,7 +997,7 @@
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">$this</span>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a></span>
             &mdash;
             <section class="phpdocumentor-description"></section>
 
@@ -918,13 +1016,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/RichTextNode.php"><a href="files/src-foundation-richtextnode.html"><abbr title="src/Foundation/RichTextNode.php">RichTextNode.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">170</span>
+    <span class="phpdocumentor-element-found-in__line">210</span>
 </aside>
 
-    
+        <p class="phpdocumentor-summary">Add a quotation using &amp;lt;q&amp;gt; element.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">q</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
+                <span class="phpdocumentor-signature__name">q</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a></span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -935,7 +1034,8 @@
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                    <section class="phpdocumentor-description"><p>The text you want to add</p>
+</section>
 
             </dd>
             </dl>
@@ -943,7 +1043,7 @@
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">$this</span>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a></span>
             &mdash;
             <section class="phpdocumentor-description"></section>
 
@@ -962,10 +1062,11 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/RichTextNode.php"><a href="files/src-foundation-richtextnode.html"><abbr title="src/Foundation/RichTextNode.php">RichTextNode.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">100</span>
+    <span class="phpdocumentor-element-found-in__line">126</span>
 </aside>
 
-    
+        <p class="phpdocumentor-summary">Add a &amp;lt;blockquote&amp;gt; to your text.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">quote</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$url</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a></span></code>
@@ -979,7 +1080,8 @@
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                    <section class="phpdocumentor-description"><p>The quoted text you want to add</p>
+</section>
 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
@@ -987,7 +1089,8 @@
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                  = <span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                    <section class="phpdocumentor-description"><p>The source url of the citation</p>
+</section>
 
             </dd>
             </dl>
@@ -1014,13 +1117,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/RichTextNode.php"><a href="files/src-foundation-richtextnode.html"><abbr title="src/Foundation/RichTextNode.php">RichTextNode.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">181</span>
+    <span class="phpdocumentor-element-found-in__line">223</span>
 </aside>
 
-    
+        <p class="phpdocumentor-summary">Add a &amp;lt;span&amp;gt; element with custom CSS classes</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">span</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$classes</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
+                <span class="phpdocumentor-signature__name">span</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$classes</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a></span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -1031,7 +1135,8 @@
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                    <section class="phpdocumentor-description"><p>The text you want to add</p>
+</section>
 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1047,7 +1152,7 @@
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">$this</span>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a></span>
             &mdash;
             <section class="phpdocumentor-description"></section>
 
@@ -1066,10 +1171,11 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/RichTextNode.php"><a href="files/src-foundation-richtextnode.html"><abbr title="src/Foundation/RichTextNode.php">RichTextNode.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">58</span>
+    <span class="phpdocumentor-element-found-in__line">76</span>
 </aside>
 
-    
+        <p class="phpdocumentor-summary">Add a bold text using &amp;lt;strong&amp;gt; element.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">strong</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
@@ -1083,7 +1189,8 @@
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                    <section class="phpdocumentor-description"><p>The text you want to add</p>
+</section>
 
             </dd>
             </dl>
@@ -1110,13 +1217,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/RichTextNode.php"><a href="files/src-foundation-richtextnode.html"><abbr title="src/Foundation/RichTextNode.php">RichTextNode.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">201</span>
+    <span class="phpdocumentor-element-found-in__line">247</span>
 </aside>
 
-    
+        <p class="phpdocumentor-summary">Add a subscript.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">sub</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
+                <span class="phpdocumentor-signature__name">sub</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a></span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -1127,7 +1235,8 @@
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                    <section class="phpdocumentor-description"><p>The text you want to add</p>
+</section>
 
             </dd>
             </dl>
@@ -1135,7 +1244,7 @@
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">$this</span>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a></span>
             &mdash;
             <section class="phpdocumentor-description"></section>
 
@@ -1154,13 +1263,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/RichTextNode.php"><a href="files/src-foundation-richtextnode.html"><abbr title="src/Foundation/RichTextNode.php">RichTextNode.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">191</span>
+    <span class="phpdocumentor-element-found-in__line">235</span>
 </aside>
 
-    
+        <p class="phpdocumentor-summary">Add a superscript.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">sup</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
+                <span class="phpdocumentor-signature__name">sup</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a></span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -1171,7 +1281,8 @@
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                    <section class="phpdocumentor-description"><p>The text you want to add</p>
+</section>
 
             </dd>
             </dl>
@@ -1179,7 +1290,7 @@
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">$this</span>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a></span>
             &mdash;
             <section class="phpdocumentor-description"></section>
 
@@ -1198,13 +1309,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/RichTextNode.php"><a href="files/src-foundation-richtextnode.html"><abbr title="src/Foundation/RichTextNode.php">RichTextNode.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">211</span>
+    <span class="phpdocumentor-element-found-in__line">259</span>
 </aside>
 
-    
+        <p class="phpdocumentor-summary">Add a time element.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">time</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
+                <span class="phpdocumentor-signature__name">time</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a></span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -1215,7 +1327,8 @@
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                    <section class="phpdocumentor-description"><p>The text you want to add</p>
+</section>
 
             </dd>
             </dl>
@@ -1223,7 +1336,7 @@
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">$this</span>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a></span>
             &mdash;
             <section class="phpdocumentor-description"></section>
 
@@ -1242,13 +1355,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/RichTextNode.php"><a href="files/src-foundation-richtextnode.html"><abbr title="src/Foundation/RichTextNode.php">RichTextNode.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">78</span>
+    <span class="phpdocumentor-element-found-in__line">100</span>
 </aside>
 
-    
+        <p class="phpdocumentor-summary">Add underlined text using &amp;lt;u&amp;gt; tag</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">underline</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
+                <span class="phpdocumentor-signature__name">underline</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a></span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -1259,7 +1373,8 @@
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                    <section class="phpdocumentor-description"><p>The text you want to add</p>
+</section>
 
             </dd>
             </dl>
@@ -1267,7 +1382,7 @@
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">$this</span>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a></span>
             &mdash;
             <section class="phpdocumentor-description"></section>
 
@@ -1286,13 +1401,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/RichTextNode.php"><a href="files/src-foundation-richtextnode.html"><abbr title="src/Foundation/RichTextNode.php">RichTextNode.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">220</span>
+    <span class="phpdocumentor-element-found-in__line">270</span>
 </aside>
 
-    
+        <p class="phpdocumentor-summary">Add a line break opportunity.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">wbr</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
+                <span class="phpdocumentor-signature__name">wbr</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a></span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -1300,7 +1416,7 @@
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">$this</span>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a></span>
             &mdash;
             <section class="phpdocumentor-description"></section>
 

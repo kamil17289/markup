@@ -1,5 +1,4 @@
 <?php
-
 namespace Nethead\Markup\Foundation;
 
 use Nethead\Markup\Helpers\ClassList;
@@ -7,32 +6,47 @@ use Nethead\Markup\Helpers\HtmlConfig;
 use Nethead\Markup\Helpers\HtmlAttributes;
 
 /**
- * Class Tag
- * @package Nethead\Markup\Html
+ * A class for creating any HTML tag element you would like.
+ * @package Nethead\Markup\Foundation
  */
 class Tag {
     /**
-     * Tag name (a, title, meta, etc)
-     * @var string $name Name of the tag
+     * Name of the tag (in HTML).
+     * It can be any of the valid HTML tags (a, title, meta, etc)
+     *
+     * @var string $name
      */
     public $name;
 
     /**
-     * Children of this tag
-     * @var array $children Array containing the children of the tag - other tags
+     * Children of this tag.
+     * Array containing the children of the tag - other tags.
+     * Can contain Tag objects, strings, or anything that can be converted to string.
+     * Children array can be associative to make it easier to retrieve the child elements.
+     *
+     * @var array $children
      */
     public $children = [];
 
     /**
+     * HTML attributes of this Tag
+     *
+     * @see Tag::attrs() To quickly get the attributes object
+     * @see HtmlAttributes For attributes management methods
      * @var HtmlAttributes
      */
     public $attrs;
 
     /**
      * Tag constructor.
-     * @param $name
+     *
+     * @param string $name
+     *  Name of the Tag to create
      * @param array $attributes
+     *  Attributes in form of array where keys are the names of attributes and values are... values
      * @param array $children
+     *  Children of the tag being created. If you are creating void tag, it will have no effect.
+     *  You can also set children for the tag using the public setChildren method
      */
     public function __construct(string $name, array $attributes = [], array $children = [])
     {
@@ -49,10 +63,11 @@ class Tag {
 
     /**
      * Set tag's inner HTML
-     * @param array $children
-     * @return mixed
+     *
+     * @param array $children Children of the tag in form of array, same as for the constructor
+     * @return Tag
      */
-    public function setChildren(array $children) {
+    public function setChildren(array $children): Tag {
         if (! $this->isVoidElement()) {
             $this->children = $children;
         }
@@ -70,8 +85,9 @@ class Tag {
 
     /**
      * Get the child element of a given key
-     * @param string $key
-     * @return Tag|TextNode|null
+     *
+     * @param string $key The key of the $children array to retrieve
+     * @return Tag|TextNode|null Child tag requested or null if the child doesn't exist
      */
     public function getChild(string $key)
     {
@@ -83,8 +99,9 @@ class Tag {
     }
 
     /**
-     * Remove child element
-     * @param string $key
+     * Remove child element of a given key
+     *
+     * @param string $key Child tag name (key) in $children array
      */
     public function removeChild(string $key)
     {
@@ -94,7 +111,8 @@ class Tag {
     /**
      * Add new child elements
      * Warning: if some keys already exists they will be overwritten
-     * @param array $children
+     *
+     * @param array $children New children to merge into inner HTML
      */
     public function addChildren(array $children)
     {
@@ -102,7 +120,9 @@ class Tag {
     }
 
     /**
-     * Modify the attributes
+     * Retrieve the attributes object
+     *
+     * @see HtmlAttributes To check how to modify the attributes of the tag
      * @return HtmlAttributes
      */
     public function attrs(): HtmlAttributes
@@ -111,7 +131,9 @@ class Tag {
     }
 
     /**
-     * Modify the class attribute directly
+     * Modify the class attribute directly, without calling ->attrs()
+     *
+     * @see ClassList to find out how to modify class names of the tags
      * @return ClassList
      */
     public function classList(): ClassList
@@ -120,7 +142,10 @@ class Tag {
     }
 
     /**
-     * @param callable $processor
+     * Pass the Tag instance to any processing function for further modification.
+     * Can be useful for any initialization purposes, or for the HTML altering inside the modular application.
+     *
+     * @param callable $processor Function which will process the Tag object
      * @return Tag
      */
     public function with(callable $processor): Tag
@@ -131,7 +156,9 @@ class Tag {
     }
 
     /**
-     * Render the tag
+     * Magic method to make the Tag object convertible to string
+     *
+     * @see Tag::render()
      * @return string
      */
     public function __toString() : string
@@ -140,7 +167,9 @@ class Tag {
     }
 
     /**
-     * @return string
+     * Render the tag object to string.
+     *
+     * @return string Tag object compiled to a string that can be outputted to the browser.
      */
     public function render(): string
     {
@@ -149,7 +178,8 @@ class Tag {
 
     /**
      * Check if this tag has it's closing equivalent
-     * @return bool
+     *
+     * @return bool TRUE if the Tag is a void tag, FALSE otherwise
      */
     public function isVoidElement() : bool
     {
@@ -157,6 +187,10 @@ class Tag {
     }
 
     /**
+     * Open the Tag in HTML.
+     * Prints the opening < with a tag name and the attributes if there are any.
+     * If the tag is void tag, and HtmlConfig::$closeVoids is set to true, it will be automatically closed with />.
+     *
      * @return string
      */
     public function open() : string
@@ -179,6 +213,8 @@ class Tag {
     }
 
     /**
+     * Render child elements of this Tag.
+     *
      * @return string
      */
     public function renderChildren() : string
@@ -191,7 +227,9 @@ class Tag {
     }
 
     /**
-     * Close the tag
+     * Close the tag.
+     * Prints the closing tag in HTML. If the tag is void tag, empty string will be returned instead.
+     *
      * @return string
      */
     public function close() : string
@@ -204,8 +242,10 @@ class Tag {
     }
 
     /**
-     * Intercept any calls to undefined methods and use it for convenient attributes setting
+     * Intercept any calls to undefined methods and use it for convenient attributes setting.
      * Only global attributes can be set this way.
+     *
+     * @see https://www.w3schools.com/tags/ref_standardattributes.asp For a list of Global HTML Attributes
      * @param $name
      * @param $arguments
      */

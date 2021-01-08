@@ -143,6 +143,13 @@
 <dd>Render &lt;link&gt; element to document&#039;s author</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Nethead-Markup-MarkupFactory.html#method_bookmark">bookmark()</a>
+    <span>
+                        &nbsp;: <a href="classes/Nethead-Markup-Tags-A.html"><abbr title="\Nethead\Markup\Tags\A">A</abbr></a>    </span>
+</dt>
+<dd>Create a bookmark.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-MarkupFactory.html#method_button">button()</a>
     <span>
                         &nbsp;: <a href="classes/Nethead-Markup-Tags-Button.html"><abbr title="\Nethead\Markup\Tags\Button">Button</abbr></a>    </span>
@@ -218,6 +225,13 @@
                         &nbsp;: <a href="classes/Nethead-Markup-Tags-Form.html"><abbr title="\Nethead\Markup\Tags\Form">Form</abbr></a>    </span>
 </dt>
 <dd>Create the &lt;form&gt; element</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Nethead-Markup-MarkupFactory.html#method_generateId">generateId()</a>
+    <span>
+                        &nbsp;: string    </span>
+</dt>
+<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-MarkupFactory.html#method_hidden">hidden()</a>
@@ -642,6 +656,78 @@
             -public
                                     -static                    "
 >
+    <h4 class="phpdocumentor-element__name" id="method_bookmark">
+        bookmark()
+        <a href="classes/Nethead-Markup-MarkupFactory.html#method_bookmark" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/MarkupFactory.php"><a href="files/src-markupfactory.html"><abbr title="src/MarkupFactory.php">MarkupFactory.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">149</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Create a bookmark.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">bookmark</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$contents</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|<a href="classes/Nethead-Markup-Foundation-Tag.html"><abbr title="\Nethead\Markup\Foundation\Tag">Tag</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$to</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Tags-A.html"><abbr title="\Nethead\Markup\Tags\A">A</abbr></a></span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$contents</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>What you want inside the link element.</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$to</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string|<a href="classes/Nethead-Markup-Foundation-Tag.html"><abbr title="\Nethead\Markup\Foundation\Tag">Tag</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>What to bookmark - if string is provided it will be used as the bookmark destination.
+If $to is a Tag object it's ID will be fetched. If the object doesn't have the ID,
+it will be generated automatically</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">see</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                    <span class="phpdocumentor-tag-link"><a href="classes/Nethead-Markup-MarkupFactory.html#method_generateId"><abbr title="\Nethead\Markup\MarkupFactory::generateId()">MarkupFactory::generateId()</abbr></a></span>
+                                        
+                                                 <section class="phpdocumentor-description"></section>
+
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Tags-A.html"><abbr title="\Nethead\Markup\Tags\A">A</abbr></a></span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
     <h4 class="phpdocumentor-element__name" id="method_button">
         button()
         <a href="classes/Nethead-Markup-MarkupFactory.html#method_button" class="headerlink"><i class="fas fa-link"></i></a>
@@ -649,7 +735,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/MarkupFactory.php"><a href="files/src-markupfactory.html"><abbr title="src/MarkupFactory.php">MarkupFactory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">200</span>
+    <span class="phpdocumentor-element-found-in__line">224</span>
 </aside>
 
         <p class="phpdocumentor-summary">Create &lt;button&gt; element</p>
@@ -702,7 +788,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/MarkupFactory.php"><a href="files/src-markupfactory.html"><abbr title="src/MarkupFactory.php">MarkupFactory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">154</span>
+    <span class="phpdocumentor-element-found-in__line">178</span>
 </aside>
 
         <p class="phpdocumentor-summary">Create a charset &lt;meta&gt; element</p>
@@ -747,7 +833,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/MarkupFactory.php"><a href="files/src-markupfactory.html"><abbr title="src/MarkupFactory.php">MarkupFactory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">338</span>
+    <span class="phpdocumentor-element-found-in__line">362</span>
 </aside>
 
         <p class="phpdocumentor-summary">Create a checkbox &lt;input&gt; element</p>
@@ -808,7 +894,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/MarkupFactory.php"><a href="files/src-markupfactory.html"><abbr title="src/MarkupFactory.php">MarkupFactory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">361</span>
+    <span class="phpdocumentor-element-found-in__line">385</span>
 </aside>
 
         <p class="phpdocumentor-summary">Create color &lt;input&gt; element</p>
@@ -861,7 +947,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/MarkupFactory.php"><a href="files/src-markupfactory.html"><abbr title="src/MarkupFactory.php">MarkupFactory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">255</span>
+    <span class="phpdocumentor-element-found-in__line">279</span>
 </aside>
 
         <p class="phpdocumentor-summary">Create &lt;datalist&gt; element</p>
@@ -914,7 +1000,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/MarkupFactory.php"><a href="files/src-markupfactory.html"><abbr title="src/MarkupFactory.php">MarkupFactory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">372</span>
+    <span class="phpdocumentor-element-found-in__line">396</span>
 </aside>
 
         <p class="phpdocumentor-summary">Create date &lt;input&gt; element</p>
@@ -967,7 +1053,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/MarkupFactory.php"><a href="files/src-markupfactory.html"><abbr title="src/MarkupFactory.php">MarkupFactory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">383</span>
+    <span class="phpdocumentor-element-found-in__line">407</span>
 </aside>
 
         <p class="phpdocumentor-summary">Create datetime-local &lt;input&gt; element</p>
@@ -1020,7 +1106,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/MarkupFactory.php"><a href="files/src-markupfactory.html"><abbr title="src/MarkupFactory.php">MarkupFactory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">394</span>
+    <span class="phpdocumentor-element-found-in__line">418</span>
 </aside>
 
         <p class="phpdocumentor-summary">Create email &lt;input&gt; element</p>
@@ -1073,7 +1159,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/MarkupFactory.php"><a href="files/src-markupfactory.html"><abbr title="src/MarkupFactory.php">MarkupFactory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">592</span>
+    <span class="phpdocumentor-element-found-in__line">616</span>
 </aside>
 
         <p class="phpdocumentor-summary">Create &lt;fieldset&gt; element</p>
@@ -1126,7 +1212,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/MarkupFactory.php"><a href="files/src-markupfactory.html"><abbr title="src/MarkupFactory.php">MarkupFactory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">552</span>
+    <span class="phpdocumentor-element-found-in__line">576</span>
 </aside>
 
         <p class="phpdocumentor-summary">Create file &lt;input&gt; element</p>
@@ -1171,7 +1257,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/MarkupFactory.php"><a href="files/src-markupfactory.html"><abbr title="src/MarkupFactory.php">MarkupFactory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">659</span>
+    <span class="phpdocumentor-element-found-in__line">683</span>
 </aside>
 
         <p class="phpdocumentor-summary">Create the &lt;form&gt; element</p>
@@ -1233,6 +1319,50 @@
             -public
                                     -static                    "
 >
+    <h4 class="phpdocumentor-element__name" id="method_generateId">
+        generateId()
+        <a href="classes/Nethead-Markup-MarkupFactory.html#method_generateId" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/MarkupFactory.php"><a href="files/src-markupfactory.html"><abbr title="src/MarkupFactory.php">MarkupFactory.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">696</span>
+</aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">generateId</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$length</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">5</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$length</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">5</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
     <h4 class="phpdocumentor-element__name" id="method_hidden">
         hidden()
         <a href="classes/Nethead-Markup-MarkupFactory.html#method_hidden" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1240,7 +1370,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/MarkupFactory.php"><a href="files/src-markupfactory.html"><abbr title="src/MarkupFactory.php">MarkupFactory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">563</span>
+    <span class="phpdocumentor-element-found-in__line">587</span>
 </aside>
 
         <p class="phpdocumentor-summary">Create hidden &lt;input&gt; element</p>
@@ -1407,7 +1537,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/MarkupFactory.php"><a href="files/src-markupfactory.html"><abbr title="src/MarkupFactory.php">MarkupFactory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">575</span>
+    <span class="phpdocumentor-element-found-in__line">599</span>
 </aside>
 
     
@@ -1475,7 +1605,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/MarkupFactory.php"><a href="files/src-markupfactory.html"><abbr title="src/MarkupFactory.php">MarkupFactory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">307</span>
+    <span class="phpdocumentor-element-found-in__line">331</span>
 </aside>
 
         <p class="phpdocumentor-summary">Create any &lt;input&gt; element</p>
@@ -1536,7 +1666,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/MarkupFactory.php"><a href="files/src-markupfactory.html"><abbr title="src/MarkupFactory.php">MarkupFactory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">189</span>
+    <span class="phpdocumentor-element-found-in__line">213</span>
 </aside>
 
         <p class="phpdocumentor-summary">Create &lt;input&gt; button</p>
@@ -1589,7 +1719,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/MarkupFactory.php"><a href="files/src-markupfactory.html"><abbr title="src/MarkupFactory.php">MarkupFactory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">233</span>
+    <span class="phpdocumentor-element-found-in__line">257</span>
 </aside>
 
         <p class="phpdocumentor-summary">Create &lt;input type=&quot;reset&quot;&gt; element</p>
@@ -1642,7 +1772,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/MarkupFactory.php"><a href="files/src-markupfactory.html"><abbr title="src/MarkupFactory.php">MarkupFactory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">211</span>
+    <span class="phpdocumentor-element-found-in__line">235</span>
 </aside>
 
         <p class="phpdocumentor-summary">Create &lt;input type=&quot;submit&quot;&gt; element</p>
@@ -1695,7 +1825,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/MarkupFactory.php"><a href="files/src-markupfactory.html"><abbr title="src/MarkupFactory.php">MarkupFactory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">640</span>
+    <span class="phpdocumentor-element-found-in__line">664</span>
 </aside>
 
         <p class="phpdocumentor-summary">Create &lt;label&gt; element</p>
@@ -1756,7 +1886,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/MarkupFactory.php"><a href="files/src-markupfactory.html"><abbr title="src/MarkupFactory.php">MarkupFactory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">419</span>
+    <span class="phpdocumentor-element-found-in__line">443</span>
 </aside>
 
         <p class="phpdocumentor-summary">Create number/range &lt;input&gt; element</p>
@@ -1833,7 +1963,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/MarkupFactory.php"><a href="files/src-markupfactory.html"><abbr title="src/MarkupFactory.php">MarkupFactory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">144</span>
+    <span class="phpdocumentor-element-found-in__line">168</span>
 </aside>
 
         <p class="phpdocumentor-summary">Create mailto: &lt;a&gt; element with encrypted e-mail address</p>
@@ -1886,7 +2016,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/MarkupFactory.php"><a href="files/src-markupfactory.html"><abbr title="src/MarkupFactory.php">MarkupFactory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">178</span>
+    <span class="phpdocumentor-element-found-in__line">202</span>
 </aside>
 
         <p class="phpdocumentor-summary">Create &lt;meta&gt; element</p>
@@ -1940,7 +2070,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/MarkupFactory.php"><a href="files/src-markupfactory.html"><abbr title="src/MarkupFactory.php">MarkupFactory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">405</span>
+    <span class="phpdocumentor-element-found-in__line">429</span>
 </aside>
 
         <p class="phpdocumentor-summary">Create month &lt;input&gt; element</p>
@@ -1993,7 +2123,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/MarkupFactory.php"><a href="files/src-markupfactory.html"><abbr title="src/MarkupFactory.php">MarkupFactory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">444</span>
+    <span class="phpdocumentor-element-found-in__line">468</span>
 </aside>
 
         <p class="phpdocumentor-summary">Create number &lt;input&gt; element</p>
@@ -2070,7 +2200,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/MarkupFactory.php"><a href="files/src-markupfactory.html"><abbr title="src/MarkupFactory.php">MarkupFactory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">266</span>
+    <span class="phpdocumentor-element-found-in__line">290</span>
 </aside>
 
         <p class="phpdocumentor-summary">Create &lt;optgroup&gt; element</p>
@@ -2123,7 +2253,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/MarkupFactory.php"><a href="files/src-markupfactory.html"><abbr title="src/MarkupFactory.php">MarkupFactory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">278</span>
+    <span class="phpdocumentor-element-found-in__line">302</span>
 </aside>
 
         <p class="phpdocumentor-summary">Create &lt;option&gt; element</p>
@@ -2184,7 +2314,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/MarkupFactory.php"><a href="files/src-markupfactory.html"><abbr title="src/MarkupFactory.php">MarkupFactory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">497</span>
+    <span class="phpdocumentor-element-found-in__line">521</span>
 </aside>
 
         <p class="phpdocumentor-summary">Create a password &lt;input&gt;</p>
@@ -2282,7 +2412,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/MarkupFactory.php"><a href="files/src-markupfactory.html"><abbr title="src/MarkupFactory.php">MarkupFactory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">350</span>
+    <span class="phpdocumentor-element-found-in__line">374</span>
 </aside>
 
         <p class="phpdocumentor-summary">Create a radio &lt;input&gt; element</p>
@@ -2343,7 +2473,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/MarkupFactory.php"><a href="files/src-markupfactory.html"><abbr title="src/MarkupFactory.php">MarkupFactory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">461</span>
+    <span class="phpdocumentor-element-found-in__line">485</span>
 </aside>
 
         <p class="phpdocumentor-summary">Create a range &lt;input&gt; element</p>
@@ -2412,7 +2542,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/MarkupFactory.php"><a href="files/src-markupfactory.html"><abbr title="src/MarkupFactory.php">MarkupFactory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">244</span>
+    <span class="phpdocumentor-element-found-in__line">268</span>
 </aside>
 
         <p class="phpdocumentor-summary">Create &lt;button type=&quot;reset&quot;&gt; element</p>
@@ -2510,7 +2640,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/MarkupFactory.php"><a href="files/src-markupfactory.html"><abbr title="src/MarkupFactory.php">MarkupFactory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">508</span>
+    <span class="phpdocumentor-element-found-in__line">532</span>
 </aside>
 
         <p class="phpdocumentor-summary">Create a search &lt;input&gt;</p>
@@ -2563,7 +2693,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/MarkupFactory.php"><a href="files/src-markupfactory.html"><abbr title="src/MarkupFactory.php">MarkupFactory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">295</span>
+    <span class="phpdocumentor-element-found-in__line">319</span>
 </aside>
 
         <p class="phpdocumentor-summary">Create new &lt;select&gt; element</p>
@@ -2669,7 +2799,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/MarkupFactory.php"><a href="files/src-markupfactory.html"><abbr title="src/MarkupFactory.php">MarkupFactory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">222</span>
+    <span class="phpdocumentor-element-found-in__line">246</span>
 </aside>
 
         <p class="phpdocumentor-summary">Create &lt;button type=&quot;submit&quot;&gt; element</p>
@@ -2722,7 +2852,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/MarkupFactory.php"><a href="files/src-markupfactory.html"><abbr title="src/MarkupFactory.php">MarkupFactory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">530</span>
+    <span class="phpdocumentor-element-found-in__line">554</span>
 </aside>
 
         <p class="phpdocumentor-summary">Create a telephone &lt;input&gt;</p>
@@ -2775,7 +2905,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/MarkupFactory.php"><a href="files/src-markupfactory.html"><abbr title="src/MarkupFactory.php">MarkupFactory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">628</span>
+    <span class="phpdocumentor-element-found-in__line">652</span>
 </aside>
 
         <p class="phpdocumentor-summary">Create &lt;template&gt; element</p>
@@ -2828,7 +2958,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/MarkupFactory.php"><a href="files/src-markupfactory.html"><abbr title="src/MarkupFactory.php">MarkupFactory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">519</span>
+    <span class="phpdocumentor-element-found-in__line">543</span>
 </aside>
 
         <p class="phpdocumentor-summary">Create a text &lt;input&gt;</p>
@@ -2881,7 +3011,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/MarkupFactory.php"><a href="files/src-markupfactory.html"><abbr title="src/MarkupFactory.php">MarkupFactory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">611</span>
+    <span class="phpdocumentor-element-found-in__line">635</span>
 </aside>
 
         <p class="phpdocumentor-summary">Create a &lt;textarea&gt; element</p>
@@ -2950,7 +3080,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/MarkupFactory.php"><a href="files/src-markupfactory.html"><abbr title="src/MarkupFactory.php">MarkupFactory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">320</span>
+    <span class="phpdocumentor-element-found-in__line">344</span>
 </aside>
 
         <p class="phpdocumentor-summary">Create a radio/checkbox &lt;input&gt; element</p>
@@ -3019,7 +3149,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/MarkupFactory.php"><a href="files/src-markupfactory.html"><abbr title="src/MarkupFactory.php">MarkupFactory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">474</span>
+    <span class="phpdocumentor-element-found-in__line">498</span>
 </aside>
 
         <p class="phpdocumentor-summary">Create time &lt;input&gt; element</p>
@@ -3088,7 +3218,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/MarkupFactory.php"><a href="files/src-markupfactory.html"><abbr title="src/MarkupFactory.php">MarkupFactory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">541</span>
+    <span class="phpdocumentor-element-found-in__line">565</span>
 </aside>
 
         <p class="phpdocumentor-summary">Create a url &lt;input&gt;</p>
@@ -3141,7 +3271,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/MarkupFactory.php"><a href="files/src-markupfactory.html"><abbr title="src/MarkupFactory.php">MarkupFactory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">165</span>
+    <span class="phpdocumentor-element-found-in__line">189</span>
 </aside>
 
         <p class="phpdocumentor-summary">Create viewport &lt;meta&gt; element</p>
@@ -3194,7 +3324,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/MarkupFactory.php"><a href="files/src-markupfactory.html"><abbr title="src/MarkupFactory.php">MarkupFactory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">487</span>
+    <span class="phpdocumentor-element-found-in__line">511</span>
 </aside>
 
         <p class="phpdocumentor-summary">Create week &lt;input&gt; element</p>

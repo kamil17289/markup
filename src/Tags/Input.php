@@ -3,23 +3,37 @@
 namespace Nethead\Markup\Tags;
 
 use Nethead\Markup\Foundation\Tag;
+use Nethead\Markup\Helpers\CanBeAutoCompleted;
 use Nethead\Markup\Helpers\CanBeDisabled;
 use Nethead\Markup\Helpers\CanBeReadonly;
 use Nethead\Markup\Helpers\CanBeRequired;
+use Nethead\Markup\Helpers\CanGainAutoFocus;
+use Nethead\Markup\Helpers\CanHaveMinMaxValues;
 
 /**
- * Class Input
- * @package Nethead\Markup\Html
+ * Creates an "input" element.
+ *
+ * @package Nethead\Markup\Tags
  */
 class Input extends Tag {
-    use CanBeDisabled, CanBeReadonly, CanBeRequired;
+    use CanBeDisabled,
+    CanBeReadonly,
+    CanBeRequired,
+    CanBeAutoCompleted,
+    CanGainAutoFocus,
+    CanHaveMinMaxValues;
 
     /**
      * Input constructor.
+     *
      * @param string $type
+     *  Input type. Anything supported by the HTML input element: button, checkbox, password, text, etc
      * @param string $name
+     *  Name of the input. *Important:* this is also the data name when the form is submitted
      * @param string $value
+     *  Value for the input if it can be set
      * @param array $attributes
+     *  Additional HTML attributes you want to add
      */
     public function __construct(string $type, string $name, $value = '', array $attributes = [])
     {
@@ -33,29 +47,12 @@ class Input extends Tag {
     }
 
     /**
-     * @param $value
-     * @return Input
-     */
-    public function autocomplete($value = true): Input
-    {
-        $this->attrs()->set('autocomplete', $value);
-
-        return $this;
-    }
-
-    /**
-     * @param $value
-     * @return Input
-     */
-    public function autofocus($value = true): Input
-    {
-        $this->attrs()->set('autofocus', $value);
-
-        return $this;
-    }
-
-    /**
-     * @param $value
+     * Set/Unset this input as checked.
+     * Invoking this method on inputs other than radio or checkbox will have no effect.
+     *
+     * @param mixed $value
+     *  Truthy values will add a 'checked' attribute to this element.
+     *  Falsy values will remove the attribute it if exists.
      * @return Input
      */
     public function checked($value = true): Input
@@ -63,7 +60,7 @@ class Input extends Tag {
         $selfType = $this->attrs()->get('type');
 
         if ($selfType == 'radio' || $selfType == 'checkbox') {
-            $this->attrs()->set('checked', $value);
+            $this->attrs()->set('checked', (bool) $value);
         }
 
         return $this;
@@ -77,26 +74,6 @@ class Input extends Tag {
     {
         $this->attrs()->set('multiple', $value);
 
-        return $this;
-    }
-
-    /**
-     * @param string $value
-     * @return Input
-     */
-    public function max(string $value): Input
-    {
-        $this->attrs()->set('max', $value);
-        return $this;
-    }
-
-    /**
-     * @param string $value
-     * @return Input
-     */
-    public function min(string $value): Input
-    {
-        $this->attrs()->set('min', $value);
         return $this;
     }
 

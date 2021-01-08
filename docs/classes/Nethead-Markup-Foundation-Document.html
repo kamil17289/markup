@@ -94,7 +94,9 @@
             <div class="phpdocumentor-element__package">
             in package
             <ul class="phpdocumentor-breadcrumbs">
-                                    <li class="phpdocumentor-breadcrumb"><a href="packages/Default.html">Default</a></li>
+                                    <li class="phpdocumentor-breadcrumb"><a href="packages/Nethead.html">Nethead</a></li>
+                                    <li class="phpdocumentor-breadcrumb"><a href="packages/Nethead-Markup.html">Markup</a></li>
+                                    <li class="phpdocumentor-breadcrumb"><a href="packages/Nethead-Markup-Foundation.html">Foundation</a></li>
                             </ul>
         </div>
     
@@ -104,10 +106,15 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/Document.php"><a href="files/src-foundation-document.html"><abbr title="src/Foundation/Document.php">Document.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">10</span>
+    <span class="phpdocumentor-element-found-in__line">17</span>
 </aside>
 
-        
+            <p class="phpdocumentor-summary">Creates a whole HTML document.</p>
+
+    <section class="phpdocumentor-description"><p>This class can be used for fast creation of simple pages, if the error occurs when
+the templating engine is not loaded yet or just for convenient HTML building.
+For example generating HTML reports or &quot;fast 404&quot; page.</p>
+</section>
 
 
 
@@ -148,14 +155,14 @@
     <span>
                 &nbsp;: string            </span>
 </dt>
-<dd></dd>
+<dd>Holds the doctype declaration for this document</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/Nethead-Markup-Foundation-Document.html#property_html">$html</a>
     <span>
                 &nbsp;: <a href="classes/Nethead-Markup-Tags-Html.html"><abbr title="\Nethead\Markup\Tags\Html">Html</abbr></a>            </span>
 </dt>
-<dd></dd>
+<dd>Root element of every HTML document</dd>
 
                 <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Foundation-Document.html#method___construct">__construct()</a>
@@ -169,7 +176,7 @@
     <span>
                         &nbsp;: string    </span>
 </dt>
-<dd></dd>
+<dd>Compile the object into HTML string</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Foundation-Document.html#method_body">body()</a>
@@ -183,7 +190,7 @@
     <span>
                         &nbsp;: <a href="classes/Nethead-Markup-Foundation-Document.html"><abbr title="\Nethead\Markup\Foundation\Document">Document</abbr></a>    </span>
 </dt>
-<dd></dd>
+<dd>Set the charset meta tag for this document.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Foundation-Document.html#method_doctype">doctype()</a>
@@ -204,28 +211,28 @@
     <span>
                         &nbsp;: <a href="classes/Nethead-Markup-Foundation-Document.html"><abbr title="\Nethead\Markup\Foundation\Document">Document</abbr></a>    </span>
 </dt>
-<dd></dd>
+<dd>Add any meta tags to head element.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Foundation-Document.html#method_title">title()</a>
     <span>
                         &nbsp;: <a href="classes/Nethead-Markup-Foundation-Document.html"><abbr title="\Nethead\Markup\Foundation\Document">Document</abbr></a>    </span>
 </dt>
-<dd></dd>
+<dd>Give this document a title!</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Foundation-Document.html#method_toBody">toBody()</a>
     <span>
                         &nbsp;: $this    </span>
 </dt>
-<dd></dd>
+<dd>Add more elements to the body</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Foundation-Document.html#method_toHead">toHead()</a>
     <span>
                         &nbsp;: $this    </span>
 </dt>
-<dd></dd>
+<dd>Add more child elements to the head.</dd>
 
         </dl>
 
@@ -246,14 +253,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/Document.php"><a href="files/src-foundation-document.html"><abbr title="src/Foundation/Document.php">Document.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">19</span>
+    <span class="phpdocumentor-element-found-in__line">30</span>
 </aside>
 
         <p class="phpdocumentor-summary">Declaration for HTML 4.01 if you need to support something older</p>
 
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
-    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__type">string</span>
     <span class="phpdocumentor-signature__name">DOC_HTML4</span>
     = <span class="phpdocumentor-signature__default-value">&#039;HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&#039;</span>
 </code>
@@ -273,14 +280,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/Document.php"><a href="files/src-foundation-document.html"><abbr title="src/Foundation/Document.php">Document.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">14</span>
+    <span class="phpdocumentor-element-found-in__line">23</span>
 </aside>
 
         <p class="phpdocumentor-summary">Living standard</p>
 
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
-    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__type">string</span>
     <span class="phpdocumentor-signature__name">DOC_HTML5</span>
     = <span class="phpdocumentor-signature__default-value">&#039;html&#039;</span>
 </code>
@@ -300,14 +307,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/Document.php"><a href="files/src-foundation-document.html"><abbr title="src/Foundation/Document.php">Document.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">24</span>
+    <span class="phpdocumentor-element-found-in__line">37</span>
 </aside>
 
         <p class="phpdocumentor-summary">Declaration for XHTML 1.1 if you need to parse it later as XML compliant</p>
 
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
-    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__type">string</span>
     <span class="phpdocumentor-signature__name">DOC_XHTML</span>
     = <span class="phpdocumentor-signature__default-value">&#039;html PUBLIC &quot;-//W3C//DTD XHTML 1.1//EN&quot; &quot;http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd&quot;&#039;</span>
 </code>
@@ -342,10 +349,11 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/Document.php"><a href="files/src-foundation-document.html"><abbr title="src/Foundation/Document.php">Document.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">29</span>
+    <span class="phpdocumentor-element-found-in__line">44</span>
 </aside>
 
-    
+        <p class="phpdocumentor-summary">Holds the doctype declaration for this document</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">string</span>
@@ -373,10 +381,11 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/Document.php"><a href="files/src-foundation-document.html"><abbr title="src/Foundation/Document.php">Document.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">34</span>
+    <span class="phpdocumentor-element-found-in__line">51</span>
 </aside>
 
-    
+        <p class="phpdocumentor-summary">Root element of every HTML document</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type"><a href="classes/Nethead-Markup-Tags-Html.html"><abbr title="\Nethead\Markup\Tags\Html">Html</abbr></a></span>
@@ -408,7 +417,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/Document.php"><a href="files/src-foundation-document.html"><abbr title="src/Foundation/Document.php">Document.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">42</span>
+    <span class="phpdocumentor-element-found-in__line">65</span>
 </aside>
 
         <p class="phpdocumentor-summary">Document constructor.</p>
@@ -426,7 +435,8 @@
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                    <section class="phpdocumentor-description"><p>Language of the document. It will be inserted as the lang attribute in <html> element</p>
+</section>
 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
@@ -434,7 +444,8 @@
                 : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
                  = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                    <section class="phpdocumentor-description"><p>Other attributes you may need to put on <html> element</p>
+</section>
 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
@@ -442,7 +453,10 @@
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                  = <span class="phpdocumentor-signature__argument__default-value">self::DOC_HTML5</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                    <section class="phpdocumentor-description"><p>HTML document version, defaults to HTML 5 (Document::DOC_HTML5).
+If you need to use custom doctype, omit the &lt;!DOCTYPE like this:
+new Document('en', [], 'HTML PUBLIC &quot;-//W3C//DTD HTML 4.01//EN&quot; &quot;http://www.w3.org/TR/html4/strict.dtd&quot;');</p>
+</section>
 
             </dd>
             </dl>
@@ -469,10 +483,11 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/Document.php"><a href="files/src-foundation-document.html"><abbr title="src/Foundation/Document.php">Document.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">145</span>
+    <span class="phpdocumentor-element-found-in__line">188</span>
 </aside>
 
-    
+        <p class="phpdocumentor-summary">Compile the object into HTML string</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">__toString</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
@@ -502,7 +517,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/Document.php"><a href="files/src-foundation-document.html"><abbr title="src/Foundation/Document.php">Document.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">137</span>
+    <span class="phpdocumentor-element-found-in__line">179</span>
 </aside>
 
         <p class="phpdocumentor-summary">Get the body to set attributes or contents</p>
@@ -536,10 +551,11 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/Document.php"><a href="files/src-foundation-document.html"><abbr title="src/Foundation/Document.php">Document.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">102</span>
+    <span class="phpdocumentor-element-found-in__line">141</span>
 </aside>
 
-    
+        <p class="phpdocumentor-summary">Set the charset meta tag for this document.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">charset</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$charset</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;UTF-8&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-Document.html"><abbr title="\Nethead\Markup\Foundation\Document">Document</abbr></a></span></code>
@@ -553,7 +569,8 @@
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                  = <span class="phpdocumentor-signature__argument__default-value">&#039;UTF-8&#039;</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                    <section class="phpdocumentor-description"><p>Pretty self-explanatory</p>
+</section>
 
             </dd>
             </dl>
@@ -563,7 +580,8 @@
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-Document.html"><abbr title="\Nethead\Markup\Foundation\Document">Document</abbr></a></span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
+            <section class="phpdocumentor-description"><p>Same document, but with new meta data tags</p>
+</section>
 
     
 </article>
@@ -580,7 +598,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/Document.php"><a href="files/src-foundation-document.html"><abbr title="src/Foundation/Document.php">Document.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">57</span>
+    <span class="phpdocumentor-element-found-in__line">83</span>
 </aside>
 
         <p class="phpdocumentor-summary">Return document type declaration as string</p>
@@ -598,7 +616,9 @@
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                    <section class="phpdocumentor-description"><p>Contents for the &lt;!DOCTYPE&gt;
+Easier to use with defined constants, for example Document::DOC_HTML4</p>
+</section>
 
             </dd>
             </dl>
@@ -625,7 +645,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/Document.php"><a href="files/src-foundation-document.html"><abbr title="src/Foundation/Document.php">Document.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">66</span>
+    <span class="phpdocumentor-element-found-in__line">94</span>
 </aside>
 
         <p class="phpdocumentor-summary">Get the head to set the metadata tags or attributes</p>
@@ -638,11 +658,28 @@
 
     
     
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">see</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                    <span class="phpdocumentor-tag-link"><a href="classes/Nethead-Markup-Tags-Head.html"><abbr title="\Nethead\Markup\Tags\Head">Head</abbr></a></span>
+                                        
+                                                 <section class="phpdocumentor-description"><p>for more info on what you can do with your head</p>
+</section>
+
+                                    </dd>
+                        </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Tags-Head.html"><abbr title="\Nethead\Markup\Tags\Head">Head</abbr></a></span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
+            <section class="phpdocumentor-description"><p>The instance of Head</p>
+</section>
 
     
 </article>
@@ -659,10 +696,11 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/Document.php"><a href="files/src-foundation-document.html"><abbr title="src/Foundation/Document.php">Document.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">89</span>
+    <span class="phpdocumentor-element-found-in__line">124</span>
 </aside>
 
-    
+        <p class="phpdocumentor-summary">Add any meta tags to head element.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">meta</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-Document.html"><abbr title="\Nethead\Markup\Foundation\Document">Document</abbr></a></span></code>
@@ -676,7 +714,8 @@
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                    <section class="phpdocumentor-description"><p>Meta tag name, like &quot;keywords&quot;, &quot;author&quot;, or &quot;description&quot;</p>
+</section>
 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
@@ -684,7 +723,8 @@
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                    <section class="phpdocumentor-description"><p>Value to set for the meta tag. Example: $document-&gt;meta('keywords', 'Nethead, Markup, HTML');</p>
+</section>
 
             </dd>
             </dl>
@@ -694,7 +734,8 @@
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-Document.html"><abbr title="\Nethead\Markup\Foundation\Document">Document</abbr></a></span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
+            <section class="phpdocumentor-description"><p>Same document, but with new meta data tags</p>
+</section>
 
     
 </article>
@@ -711,10 +752,11 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/Document.php"><a href="files/src-foundation-document.html"><abbr title="src/Foundation/Document.php">Document.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">75</span>
+    <span class="phpdocumentor-element-found-in__line">105</span>
 </aside>
 
-    
+        <p class="phpdocumentor-summary">Give this document a title!</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">title</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$title</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-Document.html"><abbr title="\Nethead\Markup\Foundation\Document">Document</abbr></a></span></code>
@@ -728,7 +770,8 @@
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                    <section class="phpdocumentor-description"><p>Title to show in the browser's window</p>
+</section>
 
             </dd>
             </dl>
@@ -738,7 +781,8 @@
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-Document.html"><abbr title="\Nethead\Markup\Foundation\Document">Document</abbr></a></span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
+            <section class="phpdocumentor-description"><p>Same document object, but with the title in the head</p>
+</section>
 
     
 </article>
@@ -755,10 +799,11 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/Document.php"><a href="files/src-foundation-document.html"><abbr title="src/Foundation/Document.php">Document.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">126</span>
+    <span class="phpdocumentor-element-found-in__line">168</span>
 </aside>
 
-    
+        <p class="phpdocumentor-summary">Add more elements to the body</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">toBody</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$contents</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
@@ -799,15 +844,17 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/Document.php"><a href="files/src-foundation-document.html"><abbr title="src/Foundation/Document.php">Document.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">115</span>
+    <span class="phpdocumentor-element-found-in__line">156</span>
 </aside>
 
-    
+        <p class="phpdocumentor-summary">Add more child elements to the head.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">toHead</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$contents</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
 
-        <section class="phpdocumentor-description"></section>
+        <section class="phpdocumentor-description"><p>Warning: make sure that you didn't duplicated anything</p>
+</section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">

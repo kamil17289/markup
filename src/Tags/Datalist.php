@@ -8,17 +8,22 @@ use Nethead\Markup\Helpers\CanBeReadonly;
 use Nethead\Markup\Helpers\CanBeRequired;
 
 /**
- * Class Datalist
- * @package Nethead\Markup\Html
+ * Creates a "datalist" element.
+ *
+ * @package Nethead\Markup\Tags
  */
 class Datalist extends Tag {
     use CanBeRequired, CanBeReadonly, CanBeDisabled;
 
     /**
      * Datalist constructor.
+     *
      * @param string $id
+     *  The HTML id of the datalist
      * @param array $attributes
+     *  Additional HTML attributes you want to add
      * @param array $options
+     *  Options for the datalist in format `'machine_name' => 'Human readable name'`
      */
     public function __construct(string $id, array $attributes = [], array $options = [])
     {
