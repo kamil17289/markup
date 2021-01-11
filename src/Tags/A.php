@@ -3,6 +3,9 @@
 namespace Nethead\Markup\Tags;
 
 use Nethead\Markup\Foundation\Tag;
+use Nethead\Markup\Foundation\TextNode;
+use Nethead\Markup\Helpers\ObfuscatesData;
+use SebastianBergmann\CodeCoverage\Report\Text;
 
 /**
  * Creates "a" element.
@@ -11,6 +14,8 @@ use Nethead\Markup\Foundation\Tag;
  * @package Nethead\Markup\Tags
  */
 class A extends Tag {
+    use ObfuscatesData;
+
     /**
      * A constructor.
      *
@@ -26,6 +31,36 @@ class A extends Tag {
         parent::__construct('a', $attributes, $children);
 
         $this->attrs()->set('href', $href);
+    }
+
+    /**
+     * Convert the link into mailto: link with obfuscated email address.
+     * Make sure you set the email address as link's href attribute.
+     * DO NOT add "mailto:" at the beginning of the href.
+     *
+     * @return A
+     */
+    public function mailto(): A
+    {
+        foreach($this->children as $name => $child) {
+            if (is_string($this->children[$name])) {
+                $this->children[$name] = $this->reverse($this->children[$name]);
+            }
+            elseif ($this->children[$name] instanceof TextNode) {
+                $this->children[$name]->alter([$this, 'reverse']);
+            }
+        }
+
+        $email = $this->attrs()->get('href');
+
+        $this->attrs()->setMany([
+            'href' => 'javascript:void(0);',
+            'data-address' => $this->obfuscate($email),
+            'style' => 'direction: rtl; unicode-bidi: bidi-override;',
+            'onclick' => "window.location.href='mailto:'+this.dataset.address" . $this->rot13jsDecoder
+        ]);
+
+        return $this;
     }
 
     /**

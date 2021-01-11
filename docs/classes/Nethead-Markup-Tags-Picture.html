@@ -222,6 +222,13 @@ Warning: if some keys already exists they will be overwritten</dd>
 <dd>Get the child element of a given key</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Nethead-Markup-Tags-Picture.html#method_image">image()</a>
+    <span>
+                        &nbsp;: <a href="classes/Nethead-Markup-Tags-Picture.html"><abbr title="\Nethead\Markup\Tags\Picture">Picture</abbr></a>    </span>
+</dt>
+<dd>Add &quot;image&quot; tag to a picture structure.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Foundation-Tag.html#method_isVoidElement">isVoidElement()</a>
     <span>
                         &nbsp;: bool    </span>
@@ -894,6 +901,72 @@ Warning: if some keys already exists they will be overwritten</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_image">
+        image()
+        <a href="classes/Nethead-Markup-Tags-Picture.html#method_image" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Tags/Picture.php"><a href="files/src-tags-picture.html"><abbr title="src/Tags/Picture.php">Picture.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">66</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Add &quot;image&quot; tag to a picture structure.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">image</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$href</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$alt</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$attributes</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Tags-Picture.html"><abbr title="\Nethead\Markup\Tags\Picture">Picture</abbr></a></span></code>
+
+        <section class="phpdocumentor-description"><p>Image tag must be the last child of the picture tag. All other sources have to be rendered above,
+so use this method when adding the last image source.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$href</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The URL of the image</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$alt</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Alternative text to display if the image can't be loaded.</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$attributes</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Additional HTML attributes you'd like to add</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Tags-Picture.html"><abbr title="\Nethead\Markup\Tags\Picture">Picture</abbr></a></span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_isVoidElement">
         isVoidElement()
         <a href="classes/Nethead-Markup-Foundation-Tag.html#method_isVoidElement" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1133,7 +1206,7 @@ If the tag is void tag, and HtmlConfig::$closeVoids is set to true, it will be a
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Tags/Picture.php"><a href="files/src-tags-picture.html"><abbr title="src/Tags/Picture.php">Picture.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">40</span>
+    <span class="phpdocumentor-element-found-in__line">42</span>
 </aside>
 
         <p class="phpdocumentor-summary">Add &quot;source&quot; element to the &quot;picture&quot;</p>
@@ -1151,7 +1224,8 @@ If the tag is void tag, and HtmlConfig::$closeVoids is set to true, it will be a
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                    <section class="phpdocumentor-description"><p>URL of the image source</p>
+</section>
 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1159,7 +1233,8 @@ If the tag is void tag, and HtmlConfig::$closeVoids is set to true, it will be a
                 : <span class="phpdocumentor-signature__argument__return-type">int</span>
                  = <span class="phpdocumentor-signature__argument__default-value">320</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                    <section class="phpdocumentor-description"><p>Media breakpoint width in pixels</p>
+</section>
 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1174,27 +1249,13 @@ If the tag is void tag, and HtmlConfig::$closeVoids is set to true, it will be a
                 : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
                  = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                    <section class="phpdocumentor-description"><p>Additional HTML attributes you'd like to add</p>
+</section>
 
             </dd>
             </dl>
 
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">todo</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>Image tag must be the last child of Picture</p>
-</section>
-
-                                    </dd>
-                        </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Tags-Picture.html"><abbr title="\Nethead\Markup\Tags\Picture">Picture</abbr></a></span>

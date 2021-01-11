@@ -60,6 +60,18 @@ class TextNode {
     }
 
     /**
+     * Alter the TextNode contents using custom function.
+     *
+     * @param callable $processingFunction
+     * @return TextNode
+     */
+    public function alter(callable $processingFunction): TextNode
+    {
+        $this->contents = $processingFunction($this->contents);
+        return $this;
+    }
+
+    /**
      * Render the contents as a safe HTML string.
      * Uses htmlspecialchars to escape unsafe strings into safe ones.
      *

@@ -163,7 +163,7 @@ class Tag {
      */
     public function __toString() : string
     {
-        return $this->open() . $this->renderChildren() . $this->close();
+        return $this->render();
     }
 
     /**
@@ -173,7 +173,7 @@ class Tag {
      */
     public function render(): string
     {
-        return $this->__toString();
+        return $this->open() . $this->renderChildren() . $this->close();
     }
 
     /**

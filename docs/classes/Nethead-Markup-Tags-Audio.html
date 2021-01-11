@@ -97,20 +97,25 @@
             <div class="phpdocumentor-element__package">
             in package
             <ul class="phpdocumentor-breadcrumbs">
-                                    <li class="phpdocumentor-breadcrumb"><a href="packages/Default.html">Default</a></li>
+                                    <li class="phpdocumentor-breadcrumb"><a href="packages/Nethead.html">Nethead</a></li>
+                                    <li class="phpdocumentor-breadcrumb"><a href="packages/Nethead-Markup.html">Markup</a></li>
+                                    <li class="phpdocumentor-breadcrumb"><a href="packages/Nethead-Markup-Tags.html">Tags</a></li>
                             </ul>
         </div>
     
     
+            <span class="phpdocumentor-element__extends">
+            Uses
+                            <a href="classes/Nethead-Markup-Helpers-CanHaveMediaControls.html"><abbr title="\Nethead\Markup\Helpers\CanHaveMediaControls">CanHaveMediaControls</abbr></a>                    </span>
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Tags/Audio.php"><a href="files/src-tags-audio.html"><abbr title="src/Tags/Audio.php">Audio.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">7</span>
+    <span class="phpdocumentor-element-found-in__line">14</span>
 </aside>
 
-            <p class="phpdocumentor-summary">A class for creating any HTML tag element you would like.</p>
+            <p class="phpdocumentor-summary">Class Audio creates &quot;audio&quot; tags.</p>
 
     <section class="phpdocumentor-description"></section>
 
@@ -148,6 +153,13 @@
 </dt>
 <dd>Name of the tag (in HTML).</dd>
 
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a href="classes/Nethead-Markup-Tags-Audio.html#property_notSupportedMessege">$notSupportedMessege</a>
+    <span>
+                &nbsp;: string            </span>
+</dt>
+<dd>Set this message with your own and show for older browsers.</dd>
+
                 <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Foundation-Tag.html#method___call">__call()</a>
     <span>
@@ -160,7 +172,7 @@
     <span>
                         &nbsp;: mixed    </span>
 </dt>
-<dd>Tag constructor.</dd>
+<dd>Audio constructor.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Foundation-Tag.html#method___toString">__toString()</a>
@@ -185,6 +197,13 @@ Warning: if some keys already exists they will be overwritten</dd>
 <dd>Retrieve the attributes object</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Nethead-Markup-Helpers-CanHaveMediaControls.html#method_autoplay">autoplay()</a>
+    <span>
+                        &nbsp;: $this    </span>
+</dt>
+<dd>Specifies that the video/audio will start playing as soon as it is ready</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Foundation-Tag.html#method_classList">classList()</a>
     <span>
                         &nbsp;: <a href="classes/Nethead-Markup-Helpers-ClassList.html"><abbr title="\Nethead\Markup\Helpers\ClassList">ClassList</abbr></a>    </span>
@@ -206,6 +225,13 @@ Warning: if some keys already exists they will be overwritten</dd>
 <dd>Close the tag.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Nethead-Markup-Helpers-CanHaveMediaControls.html#method_controls">controls()</a>
+    <span>
+                        &nbsp;: $this    </span>
+</dt>
+<dd>Specifies that video controls should be displayed</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Foundation-Tag.html#method_getChild">getChild()</a>
     <span>
                         &nbsp;: <a href="classes/Nethead-Markup-Foundation-Tag.html"><abbr title="\Nethead\Markup\Foundation\Tag">Tag</abbr></a>|<a href="classes/Nethead-Markup-Foundation-TextNode.html"><abbr title="\Nethead\Markup\Foundation\TextNode">TextNode</abbr></a>|null    </span>
@@ -220,11 +246,32 @@ Warning: if some keys already exists they will be overwritten</dd>
 <dd>Check if this tag has it&#039;s closing equivalent</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Nethead-Markup-Helpers-CanHaveMediaControls.html#method_loop">loop()</a>
+    <span>
+                        &nbsp;: $this    </span>
+</dt>
+<dd>Specifies that the video/audio will start over again, every time it is finished</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Nethead-Markup-Helpers-CanHaveMediaControls.html#method_muted">muted()</a>
+    <span>
+                        &nbsp;: $this    </span>
+</dt>
+<dd>Specifies that the audio output of the video/audio should be muted</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Foundation-Tag.html#method_open">open()</a>
     <span>
                         &nbsp;: string    </span>
 </dt>
 <dd>Open the Tag in HTML.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Nethead-Markup-Helpers-CanHaveMediaControls.html#method_preload">preload()</a>
+    <span>
+                        &nbsp;: $this    </span>
+</dt>
+<dd>Specifies if and how the author thinks the video should be loaded when the page loads.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Foundation-Tag.html#method_removeChild">removeChild()</a>
@@ -234,11 +281,11 @@ Warning: if some keys already exists they will be overwritten</dd>
 <dd>Remove child element of a given key</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Nethead-Markup-Foundation-Tag.html#method_render">render()</a>
+    <a href="classes/Nethead-Markup-Tags-Audio.html#method_render">render()</a>
     <span>
                         &nbsp;: string    </span>
 </dt>
-<dd>Render the tag object to string.</dd>
+<dd>Renders the object into HTML string</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Foundation-Tag.html#method_renderChildren">renderChildren()</a>
@@ -253,6 +300,13 @@ Warning: if some keys already exists they will be overwritten</dd>
                         &nbsp;: <a href="classes/Nethead-Markup-Foundation-Tag.html"><abbr title="\Nethead\Markup\Foundation\Tag">Tag</abbr></a>    </span>
 </dt>
 <dd>Set tag&#039;s inner HTML</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Nethead-Markup-Tags-Audio.html#method_source">source()</a>
+    <span>
+                        &nbsp;: <a href="classes/Nethead-Markup-Tags-Audio.html"><abbr title="\Nethead\Markup\Tags\Audio">Audio</abbr></a>    </span>
+</dt>
+<dd>Add a audio source.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Foundation-Tag.html#method_with">with()</a>
@@ -399,6 +453,38 @@ Children array can be associative to make it easier to retrieve the child elemen
     
 
 </article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_notSupportedMessege">
+        $notSupportedMessege
+        <a href="classes/Nethead-Markup-Tags-Audio.html#property_notSupportedMessege" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Tags/Audio.php"><a href="files/src-tags-audio.html"><abbr title="src/Tags/Audio.php">Audio.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">22</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Set this message with your own and show for older browsers.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">string</span>
+    <span class="phpdocumentor-signature__name">$notSupportedMessege</span>
+     = <span class="phpdocumentor-signature__default-value">&#039;Your browser does not support the audio tag.&#039;</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
             </section>
 
             <section class="phpdocumentor-methods">
@@ -489,45 +575,25 @@ Children array can be associative to make it easier to retrieve the child elemen
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Tags/Audio.php"><a href="files/src-tags-audio.html"><abbr title="src/Tags/Audio.php">Audio.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">8</span>
+    <span class="phpdocumentor-element-found-in__line">29</span>
 </aside>
 
-        <p class="phpdocumentor-summary">Tag constructor.</p>
+        <p class="phpdocumentor-summary">Audio constructor.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$attributes</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$children</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$attributes</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
         <section class="phpdocumentor-description"></section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$name</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Name of the Tag to create</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$attributes</span>
                 : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
                  = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Attributes in form of array where keys are the names of attributes and values are... values</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$children</span>
-                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Children of the tag being created. If you are creating void tag, it will have no effect.
-You can also set children for the tag using the public setChildren method</p>
-</section>
+                    <section class="phpdocumentor-description"></section>
 
             </dd>
             </dl>
@@ -693,6 +759,51 @@ Warning: if some keys already exists they will be overwritten</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_autoplay">
+        autoplay()
+        <a href="classes/Nethead-Markup-Helpers-CanHaveMediaControls.html#method_autoplay" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Helpers/CanHaveMediaControls.php"><a href="files/src-helpers-canhavemediacontrols.html"><abbr title="src/Helpers/CanHaveMediaControls.php">CanHaveMediaControls.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">31</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Specifies that the video/audio will start playing as soon as it is ready</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">autoplay</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$value</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">$this</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_classList">
         classList()
         <a href="classes/Nethead-Markup-Foundation-Tag.html#method_classList" class="headerlink"><i class="fas fa-link"></i></a>
@@ -812,6 +923,51 @@ Warning: if some keys already exists they will be overwritten</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_controls">
+        controls()
+        <a href="classes/Nethead-Markup-Helpers-CanHaveMediaControls.html#method_controls" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Helpers/CanHaveMediaControls.php"><a href="files/src-helpers-canhavemediacontrols.html"><abbr title="src/Helpers/CanHaveMediaControls.php">CanHaveMediaControls.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">19</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Specifies that video controls should be displayed</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">controls</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$value</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">$this</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_getChild">
         getChild()
         <a href="classes/Nethead-Markup-Foundation-Tag.html#method_getChild" class="headerlink"><i class="fas fa-link"></i></a>
@@ -894,6 +1050,96 @@ Warning: if some keys already exists they will be overwritten</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_loop">
+        loop()
+        <a href="classes/Nethead-Markup-Helpers-CanHaveMediaControls.html#method_loop" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Helpers/CanHaveMediaControls.php"><a href="files/src-helpers-canhavemediacontrols.html"><abbr title="src/Helpers/CanHaveMediaControls.php">CanHaveMediaControls.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">43</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Specifies that the video/audio will start over again, every time it is finished</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">loop</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$value</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">$this</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_muted">
+        muted()
+        <a href="classes/Nethead-Markup-Helpers-CanHaveMediaControls.html#method_muted" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Helpers/CanHaveMediaControls.php"><a href="files/src-helpers-canhavemediacontrols.html"><abbr title="src/Helpers/CanHaveMediaControls.php">CanHaveMediaControls.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">55</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Specifies that the audio output of the video/audio should be muted</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">muted</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$value</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">$this</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_open">
         open()
         <a href="classes/Nethead-Markup-Foundation-Tag.html#method_open" class="headerlink"><i class="fas fa-link"></i></a>
@@ -919,6 +1165,52 @@ If the tag is void tag, and HtmlConfig::$closeVoids is set to true, it will be a
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_preload">
+        preload()
+        <a href="classes/Nethead-Markup-Helpers-CanHaveMediaControls.html#method_preload" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Helpers/CanHaveMediaControls.php"><a href="files/src-helpers-canhavemediacontrols.html"><abbr title="src/Helpers/CanHaveMediaControls.php">CanHaveMediaControls.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">68</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Specifies if and how the author thinks the video should be loaded when the page loads.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">preload</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$value</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>auto|metadata|none</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">$this</span>
             &mdash;
             <section class="phpdocumentor-description"></section>
 
@@ -978,15 +1270,15 @@ If the tag is void tag, and HtmlConfig::$closeVoids is set to true, it will be a
 >
     <h4 class="phpdocumentor-element__name" id="method_render">
         render()
-        <a href="classes/Nethead-Markup-Foundation-Tag.html#method_render" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Nethead-Markup-Tags-Audio.html#method_render" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/Tag.php"><a href="files/src-foundation-tag.html"><abbr title="src/Foundation/Tag.php">Tag.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Tags/Audio.php"><a href="files/src-tags-audio.html"><abbr title="src/Tags/Audio.php">Audio.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">174</span>
+    <span class="phpdocumentor-element-found-in__line">57</span>
 </aside>
 
-        <p class="phpdocumentor-summary">Render the tag object to string.</p>
+        <p class="phpdocumentor-summary">Renders the object into HTML string</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -1000,8 +1292,7 @@ If the tag is void tag, and HtmlConfig::$closeVoids is set to true, it will be a
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">string</span>
             &mdash;
-            <section class="phpdocumentor-description"><p>Tag object compiled to a string that can be outputted to the browser.</p>
-</section>
+            <section class="phpdocumentor-description"></section>
 
     
 </article>
@@ -1080,6 +1371,61 @@ If the tag is void tag, and HtmlConfig::$closeVoids is set to true, it will be a
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-Tag.html"><abbr title="\Nethead\Markup\Foundation\Tag">Tag</abbr></a></span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_source">
+        source()
+        <a href="classes/Nethead-Markup-Tags-Audio.html#method_source" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Tags/Audio.php"><a href="files/src-tags-audio.html"><abbr title="src/Tags/Audio.php">Audio.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">41</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Add a audio source.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">source</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$src</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Tags-Audio.html"><abbr title="\Nethead\Markup\Tags\Audio">Audio</abbr></a></span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$src</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>src attribute value, a URL basically</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$type</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>MIME type of the video</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Tags-Audio.html"><abbr title="\Nethead\Markup\Tags\Audio">Audio</abbr></a></span>
             &mdash;
             <section class="phpdocumentor-description"></section>
 

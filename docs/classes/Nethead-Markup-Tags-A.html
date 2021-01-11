@@ -104,12 +104,15 @@
         </div>
     
     
+            <span class="phpdocumentor-element__extends">
+            Uses
+                            <a href="classes/Nethead-Markup-Helpers-ObfuscatesData.html"><abbr title="\Nethead\Markup\Helpers\ObfuscatesData">ObfuscatesData</abbr></a>                    </span>
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Tags/A.php"><a href="files/src-tags-a.html"><abbr title="src/Tags/A.php">A.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">13</span>
+    <span class="phpdocumentor-element-found-in__line">16</span>
 </aside>
 
             <p class="phpdocumentor-summary">Creates &quot;a&quot; element.</p>
@@ -164,6 +167,13 @@
                 &nbsp;: string            </span>
 </dt>
 <dd>Name of the tag (in HTML).</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/Nethead-Markup-Helpers-ObfuscatesData.html#property_rot13jsDecoder">$rot13jsDecoder</a>
+    <span>
+                &nbsp;: mixed            </span>
+</dt>
+<dd></dd>
 
                 <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Foundation-Tag.html#method___call">__call()</a>
@@ -251,6 +261,13 @@ Warning: if some keys already exists they will be overwritten</dd>
 <dd>Check if this tag has it&#039;s closing equivalent</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Nethead-Markup-Tags-A.html#method_mailto">mailto()</a>
+    <span>
+                        &nbsp;: <a href="classes/Nethead-Markup-Tags-A.html"><abbr title="\Nethead\Markup\Tags\A">A</abbr></a>    </span>
+</dt>
+<dd>Convert the link into mailto: link with obfuscated email address.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Foundation-Tag.html#method_open">open()</a>
     <span>
                         &nbsp;: string    </span>
@@ -305,6 +322,20 @@ Warning: if some keys already exists they will be overwritten</dd>
                         &nbsp;: <a href="classes/Nethead-Markup-Foundation-Tag.html"><abbr title="\Nethead\Markup\Foundation\Tag">Tag</abbr></a>    </span>
 </dt>
 <dd>Pass the Tag instance to any processing function for further modification.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Nethead-Markup-Helpers-ObfuscatesData.html#method_obfuscate">obfuscate()</a>
+    <span>
+                        &nbsp;: string    </span>
+</dt>
+<dd>Code the string to make it harder for robots to collect data.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Nethead-Markup-Helpers-ObfuscatesData.html#method_reverse">reverse()</a>
+    <span>
+                        &nbsp;: string    </span>
+</dt>
+<dd>Reverse the string.</dd>
 
         </dl>
 
@@ -444,6 +475,36 @@ Children array can be associative to make it easier to retrieve the child elemen
     
 
 </article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_rot13jsDecoder">
+        $rot13jsDecoder
+        <a href="classes/Nethead-Markup-Helpers-ObfuscatesData.html#property_rot13jsDecoder" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Helpers/ObfuscatesData.php"><a href="files/src-helpers-obfuscatesdata.html"><abbr title="src/Helpers/ObfuscatesData.php">ObfuscatesData.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">15</span>
+</aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">$rot13jsDecoder</span>
+     = <span class="phpdocumentor-signature__default-value">&#039;.replace(/[a-zA-Z]/g,function(c){return String.fromCharCode((c&lt;=&#039;Z&#039;?90:122)&gt;=(c=c.charCodeAt(0)+13)?c:c-26);})&#039;</span></code>
+
+    
+    
+
+</article>
             </section>
 
             <section class="phpdocumentor-methods">
@@ -534,7 +595,7 @@ Children array can be associative to make it easier to retrieve the child elemen
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Tags/A.php"><a href="files/src-tags-a.html"><abbr title="src/Tags/A.php">A.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">24</span>
+    <span class="phpdocumentor-element-found-in__line">29</span>
 </aside>
 
         <p class="phpdocumentor-summary">A constructor.</p>
@@ -744,7 +805,7 @@ Warning: if some keys already exists they will be overwritten</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Tags/A.php"><a href="files/src-tags-a.html"><abbr title="src/Tags/A.php">A.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">61</span>
+    <span class="phpdocumentor-element-found-in__line">96</span>
 </aside>
 
         <p class="phpdocumentor-summary">Helper function to set the link to open in new tab.</p>
@@ -897,7 +958,7 @@ Warning: if some keys already exists they will be overwritten</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Tags/A.php"><a href="files/src-tags-a.html"><abbr title="src/Tags/A.php">A.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">36</span>
+    <span class="phpdocumentor-element-found-in__line">71</span>
 </aside>
 
         <p class="phpdocumentor-summary">Helper function for indicating download link.</p>
@@ -1006,6 +1067,42 @@ Warning: if some keys already exists they will be overwritten</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_mailto">
+        mailto()
+        <a href="classes/Nethead-Markup-Tags-A.html#method_mailto" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Tags/A.php"><a href="files/src-tags-a.html"><abbr title="src/Tags/A.php">A.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">43</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Convert the link into mailto: link with obfuscated email address.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">mailto</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Tags-A.html"><abbr title="\Nethead\Markup\Tags\A">A</abbr></a></span></code>
+
+        <section class="phpdocumentor-description"><p>Make sure you set the email address as link's href attribute.
+DO NOT add &quot;mailto:&quot; at the beginning of the href.</p>
+</section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Tags-A.html"><abbr title="\Nethead\Markup\Tags\A">A</abbr></a></span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_open">
         open()
         <a href="classes/Nethead-Markup-Foundation-Tag.html#method_open" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1049,7 +1146,7 @@ If the tag is void tag, and HtmlConfig::$closeVoids is set to true, it will be a
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Tags/A.php"><a href="files/src-tags-a.html"><abbr title="src/Tags/A.php">A.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">73</span>
+    <span class="phpdocumentor-element-found-in__line">108</span>
 </aside>
 
         <p class="phpdocumentor-summary">Set the relation of the link.</p>
@@ -1255,7 +1352,7 @@ If the tag is void tag, and HtmlConfig::$closeVoids is set to true, it will be a
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Tags/A.php"><a href="files/src-tags-a.html"><abbr title="src/Tags/A.php">A.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">49</span>
+    <span class="phpdocumentor-element-found-in__line">84</span>
 </aside>
 
         <p class="phpdocumentor-summary">Helper function for setting target frame</p>
@@ -1330,6 +1427,98 @@ If the tag is void tag, and HtmlConfig::$closeVoids is set to true, it will be a
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-Tag.html"><abbr title="\Nethead\Markup\Foundation\Tag">Tag</abbr></a></span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_obfuscate">
+        obfuscate()
+        <a href="classes/Nethead-Markup-Helpers-ObfuscatesData.html#method_obfuscate" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Helpers/ObfuscatesData.php"><a href="files/src-helpers-obfuscatesdata.html"><abbr title="src/Helpers/ObfuscatesData.php">ObfuscatesData.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">23</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Code the string to make it harder for robots to collect data.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                <span class="phpdocumentor-signature__name">obfuscate</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$data</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Data you want to encode.</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>Data encoded with simple rot13 encoding.</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_reverse">
+        reverse()
+        <a href="classes/Nethead-Markup-Helpers-ObfuscatesData.html#method_reverse" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Helpers/ObfuscatesData.php"><a href="files/src-helpers-obfuscatesdata.html"><abbr title="src/Helpers/ObfuscatesData.php">ObfuscatesData.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">37</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Reverse the string.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                <span class="phpdocumentor-signature__name">reverse</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$data</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
             &mdash;
             <section class="phpdocumentor-description"></section>
 

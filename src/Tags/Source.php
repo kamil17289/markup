@@ -79,7 +79,6 @@ class Source extends Tag {
      * Set the MIME type of the media source.
      *
      * @param string $type
-     * @todo Add automatic mime type setting
      * @return $this
      */
     public function type(string $type): Source

@@ -316,6 +316,11 @@ Search.appendIndex(
             "summary": "Append\u0020some\u0020characters\u0020at\u0020the\u0020end\u0020of\u0020the\u0020string.",
             "url": "classes/Nethead-Markup-Foundation-TextNode.html#method_append"
         },                {
+            "fqsen": "\\Nethead\\Markup\\Foundation\\TextNode\u003A\u003Aalter\u0028\u0029",
+            "name": "alter",
+            "summary": "Alter\u0020the\u0020TextNode\u0020contents\u0020using\u0020custom\u0020function.",
+            "url": "classes/Nethead-Markup-Foundation-TextNode.html#method_alter"
+        },                {
             "fqsen": "\\Nethead\\Markup\\Foundation\\TextNode\u003A\u003Arender\u0028\u0029",
             "name": "render",
             "summary": "Render\u0020the\u0020contents\u0020as\u0020a\u0020safe\u0020HTML\u0020string.",
@@ -846,6 +851,11 @@ Search.appendIndex(
             "summary": "A\u0020constructor.",
             "url": "classes/Nethead-Markup-Tags-A.html#method___construct"
         },                {
+            "fqsen": "\\Nethead\\Markup\\Tags\\A\u003A\u003Amailto\u0028\u0029",
+            "name": "mailto",
+            "summary": "Convert\u0020the\u0020link\u0020into\u0020mailto\u003A\u0020link\u0020with\u0020obfuscated\u0020email\u0020address.",
+            "url": "classes/Nethead-Markup-Tags-A.html#method_mailto"
+        },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\A\u003A\u003Adownload\u0028\u0029",
             "name": "download",
             "summary": "Helper\u0020function\u0020for\u0020indicating\u0020download\u0020link.",
@@ -1086,16 +1096,6 @@ Search.appendIndex(
             "summary": "Link\u0020constructor.",
             "url": "classes/Nethead-Markup-Tags-Link.html#method___construct"
         },                {
-            "fqsen": "\\Nethead\\Markup\\Tags\\Mailto",
-            "name": "Mailto",
-            "summary": "Creates\u0020a\u0020mailto\u003A\u0020link.",
-            "url": "classes/Nethead-Markup-Tags-Mailto.html"
-        },                {
-            "fqsen": "\\Nethead\\Markup\\Tags\\Mailto\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "Mailto\u0020constructor.",
-            "url": "classes/Nethead-Markup-Tags-Mailto.html#method___construct"
-        },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\Meta",
             "name": "Meta",
             "summary": "Creates\u0020\u0022meta\u0022\u0020element.",
@@ -1155,6 +1155,11 @@ Search.appendIndex(
             "name": "source",
             "summary": "Add\u0020\u0022source\u0022\u0020element\u0020to\u0020the\u0020\u0022picture\u0022",
             "url": "classes/Nethead-Markup-Tags-Picture.html#method_source"
+        },                {
+            "fqsen": "\\Nethead\\Markup\\Tags\\Picture\u003A\u003Aimage\u0028\u0029",
+            "name": "image",
+            "summary": "Add\u0020\u0022image\u0022\u0020tag\u0020to\u0020a\u0020picture\u0020structure.",
+            "url": "classes/Nethead-Markup-Tags-Picture.html#method_image"
         },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\Picture\u003A\u003A\u0024alt",
             "name": "alt",
@@ -1363,13 +1368,28 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\Audio",
             "name": "Audio",
-            "summary": "A\u0020class\u0020for\u0020creating\u0020any\u0020HTML\u0020tag\u0020element\u0020you\u0020would\u0020like.",
+            "summary": "Class\u0020Audio\u0020creates\u0020\u0022audio\u0022\u0020tags.",
             "url": "classes/Nethead-Markup-Tags-Audio.html"
         },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\Audio\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "Tag\u0020constructor.",
+            "summary": "Audio\u0020constructor.",
             "url": "classes/Nethead-Markup-Tags-Audio.html#method___construct"
+        },                {
+            "fqsen": "\\Nethead\\Markup\\Tags\\Audio\u003A\u003Asource\u0028\u0029",
+            "name": "source",
+            "summary": "Add\u0020a\u0020audio\u0020source.",
+            "url": "classes/Nethead-Markup-Tags-Audio.html#method_source"
+        },                {
+            "fqsen": "\\Nethead\\Markup\\Tags\\Audio\u003A\u003Arender\u0028\u0029",
+            "name": "render",
+            "summary": "Renders\u0020the\u0020object\u0020into\u0020HTML\u0020string",
+            "url": "classes/Nethead-Markup-Tags-Audio.html#method_render"
+        },                {
+            "fqsen": "\\Nethead\\Markup\\Tags\\Audio\u003A\u003A\u0024notSupportedMessege",
+            "name": "notSupportedMessege",
+            "summary": "Set\u0020this\u0020message\u0020with\u0020your\u0020own\u0020and\u0020show\u0020for\u0020older\u0020browsers.",
+            "url": "classes/Nethead-Markup-Tags-Audio.html#property_notSupportedMessege"
         },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\Meter",
             "name": "Meter",
@@ -1393,23 +1413,73 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\Progress",
             "name": "Progress",
-            "summary": "A\u0020class\u0020for\u0020creating\u0020any\u0020HTML\u0020tag\u0020element\u0020you\u0020would\u0020like.",
+            "summary": "Class\u0020Progress\u0020creates\u0020a\u0020progress\u0020indicators.",
             "url": "classes/Nethead-Markup-Tags-Progress.html"
         },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\Progress\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "Tag\u0020constructor.",
+            "summary": "Progress\u0020constructor.",
             "url": "classes/Nethead-Markup-Tags-Progress.html#method___construct"
         },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\Video",
             "name": "Video",
-            "summary": "A\u0020class\u0020for\u0020creating\u0020any\u0020HTML\u0020tag\u0020element\u0020you\u0020would\u0020like.",
+            "summary": "Class\u0020Video\u0020creates\u0020a\u0020\u0022video\u0022\u0020tags",
             "url": "classes/Nethead-Markup-Tags-Video.html"
         },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\Video\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "Tag\u0020constructor.",
+            "summary": "Video\u0020constructor.",
             "url": "classes/Nethead-Markup-Tags-Video.html#method___construct"
+        },                {
+            "fqsen": "\\Nethead\\Markup\\Tags\\Video\u003A\u003Asource\u0028\u0029",
+            "name": "source",
+            "summary": "Add\u0020a\u0020video\u0020source.",
+            "url": "classes/Nethead-Markup-Tags-Video.html#method_source"
+        },                {
+            "fqsen": "\\Nethead\\Markup\\Tags\\Video\u003A\u003Aposter\u0028\u0029",
+            "name": "poster",
+            "summary": "Set\u0020the\u0020poster\u0020image\u0020for\u0020the\u0020video.",
+            "url": "classes/Nethead-Markup-Tags-Video.html#method_poster"
+        },                {
+            "fqsen": "\\Nethead\\Markup\\Tags\\Video\u003A\u003Arender\u0028\u0029",
+            "name": "render",
+            "summary": "Renders\u0020the\u0020object\u0020into\u0020HTML\u0020string",
+            "url": "classes/Nethead-Markup-Tags-Video.html#method_render"
+        },                {
+            "fqsen": "\\Nethead\\Markup\\Tags\\Video\u003A\u003A\u0024notSupportedMessege",
+            "name": "notSupportedMessege",
+            "summary": "Set\u0020this\u0020message\u0020with\u0020your\u0020own\u0020and\u0020show\u0020for\u0020older\u0020browsers.",
+            "url": "classes/Nethead-Markup-Tags-Video.html#property_notSupportedMessege"
+        },                {
+            "fqsen": "\\Nethead\\Markup\\Helpers\\CanHaveMediaControls",
+            "name": "CanHaveMediaControls",
+            "summary": "Trait\u0020CanHaveMediaControls.",
+            "url": "classes/Nethead-Markup-Helpers-CanHaveMediaControls.html"
+        },                {
+            "fqsen": "\\Nethead\\Markup\\Helpers\\CanHaveMediaControls\u003A\u003Acontrols\u0028\u0029",
+            "name": "controls",
+            "summary": "Specifies\u0020that\u0020video\u0020controls\u0020should\u0020be\u0020displayed",
+            "url": "classes/Nethead-Markup-Helpers-CanHaveMediaControls.html#method_controls"
+        },                {
+            "fqsen": "\\Nethead\\Markup\\Helpers\\CanHaveMediaControls\u003A\u003Aautoplay\u0028\u0029",
+            "name": "autoplay",
+            "summary": "Specifies\u0020that\u0020the\u0020video\/audio\u0020will\u0020start\u0020playing\u0020as\u0020soon\u0020as\u0020it\u0020is\u0020ready",
+            "url": "classes/Nethead-Markup-Helpers-CanHaveMediaControls.html#method_autoplay"
+        },                {
+            "fqsen": "\\Nethead\\Markup\\Helpers\\CanHaveMediaControls\u003A\u003Aloop\u0028\u0029",
+            "name": "loop",
+            "summary": "Specifies\u0020that\u0020the\u0020video\/audio\u0020will\u0020start\u0020over\u0020again,\u0020every\u0020time\u0020it\u0020is\u0020finished",
+            "url": "classes/Nethead-Markup-Helpers-CanHaveMediaControls.html#method_loop"
+        },                {
+            "fqsen": "\\Nethead\\Markup\\Helpers\\CanHaveMediaControls\u003A\u003Amuted\u0028\u0029",
+            "name": "muted",
+            "summary": "Specifies\u0020that\u0020the\u0020audio\u0020output\u0020of\u0020the\u0020video\/audio\u0020should\u0020be\u0020muted",
+            "url": "classes/Nethead-Markup-Helpers-CanHaveMediaControls.html#method_muted"
+        },                {
+            "fqsen": "\\Nethead\\Markup\\Helpers\\CanHaveMediaControls\u003A\u003Apreload\u0028\u0029",
+            "name": "preload",
+            "summary": "Specifies\u0020if\u0020and\u0020how\u0020the\u0020author\u0020thinks\u0020the\u0020video\u0020should\u0020be\u0020loaded\u0020when\u0020the\u0020page\u0020loads.",
+            "url": "classes/Nethead-Markup-Helpers-CanHaveMediaControls.html#method_preload"
         },                {
             "fqsen": "\\",
             "name": "\\",
