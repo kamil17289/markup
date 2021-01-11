@@ -9,24 +9,15 @@
         }
     ],
     "require": {
-        "php": "^7.1"
+        "php": "^7.3"
     },
     "autoload": {
         "psr-4": {
             "Nethead\\Markup\\": "src/"
-        }
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Nethead\\Markup\\MarkupServiceProvider"
-            ],
-            "aliases": {
-                "Markup": "Nethead\\Markup\\MarkupFacade"
-            }
-        }
+        },
+        "files": ["src/Helpers/tag.php"]
     },
     "require-dev": {
-        "orchestra/testbench": "^3.8"
+        "phpunit/phpunit": "^9"
     }
 }
