@@ -5,75 +5,109 @@ It can be used as a helper in Blade templates (Laravel), but it basically is
 created as a support package for my other projects.
 
 The package is framework-independent. This means you can install it in every project
-which is using Composer to manage its dependencies.
+which is using PSR-4 autoloading.
 
-## Installation in Laravel
-For Laravel, you only need to install it using composer. Markup supports package
-discovery and automatically register itself in the service container under 'markup'
-alias. You can also use the Markup Facade.
-
-## Installation in other frameworks
-First you need to create a Presenter. There are three presenters available for you out
-of the box:
-
-* LaravelBladePresenter - is used by the Laravel ServiceProvider so the MarkupBuilder
-will always return a HtmlString object. You don't need to use it explicitly anywhere.
-* ObjectPresenter - you can use it to make MarkupBuilder always return the Tag object,
-instead of a `string`. You can then have more control and call any methods
-delivered by the Tag objects.
-* PlainStringPresenter - best for printing HTML inside templates, it will make the
-MarkupBuilder return a compiled Tag in as a `string` type.
-
-```
-use Nethead\Markup\Presenters\PlainStringPresenter;
-
-$presenter = new PlainStringPresenter();
-```
-
-Next you need a URL generator. Markup has two ready for use URL generators:
-* LaravelUrlAdapter - is used automatically when you install a package in Laravel
-* BasicUrlGenerator - is a simple URL generator which will simply create a URL based
-on the current working domain. It is not recommended to use it - create your own 
-URL generator by implementing the `Nethead\Markup\UrlGenerators\UrlGenerator`
-interface to integrate the package with your framework.
-
-```
-use Nethead\Markup\UrlGenerators\BasicUrlGenerator;
-
-$generator = new BasicUrlGenerator();
-```
-
-Next create an MarkupBuilder instance configuring it with the appropriate URL generator
-and presenter:
-
-```
-use Nethead\Markup\MarkupBuilder;
-
-$htmlBuilder = new MarkupBuilder($generator, $presenter);
-```
-
-You can register it as a service or construct a factory function, or do whatever your
-framework supports to integrate the package.
+## Usage
+Use Nethead\Markup\MarkupFactory to build object representation of the
+needed HTML. Use can generate menus, links, blocks, paragraphs, anything.
+MarkupFactory includes useful static helpers to quickly generate what you
+want. The package also includes a `tag` helper function if you like the
+functional approach more.
 
 ## Generating HTML code
+```php
+use Nethead\Markup\MarkupFactory as Html;
+// or
+use function Nethead\Markup\Helpers\tag;
+
+// Link to Google.com
+Html::anchor('https://google.com', ['Go to Google'])->blank();
+
+// Image link
+Html::anchor('https://google.com', [
+    Html::image('/img/google.png', 'Google Logo')
+])->blank();
+
+// Paragraph
+tag('p', ['class' => 'px-2'], [
+    'Here is how you can search with',
+    tag('a', ['href' => 'https://google.com'], ['Google'])->blank()
+]);
 ```
-$htmlBuilder->doctype();
-$htmlBuilder->tag(string $name, array $attributes = [], $contents = '');
-$htmlBuilder->script(string $assetPath = '', array $attributes = [], $secure = null);
-$htmlBuilder->style(array $attributes = [], $contents = '');
-$htmlBuilder->link(array $attributes = []);
-$htmlBuilder->stylesheet(string $href, string $media, array $attributes = []);
-$htmlBuilder->alternate(string $href, string $type, string $title = '', array $attributes = []);
-$htmlBuilder->author(string $href, array $attributes = []);
-$htmlBuilder->icon(string $href, string $type, string $sizes, array $attributes = []);
-$htmlBuilder->image(string $src, string $alt, array $attributes = []);
-$htmlBuilder->picture(string $alt, array $attributes = [], $secure = null);
-$htmlBuilder->a(string $href, string $text, array $attributes = []);
-$htmlBuilder->mailto(string $email, string $text, array $attributes = []);
-$htmlBuilder->meta(string $name, string $content);
-$htmlBuilder->charset($charset = 'UTF-8');
-$htmlBuilder->viewport(string $content = 'width=device-width, initial-scale=1.0');
-$htmlBuilder->meta_author(string $content);
-$htmlBuilder->meta_description(string $content);
-$htmlBuilder->meta_keywords(string $content);
+
+Markup objects are designs to support methods chaining, with 
+self-explanatory syntax, and ability to pass them through the chain of
+execution. It makes it easy to make changes to the markup with 
+comfortable objective API, instead of operating on strings or arrays.
+This is useful for example when you have multiple modules, each altering
+or adding something to the HTML.
+
+## Using HtmlAttributes
+Each Markup object has a public attrs() method which returns the
+HtmlAttributes object, which in turn allows you to set, remove or modify
+the attributes of an HTML element.
+
+```php
+$menuItem = tag('li', ['class' => 'nav-item'], ['Discount!']);
+// (...)
+$menuItem->attrs()
+    ->set('class', 'bold');
+```
+
+## Using ClassList object
+Each Markup object is also allowing you to set and remove CSS classes
+without calling the attr() object. You can access the ClassList object
+directly with classList() public method:
+
+```php
+if ($menuItem->classList()->caintains('bold')) {
+    $menuItem->attrs()->data('modal', 'discount');
+}
+```
+
+## Configuring the package
+Using the HtmlConfig you can easily change how the HTML is generated.
+For example, if you like to have void tags (like input) closed everytime,
+just call this before you start creating:
+
+```php
+use Nethead\Markup\Helpers\HtmlConfig;
+
+HtmlConfig::$closeVoids = true;
+```
+Refer to the documentation to have a better insight of what can be
+configured and how.
+
+## Icons Factory
+The IconsFactory makes it easy to switch between the icon fonts providers.
+By default, it is configured to generate Font Awesome HTML tags.
+For example, if you're using the Bootstrap's Glyphicons, you could do:
+
+```php
+use Nethead\Markup\Helpers\IconsFactory;
+use Nethead\Markup\Helpers\HtmlConfig;
+
+HtmlConfig::$defaultIconsFactory = 'glyphicons';
+
+print IconsFactory::icon('user');
+```
+
+## Forms
+You can build HTML forms using OOP PHP and easily add business logic.
+Look at the example below to see how easy it is to build a language
+select dropdown menu:
+
+```php
+use Nethead\Markup\MarkupFactory as Html;
+
+$langs = [
+    'en_GB' => 'English (British)',
+    'pl_PL' => 'Polski'
+];
+
+$select = Html::select('locale', $langs);
+$select->attrs()
+    ->on('change', 'this.form.submit();');
+
+$form = Html::form('/select-locale', 'POST', [$select]);
 ```

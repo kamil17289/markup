@@ -176,6 +176,19 @@ class HtmlAttributes {
     }
 
     /**
+     * Set the event attribute for the element.
+     *
+     * @param string $action
+     * @param $value
+     * @return $this
+     */
+    public function on(string $action, $value): HtmlAttributes
+    {
+        $this->set('on' . $action, $value);
+        return $this;
+    }
+
+    /**
      * Render the attributes as HTML string.
      * @return string
      */
