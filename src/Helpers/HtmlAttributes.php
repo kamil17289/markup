@@ -236,7 +236,7 @@ class HtmlAttributes {
     }
 
     /**
-     * Convert the HtmlAtributes object into HTML string.
+     * Convert the HtmlAttributes object into HTML string.
      * @see HtmlAttributes::render()
      * @return string
      */

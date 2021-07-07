@@ -136,8 +136,9 @@ class MarkupFactory {
 
     /**
      * Create a bookmark.
-     * @param array $contents What you want inside the link element.
      * @param string|Tag $to
+     * @param array $contents What you want inside the link element.
+     * @param array $attributes The HTML attributes for link element.
      *  What to bookmark - if string is provided it will be used as the bookmark destination.
      *  If $to is a Tag object it's ID will be fetched. If the object doesn't have the ID,
      *  it will be generated automatically
@@ -145,17 +146,9 @@ class MarkupFactory {
      * @see MarkupFactory::generateId()
      * @return A
      */
-    public static function bookmark(array $contents, $to): A
+    public static function bookmark($to, array $contents, array $attributes = []): A
     {
-        if ($to instanceof Tag) {
-            if (! $to->attrs()->get('id', false)) {
-                $to->attrs()->set('id', self::generateId());
-            }
-
-            return new A('#' . $to->attrs()->get('id'), $contents);
-        }
-
-        return new A('#' . $to, $contents);
+        return (new A('', $contents, $attributes))->bookmark($to);
     }
 
     /**
