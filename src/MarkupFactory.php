@@ -461,7 +461,6 @@ class MarkupFactory {
      * @param int $step
      * @param int|null $min
      * @param int|null $max
-     * @param array $attributes
      * @return mixed
      */
     public static function number(string $name, $value = null, int $step = 1, int $min = null, int $max = null): Input
@@ -569,7 +568,6 @@ class MarkupFactory {
     /**
      * Create file <input> element
      * @param string $name
-     * @param $value
      * @return Input
      */
     public static function file(string $name): Input
@@ -679,7 +677,7 @@ class MarkupFactory {
      * @param string $enctype
      * @return Form
      */
-    public static function form(string $action, string $method, array $contents = [], $enctype = Form::ENCTYPE_URLENCODED): Form
+    public static function form(string $action, string $method, array $contents = [], string $enctype = Form::ENCTYPE_URLENCODED): Form
     {
         $form = new Form($action, $method, [], $contents);
 
