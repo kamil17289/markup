@@ -680,6 +680,34 @@ class MarkupFactory {
     }
 
     /**
+     * Helper for creating ordered and unordered listings
+     *
+     * @param string $type
+     *   Type of listing: 'ul' for unordered, 'ol' for ordered
+     * @param array $points
+     *   Array of points to be rendered inside a listing
+     * @param callable|null $creator
+     *   Creator function which can be used to create <li> elements.
+     *   Should always return a Tag instance. Note: the contents won't be injected automatically!
+     * @return Tag
+     */
+    public static function listing(string $type = 'ul', array $points, callable $creator = null): Tag
+    {
+        $contents = [];
+
+        if (is_null($creator)) {
+            foreach ($points as $point) {
+                $contents[] = new Tag('li', [], [$point]);
+            }
+        }
+        else {
+            $contents = array_map($creator, $points);
+        }
+
+        return new Tag($type, [], $contents);
+    }
+
+    /**
      * @param int $length
      * @return string
      */
