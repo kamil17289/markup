@@ -35,7 +35,7 @@ tag('p', ['class' => 'px-2'], [
 ]);
 ```
 
-Markup objects are designs to support methods chaining, with 
+Markup objects are designed to support methods chaining, with 
 self-explanatory syntax, and ability to pass them through the chain of
 execution. It makes it easy to make changes to the markup with 
 comfortable objective API, instead of operating on strings or arrays.
