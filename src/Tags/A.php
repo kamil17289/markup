@@ -5,7 +5,6 @@ namespace Nethead\Markup\Tags;
 use Nethead\Markup\Foundation\Tag;
 use Nethead\Markup\Foundation\TextNode;
 use Nethead\Markup\Helpers\ObfuscatesData;
-use SebastianBergmann\CodeCoverage\Report\Text;
 
 /**
  * Creates "a" element.

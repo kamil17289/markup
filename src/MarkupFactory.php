@@ -10,7 +10,6 @@ use Nethead\Markup\Tags\Template;
 use Nethead\Markup\Tags\Optgroup;
 use Nethead\Markup\Tags\Picture;
 use Nethead\Markup\Tags\Button;
-use Nethead\Markup\Tags\Mailto;
 use Nethead\Markup\Tags\Select;
 use Nethead\Markup\Tags\Option;
 use Nethead\Markup\Tags\Script;
@@ -160,14 +159,14 @@ class MarkupFactory {
     }
 
     /**
-     * Create mailto: <a> element with encrypted e-mail address
+     * Create mailto: <a> element with obfuscated e-mail address
      * @param string $email
      * @param string $text
-     * @return Mailto
+     * @return A
      */
-    public static function mailto(string $email, string $text): Mailto
+    public static function mailto(string $email, string $text): A
     {
-        return new Mailto($email, $text);
+        return (new A($email, [$text]))->mailto();
     }
 
     /**
