@@ -5,7 +5,7 @@ namespace Nethead\Markup\Tags;
 use Nethead\Markup\Foundation\Tag;
 use Nethead\Markup\Foundation\TextNode;
 use Nethead\Markup\Helpers\ObfuscatesData;
-use SebastianBergmann\CodeCoverage\Report\Text;
+use Nethead\Markup\MarkupFactory;
 
 /**
  * Creates "a" element.
@@ -59,6 +59,27 @@ class A extends Tag {
             'style' => 'direction: rtl; unicode-bidi: bidi-override;',
             'onclick' => "window.location.href='mailto:'+this.dataset.address" . $this->rot13jsDecoder
         ]);
+
+        return $this;
+    }
+
+    /**
+     * Transform a link into a bookmark.
+     *
+     * @param $to string|Tag the ID or an element to bookmark
+     * @return $this
+     */
+    public function bookmark($to): A
+    {
+        if ($to instanceof Tag) {
+            if (! $to->attrs()->get('id', false)) {
+                $to->attrs()->set('id', MarkupFactory::generateId());
+            }
+
+            $to = $to->attrs()->get('id');
+        }
+
+        $this->attrs()->set('href', sprintf('#%s', $to));
 
         return $this;
     }

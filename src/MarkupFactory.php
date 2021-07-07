@@ -10,7 +10,6 @@ use Nethead\Markup\Tags\Template;
 use Nethead\Markup\Tags\Optgroup;
 use Nethead\Markup\Tags\Picture;
 use Nethead\Markup\Tags\Button;
-use Nethead\Markup\Tags\Mailto;
 use Nethead\Markup\Tags\Select;
 use Nethead\Markup\Tags\Option;
 use Nethead\Markup\Tags\Script;
@@ -137,8 +136,9 @@ class MarkupFactory {
 
     /**
      * Create a bookmark.
-     * @param array $contents What you want inside the link element.
      * @param string|Tag $to
+     * @param array $contents What you want inside the link element.
+     * @param array $attributes The HTML attributes for link element.
      *  What to bookmark - if string is provided it will be used as the bookmark destination.
      *  If $to is a Tag object it's ID will be fetched. If the object doesn't have the ID,
      *  it will be generated automatically
@@ -146,28 +146,20 @@ class MarkupFactory {
      * @see MarkupFactory::generateId()
      * @return A
      */
-    public static function bookmark(array $contents, $to): A
+    public static function bookmark($to, array $contents, array $attributes = []): A
     {
-        if ($to instanceof Tag) {
-            if (! $to->attrs()->get('id', false)) {
-                $to->attrs()->set('id', self::generateId());
-            }
-
-            return new A('#' . $to->attrs()->get('id'), $contents);
-        }
-
-        return new A('#' . $to, $contents);
+        return (new A('', $contents, $attributes))->bookmark($to);
     }
 
     /**
-     * Create mailto: <a> element with encrypted e-mail address
+     * Create mailto: <a> element with obfuscated e-mail address
      * @param string $email
      * @param string $text
-     * @return Mailto
+     * @return A
      */
-    public static function mailto(string $email, string $text): Mailto
+    public static function mailto(string $email, string $text): A
     {
-        return new Mailto($email, $text);
+        return (new A($email, [$text]))->mailto();
     }
 
     /**
@@ -462,7 +454,6 @@ class MarkupFactory {
      * @param int $step
      * @param int|null $min
      * @param int|null $max
-     * @param array $attributes
      * @return mixed
      */
     public static function number(string $name, $value = null, int $step = 1, int $min = null, int $max = null): Input
@@ -570,7 +561,6 @@ class MarkupFactory {
     /**
      * Create file <input> element
      * @param string $name
-     * @param $value
      * @return Input
      */
     public static function file(string $name): Input
@@ -680,13 +670,41 @@ class MarkupFactory {
      * @param string $enctype
      * @return Form
      */
-    public static function form(string $action, string $method, array $contents = [], $enctype = Form::ENCTYPE_URLENCODED): Form
+    public static function form(string $action, string $method, array $contents = [], string $enctype = Form::ENCTYPE_URLENCODED): Form
     {
         $form = new Form($action, $method, [], $contents);
 
         $form->enctype($enctype);
 
         return $form;
+    }
+
+    /**
+     * Helper for creating ordered and unordered listings
+     *
+     * @param string $type
+     *   Type of listing: 'ul' for unordered, 'ol' for ordered
+     * @param array $points
+     *   Array of points to be rendered inside a listing
+     * @param callable|null $creator
+     *   Creator function which can be used to create <li> elements.
+     *   Should always return a Tag instance. Note: the contents won't be injected automatically!
+     * @return Tag
+     */
+    public static function listing(string $type = 'ul', array $points, callable $creator = null): Tag
+    {
+        $contents = [];
+
+        if (is_null($creator)) {
+            foreach ($points as $point) {
+                $contents[] = new Tag('li', [], [$point]);
+            }
+        }
+        else {
+            $contents = array_map($creator, $points);
+        }
+
+        return new Tag($type, [], $contents);
     }
 
     /**

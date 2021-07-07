@@ -189,6 +189,18 @@ class HtmlAttributes {
     }
 
     /**
+     * Set the access key for the element.
+     *
+     * @param $key
+     * @return $this
+     */
+    public function accessKey($key): HtmlAttributes
+    {
+        $this->set('accesskey', $key);
+        return $this;
+    }
+
+    /**
      * Render the attributes as HTML string.
      * @return string
      */
@@ -224,7 +236,7 @@ class HtmlAttributes {
     }
 
     /**
-     * Convert the HtmlAtributes object into HTML string.
+     * Convert the HtmlAttributes object into HTML string.
      * @see HtmlAttributes::render()
      * @return string
      */
