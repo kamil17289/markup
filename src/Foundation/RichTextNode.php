@@ -10,24 +10,7 @@ namespace Nethead\Markup\Foundation;
  * rendered at once when you cast it to string.
  * @package Nethead\Markup\Foundation
  */
-class RichTextNode {
-    /**
-     * The contents of the node
-     *
-     * @var array
-     */
-    protected $contents;
-
-    /**
-     * RichTextNode constructor.
-     *
-     * @param array $contents The contents for the created node
-     */
-    public function __construct(array $contents = [])
-    {
-        $this->contents = $contents;
-    }
-
+class RichTextNode extends Fragment {
     /**
      * Add a HTML header of desired level (1-6)
      *
@@ -283,14 +266,5 @@ class RichTextNode {
     {
         $this->contents[] = new Tag('mark', [], [new TextNode($text)]);
         return $this;
-    }
-
-    /**
-     * Convert the RichTextNode to HTML string
-     * @return string
-     */
-    public function __toString() :string
-    {
-        return implode('', $this->contents);
     }
 }

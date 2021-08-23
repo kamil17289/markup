@@ -90,6 +90,9 @@
         <h2 class="phpdocumentor-content__title">
     RichTextNode
 
+        <span class="phpdocumentor-element__extends">
+        extends <a href="classes/Nethead-Markup-Foundation-Fragment.html"><abbr title="\Nethead\Markup\Foundation\Fragment">Fragment</abbr></a>
+    </span>
     
             <div class="phpdocumentor-element__package">
             in package
@@ -131,25 +134,25 @@ rendered at once when you cast it to string.</p>
 
 <dl class="phpdocumentor-table-of-contents">
                 <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Nethead-Markup-Foundation-RichTextNode.html#property_contents">$contents</a>
+    <a href="classes/Nethead-Markup-Foundation-Fragment.html#property_contents">$contents</a>
     <span>
                 &nbsp;: array&lt;string|int, mixed&gt;            </span>
 </dt>
-<dd>The contents of the node</dd>
+<dd>The contents of the fragment</dd>
 
                 <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Nethead-Markup-Foundation-RichTextNode.html#method___construct">__construct()</a>
+    <a href="classes/Nethead-Markup-Foundation-Fragment.html#method___construct">__construct()</a>
     <span>
                         &nbsp;: mixed    </span>
 </dt>
-<dd>RichTextNode constructor.</dd>
+<dd>Fragment constructor.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Nethead-Markup-Foundation-RichTextNode.html#method___toString">__toString()</a>
+    <a href="classes/Nethead-Markup-Foundation-Fragment.html#method___toString">__toString()</a>
     <span>
                         &nbsp;: string    </span>
 </dt>
-<dd>Convert the RichTextNode to HTML string</dd>
+<dd>Convert the Fragment to HTML string</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Foundation-RichTextNode.html#method_abbr">abbr()</a>
@@ -185,6 +188,13 @@ rendered at once when you cast it to string.</p>
                         &nbsp;: <a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a>    </span>
 </dt>
 <dd>Add emphasised text.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Nethead-Markup-Foundation-Fragment.html#method_get">get()</a>
+    <span>
+                        &nbsp;: <a href="classes/Nethead-Markup-Foundation-Tag.html"><abbr title="\Nethead\Markup\Foundation\Tag">Tag</abbr></a>    </span>
+</dt>
+<dd>Get a Tag from the specified index.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Foundation-RichTextNode.html#method_h">h()</a>
@@ -234,6 +244,13 @@ rendered at once when you cast it to string.</p>
                         &nbsp;: <a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a>    </span>
 </dt>
 <dd>Add a plain text.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Nethead-Markup-Foundation-Fragment.html#method_push">push()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd>Push new tag at the end of the fragment.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Foundation-RichTextNode.html#method_q">q()</a>
@@ -319,17 +336,17 @@ rendered at once when you cast it to string.</p>
 >
     <h4 class="phpdocumentor-element__name" id="property_contents">
         $contents
-        <a href="classes/Nethead-Markup-Foundation-RichTextNode.html#property_contents" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Nethead-Markup-Foundation-Fragment.html#property_contents" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/RichTextNode.php"><a href="files/src-foundation-richtextnode.html"><abbr title="src/Foundation/RichTextNode.php">RichTextNode.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/Fragment.php"><a href="files/src-foundation-fragment.html"><abbr title="src/Foundation/Fragment.php">Fragment.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">19</span>
+    <span class="phpdocumentor-element-found-in__line">15</span>
 </aside>
 
-        <p class="phpdocumentor-summary">The contents of the node</p>
+        <p class="phpdocumentor-summary">The contents of the fragment</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
@@ -357,15 +374,15 @@ rendered at once when you cast it to string.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method___construct">
         __construct()
-        <a href="classes/Nethead-Markup-Foundation-RichTextNode.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Nethead-Markup-Foundation-Fragment.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/RichTextNode.php"><a href="files/src-foundation-richtextnode.html"><abbr title="src/Foundation/RichTextNode.php">RichTextNode.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/Fragment.php"><a href="files/src-foundation-fragment.html"><abbr title="src/Foundation/Fragment.php">Fragment.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">26</span>
+    <span class="phpdocumentor-element-found-in__line">21</span>
 </aside>
 
-        <p class="phpdocumentor-summary">RichTextNode constructor.</p>
+        <p class="phpdocumentor-summary">Fragment constructor.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -380,7 +397,7 @@ rendered at once when you cast it to string.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
                  = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>The contents for the created node</p>
+                    <section class="phpdocumentor-description"><p>The contents for the created fragment</p>
 </section>
 
             </dd>
@@ -403,15 +420,15 @@ rendered at once when you cast it to string.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method___toString">
         __toString()
-        <a href="classes/Nethead-Markup-Foundation-RichTextNode.html#method___toString" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Nethead-Markup-Foundation-Fragment.html#method___toString" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/RichTextNode.php"><a href="files/src-foundation-richtextnode.html"><abbr title="src/Foundation/RichTextNode.php">RichTextNode.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/Fragment.php"><a href="files/src-foundation-fragment.html"><abbr title="src/Foundation/Fragment.php">Fragment.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">292</span>
+    <span class="phpdocumentor-element-found-in__line">60</span>
 </aside>
 
-        <p class="phpdocumentor-summary">Convert the RichTextNode to HTML string</p>
+        <p class="phpdocumentor-summary">Convert the Fragment to HTML string</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -442,7 +459,7 @@ rendered at once when you cast it to string.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/RichTextNode.php"><a href="files/src-foundation-richtextnode.html"><abbr title="src/Foundation/RichTextNode.php">RichTextNode.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">113</span>
+    <span class="phpdocumentor-element-found-in__line">96</span>
 </aside>
 
         <p class="phpdocumentor-summary">Add abbreviation to your text</p>
@@ -497,7 +514,7 @@ rendered at once when you cast it to string.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/RichTextNode.php"><a href="files/src-foundation-richtextnode.html"><abbr title="src/Foundation/RichTextNode.php">RichTextNode.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">89</span>
+    <span class="phpdocumentor-element-found-in__line">72</span>
 </aside>
 
         <p class="phpdocumentor-summary">Alias for strong()</p>
@@ -558,7 +575,7 @@ rendered at once when you cast it to string.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/RichTextNode.php"><a href="files/src-foundation-richtextnode.html"><abbr title="src/Foundation/RichTextNode.php">RichTextNode.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">52</span>
+    <span class="phpdocumentor-element-found-in__line">35</span>
 </aside>
 
         <p class="phpdocumentor-summary">Create a line break.</p>
@@ -592,7 +609,7 @@ rendered at once when you cast it to string.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/RichTextNode.php"><a href="files/src-foundation-richtextnode.html"><abbr title="src/Foundation/RichTextNode.php">RichTextNode.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">138</span>
+    <span class="phpdocumentor-element-found-in__line">121</span>
 </aside>
 
         <p class="phpdocumentor-summary">Add a strikethrough text using &amp;lt;del&amp;gt; element.</p>
@@ -638,7 +655,7 @@ rendered at once when you cast it to string.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/RichTextNode.php"><a href="files/src-foundation-richtextnode.html"><abbr title="src/Foundation/RichTextNode.php">RichTextNode.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">162</span>
+    <span class="phpdocumentor-element-found-in__line">145</span>
 </aside>
 
         <p class="phpdocumentor-summary">Add emphasised text.</p>
@@ -677,6 +694,61 @@ rendered at once when you cast it to string.</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_get">
+        get()
+        <a href="classes/Nethead-Markup-Foundation-Fragment.html#method_get" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/Fragment.php"><a href="files/src-foundation-fragment.html"><abbr title="src/Foundation/Fragment.php">Fragment.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">47</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Get a Tag from the specified index.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">get</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$index</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$default</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-Tag.html"><abbr title="\Nethead\Markup\Foundation\Tag">Tag</abbr></a></span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$index</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>int|string The index to retrieve</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$default</span>
+                : <span class="phpdocumentor-signature__argument__return-type">null</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Value that is returned when the specified index doesn't exist</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-Tag.html"><abbr title="\Nethead\Markup\Foundation\Tag">Tag</abbr></a></span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_h">
         h()
         <a href="classes/Nethead-Markup-Foundation-RichTextNode.html#method_h" class="headerlink"><i class="fas fa-link"></i></a>
@@ -684,7 +756,7 @@ rendered at once when you cast it to string.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/RichTextNode.php"><a href="files/src-foundation-richtextnode.html"><abbr title="src/Foundation/RichTextNode.php">RichTextNode.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">41</span>
+    <span class="phpdocumentor-element-found-in__line">24</span>
 </aside>
 
         <p class="phpdocumentor-summary">Add a HTML header of desired level (1-6)</p>
@@ -740,7 +812,7 @@ Just remember HTML supports only headers from h1 to h6</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/RichTextNode.php"><a href="files/src-foundation-richtextnode.html"><abbr title="src/Foundation/RichTextNode.php">RichTextNode.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">186</span>
+    <span class="phpdocumentor-element-found-in__line">169</span>
 </aside>
 
         <p class="phpdocumentor-summary">Add a horizontal line</p>
@@ -786,7 +858,7 @@ Just remember HTML supports only headers from h1 to h6</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/RichTextNode.php"><a href="files/src-foundation-richtextnode.html"><abbr title="src/Foundation/RichTextNode.php">RichTextNode.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">174</span>
+    <span class="phpdocumentor-element-found-in__line">157</span>
 </aside>
 
         <p class="phpdocumentor-summary">Add simple italic text using &amp;lt;i&amp;gt; element.</p>
@@ -832,7 +904,7 @@ Just remember HTML supports only headers from h1 to h6</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/RichTextNode.php"><a href="files/src-foundation-richtextnode.html"><abbr title="src/Foundation/RichTextNode.php">RichTextNode.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">150</span>
+    <span class="phpdocumentor-element-found-in__line">133</span>
 </aside>
 
         <p class="phpdocumentor-summary">Add &quot;inserted&quot; text.</p>
@@ -878,7 +950,7 @@ Just remember HTML supports only headers from h1 to h6</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/RichTextNode.php"><a href="files/src-foundation-richtextnode.html"><abbr title="src/Foundation/RichTextNode.php">RichTextNode.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">198</span>
+    <span class="phpdocumentor-element-found-in__line">181</span>
 </aside>
 
         <p class="phpdocumentor-summary">Add a keyboard input.</p>
@@ -924,7 +996,7 @@ Just remember HTML supports only headers from h1 to h6</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/RichTextNode.php"><a href="files/src-foundation-richtextnode.html"><abbr title="src/Foundation/RichTextNode.php">RichTextNode.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">282</span>
+    <span class="phpdocumentor-element-found-in__line">265</span>
 </aside>
 
         <p class="phpdocumentor-summary">Add a marked/highlighted text.</p>
@@ -970,7 +1042,7 @@ Just remember HTML supports only headers from h1 to h6</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/RichTextNode.php"><a href="files/src-foundation-richtextnode.html"><abbr title="src/Foundation/RichTextNode.php">RichTextNode.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">64</span>
+    <span class="phpdocumentor-element-found-in__line">47</span>
 </aside>
 
         <p class="phpdocumentor-summary">Add a plain text.</p>
@@ -1009,6 +1081,59 @@ Just remember HTML supports only headers from h1 to h6</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_push">
+        push()
+        <a href="classes/Nethead-Markup-Foundation-Fragment.html#method_push" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/Fragment.php"><a href="files/src-foundation-fragment.html"><abbr title="src/Foundation/Fragment.php">Fragment.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">31</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Push new tag at the end of the fragment.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">push</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Nethead-Markup-Foundation-Tag.html"><abbr title="\Nethead\Markup\Foundation\Tag">Tag</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$tag</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$name</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$tag</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Nethead-Markup-Foundation-Tag.html"><abbr title="\Nethead\Markup\Foundation\Tag">Tag</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_q">
         q()
         <a href="classes/Nethead-Markup-Foundation-RichTextNode.html#method_q" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1016,7 +1141,7 @@ Just remember HTML supports only headers from h1 to h6</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/RichTextNode.php"><a href="files/src-foundation-richtextnode.html"><abbr title="src/Foundation/RichTextNode.php">RichTextNode.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">210</span>
+    <span class="phpdocumentor-element-found-in__line">193</span>
 </aside>
 
         <p class="phpdocumentor-summary">Add a quotation using &amp;lt;q&amp;gt; element.</p>
@@ -1062,7 +1187,7 @@ Just remember HTML supports only headers from h1 to h6</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/RichTextNode.php"><a href="files/src-foundation-richtextnode.html"><abbr title="src/Foundation/RichTextNode.php">RichTextNode.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">126</span>
+    <span class="phpdocumentor-element-found-in__line">109</span>
 </aside>
 
         <p class="phpdocumentor-summary">Add a &amp;lt;blockquote&amp;gt; to your text.</p>
@@ -1117,7 +1242,7 @@ Just remember HTML supports only headers from h1 to h6</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/RichTextNode.php"><a href="files/src-foundation-richtextnode.html"><abbr title="src/Foundation/RichTextNode.php">RichTextNode.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">223</span>
+    <span class="phpdocumentor-element-found-in__line">206</span>
 </aside>
 
         <p class="phpdocumentor-summary">Add a &amp;lt;span&amp;gt; element with custom CSS classes</p>
@@ -1171,7 +1296,7 @@ Just remember HTML supports only headers from h1 to h6</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/RichTextNode.php"><a href="files/src-foundation-richtextnode.html"><abbr title="src/Foundation/RichTextNode.php">RichTextNode.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">76</span>
+    <span class="phpdocumentor-element-found-in__line">59</span>
 </aside>
 
         <p class="phpdocumentor-summary">Add a bold text using &amp;lt;strong&amp;gt; element.</p>
@@ -1217,7 +1342,7 @@ Just remember HTML supports only headers from h1 to h6</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/RichTextNode.php"><a href="files/src-foundation-richtextnode.html"><abbr title="src/Foundation/RichTextNode.php">RichTextNode.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">247</span>
+    <span class="phpdocumentor-element-found-in__line">230</span>
 </aside>
 
         <p class="phpdocumentor-summary">Add a subscript.</p>
@@ -1263,7 +1388,7 @@ Just remember HTML supports only headers from h1 to h6</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/RichTextNode.php"><a href="files/src-foundation-richtextnode.html"><abbr title="src/Foundation/RichTextNode.php">RichTextNode.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">235</span>
+    <span class="phpdocumentor-element-found-in__line">218</span>
 </aside>
 
         <p class="phpdocumentor-summary">Add a superscript.</p>
@@ -1309,7 +1434,7 @@ Just remember HTML supports only headers from h1 to h6</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/RichTextNode.php"><a href="files/src-foundation-richtextnode.html"><abbr title="src/Foundation/RichTextNode.php">RichTextNode.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">259</span>
+    <span class="phpdocumentor-element-found-in__line">242</span>
 </aside>
 
         <p class="phpdocumentor-summary">Add a time element.</p>
@@ -1355,7 +1480,7 @@ Just remember HTML supports only headers from h1 to h6</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/RichTextNode.php"><a href="files/src-foundation-richtextnode.html"><abbr title="src/Foundation/RichTextNode.php">RichTextNode.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">100</span>
+    <span class="phpdocumentor-element-found-in__line">83</span>
 </aside>
 
         <p class="phpdocumentor-summary">Add underlined text using &amp;lt;u&amp;gt; tag</p>
@@ -1401,7 +1526,7 @@ Just remember HTML supports only headers from h1 to h6</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/RichTextNode.php"><a href="files/src-foundation-richtextnode.html"><abbr title="src/Foundation/RichTextNode.php">RichTextNode.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">270</span>
+    <span class="phpdocumentor-element-found-in__line">253</span>
 </aside>
 
         <p class="phpdocumentor-summary">Add a line break opportunity.</p>

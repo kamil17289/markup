@@ -81,11 +81,6 @@ Search.appendIndex(
             "summary": "Creates\u0020rich\u0020formatted\u0020texts\u0020in\u0020HTML.",
             "url": "classes/Nethead-Markup-Foundation-RichTextNode.html"
         },                {
-            "fqsen": "\\Nethead\\Markup\\Foundation\\RichTextNode\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "RichTextNode\u0020constructor.",
-            "url": "classes/Nethead-Markup-Foundation-RichTextNode.html#method___construct"
-        },                {
             "fqsen": "\\Nethead\\Markup\\Foundation\\RichTextNode\u003A\u003Ah\u0028\u0029",
             "name": "h",
             "summary": "Add\u0020a\u0020HTML\u0020header\u0020of\u0020desired\u0020level\u0020\u00281\u002D6\u0029",
@@ -190,16 +185,6 @@ Search.appendIndex(
             "name": "mark",
             "summary": "Add\u0020a\u0020marked\/highlighted\u0020text.",
             "url": "classes/Nethead-Markup-Foundation-RichTextNode.html#method_mark"
-        },                {
-            "fqsen": "\\Nethead\\Markup\\Foundation\\RichTextNode\u003A\u003A__toString\u0028\u0029",
-            "name": "__toString",
-            "summary": "Convert\u0020the\u0020RichTextNode\u0020to\u0020HTML\u0020string",
-            "url": "classes/Nethead-Markup-Foundation-RichTextNode.html#method___toString"
-        },                {
-            "fqsen": "\\Nethead\\Markup\\Foundation\\RichTextNode\u003A\u003A\u0024contents",
-            "name": "contents",
-            "summary": "The\u0020contents\u0020of\u0020the\u0020node",
-            "url": "classes/Nethead-Markup-Foundation-RichTextNode.html#property_contents"
         },                {
             "fqsen": "\\Nethead\\Markup\\Foundation\\Tag",
             "name": "Tag",
@@ -486,6 +471,16 @@ Search.appendIndex(
             "summary": "Set\u0020the\u0020aria\u002D\u002A\u0020attribute\u0020for\u0020the\u0020element.",
             "url": "classes/Nethead-Markup-Helpers-HtmlAttributes.html#method_aria"
         },                {
+            "fqsen": "\\Nethead\\Markup\\Helpers\\HtmlAttributes\u003A\u003Aon\u0028\u0029",
+            "name": "on",
+            "summary": "Set\u0020the\u0020event\u0020attribute\u0020for\u0020the\u0020element.",
+            "url": "classes/Nethead-Markup-Helpers-HtmlAttributes.html#method_on"
+        },                {
+            "fqsen": "\\Nethead\\Markup\\Helpers\\HtmlAttributes\u003A\u003AaccessKey\u0028\u0029",
+            "name": "accessKey",
+            "summary": "Set\u0020the\u0020access\u0020key\u0020for\u0020the\u0020element.",
+            "url": "classes/Nethead-Markup-Helpers-HtmlAttributes.html#method_accessKey"
+        },                {
             "fqsen": "\\Nethead\\Markup\\Helpers\\HtmlAttributes\u003A\u003Arender\u0028\u0029",
             "name": "render",
             "summary": "Render\u0020the\u0020attributes\u0020as\u0020HTML\u0020string.",
@@ -493,7 +488,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Nethead\\Markup\\Helpers\\HtmlAttributes\u003A\u003A__toString\u0028\u0029",
             "name": "__toString",
-            "summary": "Convert\u0020the\u0020HtmlAtributes\u0020object\u0020into\u0020HTML\u0020string.",
+            "summary": "Convert\u0020the\u0020HtmlAttributes\u0020object\u0020into\u0020HTML\u0020string.",
             "url": "classes/Nethead-Markup-Helpers-HtmlAttributes.html#method___toString"
         },                {
             "fqsen": "\\Nethead\\Markup\\Helpers\\HtmlAttributes\u003A\u003A\u0024attrs",
@@ -633,7 +628,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Nethead\\Markup\\MarkupFactory\u003A\u003Amailto\u0028\u0029",
             "name": "mailto",
-            "summary": "Create\u0020mailto\u003A\u0020\u003Ca\u003E\u0020element\u0020with\u0020encrypted\u0020e\u002Dmail\u0020address",
+            "summary": "Create\u0020mailto\u003A\u0020\u003Ca\u003E\u0020element\u0020with\u0020obfuscated\u0020e\u002Dmail\u0020address",
             "url": "classes/Nethead-Markup-MarkupFactory.html#method_mailto"
         },                {
             "fqsen": "\\Nethead\\Markup\\MarkupFactory\u003A\u003Acharset\u0028\u0029",
@@ -836,6 +831,11 @@ Search.appendIndex(
             "summary": "Create\u0020the\u0020\u003Cform\u003E\u0020element",
             "url": "classes/Nethead-Markup-MarkupFactory.html#method_form"
         },                {
+            "fqsen": "\\Nethead\\Markup\\MarkupFactory\u003A\u003Alisting\u0028\u0029",
+            "name": "listing",
+            "summary": "Helper\u0020for\u0020creating\u0020ordered\u0020and\u0020unordered\u0020listings",
+            "url": "classes/Nethead-Markup-MarkupFactory.html#method_listing"
+        },                {
             "fqsen": "\\Nethead\\Markup\\MarkupFactory\u003A\u003AgenerateId\u0028\u0029",
             "name": "generateId",
             "summary": "",
@@ -855,6 +855,11 @@ Search.appendIndex(
             "name": "mailto",
             "summary": "Convert\u0020the\u0020link\u0020into\u0020mailto\u003A\u0020link\u0020with\u0020obfuscated\u0020email\u0020address.",
             "url": "classes/Nethead-Markup-Tags-A.html#method_mailto"
+        },                {
+            "fqsen": "\\Nethead\\Markup\\Tags\\A\u003A\u003Abookmark\u0028\u0029",
+            "name": "bookmark",
+            "summary": "Transform\u0020a\u0020link\u0020into\u0020a\u0020bookmark.",
+            "url": "classes/Nethead-Markup-Tags-A.html#method_bookmark"
         },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\A\u003A\u003Adownload\u0028\u0029",
             "name": "download",
@@ -1480,6 +1485,36 @@ Search.appendIndex(
             "name": "preload",
             "summary": "Specifies\u0020if\u0020and\u0020how\u0020the\u0020author\u0020thinks\u0020the\u0020video\u0020should\u0020be\u0020loaded\u0020when\u0020the\u0020page\u0020loads.",
             "url": "classes/Nethead-Markup-Helpers-CanHaveMediaControls.html#method_preload"
+        },                {
+            "fqsen": "\\Nethead\\Markup\\Foundation\\Fragment",
+            "name": "Fragment",
+            "summary": "Class\u0020Fragment\u0020holds\u0020a\u0020number\u0020of\u0020HTML\u0020Tag\u0020objects\u0020for\u0020grouping\u0020purposes.",
+            "url": "classes/Nethead-Markup-Foundation-Fragment.html"
+        },                {
+            "fqsen": "\\Nethead\\Markup\\Foundation\\Fragment\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Fragment\u0020constructor.",
+            "url": "classes/Nethead-Markup-Foundation-Fragment.html#method___construct"
+        },                {
+            "fqsen": "\\Nethead\\Markup\\Foundation\\Fragment\u003A\u003Apush\u0028\u0029",
+            "name": "push",
+            "summary": "Push\u0020new\u0020tag\u0020at\u0020the\u0020end\u0020of\u0020the\u0020fragment.",
+            "url": "classes/Nethead-Markup-Foundation-Fragment.html#method_push"
+        },                {
+            "fqsen": "\\Nethead\\Markup\\Foundation\\Fragment\u003A\u003Aget\u0028\u0029",
+            "name": "get",
+            "summary": "Get\u0020a\u0020Tag\u0020from\u0020the\u0020specified\u0020index.",
+            "url": "classes/Nethead-Markup-Foundation-Fragment.html#method_get"
+        },                {
+            "fqsen": "\\Nethead\\Markup\\Foundation\\Fragment\u003A\u003A__toString\u0028\u0029",
+            "name": "__toString",
+            "summary": "Convert\u0020the\u0020Fragment\u0020to\u0020HTML\u0020string",
+            "url": "classes/Nethead-Markup-Foundation-Fragment.html#method___toString"
+        },                {
+            "fqsen": "\\Nethead\\Markup\\Foundation\\Fragment\u003A\u003A\u0024contents",
+            "name": "contents",
+            "summary": "The\u0020contents\u0020of\u0020the\u0020fragment",
+            "url": "classes/Nethead-Markup-Foundation-Fragment.html#property_contents"
         },                {
             "fqsen": "\\",
             "name": "\\",
