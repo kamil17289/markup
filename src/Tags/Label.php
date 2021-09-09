@@ -25,7 +25,7 @@ class Label extends Tag {
      */
     public function __construct(string $for, string $text, array $attributes = [])
     {
-        parent::__construct('label', $attributes, $text);
+        parent::__construct('label', $attributes, [$text]);
 
         $this->attrs()->set('for', $for);
     }

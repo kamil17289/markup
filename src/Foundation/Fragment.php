@@ -54,6 +54,36 @@ class Fragment {
     }
 
     /**
+     * Check if the element is present within the fragment.
+     * @param $name
+     * @return bool
+     */
+    public function has($name): bool
+    {
+        return array_key_exists($name, $this->contents);
+    }
+
+    /**
+     * Get an array of all Tags inside the fragment.
+     * @return array
+     */
+    public function toArray(): array
+    {
+        return $this->contents;
+    }
+
+    /**
+     * Wrap the contents inside the custom container.
+     * @param string $wrapper
+     * @param array $attributes
+     * @return Tag
+     */
+    public function wrap(string $wrapper, array $attributes = []): Tag
+    {
+        return new Tag($wrapper, $attributes, [$this->contents]);
+    }
+
+    /**
      * Convert the Fragment to HTML string
      * @return string
      */
