@@ -64,6 +64,40 @@ class HtmlConfig {
     ];
 
     /**
+     * Attributes which can only have a TRUE or FALSE value.
+     * The presence of an attribute on an element represents TRUE.
+     * @var array
+     */
+    public static $booleanAttributes = [
+        'allowfullscreen',
+        'allowpaymentrequest',
+        'async',
+        'autofocus',
+        'autoplay',
+        'checked',
+        'controls',
+        'default',
+        'defer',
+        'disabled',
+        'formnovalidate',
+        'hidden',
+        'ismap',
+        'itemscope',
+        'loop',
+        'multiple',
+        'muted',
+        'nomodule',
+        'novalidate',
+        'open',
+        'playsinline',
+        'readonly',
+        'required',
+        'reversed',
+        'selected',
+        'truespeed'
+    ];
+
+    /**
      * If set to true, void tags will be always closed. Useful when you are working in XHTML.
      *
      * @var bool

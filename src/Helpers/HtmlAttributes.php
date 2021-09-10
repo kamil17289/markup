@@ -60,12 +60,12 @@ class HtmlAttributes {
      * @param string $name
      *  Name of the attribute you want to set.
      * @param null $value
-     *  Value of the attribute you want to set. Use (bool) false to remove the attribute.
+     *  Value of the attribute you want to set. Use null to remove the attribute.
      * @return HtmlAttributes
      */
     public function set(string $name, $value = null): HtmlAttributes
     {
-        if ($value === false) {
+        if (is_null($value)) {
             $this->remove($name);
         }
         elseif ($name == 'class') {
@@ -201,6 +201,43 @@ class HtmlAttributes {
     }
 
     /**
+     * Helper function for converting some of PHP types into string attributes values
+     * @param $value
+     * @return string
+     */
+    public function stringValue($value): string
+    {
+        $type = gettype($value);
+
+        switch($type) {
+            case 'boolean':
+                if ($value) return '(true)';
+                else return '(false)';
+
+            case 'array':
+                return implode('', $value);
+
+            case 'object':
+                if (method_exists($value, '__toString'))
+                    return $value->__toString();
+                else
+                    return '(object)';
+
+            case 'resource':
+                return '(resource)';
+
+            case 'NULL':
+                return '(null)';
+
+            case 'integer':
+            case 'double':
+            case 'string':
+            default:
+                return (string) $value;
+        }
+    }
+
+    /**
      * Render the attributes as HTML string.
      * @return string
      */
@@ -213,17 +250,17 @@ class HtmlAttributes {
                 $attrName = htmlspecialchars($attrName, ENT_QUOTES);
 
                 // no-value attributes, like required, disabled, readonly
-                if (is_bool($attrValue)) {
-                    $attributes[] = $attrValue ? $attrName : '';
+                if (in_array($attrName, HtmlConfig::$booleanAttributes) && $attrValue === true) {
+                    $attributes[] = $attrName;
                 }
-                elseif (! is_null($attrValue)) {
+                else {
+                    $attrValue = $this->stringValue($attrValue);
+
                     if (! in_array($attrName, HtmlConfig::$notEscapedAttributes)) {
                         $attrValue = htmlspecialchars($attrValue, ENT_QUOTES);
                     }
 
-                    if (! empty($attrValue)) {
-                        $attributes[] = sprintf('%s="%s"', $attrName, $attrValue);
-                    }
+                    $attributes[] = sprintf('%s="%s"', $attrName, $attrValue);
                 }
             }
         }
