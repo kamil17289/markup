@@ -481,6 +481,11 @@ Search.appendIndex(
             "summary": "Set\u0020the\u0020access\u0020key\u0020for\u0020the\u0020element.",
             "url": "classes/Nethead-Markup-Helpers-HtmlAttributes.html#method_accessKey"
         },                {
+            "fqsen": "\\Nethead\\Markup\\Helpers\\HtmlAttributes\u003A\u003AstringValue\u0028\u0029",
+            "name": "stringValue",
+            "summary": "Helper\u0020function\u0020for\u0020converting\u0020some\u0020of\u0020PHP\u0020types\u0020into\u0020string\u0020attributes\u0020values",
+            "url": "classes/Nethead-Markup-Helpers-HtmlAttributes.html#method_stringValue"
+        },                {
             "fqsen": "\\Nethead\\Markup\\Helpers\\HtmlAttributes\u003A\u003Arender\u0028\u0029",
             "name": "render",
             "summary": "Render\u0020the\u0020attributes\u0020as\u0020HTML\u0020string.",
@@ -510,6 +515,11 @@ Search.appendIndex(
             "name": "globalAttributes",
             "summary": "Global\u0020attributes\u0020supported\u0020by\u0020every\u0020HTML\u0020tag.",
             "url": "classes/Nethead-Markup-Helpers-HtmlConfig.html#property_globalAttributes"
+        },                {
+            "fqsen": "\\Nethead\\Markup\\Helpers\\HtmlConfig\u003A\u003A\u0024booleanAttributes",
+            "name": "booleanAttributes",
+            "summary": "Attributes\u0020which\u0020can\u0020only\u0020have\u0020a\u0020TRUE\u0020or\u0020FALSE\u0020value.",
+            "url": "classes/Nethead-Markup-Helpers-HtmlConfig.html#property_booleanAttributes"
         },                {
             "fqsen": "\\Nethead\\Markup\\Helpers\\HtmlConfig\u003A\u003A\u0024closeVoids",
             "name": "closeVoids",
@@ -1505,6 +1515,21 @@ Search.appendIndex(
             "name": "get",
             "summary": "Get\u0020a\u0020Tag\u0020from\u0020the\u0020specified\u0020index.",
             "url": "classes/Nethead-Markup-Foundation-Fragment.html#method_get"
+        },                {
+            "fqsen": "\\Nethead\\Markup\\Foundation\\Fragment\u003A\u003Ahas\u0028\u0029",
+            "name": "has",
+            "summary": "Check\u0020if\u0020the\u0020element\u0020is\u0020present\u0020within\u0020the\u0020fragment.",
+            "url": "classes/Nethead-Markup-Foundation-Fragment.html#method_has"
+        },                {
+            "fqsen": "\\Nethead\\Markup\\Foundation\\Fragment\u003A\u003AtoArray\u0028\u0029",
+            "name": "toArray",
+            "summary": "Get\u0020an\u0020array\u0020of\u0020all\u0020Tags\u0020inside\u0020the\u0020fragment.",
+            "url": "classes/Nethead-Markup-Foundation-Fragment.html#method_toArray"
+        },                {
+            "fqsen": "\\Nethead\\Markup\\Foundation\\Fragment\u003A\u003Awrap\u0028\u0029",
+            "name": "wrap",
+            "summary": "Wrap\u0020the\u0020contents\u0020inside\u0020the\u0020custom\u0020container.",
+            "url": "classes/Nethead-Markup-Foundation-Fragment.html#method_wrap"
         },                {
             "fqsen": "\\Nethead\\Markup\\Foundation\\Fragment\u003A\u003A__toString\u0028\u0029",
             "name": "__toString",

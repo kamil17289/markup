@@ -41,16 +41,15 @@ class Fragment {
     /**
      * Get a Tag from the specified index.
      * @param $index int|string The index to retrieve
-     * @param null $default Value that is returned when the specified index doesn't exist
-     * @return Tag
+     * @return Tag|null
      */
-    public function get($index, $default = null): Tag
+    public function get($index): ?Tag
     {
         if (isset($this->contents[$index])) {
             return $this->contents[$index];
         }
 
-        return $default;
+        return null;
     }
 
     /**
@@ -80,7 +79,7 @@ class Fragment {
      */
     public function wrap(string $wrapper, array $attributes = []): Tag
     {
-        return new Tag($wrapper, $attributes, [$this->contents]);
+        return new Tag($wrapper, $attributes, $this->contents);
     }
 
     /**

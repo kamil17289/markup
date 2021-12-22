@@ -130,6 +130,13 @@ See below for more documentation on configuration options.</p>
 
 <dl class="phpdocumentor-table-of-contents">
                 <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a href="classes/Nethead-Markup-Helpers-HtmlConfig.html#property_booleanAttributes">$booleanAttributes</a>
+    <span>
+                &nbsp;: array&lt;string|int, mixed&gt;            </span>
+</dt>
+<dd>Attributes which can only have a TRUE or FALSE value.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/Nethead-Markup-Helpers-HtmlConfig.html#property_closeVoids">$closeVoids</a>
     <span>
                 &nbsp;: bool            </span>
@@ -183,6 +190,39 @@ See below for more documentation on configuration options.</p>
             -public
             -static                                            "
 >
+    <h4 class="phpdocumentor-element__name" id="property_booleanAttributes">
+        $booleanAttributes
+        <a href="classes/Nethead-Markup-Helpers-HtmlConfig.html#property_booleanAttributes" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Helpers/HtmlConfig.php"><a href="files/src-helpers-htmlconfig.html"><abbr title="src/Helpers/HtmlConfig.php">HtmlConfig.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">71</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Attributes which can only have a TRUE or FALSE value.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
+    <span class="phpdocumentor-signature__name">$booleanAttributes</span>
+     = <span class="phpdocumentor-signature__default-value">[&#039;allowfullscreen&#039;, &#039;allowpaymentrequest&#039;, &#039;async&#039;, &#039;autofocus&#039;, &#039;autoplay&#039;, &#039;checked&#039;, &#039;controls&#039;, &#039;default&#039;, &#039;defer&#039;, &#039;disabled&#039;, &#039;formnovalidate&#039;, &#039;hidden&#039;, &#039;ismap&#039;, &#039;itemscope&#039;, &#039;loop&#039;, &#039;multiple&#039;, &#039;muted&#039;, &#039;nomodule&#039;, &#039;novalidate&#039;, &#039;open&#039;, &#039;playsinline&#039;, &#039;readonly&#039;, &#039;required&#039;, &#039;reversed&#039;, &#039;selected&#039;, &#039;truespeed&#039;]</span></code>
+
+        <section class="phpdocumentor-description"><p>The presence of an attribute on an element represents TRUE.</p>
+</section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+            -static                                            "
+>
     <h4 class="phpdocumentor-element__name" id="property_closeVoids">
         $closeVoids
         <a href="classes/Nethead-Markup-Helpers-HtmlConfig.html#property_closeVoids" class="headerlink"><i class="fas fa-link"></i></a>
@@ -192,7 +232,7 @@ See below for more documentation on configuration options.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Helpers/HtmlConfig.php"><a href="files/src-helpers-htmlconfig.html"><abbr title="src/Helpers/HtmlConfig.php">HtmlConfig.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">71</span>
+    <span class="phpdocumentor-element-found-in__line">105</span>
 </aside>
 
         <p class="phpdocumentor-summary">If set to true, void tags will be always closed. Useful when you are working in XHTML.</p>
@@ -224,7 +264,7 @@ See below for more documentation on configuration options.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Helpers/HtmlConfig.php"><a href="files/src-helpers-htmlconfig.html"><abbr title="src/Helpers/HtmlConfig.php">HtmlConfig.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">87</span>
+    <span class="phpdocumentor-element-found-in__line">121</span>
 </aside>
 
         <p class="phpdocumentor-summary">Change if you have your own factory or you want to use diferent icons set.</p>
@@ -306,7 +346,7 @@ according to HTML standard. It's your responsibility if the HTML will validate.<
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Helpers/HtmlConfig.php"><a href="files/src-helpers-htmlconfig.html"><abbr title="src/Helpers/HtmlConfig.php">HtmlConfig.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">78</span>
+    <span class="phpdocumentor-element-found-in__line">112</span>
 </aside>
 
         <p class="phpdocumentor-summary">List of attributes which value shouldn&#039;t be escaped.</p>
