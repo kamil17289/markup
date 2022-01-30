@@ -12,7 +12,7 @@ class Fragment {
      *
      * @var array
      */
-    protected $contents;
+    protected $contents = [];
 
     /**
      * Fragment constructor.
@@ -80,7 +80,7 @@ class Fragment {
      */
     public function wrap(string $wrapper, array $attributes = []): Tag
     {
-        return new Tag($wrapper, $attributes, [$this->contents]);
+        return new Tag($wrapper, $attributes, $this->contents);
     }
 
     /**

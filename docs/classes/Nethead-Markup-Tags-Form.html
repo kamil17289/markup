@@ -2,18 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Documentation</title>
+            <title>Documentation</title>
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <base href="../">
     <link rel="icon" href="images/favicon.ico"/>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
-            <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/template.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism-okaidia.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.css">
                 <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
         <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
         <script src="js/search.js"></script>
         <script defer src="js/searchIndex.js"></script>
     </head>
@@ -48,24 +53,37 @@
     Menu
 </label>
 <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
-    
-    <section class="phpdocumentor-sidebar__category">
-        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
-                                                <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/nethead.html"><abbr title="\Nethead">Nethead</abbr></a></h4>
-                <ul class="phpdocumentor-list">
-                                            <li><a href="namespaces/nethead-markup.html"><abbr title="\Nethead\Markup">Markup</abbr></a></li>
-                                    </ul>
-                        </section>
+                    <section class="phpdocumentor-sidebar__category">
+            <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="namespaces/nethead.html" class="">Nethead</a>
+</h4>
+    <ul class="phpdocumentor-list">
+                    <li>
+                <a href="namespaces/nethead-markup.html" class="">Markup</a>
+                
+            </li>
+            </ul>
 
-        <section class="phpdocumentor-sidebar__category">
-        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
-                    <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Default.html"><abbr title="\Default">Default</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Nethead.html"><abbr title="\Nethead">Nethead</abbr></a></h3>
-                        <ul class="phpdocumentor-list">
-                                    <li><a href="packages/Nethead-Markup.html"><abbr title="\Nethead\Markup">Markup</abbr></a></li>
-                            </ul>
                         </section>
-    
+                <section class="phpdocumentor-sidebar__category">
+            <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="packages/Application.html" class="">Application</a>
+</h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="packages/Nethead.html" class="">Nethead</a>
+</h4>
+    <ul class="phpdocumentor-list">
+                    <li>
+                <a href="packages/Nethead-Markup.html" class="">Markup</a>
+                
+            </li>
+            </ul>
+
+                        </section>
+            
     <section class="phpdocumentor-sidebar__category">
         <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
                 <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
@@ -113,11 +131,11 @@
     <abbr class="phpdocumentor-element-found-in__file" title="src/Tags/Form.php"><a href="files/src-tags-form.html"><abbr title="src/Tags/Form.php">Form.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">13</span>
-</aside>
+
+    </aside>
 
             <p class="phpdocumentor-summary">Creates a &quot;form&quot; element.</p>
 
-    <section class="phpdocumentor-description"></section>
 
 
 
@@ -135,7 +153,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="classes/Nethead-Markup-Tags-Form.html#constant_ENCTYPE_MULTIPART">ENCTYPE_MULTIPART</a>
     <span>
-        &nbsp;= &#039;multipart/form-data&#039;                    </span>
+        &nbsp;= &#039;multipart/form-data&#039;                            </span>
 </dt>
 <dd>Each value is sent as a block of data (&quot;body part&quot;), with a user agent-defined delimiter (&quot;boundary&quot;)
 separating each part. This one is good for binary data forms.</dd>
@@ -143,77 +161,77 @@ separating each part. This one is good for binary data forms.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="classes/Nethead-Markup-Tags-Form.html#constant_ENCTYPE_TEXTPLAIN">ENCTYPE_TEXTPLAIN</a>
     <span>
-        &nbsp;= &#039;text/plain&#039;                    </span>
+        &nbsp;= &#039;text/plain&#039;                            </span>
 </dt>
 <dd>Plain text - no encoding, introduced for debugging purposes</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="classes/Nethead-Markup-Tags-Form.html#constant_ENCTYPE_URLENCODED">ENCTYPE_URLENCODED</a>
     <span>
-        &nbsp;= &#039;application/x-www-form-urlencoded&#039;                    </span>
+        &nbsp;= &#039;application/x-www-form-urlencoded&#039;                            </span>
 </dt>
 <dd>Form encoding types (only for POST method).</dd>
 
-                <dt class="phpdocumentor-table-of-contents__entry -property -public">
+                    <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/Nethead-Markup-Foundation-Tag.html#property_attrs">$attrs</a>
     <span>
-                &nbsp;: <a href="classes/Nethead-Markup-Helpers-HtmlAttributes.html"><abbr title="\Nethead\Markup\Helpers\HtmlAttributes">HtmlAttributes</abbr></a>            </span>
+                        &nbsp;: <a href="classes/Nethead-Markup-Helpers-HtmlAttributes.html"><abbr title="\Nethead\Markup\Helpers\HtmlAttributes">HtmlAttributes</abbr></a>            </span>
 </dt>
 <dd>HTML attributes of this Tag</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/Nethead-Markup-Foundation-Tag.html#property_children">$children</a>
     <span>
-                &nbsp;: array&lt;string|int, mixed&gt;            </span>
+                        &nbsp;: array&lt;string|int, mixed&gt;            </span>
 </dt>
 <dd>Children of this tag.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/Nethead-Markup-Tags-Form.html#property_enctype">$enctype</a>
     <span>
-                &nbsp;: string            </span>
+                        &nbsp;: string            </span>
 </dt>
 <dd>Current form encoding.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/Nethead-Markup-Foundation-Tag.html#property_name">$name</a>
     <span>
-                &nbsp;: string            </span>
+                        &nbsp;: string            </span>
 </dt>
 <dd>Name of the tag (in HTML).</dd>
 
                 <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Foundation-Tag.html#method___call">__call()</a>
     <span>
-                        &nbsp;: mixed    </span>
+                                &nbsp;: mixed    </span>
 </dt>
 <dd>Intercept any calls to undefined methods and use it for convenient attributes setting.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Tags-Form.html#method___construct">__construct()</a>
     <span>
-                        &nbsp;: mixed    </span>
+                                &nbsp;: mixed    </span>
 </dt>
 <dd>Form constructor.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Foundation-Tag.html#method___toString">__toString()</a>
     <span>
-                        &nbsp;: string    </span>
+                                &nbsp;: string    </span>
 </dt>
 <dd>Magic method to make the Tag object convertible to string</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Tags-Form.html#method_acceptCharset">acceptCharset()</a>
     <span>
-                        &nbsp;: <a href="classes/Nethead-Markup-Tags-Form.html"><abbr title="\Nethead\Markup\Tags\Form">Form</abbr></a>    </span>
+                                &nbsp;: <a href="classes/Nethead-Markup-Tags-Form.html"><abbr title="\Nethead\Markup\Tags\Form">Form</abbr></a>    </span>
 </dt>
 <dd>Set the accept-charset attribute.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Foundation-Tag.html#method_addChildren">addChildren()</a>
     <span>
-                        &nbsp;: mixed    </span>
+                                &nbsp;: mixed    </span>
 </dt>
 <dd>Add new child elements
 Warning: if some keys already exists they will be overwritten</dd>
@@ -221,105 +239,105 @@ Warning: if some keys already exists they will be overwritten</dd>
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Foundation-Tag.html#method_attrs">attrs()</a>
     <span>
-                        &nbsp;: <a href="classes/Nethead-Markup-Helpers-HtmlAttributes.html"><abbr title="\Nethead\Markup\Helpers\HtmlAttributes">HtmlAttributes</abbr></a>    </span>
+                                &nbsp;: <a href="classes/Nethead-Markup-Helpers-HtmlAttributes.html"><abbr title="\Nethead\Markup\Helpers\HtmlAttributes">HtmlAttributes</abbr></a>    </span>
 </dt>
 <dd>Retrieve the attributes object</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Helpers-CanBeAutoCompleted.html#method_autocomplete">autocomplete()</a>
     <span>
-                        &nbsp;: $this    </span>
+                                &nbsp;: $this    </span>
 </dt>
 <dd>Set the autocomplete attribute.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Foundation-Tag.html#method_classList">classList()</a>
     <span>
-                        &nbsp;: <a href="classes/Nethead-Markup-Helpers-ClassList.html"><abbr title="\Nethead\Markup\Helpers\ClassList">ClassList</abbr></a>    </span>
+                                &nbsp;: <a href="classes/Nethead-Markup-Helpers-ClassList.html"><abbr title="\Nethead\Markup\Helpers\ClassList">ClassList</abbr></a>    </span>
 </dt>
 <dd>Modify the class attribute directly, without calling -&gt;attrs()</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Foundation-Tag.html#method_clearChildren">clearChildren()</a>
     <span>
-                        &nbsp;: mixed    </span>
+                                &nbsp;: mixed    </span>
 </dt>
 <dd>Clear tag&#039;s inner HTML</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Foundation-Tag.html#method_close">close()</a>
     <span>
-                        &nbsp;: string    </span>
+                                &nbsp;: string    </span>
 </dt>
 <dd>Close the tag.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Tags-Form.html#method_enctype">enctype()</a>
     <span>
-                        &nbsp;: <a href="classes/Nethead-Markup-Tags-Form.html"><abbr title="\Nethead\Markup\Tags\Form">Form</abbr></a>    </span>
+                                &nbsp;: <a href="classes/Nethead-Markup-Tags-Form.html"><abbr title="\Nethead\Markup\Tags\Form">Form</abbr></a>    </span>
 </dt>
 <dd>Set the enctype attribute.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Foundation-Tag.html#method_getChild">getChild()</a>
     <span>
-                        &nbsp;: <a href="classes/Nethead-Markup-Foundation-Tag.html"><abbr title="\Nethead\Markup\Foundation\Tag">Tag</abbr></a>|<a href="classes/Nethead-Markup-Foundation-TextNode.html"><abbr title="\Nethead\Markup\Foundation\TextNode">TextNode</abbr></a>|null    </span>
+                                &nbsp;: <a href="classes/Nethead-Markup-Foundation-Tag.html"><abbr title="\Nethead\Markup\Foundation\Tag">Tag</abbr></a>|<a href="classes/Nethead-Markup-Foundation-TextNode.html"><abbr title="\Nethead\Markup\Foundation\TextNode">TextNode</abbr></a>|null    </span>
 </dt>
 <dd>Get the child element of a given key</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Foundation-Tag.html#method_isVoidElement">isVoidElement()</a>
     <span>
-                        &nbsp;: bool    </span>
+                                &nbsp;: bool    </span>
 </dt>
 <dd>Check if this tag has it&#039;s closing equivalent</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Tags-Form.html#method_name">name()</a>
     <span>
-                        &nbsp;: <a href="classes/Nethead-Markup-Tags-Form.html"><abbr title="\Nethead\Markup\Tags\Form">Form</abbr></a>    </span>
+                                &nbsp;: <a href="classes/Nethead-Markup-Tags-Form.html"><abbr title="\Nethead\Markup\Tags\Form">Form</abbr></a>    </span>
 </dt>
 <dd>Set the form element name attribute.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Foundation-Tag.html#method_open">open()</a>
     <span>
-                        &nbsp;: string    </span>
+                                &nbsp;: string    </span>
 </dt>
 <dd>Open the Tag in HTML.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Foundation-Tag.html#method_removeChild">removeChild()</a>
     <span>
-                        &nbsp;: mixed    </span>
+                                &nbsp;: mixed    </span>
 </dt>
 <dd>Remove child element of a given key</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Foundation-Tag.html#method_render">render()</a>
     <span>
-                        &nbsp;: string    </span>
+                                &nbsp;: string    </span>
 </dt>
 <dd>Render the tag object to string.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Foundation-Tag.html#method_renderChildren">renderChildren()</a>
     <span>
-                        &nbsp;: string    </span>
+                                &nbsp;: string    </span>
 </dt>
 <dd>Render child elements of this Tag.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Foundation-Tag.html#method_setChildren">setChildren()</a>
     <span>
-                        &nbsp;: <a href="classes/Nethead-Markup-Foundation-Tag.html"><abbr title="\Nethead\Markup\Foundation\Tag">Tag</abbr></a>    </span>
+                                &nbsp;: <a href="classes/Nethead-Markup-Foundation-Tag.html"><abbr title="\Nethead\Markup\Foundation\Tag">Tag</abbr></a>    </span>
 </dt>
 <dd>Set tag&#039;s inner HTML</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Foundation-Tag.html#method_with">with()</a>
     <span>
-                        &nbsp;: <a href="classes/Nethead-Markup-Foundation-Tag.html"><abbr title="\Nethead\Markup\Foundation\Tag">Tag</abbr></a>    </span>
+                                &nbsp;: <a href="classes/Nethead-Markup-Foundation-Tag.html"><abbr title="\Nethead\Markup\Foundation\Tag">Tag</abbr></a>    </span>
 </dt>
 <dd>Pass the Tag instance to any processing function for further modification.</dd>
 
@@ -343,21 +361,22 @@ Warning: if some keys already exists they will be overwritten</dd>
     <abbr class="phpdocumentor-element-found-in__file" title="src/Tags/Form.php"><a href="files/src-tags-form.html"><abbr title="src/Tags/Form.php">Form.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">32</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Each value is sent as a block of data (&quot;body part&quot;), with a user agent-defined delimiter (&quot;boundary&quot;)
 separating each part. This one is good for binary data forms.</p>
 
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
-    <span class="phpdocumentor-signature__type">string</span>
+        <span class="phpdocumentor-signature__type">string</span>
     <span class="phpdocumentor-signature__name">ENCTYPE_MULTIPART</span>
     = <span class="phpdocumentor-signature__default-value">&#039;multipart/form-data&#039;</span>
 </code>
 
 
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -371,20 +390,21 @@ separating each part. This one is good for binary data forms.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="src/Tags/Form.php"><a href="files/src-tags-form.html"><abbr title="src/Tags/Form.php">Form.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">39</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Plain text - no encoding, introduced for debugging purposes</p>
 
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
-    <span class="phpdocumentor-signature__type">string</span>
+        <span class="phpdocumentor-signature__type">string</span>
     <span class="phpdocumentor-signature__name">ENCTYPE_TEXTPLAIN</span>
     = <span class="phpdocumentor-signature__default-value">&#039;text/plain&#039;</span>
 </code>
 
 
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -398,13 +418,14 @@ separating each part. This one is good for binary data forms.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="src/Tags/Form.php"><a href="files/src-tags-form.html"><abbr title="src/Tags/Form.php">Form.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">24</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Form encoding types (only for POST method).</p>
 
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
-    <span class="phpdocumentor-signature__type">string</span>
+        <span class="phpdocumentor-signature__type">string</span>
     <span class="phpdocumentor-signature__name">ENCTYPE_URLENCODED</span>
     = <span class="phpdocumentor-signature__default-value">&#039;application/x-www-form-urlencoded&#039;</span>
 </code>
@@ -415,6 +436,7 @@ separated by '&amp;', with a '=' between the key and the value. Non-alphanumeric
 keys and values are percent encoded.</p>
 </section>
 
+    
     
 
 </article>
@@ -443,7 +465,8 @@ keys and values are percent encoded.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/Tag.php"><a href="files/src-foundation-tag.html"><abbr title="src/Foundation/Tag.php">Tag.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">38</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">HTML attributes of this Tag</p>
 
@@ -453,8 +476,8 @@ keys and values are percent encoded.</p>
     <span class="phpdocumentor-signature__name">$attrs</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
@@ -501,7 +524,8 @@ keys and values are percent encoded.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/Tag.php"><a href="files/src-foundation-tag.html"><abbr title="src/Foundation/Tag.php">Tag.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">29</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Children of this tag.</p>
 
@@ -516,6 +540,7 @@ Can contain Tag objects, strings, or anything that can be converted to string.
 Children array can be associative to make it easier to retrieve the child elements.</p>
 </section>
 
+    
     
 
 </article>
@@ -536,7 +561,8 @@ Children array can be associative to make it easier to retrieve the child elemen
     <abbr class="phpdocumentor-element-found-in__file" title="src/Tags/Form.php"><a href="files/src-tags-form.html"><abbr title="src/Tags/Form.php">Form.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">46</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Current form encoding.</p>
 
@@ -546,8 +572,8 @@ Children array can be associative to make it easier to retrieve the child elemen
     <span class="phpdocumentor-signature__name">$enctype</span>
      = <span class="phpdocumentor-signature__default-value">&#039;application/x-www-form-urlencoded&#039;</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -568,7 +594,8 @@ Children array can be associative to make it easier to retrieve the child elemen
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/Tag.php"><a href="files/src-foundation-tag.html"><abbr title="src/Foundation/Tag.php">Tag.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">19</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Name of the tag (in HTML).</p>
 
@@ -581,6 +608,7 @@ Children array can be associative to make it easier to retrieve the child elemen
         <section class="phpdocumentor-description"><p>It can be any of the valid HTML tags (a, title, meta, etc)</p>
 </section>
 
+    
     
 
 </article>
@@ -605,7 +633,8 @@ Children array can be associative to make it easier to retrieve the child elemen
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/Tag.php"><a href="files/src-foundation-tag.html"><abbr title="src/Foundation/Tag.php">Tag.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">252</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Intercept any calls to undefined methods and use it for convenient attributes setting.</p>
 
@@ -623,16 +652,14 @@ Children array can be associative to make it easier to retrieve the child elemen
                 : <span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$arguments</span>
                 : <span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
@@ -657,8 +684,7 @@ Children array can be associative to make it easier to retrieve the child elemen
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -675,7 +701,8 @@ Children array can be associative to make it easier to retrieve the child elemen
     <abbr class="phpdocumentor-element-found-in__file" title="src/Tags/Form.php"><a href="files/src-tags-form.html"><abbr title="src/Tags/Form.php">Form.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">60</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Form constructor.</p>
 
@@ -683,8 +710,7 @@ Children array can be associative to make it easier to retrieve the child elemen
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$action</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$method</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;post&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$attributes</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$children</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -730,8 +756,7 @@ Children array can be associative to make it easier to retrieve the child elemen
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -748,7 +773,8 @@ Children array can be associative to make it easier to retrieve the child elemen
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/Tag.php"><a href="files/src-foundation-tag.html"><abbr title="src/Foundation/Tag.php">Tag.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">164</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Magic method to make the Tag object convertible to string</p>
 
@@ -756,8 +782,7 @@ Children array can be associative to make it easier to retrieve the child elemen
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">__toString</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
@@ -771,16 +796,14 @@ Children array can be associative to make it easier to retrieve the child elemen
                 <dd class="phpdocumentor-tag-list__definition">
                                                                                     <span class="phpdocumentor-tag-link"><a href="classes/Nethead-Markup-Foundation-Tag.html#method_render"><abbr title="\Nethead\Markup\Foundation\Tag::render()">Tag::render()</abbr></a></span>
                                         
-                                                 <section class="phpdocumentor-description"></section>
-
+                                             
                                     </dd>
                         </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">string</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -797,7 +820,8 @@ Children array can be associative to make it easier to retrieve the child elemen
     <abbr class="phpdocumentor-element-found-in__file" title="src/Tags/Form.php"><a href="files/src-tags-form.html"><abbr title="src/Tags/Form.php">Form.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">86</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Set the accept-charset attribute.</p>
 
@@ -805,8 +829,7 @@ Children array can be associative to make it easier to retrieve the child elemen
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">acceptCharset</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$charset</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Tags-Form.html"><abbr title="\Nethead\Markup\Tags\Form">Form</abbr></a></span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -825,8 +848,7 @@ Children array can be associative to make it easier to retrieve the child elemen
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Tags-Form.html"><abbr title="\Nethead\Markup\Tags\Form">Form</abbr></a></span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -843,7 +865,8 @@ Children array can be associative to make it easier to retrieve the child elemen
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/Tag.php"><a href="files/src-foundation-tag.html"><abbr title="src/Foundation/Tag.php">Tag.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">117</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Add new child elements
 Warning: if some keys already exists they will be overwritten</p>
@@ -852,8 +875,7 @@ Warning: if some keys already exists they will be overwritten</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">addChildren</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$children</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -872,8 +894,7 @@ Warning: if some keys already exists they will be overwritten</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -890,7 +911,8 @@ Warning: if some keys already exists they will be overwritten</p>
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/Tag.php"><a href="files/src-foundation-tag.html"><abbr title="src/Foundation/Tag.php">Tag.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">128</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Retrieve the attributes object</p>
 
@@ -898,8 +920,7 @@ Warning: if some keys already exists they will be overwritten</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">attrs</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Helpers-HtmlAttributes.html"><abbr title="\Nethead\Markup\Helpers\HtmlAttributes">HtmlAttributes</abbr></a></span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
@@ -922,8 +943,7 @@ Warning: if some keys already exists they will be overwritten</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Helpers-HtmlAttributes.html"><abbr title="\Nethead\Markup\Helpers\HtmlAttributes">HtmlAttributes</abbr></a></span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -940,7 +960,8 @@ Warning: if some keys already exists they will be overwritten</p>
     <abbr class="phpdocumentor-element-found-in__file" title="src/Helpers/CanBeAutoCompleted.php"><a href="files/src-helpers-canbeautocompleted.html"><abbr title="src/Helpers/CanBeAutoCompleted.php">CanBeAutoCompleted.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">20</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Set the autocomplete attribute.</p>
 
@@ -948,8 +969,7 @@ Warning: if some keys already exists they will be overwritten</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">autocomplete</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -969,8 +989,7 @@ falsy will set it to <code class="prettyprint">autocomplete=&quot;off&quot;</cod
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">$this</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -987,7 +1006,8 @@ falsy will set it to <code class="prettyprint">autocomplete=&quot;off&quot;</cod
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/Tag.php"><a href="files/src-foundation-tag.html"><abbr title="src/Foundation/Tag.php">Tag.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">139</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Modify the class attribute directly, without calling -&gt;attrs()</p>
 
@@ -995,8 +1015,7 @@ falsy will set it to <code class="prettyprint">autocomplete=&quot;off&quot;</cod
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">classList</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Helpers-ClassList.html"><abbr title="\Nethead\Markup\Helpers\ClassList">ClassList</abbr></a></span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
@@ -1019,8 +1038,7 @@ falsy will set it to <code class="prettyprint">autocomplete=&quot;off&quot;</cod
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Helpers-ClassList.html"><abbr title="\Nethead\Markup\Helpers\ClassList">ClassList</abbr></a></span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1037,7 +1055,8 @@ falsy will set it to <code class="prettyprint">autocomplete=&quot;off&quot;</cod
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/Tag.php"><a href="files/src-foundation-tag.html"><abbr title="src/Foundation/Tag.php">Tag.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">81</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Clear tag&#039;s inner HTML</p>
 
@@ -1045,16 +1064,14 @@ falsy will set it to <code class="prettyprint">autocomplete=&quot;off&quot;</cod
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">clearChildren</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1071,7 +1088,8 @@ falsy will set it to <code class="prettyprint">autocomplete=&quot;off&quot;</cod
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/Tag.php"><a href="files/src-foundation-tag.html"><abbr title="src/Foundation/Tag.php">Tag.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">235</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Close the tag.</p>
 
@@ -1088,8 +1106,7 @@ falsy will set it to <code class="prettyprint">autocomplete=&quot;off&quot;</cod
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">string</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1106,7 +1123,8 @@ falsy will set it to <code class="prettyprint">autocomplete=&quot;off&quot;</cod
     <abbr class="phpdocumentor-element-found-in__file" title="src/Tags/Form.php"><a href="files/src-tags-form.html"><abbr title="src/Tags/Form.php">Form.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">99</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Set the enctype attribute.</p>
 
@@ -1114,8 +1132,7 @@ falsy will set it to <code class="prettyprint">autocomplete=&quot;off&quot;</cod
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">enctype</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$enctype</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Tags-Form.html"><abbr title="\Nethead\Markup\Tags\Form">Form</abbr></a></span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1123,8 +1140,7 @@ falsy will set it to <code class="prettyprint">autocomplete=&quot;off&quot;</cod
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
@@ -1133,8 +1149,7 @@ falsy will set it to <code class="prettyprint">autocomplete=&quot;off&quot;</cod
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Tags-Form.html"><abbr title="\Nethead\Markup\Tags\Form">Form</abbr></a></span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1151,7 +1166,8 @@ falsy will set it to <code class="prettyprint">autocomplete=&quot;off&quot;</cod
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/Tag.php"><a href="files/src-foundation-tag.html"><abbr title="src/Foundation/Tag.php">Tag.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">92</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Get the child element of a given key</p>
 
@@ -1159,8 +1175,7 @@ falsy will set it to <code class="prettyprint">autocomplete=&quot;off&quot;</cod
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">getChild</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-Tag.html"><abbr title="\Nethead\Markup\Foundation\Tag">Tag</abbr></a>|<a href="classes/Nethead-Markup-Foundation-TextNode.html"><abbr title="\Nethead\Markup\Foundation\TextNode">TextNode</abbr></a>|null</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1198,7 +1213,8 @@ falsy will set it to <code class="prettyprint">autocomplete=&quot;off&quot;</cod
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/Tag.php"><a href="files/src-foundation-tag.html"><abbr title="src/Foundation/Tag.php">Tag.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">184</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Check if this tag has it&#039;s closing equivalent</p>
 
@@ -1206,8 +1222,7 @@ falsy will set it to <code class="prettyprint">autocomplete=&quot;off&quot;</cod
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">isVoidElement</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
 
@@ -1233,7 +1248,8 @@ falsy will set it to <code class="prettyprint">autocomplete=&quot;off&quot;</cod
     <abbr class="phpdocumentor-element-found-in__file" title="src/Tags/Form.php"><a href="files/src-tags-form.html"><abbr title="src/Tags/Form.php">Form.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">112</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Set the form element name attribute.</p>
 
@@ -1241,8 +1257,7 @@ falsy will set it to <code class="prettyprint">autocomplete=&quot;off&quot;</cod
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">name</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Tags-Form.html"><abbr title="\Nethead\Markup\Tags\Form">Form</abbr></a></span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1261,8 +1276,7 @@ falsy will set it to <code class="prettyprint">autocomplete=&quot;off&quot;</cod
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Tags-Form.html"><abbr title="\Nethead\Markup\Tags\Form">Form</abbr></a></span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1279,7 +1293,8 @@ falsy will set it to <code class="prettyprint">autocomplete=&quot;off&quot;</cod
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/Tag.php"><a href="files/src-foundation-tag.html"><abbr title="src/Foundation/Tag.php">Tag.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">196</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Open the Tag in HTML.</p>
 
@@ -1297,8 +1312,7 @@ If the tag is void tag, and HtmlConfig::$closeVoids is set to true, it will be a
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">string</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1315,7 +1329,8 @@ If the tag is void tag, and HtmlConfig::$closeVoids is set to true, it will be a
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/Tag.php"><a href="files/src-foundation-tag.html"><abbr title="src/Foundation/Tag.php">Tag.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">106</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Remove child element of a given key</p>
 
@@ -1323,8 +1338,7 @@ If the tag is void tag, and HtmlConfig::$closeVoids is set to true, it will be a
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">removeChild</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1343,8 +1357,7 @@ If the tag is void tag, and HtmlConfig::$closeVoids is set to true, it will be a
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1361,7 +1374,8 @@ If the tag is void tag, and HtmlConfig::$closeVoids is set to true, it will be a
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/Tag.php"><a href="files/src-foundation-tag.html"><abbr title="src/Foundation/Tag.php">Tag.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">174</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Render the tag object to string.</p>
 
@@ -1369,8 +1383,7 @@ If the tag is void tag, and HtmlConfig::$closeVoids is set to true, it will be a
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">render</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
 
@@ -1396,7 +1409,8 @@ If the tag is void tag, and HtmlConfig::$closeVoids is set to true, it will be a
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/Tag.php"><a href="files/src-foundation-tag.html"><abbr title="src/Foundation/Tag.php">Tag.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">220</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Render child elements of this Tag.</p>
 
@@ -1404,16 +1418,14 @@ If the tag is void tag, and HtmlConfig::$closeVoids is set to true, it will be a
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">renderChildren</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">string</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1430,7 +1442,8 @@ If the tag is void tag, and HtmlConfig::$closeVoids is set to true, it will be a
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/Tag.php"><a href="files/src-foundation-tag.html"><abbr title="src/Foundation/Tag.php">Tag.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">70</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Set tag&#039;s inner HTML</p>
 
@@ -1438,8 +1451,7 @@ If the tag is void tag, and HtmlConfig::$closeVoids is set to true, it will be a
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">setChildren</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$children</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-Tag.html"><abbr title="\Nethead\Markup\Foundation\Tag">Tag</abbr></a></span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1458,8 +1470,7 @@ If the tag is void tag, and HtmlConfig::$closeVoids is set to true, it will be a
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-Tag.html"><abbr title="\Nethead\Markup\Foundation\Tag">Tag</abbr></a></span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1476,7 +1487,8 @@ If the tag is void tag, and HtmlConfig::$closeVoids is set to true, it will be a
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/Tag.php"><a href="files/src-foundation-tag.html"><abbr title="src/Foundation/Tag.php">Tag.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">151</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Pass the Tag instance to any processing function for further modification.</p>
 
@@ -1505,11 +1517,72 @@ If the tag is void tag, and HtmlConfig::$closeVoids is set to true, it will be a
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-Tag.html"><abbr title="\Nethead\Markup\Foundation\Tag">Tag</abbr></a></span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
             </section>
+
+        
+    <script type="text/javascript">
+        function loadExternalCodeSnippets(line) {
+            Array.prototype.slice.call(document.querySelectorAll('pre[data-src]')).forEach((pre) => {
+                var src = pre.getAttribute('data-src').replace( /\\/g, '/');
+                var extension = (src.match(/\.(\w+)$/) || [, ''])[1];
+                var language = 'php';
+
+                var code = document.createElement('code');
+                code.className = 'language-' + language;
+
+                pre.textContent = '';
+
+                pre.setAttribute('data-line', line)
+                code.textContent = 'Loading…';
+
+                pre.appendChild(code);
+
+                var xhr = new XMLHttpRequest();
+
+                xhr.open('GET', src, true);
+
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState == 4) {
+
+                        if (xhr.status < 400 && xhr.responseText) {
+                            code.textContent = xhr.responseText;
+
+                            Prism.highlightElement(code);
+                        }
+                        else if (xhr.status >= 400) {
+                            code.textContent = '✖ Error ' + xhr.status + ' while fetching file: ' + xhr.statusText;
+                        }
+                        else {
+                            code.textContent = '✖ Error: File does not exist, is empty or trying to view from localhost';
+                        }
+                    }
+                };
+
+                xhr.send(null);
+            });
+        }
+
+        var modals = document.querySelectorAll("[data-modal]");
+
+        modals.forEach(function (trigger) {
+            trigger.addEventListener("click", function (event) {
+                //event.preventDefault();
+                const modal = document.getElementById(trigger.dataset.modal);
+                modal.classList.add("phpdocumentor-modal__open");
+                loadExternalCodeSnippets(trigger.dataset.line)
+                const exits = modal.querySelectorAll("[data-exit-button]");
+                exits.forEach(function (exit) {
+                    exit.addEventListener("click", function (event) {
+                        event.preventDefault();
+                        modal.classList.remove("phpdocumentor-modal__open");
+                    });
+                });
+            });
+        });
+    </script>
 
     </article>
                 <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
@@ -1532,5 +1605,9 @@ If the tag is void tag, and HtmlConfig::$closeVoids is set to true, it will be a
     <script>
         cssVars({});
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/prism.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.min.js"></script>
 </body>
 </html>

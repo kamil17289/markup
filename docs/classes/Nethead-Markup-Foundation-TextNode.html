@@ -2,18 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Documentation</title>
+            <title>Documentation</title>
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <base href="../">
     <link rel="icon" href="images/favicon.ico"/>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
-            <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/template.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism-okaidia.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.css">
                 <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
         <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
         <script src="js/search.js"></script>
         <script defer src="js/searchIndex.js"></script>
     </head>
@@ -48,24 +53,37 @@
     Menu
 </label>
 <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
-    
-    <section class="phpdocumentor-sidebar__category">
-        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
-                                                <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/nethead.html"><abbr title="\Nethead">Nethead</abbr></a></h4>
-                <ul class="phpdocumentor-list">
-                                            <li><a href="namespaces/nethead-markup.html"><abbr title="\Nethead\Markup">Markup</abbr></a></li>
-                                    </ul>
-                        </section>
+                    <section class="phpdocumentor-sidebar__category">
+            <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="namespaces/nethead.html" class="">Nethead</a>
+</h4>
+    <ul class="phpdocumentor-list">
+                    <li>
+                <a href="namespaces/nethead-markup.html" class="">Markup</a>
+                
+            </li>
+            </ul>
 
-        <section class="phpdocumentor-sidebar__category">
-        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
-                    <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Default.html"><abbr title="\Default">Default</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Nethead.html"><abbr title="\Nethead">Nethead</abbr></a></h3>
-                        <ul class="phpdocumentor-list">
-                                    <li><a href="packages/Nethead-Markup.html"><abbr title="\Nethead\Markup">Markup</abbr></a></li>
-                            </ul>
                         </section>
-    
+                <section class="phpdocumentor-sidebar__category">
+            <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="packages/Application.html" class="">Application</a>
+</h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="packages/Nethead.html" class="">Nethead</a>
+</h4>
+    <ul class="phpdocumentor-list">
+                    <li>
+                <a href="packages/Nethead-Markup.html" class="">Markup</a>
+                
+            </li>
+            </ul>
+
+                        </section>
+            
     <section class="phpdocumentor-sidebar__category">
         <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
                 <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
@@ -107,7 +125,8 @@
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/TextNode.php"><a href="files/src-foundation-textnode.html"><abbr title="src/Foundation/TextNode.php">TextNode.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">15</span>
-</aside>
+
+    </aside>
 
             <p class="phpdocumentor-summary">Class TextNode is used for adding texts inside of HTML tags.</p>
 
@@ -130,52 +149,52 @@ helper methods.</p>
 </h3>
 
 <dl class="phpdocumentor-table-of-contents">
-                <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+                    <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/Nethead-Markup-Foundation-TextNode.html#property_contents">$contents</a>
     <span>
-                &nbsp;: string            </span>
+                        &nbsp;: string            </span>
 </dt>
 <dd>The text contents of the node</dd>
 
                 <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Foundation-TextNode.html#method___construct">__construct()</a>
     <span>
-                        &nbsp;: mixed    </span>
+                                &nbsp;: mixed    </span>
 </dt>
 <dd>TextNode constructor.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Foundation-TextNode.html#method___toString">__toString()</a>
     <span>
-                        &nbsp;: string    </span>
+                                &nbsp;: string    </span>
 </dt>
 <dd>Magic method for casting the object to a string type.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Foundation-TextNode.html#method_alter">alter()</a>
     <span>
-                        &nbsp;: <a href="classes/Nethead-Markup-Foundation-TextNode.html"><abbr title="\Nethead\Markup\Foundation\TextNode">TextNode</abbr></a>    </span>
+                                &nbsp;: <a href="classes/Nethead-Markup-Foundation-TextNode.html"><abbr title="\Nethead\Markup\Foundation\TextNode">TextNode</abbr></a>    </span>
 </dt>
 <dd>Alter the TextNode contents using custom function.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Foundation-TextNode.html#method_append">append()</a>
     <span>
-                        &nbsp;: <a href="classes/Nethead-Markup-Foundation-TextNode.html"><abbr title="\Nethead\Markup\Foundation\TextNode">TextNode</abbr></a>    </span>
+                                &nbsp;: <a href="classes/Nethead-Markup-Foundation-TextNode.html"><abbr title="\Nethead\Markup\Foundation\TextNode">TextNode</abbr></a>    </span>
 </dt>
 <dd>Append some characters at the end of the string.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Foundation-TextNode.html#method_make">make()</a>
     <span>
-                        &nbsp;: <a href="classes/Nethead-Markup-Foundation-TextNode.html"><abbr title="\Nethead\Markup\Foundation\TextNode">TextNode</abbr></a>    </span>
+                                &nbsp;: <a href="classes/Nethead-Markup-Foundation-TextNode.html"><abbr title="\Nethead\Markup\Foundation\TextNode">TextNode</abbr></a>    </span>
 </dt>
 <dd>Helper method for fast creating new text nodes.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Foundation-TextNode.html#method_render">render()</a>
     <span>
-                        &nbsp;: string    </span>
+                                &nbsp;: string    </span>
 </dt>
 <dd>Render the contents as a safe HTML string.</dd>
 
@@ -208,7 +227,8 @@ helper methods.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/TextNode.php"><a href="files/src-foundation-textnode.html"><abbr title="src/Foundation/TextNode.php">TextNode.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">21</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">The text contents of the node</p>
 
@@ -218,8 +238,8 @@ helper methods.</p>
     <span class="phpdocumentor-signature__name">$contents</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -244,7 +264,8 @@ helper methods.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/TextNode.php"><a href="files/src-foundation-textnode.html"><abbr title="src/Foundation/TextNode.php">TextNode.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">29</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">TextNode constructor.</p>
 
@@ -252,8 +273,7 @@ helper methods.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$contents</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -288,8 +308,7 @@ helper methods.</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -306,7 +325,8 @@ helper methods.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/TextNode.php"><a href="files/src-foundation-textnode.html"><abbr title="src/Foundation/TextNode.php">TextNode.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">99</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Magic method for casting the object to a string type.</p>
 
@@ -339,8 +359,7 @@ helper methods.</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">string</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -357,7 +376,8 @@ helper methods.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/TextNode.php"><a href="files/src-foundation-textnode.html"><abbr title="src/Foundation/TextNode.php">TextNode.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">68</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Alter the TextNode contents using custom function.</p>
 
@@ -365,8 +385,7 @@ helper methods.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">alter</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">callable&nbsp;</span><span class="phpdocumentor-signature__argument__name">$processingFunction</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-TextNode.html"><abbr title="\Nethead\Markup\Foundation\TextNode">TextNode</abbr></a></span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -374,8 +393,7 @@ helper methods.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">callable</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
@@ -384,8 +402,7 @@ helper methods.</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-TextNode.html"><abbr title="\Nethead\Markup\Foundation\TextNode">TextNode</abbr></a></span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -402,7 +419,8 @@ helper methods.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/TextNode.php"><a href="files/src-foundation-textnode.html"><abbr title="src/Foundation/TextNode.php">TextNode.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">56</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Append some characters at the end of the string.</p>
 
@@ -410,8 +428,7 @@ helper methods.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">append</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$contents</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-TextNode.html"><abbr title="\Nethead\Markup\Foundation\TextNode">TextNode</abbr></a></span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -430,8 +447,7 @@ helper methods.</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-TextNode.html"><abbr title="\Nethead\Markup\Foundation\TextNode">TextNode</abbr></a></span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -448,7 +464,8 @@ helper methods.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/TextNode.php"><a href="files/src-foundation-textnode.html"><abbr title="src/Foundation/TextNode.php">TextNode.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">45</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Helper method for fast creating new text nodes.</p>
 
@@ -477,8 +494,7 @@ helper methods.</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-TextNode.html"><abbr title="\Nethead\Markup\Foundation\TextNode">TextNode</abbr></a></span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -495,7 +511,8 @@ helper methods.</p>
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/TextNode.php"><a href="files/src-foundation-textnode.html"><abbr title="src/Foundation/TextNode.php">TextNode.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">82</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Render the contents as a safe HTML string.</p>
 
@@ -547,6 +564,68 @@ helper methods.</p>
 </article>
             </section>
 
+        
+    <script type="text/javascript">
+        function loadExternalCodeSnippets(line) {
+            Array.prototype.slice.call(document.querySelectorAll('pre[data-src]')).forEach((pre) => {
+                var src = pre.getAttribute('data-src').replace( /\\/g, '/');
+                var extension = (src.match(/\.(\w+)$/) || [, ''])[1];
+                var language = 'php';
+
+                var code = document.createElement('code');
+                code.className = 'language-' + language;
+
+                pre.textContent = '';
+
+                pre.setAttribute('data-line', line)
+                code.textContent = 'Loading…';
+
+                pre.appendChild(code);
+
+                var xhr = new XMLHttpRequest();
+
+                xhr.open('GET', src, true);
+
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState == 4) {
+
+                        if (xhr.status < 400 && xhr.responseText) {
+                            code.textContent = xhr.responseText;
+
+                            Prism.highlightElement(code);
+                        }
+                        else if (xhr.status >= 400) {
+                            code.textContent = '✖ Error ' + xhr.status + ' while fetching file: ' + xhr.statusText;
+                        }
+                        else {
+                            code.textContent = '✖ Error: File does not exist, is empty or trying to view from localhost';
+                        }
+                    }
+                };
+
+                xhr.send(null);
+            });
+        }
+
+        var modals = document.querySelectorAll("[data-modal]");
+
+        modals.forEach(function (trigger) {
+            trigger.addEventListener("click", function (event) {
+                //event.preventDefault();
+                const modal = document.getElementById(trigger.dataset.modal);
+                modal.classList.add("phpdocumentor-modal__open");
+                loadExternalCodeSnippets(trigger.dataset.line)
+                const exits = modal.querySelectorAll("[data-exit-button]");
+                exits.forEach(function (exit) {
+                    exit.addEventListener("click", function (event) {
+                        event.preventDefault();
+                        modal.classList.remove("phpdocumentor-modal__open");
+                    });
+                });
+            });
+        });
+    </script>
+
     </article>
                 <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
     <section class="phpdocumentor-search-results__dialog">
@@ -568,5 +647,9 @@ helper methods.</p>
     <script>
         cssVars({});
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/prism.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.min.js"></script>
 </body>
 </html>

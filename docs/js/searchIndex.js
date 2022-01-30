@@ -76,6 +76,51 @@ Search.appendIndex(
             "summary": "Root\u0020element\u0020of\u0020every\u0020HTML\u0020document",
             "url": "classes/Nethead-Markup-Foundation-Document.html#property_html"
         },                {
+            "fqsen": "\\Nethead\\Markup\\Foundation\\Fragment",
+            "name": "Fragment",
+            "summary": "Class\u0020Fragment\u0020holds\u0020a\u0020number\u0020of\u0020HTML\u0020Tag\u0020objects\u0020for\u0020grouping\u0020purposes.",
+            "url": "classes/Nethead-Markup-Foundation-Fragment.html"
+        },                {
+            "fqsen": "\\Nethead\\Markup\\Foundation\\Fragment\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Fragment\u0020constructor.",
+            "url": "classes/Nethead-Markup-Foundation-Fragment.html#method___construct"
+        },                {
+            "fqsen": "\\Nethead\\Markup\\Foundation\\Fragment\u003A\u003Apush\u0028\u0029",
+            "name": "push",
+            "summary": "Push\u0020new\u0020tag\u0020at\u0020the\u0020end\u0020of\u0020the\u0020fragment.",
+            "url": "classes/Nethead-Markup-Foundation-Fragment.html#method_push"
+        },                {
+            "fqsen": "\\Nethead\\Markup\\Foundation\\Fragment\u003A\u003Aget\u0028\u0029",
+            "name": "get",
+            "summary": "Get\u0020a\u0020Tag\u0020from\u0020the\u0020specified\u0020index.",
+            "url": "classes/Nethead-Markup-Foundation-Fragment.html#method_get"
+        },                {
+            "fqsen": "\\Nethead\\Markup\\Foundation\\Fragment\u003A\u003Ahas\u0028\u0029",
+            "name": "has",
+            "summary": "Check\u0020if\u0020the\u0020element\u0020is\u0020present\u0020within\u0020the\u0020fragment.",
+            "url": "classes/Nethead-Markup-Foundation-Fragment.html#method_has"
+        },                {
+            "fqsen": "\\Nethead\\Markup\\Foundation\\Fragment\u003A\u003AtoArray\u0028\u0029",
+            "name": "toArray",
+            "summary": "Get\u0020an\u0020array\u0020of\u0020all\u0020Tags\u0020inside\u0020the\u0020fragment.",
+            "url": "classes/Nethead-Markup-Foundation-Fragment.html#method_toArray"
+        },                {
+            "fqsen": "\\Nethead\\Markup\\Foundation\\Fragment\u003A\u003Awrap\u0028\u0029",
+            "name": "wrap",
+            "summary": "Wrap\u0020the\u0020contents\u0020inside\u0020the\u0020custom\u0020container.",
+            "url": "classes/Nethead-Markup-Foundation-Fragment.html#method_wrap"
+        },                {
+            "fqsen": "\\Nethead\\Markup\\Foundation\\Fragment\u003A\u003A__toString\u0028\u0029",
+            "name": "__toString",
+            "summary": "Convert\u0020the\u0020Fragment\u0020to\u0020HTML\u0020string",
+            "url": "classes/Nethead-Markup-Foundation-Fragment.html#method___toString"
+        },                {
+            "fqsen": "\\Nethead\\Markup\\Foundation\\Fragment\u003A\u003A\u0024contents",
+            "name": "contents",
+            "summary": "The\u0020contents\u0020of\u0020the\u0020fragment",
+            "url": "classes/Nethead-Markup-Foundation-Fragment.html#property_contents"
+        },                {
             "fqsen": "\\Nethead\\Markup\\Foundation\\RichTextNode",
             "name": "RichTextNode",
             "summary": "Creates\u0020rich\u0020formatted\u0020texts\u0020in\u0020HTML.",
@@ -331,6 +376,16 @@ Search.appendIndex(
             "summary": "Bind\u0020the\u0020element\u0020to\u0020form.",
             "url": "classes/Nethead-Markup-Helpers-BindableToForm.html#method_bindForm"
         },                {
+            "fqsen": "\\Nethead\\Markup\\Helpers\\CanBeAutoCompleted",
+            "name": "CanBeAutoCompleted",
+            "summary": "Trait\u0020CanBeAutoCompleted.",
+            "url": "classes/Nethead-Markup-Helpers-CanBeAutoCompleted.html"
+        },                {
+            "fqsen": "\\Nethead\\Markup\\Helpers\\CanBeAutoCompleted\u003A\u003Aautocomplete\u0028\u0029",
+            "name": "autocomplete",
+            "summary": "Set\u0020the\u0020autocomplete\u0020attribute.",
+            "url": "classes/Nethead-Markup-Helpers-CanBeAutoCompleted.html#method_autocomplete"
+        },                {
             "fqsen": "\\Nethead\\Markup\\Helpers\\CanBeDisabled",
             "name": "CanBeDisabled",
             "summary": "Trait\u0020CanBeDisabled.",
@@ -370,6 +425,61 @@ Search.appendIndex(
             "name": "required",
             "summary": "Add\u0020or\u0020remove\u0020the\u0020required\u0020attribute\u0020on\u0020this\u0020element.",
             "url": "classes/Nethead-Markup-Helpers-CanBeRequired.html#method_required"
+        },                {
+            "fqsen": "\\Nethead\\Markup\\Helpers\\CanGainAutoFocus",
+            "name": "CanGainAutoFocus",
+            "summary": "Trait\u0020CanGainAutoFocus.",
+            "url": "classes/Nethead-Markup-Helpers-CanGainAutoFocus.html"
+        },                {
+            "fqsen": "\\Nethead\\Markup\\Helpers\\CanGainAutoFocus\u003A\u003Aautofocus\u0028\u0029",
+            "name": "autofocus",
+            "summary": "Set\u0020this\u0020element\u0020to\u0020gain\u0020focus\u0020automatically.",
+            "url": "classes/Nethead-Markup-Helpers-CanGainAutoFocus.html#method_autofocus"
+        },                {
+            "fqsen": "\\Nethead\\Markup\\Helpers\\CanHaveMediaControls",
+            "name": "CanHaveMediaControls",
+            "summary": "Trait\u0020CanHaveMediaControls.",
+            "url": "classes/Nethead-Markup-Helpers-CanHaveMediaControls.html"
+        },                {
+            "fqsen": "\\Nethead\\Markup\\Helpers\\CanHaveMediaControls\u003A\u003Acontrols\u0028\u0029",
+            "name": "controls",
+            "summary": "Specifies\u0020that\u0020video\u0020controls\u0020should\u0020be\u0020displayed",
+            "url": "classes/Nethead-Markup-Helpers-CanHaveMediaControls.html#method_controls"
+        },                {
+            "fqsen": "\\Nethead\\Markup\\Helpers\\CanHaveMediaControls\u003A\u003Aautoplay\u0028\u0029",
+            "name": "autoplay",
+            "summary": "Specifies\u0020that\u0020the\u0020video\/audio\u0020will\u0020start\u0020playing\u0020as\u0020soon\u0020as\u0020it\u0020is\u0020ready",
+            "url": "classes/Nethead-Markup-Helpers-CanHaveMediaControls.html#method_autoplay"
+        },                {
+            "fqsen": "\\Nethead\\Markup\\Helpers\\CanHaveMediaControls\u003A\u003Aloop\u0028\u0029",
+            "name": "loop",
+            "summary": "Specifies\u0020that\u0020the\u0020video\/audio\u0020will\u0020start\u0020over\u0020again,\u0020every\u0020time\u0020it\u0020is\u0020finished",
+            "url": "classes/Nethead-Markup-Helpers-CanHaveMediaControls.html#method_loop"
+        },                {
+            "fqsen": "\\Nethead\\Markup\\Helpers\\CanHaveMediaControls\u003A\u003Amuted\u0028\u0029",
+            "name": "muted",
+            "summary": "Specifies\u0020that\u0020the\u0020audio\u0020output\u0020of\u0020the\u0020video\/audio\u0020should\u0020be\u0020muted",
+            "url": "classes/Nethead-Markup-Helpers-CanHaveMediaControls.html#method_muted"
+        },                {
+            "fqsen": "\\Nethead\\Markup\\Helpers\\CanHaveMediaControls\u003A\u003Apreload\u0028\u0029",
+            "name": "preload",
+            "summary": "Specifies\u0020if\u0020and\u0020how\u0020the\u0020author\u0020thinks\u0020the\u0020video\u0020should\u0020be\u0020loaded\u0020when\u0020the\u0020page\u0020loads.",
+            "url": "classes/Nethead-Markup-Helpers-CanHaveMediaControls.html#method_preload"
+        },                {
+            "fqsen": "\\Nethead\\Markup\\Helpers\\CanHaveMinMaxValues",
+            "name": "CanHaveMinMaxValues",
+            "summary": "Trait\u0020CanHaveMinMaxValues.",
+            "url": "classes/Nethead-Markup-Helpers-CanHaveMinMaxValues.html"
+        },                {
+            "fqsen": "\\Nethead\\Markup\\Helpers\\CanHaveMinMaxValues\u003A\u003Amax\u0028\u0029",
+            "name": "max",
+            "summary": "Set\u0020the\u0020maximum\u0020value\u0020for\u0020this\u0020input.",
+            "url": "classes/Nethead-Markup-Helpers-CanHaveMinMaxValues.html#method_max"
+        },                {
+            "fqsen": "\\Nethead\\Markup\\Helpers\\CanHaveMinMaxValues\u003A\u003Amin\u0028\u0029",
+            "name": "min",
+            "summary": "Set\u0020the\u0020minimum\u0020value\u0020for\u0020this\u0020input.",
+            "url": "classes/Nethead-Markup-Helpers-CanHaveMinMaxValues.html#method_min"
         },                {
             "fqsen": "\\Nethead\\Markup\\Helpers\\ClassList",
             "name": "ClassList",
@@ -481,6 +591,11 @@ Search.appendIndex(
             "summary": "Set\u0020the\u0020access\u0020key\u0020for\u0020the\u0020element.",
             "url": "classes/Nethead-Markup-Helpers-HtmlAttributes.html#method_accessKey"
         },                {
+            "fqsen": "\\Nethead\\Markup\\Helpers\\HtmlAttributes\u003A\u003AstringValue\u0028\u0029",
+            "name": "stringValue",
+            "summary": "Helper\u0020function\u0020for\u0020converting\u0020some\u0020of\u0020PHP\u0020types\u0020into\u0020string\u0020attributes\u0020values",
+            "url": "classes/Nethead-Markup-Helpers-HtmlAttributes.html#method_stringValue"
+        },                {
             "fqsen": "\\Nethead\\Markup\\Helpers\\HtmlAttributes\u003A\u003Arender\u0028\u0029",
             "name": "render",
             "summary": "Render\u0020the\u0020attributes\u0020as\u0020HTML\u0020string.",
@@ -510,6 +625,11 @@ Search.appendIndex(
             "name": "globalAttributes",
             "summary": "Global\u0020attributes\u0020supported\u0020by\u0020every\u0020HTML\u0020tag.",
             "url": "classes/Nethead-Markup-Helpers-HtmlConfig.html#property_globalAttributes"
+        },                {
+            "fqsen": "\\Nethead\\Markup\\Helpers\\HtmlConfig\u003A\u003A\u0024booleanAttributes",
+            "name": "booleanAttributes",
+            "summary": "Attributes\u0020which\u0020can\u0020only\u0020have\u0020a\u0020TRUE\u0020or\u0020FALSE\u0020value.",
+            "url": "classes/Nethead-Markup-Helpers-HtmlConfig.html#property_booleanAttributes"
         },                {
             "fqsen": "\\Nethead\\Markup\\Helpers\\HtmlConfig\u003A\u003A\u0024closeVoids",
             "name": "closeVoids",
@@ -881,6 +1001,31 @@ Search.appendIndex(
             "summary": "Set\u0020the\u0020relation\u0020of\u0020the\u0020link.",
             "url": "classes/Nethead-Markup-Tags-A.html#method_rel"
         },                {
+            "fqsen": "\\Nethead\\Markup\\Tags\\Audio",
+            "name": "Audio",
+            "summary": "Class\u0020Audio\u0020creates\u0020\u0022audio\u0022\u0020tags.",
+            "url": "classes/Nethead-Markup-Tags-Audio.html"
+        },                {
+            "fqsen": "\\Nethead\\Markup\\Tags\\Audio\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Audio\u0020constructor.",
+            "url": "classes/Nethead-Markup-Tags-Audio.html#method___construct"
+        },                {
+            "fqsen": "\\Nethead\\Markup\\Tags\\Audio\u003A\u003Asource\u0028\u0029",
+            "name": "source",
+            "summary": "Add\u0020a\u0020audio\u0020source.",
+            "url": "classes/Nethead-Markup-Tags-Audio.html#method_source"
+        },                {
+            "fqsen": "\\Nethead\\Markup\\Tags\\Audio\u003A\u003Arender\u0028\u0029",
+            "name": "render",
+            "summary": "Renders\u0020the\u0020object\u0020into\u0020HTML\u0020string",
+            "url": "classes/Nethead-Markup-Tags-Audio.html#method_render"
+        },                {
+            "fqsen": "\\Nethead\\Markup\\Tags\\Audio\u003A\u003A\u0024notSupportedMessege",
+            "name": "notSupportedMessege",
+            "summary": "Set\u0020this\u0020message\u0020with\u0020your\u0020own\u0020and\u0020show\u0020for\u0020older\u0020browsers.",
+            "url": "classes/Nethead-Markup-Tags-Audio.html#property_notSupportedMessege"
+        },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\Body",
             "name": "Body",
             "summary": "Creates\u0020a\u0020\u0022body\u0022\u0020element.",
@@ -1111,6 +1256,26 @@ Search.appendIndex(
             "summary": "Meta\u0020constructor.",
             "url": "classes/Nethead-Markup-Tags-Meta.html#method___construct"
         },                {
+            "fqsen": "\\Nethead\\Markup\\Tags\\Meter",
+            "name": "Meter",
+            "summary": "Creates\u0020a\u0020\u0022meter\u0022\u0020element.",
+            "url": "classes/Nethead-Markup-Tags-Meter.html"
+        },                {
+            "fqsen": "\\Nethead\\Markup\\Tags\\Meter\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Meter\u0020constructor.",
+            "url": "classes/Nethead-Markup-Tags-Meter.html#method___construct"
+        },                {
+            "fqsen": "\\Nethead\\Markup\\Tags\\Meter\u003A\u003Amake\u0028\u0029",
+            "name": "make",
+            "summary": "Static\u0020factory\u0020method.",
+            "url": "classes/Nethead-Markup-Tags-Meter.html#method_make"
+        },                {
+            "fqsen": "\\Nethead\\Markup\\Tags\\Meter\u003A\u003Athreshold\u0028\u0029",
+            "name": "threshold",
+            "summary": "Set\u0020the\u0020thresholds\u0020values\u0020for\u0020the\u0020meter.",
+            "url": "classes/Nethead-Markup-Tags-Meter.html#method_threshold"
+        },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\Optgroup",
             "name": "Optgroup",
             "summary": "Creates\u0020\u0022optgroup\u0022\u0020element.",
@@ -1170,6 +1335,16 @@ Search.appendIndex(
             "name": "alt",
             "summary": "",
             "url": "classes/Nethead-Markup-Tags-Picture.html#property_alt"
+        },                {
+            "fqsen": "\\Nethead\\Markup\\Tags\\Progress",
+            "name": "Progress",
+            "summary": "Class\u0020Progress\u0020creates\u0020a\u0020progress\u0020indicators.",
+            "url": "classes/Nethead-Markup-Tags-Progress.html"
+        },                {
+            "fqsen": "\\Nethead\\Markup\\Tags\\Progress\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Progress\u0020constructor.",
+            "url": "classes/Nethead-Markup-Tags-Progress.html#method___construct"
         },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\Script",
             "name": "Script",
@@ -1336,96 +1511,6 @@ Search.appendIndex(
             "summary": "Set\u0020the\u0020placeholder\u0020for\u0020the\u0020textarea.",
             "url": "classes/Nethead-Markup-Tags-Textarea.html#method_placeholder"
         },                {
-            "fqsen": "\\Nethead\\Markup\\Helpers\\CanBeAutoCompleted",
-            "name": "CanBeAutoCompleted",
-            "summary": "Trait\u0020CanBeAutoCompleted.",
-            "url": "classes/Nethead-Markup-Helpers-CanBeAutoCompleted.html"
-        },                {
-            "fqsen": "\\Nethead\\Markup\\Helpers\\CanBeAutoCompleted\u003A\u003Aautocomplete\u0028\u0029",
-            "name": "autocomplete",
-            "summary": "Set\u0020the\u0020autocomplete\u0020attribute.",
-            "url": "classes/Nethead-Markup-Helpers-CanBeAutoCompleted.html#method_autocomplete"
-        },                {
-            "fqsen": "\\Nethead\\Markup\\Helpers\\CanGainAutoFocus",
-            "name": "CanGainAutoFocus",
-            "summary": "Trait\u0020CanGainAutoFocus.",
-            "url": "classes/Nethead-Markup-Helpers-CanGainAutoFocus.html"
-        },                {
-            "fqsen": "\\Nethead\\Markup\\Helpers\\CanGainAutoFocus\u003A\u003Aautofocus\u0028\u0029",
-            "name": "autofocus",
-            "summary": "Set\u0020this\u0020element\u0020to\u0020gain\u0020focus\u0020automatically.",
-            "url": "classes/Nethead-Markup-Helpers-CanGainAutoFocus.html#method_autofocus"
-        },                {
-            "fqsen": "\\Nethead\\Markup\\Helpers\\CanHaveMinMaxValues",
-            "name": "CanHaveMinMaxValues",
-            "summary": "Trait\u0020CanHaveMinMaxValues.",
-            "url": "classes/Nethead-Markup-Helpers-CanHaveMinMaxValues.html"
-        },                {
-            "fqsen": "\\Nethead\\Markup\\Helpers\\CanHaveMinMaxValues\u003A\u003Amax\u0028\u0029",
-            "name": "max",
-            "summary": "Set\u0020the\u0020maximum\u0020value\u0020for\u0020this\u0020input.",
-            "url": "classes/Nethead-Markup-Helpers-CanHaveMinMaxValues.html#method_max"
-        },                {
-            "fqsen": "\\Nethead\\Markup\\Helpers\\CanHaveMinMaxValues\u003A\u003Amin\u0028\u0029",
-            "name": "min",
-            "summary": "Set\u0020the\u0020minimum\u0020value\u0020for\u0020this\u0020input.",
-            "url": "classes/Nethead-Markup-Helpers-CanHaveMinMaxValues.html#method_min"
-        },                {
-            "fqsen": "\\Nethead\\Markup\\Tags\\Audio",
-            "name": "Audio",
-            "summary": "Class\u0020Audio\u0020creates\u0020\u0022audio\u0022\u0020tags.",
-            "url": "classes/Nethead-Markup-Tags-Audio.html"
-        },                {
-            "fqsen": "\\Nethead\\Markup\\Tags\\Audio\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "Audio\u0020constructor.",
-            "url": "classes/Nethead-Markup-Tags-Audio.html#method___construct"
-        },                {
-            "fqsen": "\\Nethead\\Markup\\Tags\\Audio\u003A\u003Asource\u0028\u0029",
-            "name": "source",
-            "summary": "Add\u0020a\u0020audio\u0020source.",
-            "url": "classes/Nethead-Markup-Tags-Audio.html#method_source"
-        },                {
-            "fqsen": "\\Nethead\\Markup\\Tags\\Audio\u003A\u003Arender\u0028\u0029",
-            "name": "render",
-            "summary": "Renders\u0020the\u0020object\u0020into\u0020HTML\u0020string",
-            "url": "classes/Nethead-Markup-Tags-Audio.html#method_render"
-        },                {
-            "fqsen": "\\Nethead\\Markup\\Tags\\Audio\u003A\u003A\u0024notSupportedMessege",
-            "name": "notSupportedMessege",
-            "summary": "Set\u0020this\u0020message\u0020with\u0020your\u0020own\u0020and\u0020show\u0020for\u0020older\u0020browsers.",
-            "url": "classes/Nethead-Markup-Tags-Audio.html#property_notSupportedMessege"
-        },                {
-            "fqsen": "\\Nethead\\Markup\\Tags\\Meter",
-            "name": "Meter",
-            "summary": "Creates\u0020a\u0020\u0022meter\u0022\u0020element.",
-            "url": "classes/Nethead-Markup-Tags-Meter.html"
-        },                {
-            "fqsen": "\\Nethead\\Markup\\Tags\\Meter\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "Meter\u0020constructor.",
-            "url": "classes/Nethead-Markup-Tags-Meter.html#method___construct"
-        },                {
-            "fqsen": "\\Nethead\\Markup\\Tags\\Meter\u003A\u003Amake\u0028\u0029",
-            "name": "make",
-            "summary": "Static\u0020factory\u0020method.",
-            "url": "classes/Nethead-Markup-Tags-Meter.html#method_make"
-        },                {
-            "fqsen": "\\Nethead\\Markup\\Tags\\Meter\u003A\u003Athreshold\u0028\u0029",
-            "name": "threshold",
-            "summary": "Set\u0020the\u0020thresholds\u0020values\u0020for\u0020the\u0020meter.",
-            "url": "classes/Nethead-Markup-Tags-Meter.html#method_threshold"
-        },                {
-            "fqsen": "\\Nethead\\Markup\\Tags\\Progress",
-            "name": "Progress",
-            "summary": "Class\u0020Progress\u0020creates\u0020a\u0020progress\u0020indicators.",
-            "url": "classes/Nethead-Markup-Tags-Progress.html"
-        },                {
-            "fqsen": "\\Nethead\\Markup\\Tags\\Progress\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "Progress\u0020constructor.",
-            "url": "classes/Nethead-Markup-Tags-Progress.html#method___construct"
-        },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\Video",
             "name": "Video",
             "summary": "Class\u0020Video\u0020creates\u0020a\u0020\u0022video\u0022\u0020tags",
@@ -1455,66 +1540,6 @@ Search.appendIndex(
             "name": "notSupportedMessege",
             "summary": "Set\u0020this\u0020message\u0020with\u0020your\u0020own\u0020and\u0020show\u0020for\u0020older\u0020browsers.",
             "url": "classes/Nethead-Markup-Tags-Video.html#property_notSupportedMessege"
-        },                {
-            "fqsen": "\\Nethead\\Markup\\Helpers\\CanHaveMediaControls",
-            "name": "CanHaveMediaControls",
-            "summary": "Trait\u0020CanHaveMediaControls.",
-            "url": "classes/Nethead-Markup-Helpers-CanHaveMediaControls.html"
-        },                {
-            "fqsen": "\\Nethead\\Markup\\Helpers\\CanHaveMediaControls\u003A\u003Acontrols\u0028\u0029",
-            "name": "controls",
-            "summary": "Specifies\u0020that\u0020video\u0020controls\u0020should\u0020be\u0020displayed",
-            "url": "classes/Nethead-Markup-Helpers-CanHaveMediaControls.html#method_controls"
-        },                {
-            "fqsen": "\\Nethead\\Markup\\Helpers\\CanHaveMediaControls\u003A\u003Aautoplay\u0028\u0029",
-            "name": "autoplay",
-            "summary": "Specifies\u0020that\u0020the\u0020video\/audio\u0020will\u0020start\u0020playing\u0020as\u0020soon\u0020as\u0020it\u0020is\u0020ready",
-            "url": "classes/Nethead-Markup-Helpers-CanHaveMediaControls.html#method_autoplay"
-        },                {
-            "fqsen": "\\Nethead\\Markup\\Helpers\\CanHaveMediaControls\u003A\u003Aloop\u0028\u0029",
-            "name": "loop",
-            "summary": "Specifies\u0020that\u0020the\u0020video\/audio\u0020will\u0020start\u0020over\u0020again,\u0020every\u0020time\u0020it\u0020is\u0020finished",
-            "url": "classes/Nethead-Markup-Helpers-CanHaveMediaControls.html#method_loop"
-        },                {
-            "fqsen": "\\Nethead\\Markup\\Helpers\\CanHaveMediaControls\u003A\u003Amuted\u0028\u0029",
-            "name": "muted",
-            "summary": "Specifies\u0020that\u0020the\u0020audio\u0020output\u0020of\u0020the\u0020video\/audio\u0020should\u0020be\u0020muted",
-            "url": "classes/Nethead-Markup-Helpers-CanHaveMediaControls.html#method_muted"
-        },                {
-            "fqsen": "\\Nethead\\Markup\\Helpers\\CanHaveMediaControls\u003A\u003Apreload\u0028\u0029",
-            "name": "preload",
-            "summary": "Specifies\u0020if\u0020and\u0020how\u0020the\u0020author\u0020thinks\u0020the\u0020video\u0020should\u0020be\u0020loaded\u0020when\u0020the\u0020page\u0020loads.",
-            "url": "classes/Nethead-Markup-Helpers-CanHaveMediaControls.html#method_preload"
-        },                {
-            "fqsen": "\\Nethead\\Markup\\Foundation\\Fragment",
-            "name": "Fragment",
-            "summary": "Class\u0020Fragment\u0020holds\u0020a\u0020number\u0020of\u0020HTML\u0020Tag\u0020objects\u0020for\u0020grouping\u0020purposes.",
-            "url": "classes/Nethead-Markup-Foundation-Fragment.html"
-        },                {
-            "fqsen": "\\Nethead\\Markup\\Foundation\\Fragment\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "Fragment\u0020constructor.",
-            "url": "classes/Nethead-Markup-Foundation-Fragment.html#method___construct"
-        },                {
-            "fqsen": "\\Nethead\\Markup\\Foundation\\Fragment\u003A\u003Apush\u0028\u0029",
-            "name": "push",
-            "summary": "Push\u0020new\u0020tag\u0020at\u0020the\u0020end\u0020of\u0020the\u0020fragment.",
-            "url": "classes/Nethead-Markup-Foundation-Fragment.html#method_push"
-        },                {
-            "fqsen": "\\Nethead\\Markup\\Foundation\\Fragment\u003A\u003Aget\u0028\u0029",
-            "name": "get",
-            "summary": "Get\u0020a\u0020Tag\u0020from\u0020the\u0020specified\u0020index.",
-            "url": "classes/Nethead-Markup-Foundation-Fragment.html#method_get"
-        },                {
-            "fqsen": "\\Nethead\\Markup\\Foundation\\Fragment\u003A\u003A__toString\u0028\u0029",
-            "name": "__toString",
-            "summary": "Convert\u0020the\u0020Fragment\u0020to\u0020HTML\u0020string",
-            "url": "classes/Nethead-Markup-Foundation-Fragment.html#method___toString"
-        },                {
-            "fqsen": "\\Nethead\\Markup\\Foundation\\Fragment\u003A\u003A\u0024contents",
-            "name": "contents",
-            "summary": "The\u0020contents\u0020of\u0020the\u0020fragment",
-            "url": "classes/Nethead-Markup-Foundation-Fragment.html#property_contents"
         },                {
             "fqsen": "\\",
             "name": "\\",
