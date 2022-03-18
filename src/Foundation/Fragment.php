@@ -84,6 +84,16 @@ class Fragment {
     }
 
     /**
+     * Swap elements within Fragment
+     * @param array $contents
+     * @return void
+     */
+    public function swap(array $contents = [])
+    {
+        $this->contents = $contents;
+    }
+
+    /**
      * Convert the Fragment to HTML string
      * @return string
      */

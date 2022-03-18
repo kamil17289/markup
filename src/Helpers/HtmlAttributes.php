@@ -250,8 +250,10 @@ class HtmlAttributes {
                 $attrName = htmlspecialchars($attrName, ENT_QUOTES);
 
                 // no-value attributes, like required, disabled, readonly
-                if (in_array($attrName, HtmlConfig::$booleanAttributes) && $attrValue === true) {
-                    $attributes[] = $attrName;
+                if (in_array($attrName, HtmlConfig::$booleanAttributes)) {
+                    if ($attrValue === true) {
+                        $attributes[] = $attrName;
+                    }
                 }
                 else {
                     $attrValue = $this->stringValue($attrValue);
