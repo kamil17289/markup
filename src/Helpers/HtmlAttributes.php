@@ -121,6 +121,16 @@ class HtmlAttributes {
     }
 
     /**
+     * @param string $attribute
+     * @param $value
+     * @return bool
+     */
+    public function is(string $attribute, $value): bool
+    {
+        return $this->get($attribute) === $value;
+    }
+
+    /**
      * Remove the given attribute(s) from list.
      *
      * @param array|string $name

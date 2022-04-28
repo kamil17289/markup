@@ -42,9 +42,9 @@ class Fragment {
      * Get a Tag from the specified index.
      * @param $index int|string The index to retrieve
      * @param null $default Value that is returned when the specified index doesn't exist
-     * @return Tag
+     * @return Tag|null
      */
-    public function get($index, $default = null): Tag
+    public function get($index, $default = null): ?Tag
     {
         if (isset($this->contents[$index])) {
             return $this->contents[$index];
@@ -76,11 +76,15 @@ class Fragment {
      * Wrap the contents inside the custom container.
      * @param string $wrapper
      * @param array $attributes
-     * @return Tag
+     * @return void
      */
-    public function wrap(string $wrapper, array $attributes = []): Tag
+    public function wrap(string $wrapper, array $attributes = [])
     {
-        return new Tag($wrapper, $attributes, $this->contents);
+        $wrapper =  new Tag($wrapper, $attributes, $this->contents);
+
+        $this->swap([
+            'wrapper' => $wrapper
+        ]);
     }
 
     /**
