@@ -47,4 +47,15 @@ class Option extends Tag {
     {
         $this->attrs()->set('label', $value);
     }
+
+    /**
+     * Mark the option as selected.
+     *
+     * @param bool $selected
+     * @return void
+     */
+    public function selected(bool $selected = true)
+    {
+        $this->attrs()->set('selected', true);
+    }
 }
