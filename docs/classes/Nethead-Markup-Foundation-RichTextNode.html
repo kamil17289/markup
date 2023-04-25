@@ -211,7 +211,7 @@ rendered at once when you cast it to string.</p>
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Foundation-Fragment.html#method_get">get()</a>
     <span>
-                                &nbsp;: <a href="classes/Nethead-Markup-Foundation-Tag.html"><abbr title="\Nethead\Markup\Foundation\Tag">Tag</abbr></a>    </span>
+                                &nbsp;: <a href="classes/Nethead-Markup-Foundation-Tag.html"><abbr title="\Nethead\Markup\Foundation\Tag">Tag</abbr></a>|null    </span>
 </dt>
 <dd>Get a Tag from the specified index.</dd>
 
@@ -249,6 +249,13 @@ rendered at once when you cast it to string.</p>
                                 &nbsp;: <a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a>    </span>
 </dt>
 <dd>Add &quot;inserted&quot; text.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Nethead-Markup-Foundation-Fragment.html#method_jsonSerialize">jsonSerialize()</a>
+    <span>
+                                &nbsp;: array&lt;string|int, mixed&gt;    </span>
+</dt>
+<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Foundation-RichTextNode.html#method_kbd">kbd()</a>
@@ -321,6 +328,13 @@ rendered at once when you cast it to string.</p>
 <dd>Add a superscript.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Nethead-Markup-Foundation-Fragment.html#method_swap">swap()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd>Swap elements within Fragment</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Foundation-RichTextNode.html#method_time">time()</a>
     <span>
                                 &nbsp;: <a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a>    </span>
@@ -351,7 +365,7 @@ rendered at once when you cast it to string.</p>
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Nethead-Markup-Foundation-Fragment.html#method_wrap">wrap()</a>
     <span>
-                                &nbsp;: <a href="classes/Nethead-Markup-Foundation-Tag.html"><abbr title="\Nethead\Markup\Foundation\Tag">Tag</abbr></a>    </span>
+                                &nbsp;: void    </span>
 </dt>
 <dd>Wrap the contents inside the custom container.</dd>
 
@@ -428,7 +442,7 @@ rendered at once when you cast it to string.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$contents</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$contents</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -465,7 +479,7 @@ rendered at once when you cast it to string.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/Fragment.php"><a href="files/src-foundation-fragment.html"><abbr title="src/Foundation/Fragment.php">Fragment.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">90</span>
+    <span class="phpdocumentor-element-found-in__line">104</span>
 
     </aside>
 
@@ -473,7 +487,7 @@ rendered at once when you cast it to string.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">__toString</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                    <span class="phpdocumentor-signature__name">__toString</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
     
     
@@ -506,7 +520,7 @@ rendered at once when you cast it to string.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">abbr</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$title</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">abbr</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$title</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -560,7 +574,7 @@ rendered at once when you cast it to string.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">b</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">b</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -619,7 +633,7 @@ rendered at once when you cast it to string.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">br</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">br</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a></span></code>
 
     
     
@@ -652,7 +666,7 @@ rendered at once when you cast it to string.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">del</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">del</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -697,7 +711,7 @@ rendered at once when you cast it to string.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">em</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">em</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -742,7 +756,7 @@ rendered at once when you cast it to string.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">get</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$index</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$default</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-Tag.html"><abbr title="\Nethead\Markup\Foundation\Tag">Tag</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">get</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$index</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$default</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-Tag.html"><abbr title="\Nethead\Markup\Foundation\Tag">Tag</abbr></a>|null</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -770,7 +784,7 @@ rendered at once when you cast it to string.</p>
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-Tag.html"><abbr title="\Nethead\Markup\Foundation\Tag">Tag</abbr></a></span>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-Tag.html"><abbr title="\Nethead\Markup\Foundation\Tag">Tag</abbr></a>|null</span>
             &mdash;
         
     
@@ -796,7 +810,7 @@ rendered at once when you cast it to string.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">h</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">h</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -851,7 +865,7 @@ Just remember HTML supports only headers from h1 to h6</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">has</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+                    <span class="phpdocumentor-signature__name">has</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -894,7 +908,7 @@ Just remember HTML supports only headers from h1 to h6</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">hr</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">hr</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -939,7 +953,7 @@ Just remember HTML supports only headers from h1 to h6</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">i</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">i</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -984,7 +998,7 @@ Just remember HTML supports only headers from h1 to h6</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">ins</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">ins</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -1014,6 +1028,38 @@ Just remember HTML supports only headers from h1 to h6</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_jsonSerialize">
+        jsonSerialize()
+        <a href="classes/Nethead-Markup-Foundation-Fragment.html#method_jsonSerialize" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/Fragment.php"><a href="files/src-foundation-fragment.html"><abbr title="src/Foundation/Fragment.php">Fragment.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">112</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">jsonSerialize</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_kbd">
         kbd()
         <a href="classes/Nethead-Markup-Foundation-RichTextNode.html#method_kbd" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1029,7 +1075,7 @@ Just remember HTML supports only headers from h1 to h6</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">kbd</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">kbd</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -1074,7 +1120,7 @@ Just remember HTML supports only headers from h1 to h6</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">mark</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">mark</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -1119,7 +1165,7 @@ Just remember HTML supports only headers from h1 to h6</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">plain</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">plain</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -1164,7 +1210,7 @@ Just remember HTML supports only headers from h1 to h6</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">push</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Nethead-Markup-Foundation-Tag.html"><abbr title="\Nethead\Markup\Foundation\Tag">Tag</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$tag</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">push</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Nethead-Markup-Foundation-Tag.html"><abbr title="\Nethead\Markup\Foundation\Tag">Tag</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$tag</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -1214,7 +1260,7 @@ Just remember HTML supports only headers from h1 to h6</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">q</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">q</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -1259,7 +1305,7 @@ Just remember HTML supports only headers from h1 to h6</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">quote</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$url</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">quote</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$url</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -1313,7 +1359,7 @@ Just remember HTML supports only headers from h1 to h6</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">span</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$classes</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">span</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$classes</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -1365,7 +1411,7 @@ Just remember HTML supports only headers from h1 to h6</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">strong</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
+                    <span class="phpdocumentor-signature__name">strong</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -1410,7 +1456,7 @@ Just remember HTML supports only headers from h1 to h6</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">sub</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">sub</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -1455,7 +1501,7 @@ Just remember HTML supports only headers from h1 to h6</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">sup</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">sup</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -1485,6 +1531,49 @@ Just remember HTML supports only headers from h1 to h6</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_swap">
+        swap()
+        <a href="classes/Nethead-Markup-Foundation-Fragment.html#method_swap" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Foundation/Fragment.php"><a href="files/src-foundation-fragment.html"><abbr title="src/Foundation/Fragment.php">Fragment.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">95</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Swap elements within Fragment</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">swap</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$contents</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$contents</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_time">
         time()
         <a href="classes/Nethead-Markup-Foundation-RichTextNode.html#method_time" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1500,7 +1589,7 @@ Just remember HTML supports only headers from h1 to h6</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">time</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">time</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -1545,7 +1634,7 @@ Just remember HTML supports only headers from h1 to h6</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">toArray</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">toArray</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
     
     
@@ -1578,7 +1667,7 @@ Just remember HTML supports only headers from h1 to h6</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">underline</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">underline</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -1623,7 +1712,7 @@ Just remember HTML supports only headers from h1 to h6</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">wbr</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">wbr</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-RichTextNode.html"><abbr title="\Nethead\Markup\Foundation\RichTextNode">RichTextNode</abbr></a></span></code>
 
     
     
@@ -1656,7 +1745,7 @@ Just remember HTML supports only headers from h1 to h6</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">wrap</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$wrapper</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$attributes</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-Tag.html"><abbr title="\Nethead\Markup\Foundation\Tag">Tag</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">wrap</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$wrapper</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$attributes</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -1680,7 +1769,7 @@ Just remember HTML supports only headers from h1 to h6</p>
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Nethead-Markup-Foundation-Tag.html"><abbr title="\Nethead\Markup\Foundation\Tag">Tag</abbr></a></span>
+    <span class="phpdocumentor-signature__response_type">void</span>
             &mdash;
         
     

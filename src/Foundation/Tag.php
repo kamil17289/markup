@@ -9,7 +9,7 @@ use Nethead\Markup\Helpers\HtmlAttributes;
  * A class for creating any HTML tag element you would like.
  * @package Nethead\Markup\Foundation
  */
-class Tag {
+class Tag implements \JsonSerializable {
     /**
      * Name of the tag (in HTML).
      * It can be any of the valid HTML tags (a, title, meta, etc)
@@ -254,5 +254,17 @@ class Tag {
         if (in_array($name, HtmlConfig::$globalAttributes)) {
             $this->attrs()->set($name, $arguments[0]);
         }
+    }
+
+    /**
+     * @return array
+     */
+    public function jsonSerialize(): array
+    {
+        return [
+            'tag' => $this->name,
+            'attrs' => $this->attrs,
+            'children' => $this->children
+        ];
     }
 }

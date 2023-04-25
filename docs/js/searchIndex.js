@@ -111,10 +111,20 @@ Search.appendIndex(
             "summary": "Wrap\u0020the\u0020contents\u0020inside\u0020the\u0020custom\u0020container.",
             "url": "classes/Nethead-Markup-Foundation-Fragment.html#method_wrap"
         },                {
+            "fqsen": "\\Nethead\\Markup\\Foundation\\Fragment\u003A\u003Aswap\u0028\u0029",
+            "name": "swap",
+            "summary": "Swap\u0020elements\u0020within\u0020Fragment",
+            "url": "classes/Nethead-Markup-Foundation-Fragment.html#method_swap"
+        },                {
             "fqsen": "\\Nethead\\Markup\\Foundation\\Fragment\u003A\u003A__toString\u0028\u0029",
             "name": "__toString",
             "summary": "Convert\u0020the\u0020Fragment\u0020to\u0020HTML\u0020string",
             "url": "classes/Nethead-Markup-Foundation-Fragment.html#method___toString"
+        },                {
+            "fqsen": "\\Nethead\\Markup\\Foundation\\Fragment\u003A\u003AjsonSerialize\u0028\u0029",
+            "name": "jsonSerialize",
+            "summary": "",
+            "url": "classes/Nethead-Markup-Foundation-Fragment.html#method_jsonSerialize"
         },                {
             "fqsen": "\\Nethead\\Markup\\Foundation\\Fragment\u003A\u003A\u0024contents",
             "name": "contents",
@@ -315,6 +325,11 @@ Search.appendIndex(
             "name": "__call",
             "summary": "Intercept\u0020any\u0020calls\u0020to\u0020undefined\u0020methods\u0020and\u0020use\u0020it\u0020for\u0020convenient\u0020attributes\u0020setting.",
             "url": "classes/Nethead-Markup-Foundation-Tag.html#method___call"
+        },                {
+            "fqsen": "\\Nethead\\Markup\\Foundation\\Tag\u003A\u003AjsonSerialize\u0028\u0029",
+            "name": "jsonSerialize",
+            "summary": "",
+            "url": "classes/Nethead-Markup-Foundation-Tag.html#method_jsonSerialize"
         },                {
             "fqsen": "\\Nethead\\Markup\\Foundation\\Tag\u003A\u003A\u0024name",
             "name": "name",
@@ -531,6 +546,11 @@ Search.appendIndex(
             "summary": "Convert\u0020the\u0020ClasList\u0020object\u0020to\u0020a\u0020string.",
             "url": "classes/Nethead-Markup-Helpers-ClassList.html#method___toString"
         },                {
+            "fqsen": "\\Nethead\\Markup\\Helpers\\ClassList\u003A\u003AjsonSerialize\u0028\u0029",
+            "name": "jsonSerialize",
+            "summary": "",
+            "url": "classes/Nethead-Markup-Helpers-ClassList.html#method_jsonSerialize"
+        },                {
             "fqsen": "\\Nethead\\Markup\\Helpers\\ClassList\u003A\u003A\u0024classList",
             "name": "classList",
             "summary": "",
@@ -565,6 +585,11 @@ Search.appendIndex(
             "name": "get",
             "summary": "Get\u0020value\u0020of\u0020the\u0020attribute\u0020of\u0020given\u0020name.",
             "url": "classes/Nethead-Markup-Helpers-HtmlAttributes.html#method_get"
+        },                {
+            "fqsen": "\\Nethead\\Markup\\Helpers\\HtmlAttributes\u003A\u003Ais\u0028\u0029",
+            "name": "is",
+            "summary": "",
+            "url": "classes/Nethead-Markup-Helpers-HtmlAttributes.html#method_is"
         },                {
             "fqsen": "\\Nethead\\Markup\\Helpers\\HtmlAttributes\u003A\u003Aremove\u0028\u0029",
             "name": "remove",
@@ -605,6 +630,11 @@ Search.appendIndex(
             "name": "__toString",
             "summary": "Convert\u0020the\u0020HtmlAttributes\u0020object\u0020into\u0020HTML\u0020string.",
             "url": "classes/Nethead-Markup-Helpers-HtmlAttributes.html#method___toString"
+        },                {
+            "fqsen": "\\Nethead\\Markup\\Helpers\\HtmlAttributes\u003A\u003AjsonSerialize\u0028\u0029",
+            "name": "jsonSerialize",
+            "summary": "",
+            "url": "classes/Nethead-Markup-Helpers-HtmlAttributes.html#method_jsonSerialize"
         },                {
             "fqsen": "\\Nethead\\Markup\\Helpers\\HtmlAttributes\u003A\u003A\u0024attrs",
             "name": "attrs",
@@ -1310,6 +1340,11 @@ Search.appendIndex(
             "name": "label",
             "summary": "Set\u0020the\u0020label\u0020for\u0020the\u0020option.",
             "url": "classes/Nethead-Markup-Tags-Option.html#method_label"
+        },                {
+            "fqsen": "\\Nethead\\Markup\\Tags\\Option\u003A\u003Aselected\u0028\u0029",
+            "name": "selected",
+            "summary": "Mark\u0020the\u0020option\u0020as\u0020selected.",
+            "url": "classes/Nethead-Markup-Tags-Option.html#method_selected"
         },                {
             "fqsen": "\\Nethead\\Markup\\Tags\\Picture",
             "name": "Picture",

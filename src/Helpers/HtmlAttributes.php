@@ -6,7 +6,7 @@ namespace Nethead\Markup\Helpers;
  * Helper class for HTML attributes manipulation.
  * @package Nethead\Markup\Helpers
  */
-class HtmlAttributes {
+class HtmlAttributes implements \JsonSerializable {
     /**
      * List of HTML element attributes
      * @var array $htmlAttributes
@@ -292,5 +292,15 @@ class HtmlAttributes {
     public function __toString(): string
     {
         return $this->render();
+    }
+
+    /**
+     * @return array
+     */
+    public function jsonSerialize(): array
+    {
+        return array_merge($this->attrs, [
+            'class' => $this->classList
+        ]);
     }
 }

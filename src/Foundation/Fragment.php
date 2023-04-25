@@ -6,7 +6,7 @@ namespace Nethead\Markup\Foundation;
  * Class Fragment holds a number of HTML Tag objects for grouping purposes.
  * @package Nethead\Markup\Foundation
  */
-class Fragment {
+class Fragment implements \JsonSerializable {
     /**
      * The contents of the fragment
      *
@@ -104,5 +104,13 @@ class Fragment {
     public function __toString() :string
     {
         return implode('', $this->contents);
+    }
+
+    /**
+     * @return array
+     */
+    public function jsonSerialize(): array
+    {
+        return $this->contents;
     }
 }

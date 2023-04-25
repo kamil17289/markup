@@ -7,7 +7,7 @@ namespace Nethead\Markup\Helpers;
  *
  * @package Nethead\Markup\Helpers
  */
-class ClassList {
+class ClassList implements \JsonSerializable {
     /**
      * @var array The list of CSS classes
      */
@@ -132,5 +132,13 @@ class ClassList {
     public function __toString(): string
     {
         return $this->render();
+    }
+
+    /**
+     * @return array
+     */
+    public function jsonSerialize(): array
+    {
+        return $this->classList;
     }
 }
